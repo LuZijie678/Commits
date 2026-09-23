@@ -1,0 +1,2 @@
+sample_id,repo,type_pair,intent_subjects,synthetic_subject,synthetic_diff_excerpt,covers_all_required_intents,faithful_to_sources,no_artifact,subject_naturalness,length_ok,final_decision,annotator_confidence,notes
+simple2_0001,owner/repo,fix+test,fix parser | add tests,fix parser and add regression tests,"diff --git a/src/parser.py b/src/parser.py\n@@ -1 +1 @@\n-old\n+new\n...",,,,,,,,

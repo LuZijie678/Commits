@@ -1,0 +1,2133 @@
+{
+  "checked_at_utc": "2026-05-26T14:10:37.210774+00:00",
+  "check_kind": "repo_sha_level_absorption_check_against_canonical_m",
+  "canonical_csv": "datasets/m_verified/canonical/usable_m_with_real_diff.csv",
+  "canonical_row_count": 765,
+  "remaining_round_runs_root": "datasets/m_verified/workspace/round_runs",
+  "analyzed_remote_diff_csv_count": 48,
+  "global": {
+    "remaining_round_unique_pair_count": 802,
+    "matched_pair_count": 0,
+    "unmatched_pair_count": 802,
+    "match_rate": 0.0,
+    "canonical_source_file_reverse_match_count": 0,
+    "canonical_source_file_reverse_matches": []
+  },
+  "archive_decision": {
+    "eligible_group_count": 0,
+    "eligible_groups": [],
+    "decision": "retain_all_data_bearing_groups",
+    "reason": [
+      "repo/sha-level absorption is judged against the current canonical M dataset only",
+      "a data-bearing round group is archive-eligible only when every unique repo/sha in its remote_diff outputs is present in canonical M",
+      "canonical _source_file does not reverse-reference any remaining round_runs csv basename"
+    ]
+  },
+  "group_reports": [
+    {
+      "group": "batchcrawl/20260526T024705Z",
+      "file_count": 4,
+      "row_count": 115,
+      "unique_pair_count": 115,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 115,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "eligible_for_archive_by_canonical_repo_sha": false,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "BVLC/caffe",
+          "sha": "dabbc91ecda54d8d4bb69e2457289d2e7216b136"
+        },
+        {
+          "repo": "ItzCrazyKns/Vane",
+          "sha": "e0aac65e6477168101a3f9b6ddedfbe03d4f38ae"
+        },
+        {
+          "repo": "SerenityOS/serenity",
+          "sha": "1ad8304b1d0c1bafaed8a0e8e4182f2ee3249bab"
+        },
+        {
+          "repo": "SerenityOS/serenity",
+          "sha": "4c5d784603cef5ea171321df42a3e4f2d9b036df"
+        },
+        {
+          "repo": "apache/kafka",
+          "sha": "16306d9475de9abe3f71ef49261fe84289849209"
+        }
+      ],
+      "files": [
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T024705Z/batchcrawl_20260526T024705Z_round0001_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T024705Z/batchcrawl_20260526T024705Z_round0002_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T024705Z/batchcrawl_20260526T024705Z_round0003_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T024705Z/batchcrawl_20260526T024705Z_round0004_api_filelist_candidates_remote_diff.csv"
+      ]
+    },
+    {
+      "group": "batchcrawl/20260526T025527Z",
+      "file_count": 4,
+      "row_count": 108,
+      "unique_pair_count": 108,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 108,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "eligible_for_archive_by_canonical_repo_sha": false,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "CodeEditApp/CodeEdit",
+          "sha": "334357fb0d95303b3e6eb5fd15680738b8efd798"
+        },
+        {
+          "repo": "CodeEditApp/CodeEdit",
+          "sha": "cfbca15210c0ab72b4f7bc2293b2bdf50d80572b"
+        },
+        {
+          "repo": "HandBrake/HandBrake",
+          "sha": "946cea5215fad74ec141eb27d6d4d7d7975ed0e5"
+        },
+        {
+          "repo": "HandBrake/HandBrake",
+          "sha": "a76194379033a66fec8afbe65495132ad01c4062"
+        },
+        {
+          "repo": "QL-Win/QuickLook",
+          "sha": "829963d7317eb18e3f27de68e6d796911f75706d"
+        }
+      ],
+      "files": [
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T025527Z/batchcrawl_20260526T025527Z_round0005_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T025527Z/batchcrawl_20260526T025527Z_round0006_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T025527Z/batchcrawl_20260526T025527Z_round0007_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T025527Z/batchcrawl_20260526T025527Z_round0008_api_filelist_candidates_remote_diff.csv"
+      ]
+    },
+    {
+      "group": "batchcrawl/20260526T030407Z",
+      "file_count": 4,
+      "row_count": 100,
+      "unique_pair_count": 100,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 100,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "eligible_for_archive_by_canonical_repo_sha": false,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "OpenEmu/OpenEmu",
+          "sha": "bb51781f3f508dc74bfed065ee878d288f386180"
+        },
+        {
+          "repo": "emotion-js/emotion",
+          "sha": "532ff57cafd8ba04f3b624074556ea47ec76fc9a"
+        },
+        {
+          "repo": "flarum/flarum",
+          "sha": "4ffaf91ec42f68b1008b21a71723bd5ffe19e351"
+        },
+        {
+          "repo": "flarum/flarum",
+          "sha": "c5304b93f1f107ff64e8051f0f56e12b84a42261"
+        },
+        {
+          "repo": "getgrav/grav",
+          "sha": "e460ed6613fb55bf29d35f1a83d9c93b795e5cf4"
+        }
+      ],
+      "files": [
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T030407Z/batchcrawl_20260526T030407Z_round0009_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T030407Z/batchcrawl_20260526T030407Z_round0010_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T030407Z/batchcrawl_20260526T030407Z_round0011_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T030407Z/batchcrawl_20260526T030407Z_round0012_api_filelist_candidates_remote_diff.csv"
+      ]
+    },
+    {
+      "group": "batchcrawl/20260526T031105Z",
+      "file_count": 4,
+      "row_count": 118,
+      "unique_pair_count": 118,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 118,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "eligible_for_archive_by_canonical_repo_sha": false,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "BasedHardware/omi",
+          "sha": "c1a4d8ffca4ffb55e5b4d4413c71822568d40059"
+        },
+        {
+          "repo": "Jguer/yay",
+          "sha": "3b799336382efd0eaf935612eefa9c382d970c46"
+        },
+        {
+          "repo": "Jguer/yay",
+          "sha": "733e6a6b17d480d50cef53cb96e6728cc0606a0b"
+        },
+        {
+          "repo": "PHP-CS-Fixer/PHP-CS-Fixer",
+          "sha": "259c20e99e0500422b3a5941becf705248a332f9"
+        },
+        {
+          "repo": "Qloapps/QloApps",
+          "sha": "01715952a26e934b2b588053a98ac0cd43289c2f"
+        }
+      ],
+      "files": [
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031105Z/batchcrawl_20260526T031105Z_round0013_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031105Z/batchcrawl_20260526T031105Z_round0014_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031105Z/batchcrawl_20260526T031105Z_round0015_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031105Z/batchcrawl_20260526T031105Z_round0016_api_filelist_candidates_remote_diff.csv"
+      ]
+    },
+    {
+      "group": "batchcrawl/20260526T031715Z",
+      "file_count": 3,
+      "row_count": 75,
+      "unique_pair_count": 75,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 75,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "eligible_for_archive_by_canonical_repo_sha": false,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Next-Flip/Momentum-Firmware",
+          "sha": "56620ab62f3204756332fb445fe7a6afa0cff624"
+        },
+        {
+          "repo": "Next-Flip/Momentum-Firmware",
+          "sha": "a663836b7065ac181fcd733bd0d9dd9f9b60a032"
+        },
+        {
+          "repo": "Xfennec/progress",
+          "sha": "c608c6dded1734e2eb38ad38b551ce5506c3e42b"
+        },
+        {
+          "repo": "antirez/kilo",
+          "sha": "d65f4c92e8ed405937a7bac3248d24fa6b40eb6f"
+        },
+        {
+          "repo": "apache/datafusion",
+          "sha": "50013e5569112b2f17b66cb00af003d827a96eda"
+        }
+      ],
+      "files": [
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031715Z/batchcrawl_20260526T031715Z_round0017_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031715Z/batchcrawl_20260526T031715Z_round0018_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031715Z/batchcrawl_20260526T031715Z_round0019_api_filelist_candidates_remote_diff.csv"
+      ]
+    },
+    {
+      "group": "batchcrawl/20260526T071501Z",
+      "file_count": 4,
+      "row_count": 125,
+      "unique_pair_count": 125,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 125,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "eligible_for_archive_by_canonical_repo_sha": false,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Alamofire/Alamofire",
+          "sha": "17c7f9b03121cea798fe281c37a7133f2675aa72"
+        },
+        {
+          "repo": "Alamofire/Alamofire",
+          "sha": "c279eda711944b5fe0c1ce410f2d934353e7bf65"
+        },
+        {
+          "repo": "LizardByte/Sunshine",
+          "sha": "68f671809cbb707a6caaee69d19cfc48827d2d9f"
+        },
+        {
+          "repo": "ShareX/ShareX",
+          "sha": "2524605cbe364c16f67a9a8ab9b774bd4f601df3"
+        },
+        {
+          "repo": "ShareX/ShareX",
+          "sha": "27c3bbc8bd1b15e9d39f1f36e6c9881e50e3b041"
+        }
+      ],
+      "files": [
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T071501Z/batchcrawl_20260526T071501Z_round0020_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T071501Z/batchcrawl_20260526T071501Z_round0021_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T071501Z/batchcrawl_20260526T071501Z_round0022_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T071501Z/batchcrawl_20260526T071501Z_round0023_api_filelist_candidates_remote_diff.csv"
+      ]
+    },
+    {
+      "group": "batchcrawl/20260526T124753Z",
+      "file_count": 4,
+      "row_count": 101,
+      "unique_pair_count": 101,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 101,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "eligible_for_archive_by_canonical_repo_sha": false,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "apple/container",
+          "sha": "a967399d4837f70fb70e31fee5cd06983d179548"
+        },
+        {
+          "repo": "apple/container",
+          "sha": "b73933eb2d7a621e8fac2cbdf129028b5ae47557"
+        },
+        {
+          "repo": "arendst/Tasmota",
+          "sha": "07154d430af5fbff9a00e753deb1d434be3d7774"
+        },
+        {
+          "repo": "arendst/Tasmota",
+          "sha": "c7042c767c6bec865384656d2f86105e9f547a6e"
+        },
+        {
+          "repo": "bagisto/bagisto",
+          "sha": "affc19732be94f0c4c2c544d802a00b77a11baae"
+        }
+      ],
+      "files": [
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T124753Z/batchcrawl_20260526T124753Z_round0024_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T124753Z/batchcrawl_20260526T124753Z_round0025_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T124753Z/batchcrawl_20260526T124753Z_round0026_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T124753Z/batchcrawl_20260526T124753Z_round0027_api_filelist_candidates_remote_diff.csv"
+      ]
+    },
+    {
+      "group": "batchcrawl/20260526T125513Z",
+      "file_count": 4,
+      "row_count": 91,
+      "unique_pair_count": 91,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 91,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "eligible_for_archive_by_canonical_repo_sha": false,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "BookStackApp/BookStack",
+          "sha": "5d429ea9bb5d48b4a4b3bab4b09fe21dea00b752"
+        },
+        {
+          "repo": "BookStackApp/BookStack",
+          "sha": "b5d3ba2726dc2f3792f580a8d00cf8d6bbe01126"
+        },
+        {
+          "repo": "alibaba/ice",
+          "sha": "8e27933423d786ebdefe5343c2d93895a92d7b4d"
+        },
+        {
+          "repo": "alibaba/ice",
+          "sha": "cc0792b0fd8876da1e805b24792bc9aeb5fc9a67"
+        },
+        {
+          "repo": "alyssaxuu/screenity",
+          "sha": "ee5fba556c1b4b4d4fc3e2c7632b63c3db496a0e"
+        }
+      ],
+      "files": [
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T125513Z/batchcrawl_20260526T125513Z_round0028_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T125513Z/batchcrawl_20260526T125513Z_round0029_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T125513Z/batchcrawl_20260526T125513Z_round0030_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T125513Z/batchcrawl_20260526T125513Z_round0031_api_filelist_candidates_remote_diff.csv"
+      ]
+    },
+    {
+      "group": "batchcrawl/20260526T130226Z",
+      "file_count": 4,
+      "row_count": 126,
+      "unique_pair_count": 126,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 126,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "eligible_for_archive_by_canonical_repo_sha": false,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "JessYanCoding/AndroidAutoSize",
+          "sha": "2d071d3203821587e97cc149865c541d7f45585b"
+        },
+        {
+          "repo": "Kotlin/kotlinx.coroutines",
+          "sha": "b872360a0d322654e8b89972aef26668245f2bbe"
+        },
+        {
+          "repo": "Kotlin/kotlinx.coroutines",
+          "sha": "d0539bc4460c160b7605abe51fb0e69dd2238bcb"
+        },
+        {
+          "repo": "OJ/gobuster",
+          "sha": "e063d83c19ddfdecf98f248dbb9b468ea9bf0b6b"
+        },
+        {
+          "repo": "OpenNHP/opennhp",
+          "sha": "095221052e406f82123ecdf5e5b84071956d3530"
+        }
+      ],
+      "files": [
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T130226Z/batchcrawl_20260526T130226Z_round0032_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T130226Z/batchcrawl_20260526T130226Z_round0033_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T130226Z/batchcrawl_20260526T130226Z_round0034_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T130226Z/batchcrawl_20260526T130226Z_round0035_api_filelist_candidates_remote_diff.csv"
+      ]
+    },
+    {
+      "group": "batchcrawl/20260526T131044Z",
+      "file_count": 4,
+      "row_count": 101,
+      "unique_pair_count": 101,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 101,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "eligible_for_archive_by_canonical_repo_sha": false,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "AppImage/AppImageKit",
+          "sha": "b119bbe7ebdb3e48774cca87d83c915d4ce63825"
+        },
+        {
+          "repo": "FyroxEngine/Fyrox",
+          "sha": "768df4600d59a038a11713b624930628e5a4b2b2"
+        },
+        {
+          "repo": "H-M-H/Weylus",
+          "sha": "296d5de0a4fba71a5c4db29338a60b82c9e53a88"
+        },
+        {
+          "repo": "H-M-H/Weylus",
+          "sha": "ffa05daeb4832e624f8e372abaca931a9425f80a"
+        },
+        {
+          "repo": "NVIDIA/cuda-samples",
+          "sha": "547f65851fafdb6a66f47ce56b4c0603db885910"
+        }
+      ],
+      "files": [
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T131044Z/batchcrawl_20260526T131044Z_round0036_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T131044Z/batchcrawl_20260526T131044Z_round0037_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T131044Z/batchcrawl_20260526T131044Z_round0038_api_filelist_candidates_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T131044Z/batchcrawl_20260526T131044Z_round0039_api_filelist_candidates_remote_diff.csv"
+      ]
+    },
+    {
+      "group": "batchcrawl/20260526T132427Z",
+      "file_count": 1,
+      "row_count": 1,
+      "unique_pair_count": 1,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 1,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "eligible_for_archive_by_canonical_repo_sha": false,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "titanwings/colleague-skill",
+          "sha": "c3e9d8c8f7fd310fa3e46121916653ba7445c4de"
+        }
+      ],
+      "files": [
+        "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T132427Z/batchcrawl_20260526T132427Z_round0040_api_filelist_candidates_remote_diff.csv"
+      ]
+    },
+    {
+      "group": "newcrawl/20260525",
+      "file_count": 3,
+      "row_count": 87,
+      "unique_pair_count": 87,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 87,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "eligible_for_archive_by_canonical_repo_sha": false,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Homebrew/brew",
+          "sha": "ba52eced93d32ac5110a0aec694f09b015343a3e"
+        },
+        {
+          "repo": "ReactiveX/RxJava",
+          "sha": "0892c6f4481cf6415a8ad50e58ba71b6f41efce1"
+        },
+        {
+          "repo": "TheAlgorithms/Python",
+          "sha": "8e70e2e77bc534d09f655410fd1a8a38d2404928"
+        },
+        {
+          "repo": "TheAlgorithms/Python",
+          "sha": "fc2f947e0fabb84862737aa7fed05e6322389f0b"
+        },
+        {
+          "repo": "codecrafters-io/build-your-own-x",
+          "sha": "2fb5a067dfc4a6bb0673b19789d7b387851f17a8"
+        }
+      ],
+      "files": [
+        "datasets/m_verified/workspace/round_runs/newcrawl/20260525/20260525_newcrawl_api_filelist_candidates_token_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/newcrawl/20260525/20260525_newcrawl_api_filelist_candidates_token_round2_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/newcrawl/20260525/20260525_newcrawl_api_filelist_candidates_token_round3_remote_diff.csv"
+      ]
+    },
+    {
+      "group": "newcrawl/20260526",
+      "file_count": 5,
+      "row_count": 171,
+      "unique_pair_count": 171,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 171,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "eligible_for_archive_by_canonical_repo_sha": false,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "ChromeDevTools/chrome-devtools-mcp",
+          "sha": "3ade962a8da6b100800304146dc3e50e6419a6ee"
+        },
+        {
+          "repo": "ChromeDevTools/chrome-devtools-mcp",
+          "sha": "6992106d1ca3bcd9390165035e7b0a3acb7e7317"
+        },
+        {
+          "repo": "FuelLabs/fuels-ts",
+          "sha": "b03dad84d171ee3972dccb339243cefbb5d1af63"
+        },
+        {
+          "repo": "FuelLabs/fuels-ts",
+          "sha": "f4be76c0b0fcbfa76d9b30b30b70ec85269018ed"
+        },
+        {
+          "repo": "HKUDS/CLI-Anything",
+          "sha": "f7690c9efe1f2eb13d0f87d918a75db5bbec72af"
+        }
+      ],
+      "files": [
+        "datasets/m_verified/workspace/round_runs/newcrawl/20260526/20260526_newcrawl_api_filelist_candidates_token_round4_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/newcrawl/20260526/20260526_newcrawl_api_filelist_candidates_token_round5_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/newcrawl/20260526/20260526_newcrawl_api_filelist_candidates_token_round6_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/newcrawl/20260526/20260526_newcrawl_api_filelist_candidates_token_round7_remote_diff.csv",
+        "datasets/m_verified/workspace/round_runs/newcrawl/20260526/20260526_newcrawl_api_filelist_candidates_token_v2_round1_remote_diff.csv"
+      ]
+    }
+  ],
+  "file_reports": [
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T024705Z/batchcrawl_20260526T024705Z_round0001_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T024705Z_round0001_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T024705Z",
+      "row_count": 34,
+      "unique_pair_count": 34,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 34,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "BVLC/caffe",
+          "sha": "dabbc91ecda54d8d4bb69e2457289d2e7216b136"
+        },
+        {
+          "repo": "ItzCrazyKns/Vane",
+          "sha": "e0aac65e6477168101a3f9b6ddedfbe03d4f38ae"
+        },
+        {
+          "repo": "SerenityOS/serenity",
+          "sha": "1ad8304b1d0c1bafaed8a0e8e4182f2ee3249bab"
+        },
+        {
+          "repo": "SerenityOS/serenity",
+          "sha": "4c5d784603cef5ea171321df42a3e4f2d9b036df"
+        },
+        {
+          "repo": "apache/kafka",
+          "sha": "16306d9475de9abe3f71ef49261fe84289849209"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T024705Z/batchcrawl_20260526T024705Z_round0002_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T024705Z_round0002_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T024705Z",
+      "row_count": 31,
+      "unique_pair_count": 31,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 31,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "FreeCAD/FreeCAD",
+          "sha": "e3ba765cea9605d21518598d6d1a7f70d484bcaa"
+        },
+        {
+          "repo": "FreeCAD/FreeCAD",
+          "sha": "ebd237ea9c63b3d41f4dd7de08c0d683e3f8d459"
+        },
+        {
+          "repo": "FujiwaraChoki/MoneyPrinterV2",
+          "sha": "31bba003a936b30f4f0616c77f816497c844a921"
+        },
+        {
+          "repo": "FujiwaraChoki/MoneyPrinterV2",
+          "sha": "754aec467dc4363b5966856346c793bf8218ed88"
+        },
+        {
+          "repo": "Lightning-AI/pytorch-lightning",
+          "sha": "0d6ad3e3c6cd4682cbbe7bd52f544450e610767b"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T024705Z/batchcrawl_20260526T024705Z_round0003_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T024705Z_round0003_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T024705Z",
+      "row_count": 30,
+      "unique_pair_count": 30,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 30,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Anuken/Mindustry",
+          "sha": "3f649aea1fd65ce034366e4750da6d1da301ba22"
+        },
+        {
+          "repo": "Anuken/Mindustry",
+          "sha": "865536ebf4a4611280fd301c7fbe9ef702256970"
+        },
+        {
+          "repo": "ChartsOrg/Charts",
+          "sha": "afc7c983d2f98c4d81cac28b1169951cc7323bb5"
+        },
+        {
+          "repo": "Gitlawb/openclaude",
+          "sha": "90360d3e383314304dc19b29bd786b59e966be15"
+        },
+        {
+          "repo": "Gitlawb/openclaude",
+          "sha": "b3dc674dbea8e1a740832fdde54d8fd820d501bd"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T024705Z/batchcrawl_20260526T024705Z_round0004_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T024705Z_round0004_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T024705Z",
+      "row_count": 20,
+      "unique_pair_count": 20,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 20,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "apple/container",
+          "sha": "a967399d4837f70fb70e31fee5cd06983d179548"
+        },
+        {
+          "repo": "apple/container",
+          "sha": "b73933eb2d7a621e8fac2cbdf129028b5ae47557"
+        },
+        {
+          "repo": "arendst/Tasmota",
+          "sha": "ba88358ed6d9b8ec79e9d10058db9674c96e68ff"
+        },
+        {
+          "repo": "arendst/Tasmota",
+          "sha": "c7042c767c6bec865384656d2f86105e9f547a6e"
+        },
+        {
+          "repo": "bagisto/bagisto",
+          "sha": "affc19732be94f0c4c2c544d802a00b77a11baae"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T025527Z/batchcrawl_20260526T025527Z_round0005_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T025527Z_round0005_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T025527Z",
+      "row_count": 35,
+      "unique_pair_count": 35,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 35,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "CodeEditApp/CodeEdit",
+          "sha": "334357fb0d95303b3e6eb5fd15680738b8efd798"
+        },
+        {
+          "repo": "CodeEditApp/CodeEdit",
+          "sha": "cfbca15210c0ab72b4f7bc2293b2bdf50d80572b"
+        },
+        {
+          "repo": "HandBrake/HandBrake",
+          "sha": "946cea5215fad74ec141eb27d6d4d7d7975ed0e5"
+        },
+        {
+          "repo": "HandBrake/HandBrake",
+          "sha": "a76194379033a66fec8afbe65495132ad01c4062"
+        },
+        {
+          "repo": "QL-Win/QuickLook",
+          "sha": "829963d7317eb18e3f27de68e6d796911f75706d"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T025527Z/batchcrawl_20260526T025527Z_round0006_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T025527Z_round0006_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T025527Z",
+      "row_count": 26,
+      "unique_pair_count": 26,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 26,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Caldis/Mos",
+          "sha": "5831767e8c22f3abbaa3a922edf749486eefbee9"
+        },
+        {
+          "repo": "DarkFlippers/unleashed-firmware",
+          "sha": "c4ef54c71afa5fb892b0f84d1022333b70eafce2"
+        },
+        {
+          "repo": "DarkFlippers/unleashed-firmware",
+          "sha": "d5fad4f38b1ef0f5774e6ef0b95dcf71392a91dc"
+        },
+        {
+          "repo": "DesignPatternsPHP/DesignPatternsPHP",
+          "sha": "00d4ca8d912ffad87d77d11b457e98c3321a60c9"
+        },
+        {
+          "repo": "PHPMailer/PHPMailer",
+          "sha": "a5495d0c7d582ac153fb22e3138688debf6cb85e"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T025527Z/batchcrawl_20260526T025527Z_round0007_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T025527Z_round0007_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T025527Z",
+      "row_count": 21,
+      "unique_pair_count": 21,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 21,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "JetBrains/compose-multiplatform",
+          "sha": "419f82c073906f40063c162810d72e6d7fb6f1b5"
+        },
+        {
+          "repo": "browsh-org/browsh",
+          "sha": "6ccf2afd07235a1ec65680acedbc1c7ec9df6d7a"
+        },
+        {
+          "repo": "browsh-org/browsh",
+          "sha": "84f5382eda69e206c49bfaa777b3c1445f3a3a96"
+        },
+        {
+          "repo": "decaporg/decap-cms",
+          "sha": "78fb8af5dc0cfefe4f0dc7d2e0c9b43ae1121423"
+        },
+        {
+          "repo": "decaporg/decap-cms",
+          "sha": "90f3a84e7e4400dfa500f419bca4c9ae253a632b"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T025527Z/batchcrawl_20260526T025527Z_round0008_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T025527Z_round0008_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T025527Z",
+      "row_count": 26,
+      "unique_pair_count": 26,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 26,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "BookStackApp/BookStack",
+          "sha": "5d429ea9bb5d48b4a4b3bab4b09fe21dea00b752"
+        },
+        {
+          "repo": "BookStackApp/BookStack",
+          "sha": "b5d3ba2726dc2f3792f580a8d00cf8d6bbe01126"
+        },
+        {
+          "repo": "alibaba/ice",
+          "sha": "8e27933423d786ebdefe5343c2d93895a92d7b4d"
+        },
+        {
+          "repo": "alibaba/ice",
+          "sha": "cc0792b0fd8876da1e805b24792bc9aeb5fc9a67"
+        },
+        {
+          "repo": "alyssaxuu/screenity",
+          "sha": "ee5fba556c1b4b4d4fc3e2c7632b63c3db496a0e"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T030407Z/batchcrawl_20260526T030407Z_round0009_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T030407Z_round0009_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T030407Z",
+      "row_count": 19,
+      "unique_pair_count": 19,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 19,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "OpenEmu/OpenEmu",
+          "sha": "bb51781f3f508dc74bfed065ee878d288f386180"
+        },
+        {
+          "repo": "emotion-js/emotion",
+          "sha": "532ff57cafd8ba04f3b624074556ea47ec76fc9a"
+        },
+        {
+          "repo": "flarum/flarum",
+          "sha": "4ffaf91ec42f68b1008b21a71723bd5ffe19e351"
+        },
+        {
+          "repo": "flarum/flarum",
+          "sha": "c5304b93f1f107ff64e8051f0f56e12b84a42261"
+        },
+        {
+          "repo": "getgrav/grav",
+          "sha": "e460ed6613fb55bf29d35f1a83d9c93b795e5cf4"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T030407Z/batchcrawl_20260526T030407Z_round0010_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T030407Z_round0010_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T030407Z",
+      "row_count": 20,
+      "unique_pair_count": 20,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 20,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Billionmail/BillionMail",
+          "sha": "4074e02a728323b488507815add0dfdb7b7510cd"
+        },
+        {
+          "repo": "Billionmail/BillionMail",
+          "sha": "fdb7b7ee138d87a78f5dec1c2e6d7a08af306b56"
+        },
+        {
+          "repo": "Carthage/Carthage",
+          "sha": "89251a6f3e581d15508814b1f104187e35f94052"
+        },
+        {
+          "repo": "FreshRSS/FreshRSS",
+          "sha": "1ff27fea215479c6949852bba5b50b96b8277a38"
+        },
+        {
+          "repo": "FreshRSS/FreshRSS",
+          "sha": "93f989b977842d97975e162f7830d473d4306950"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T030407Z/batchcrawl_20260526T030407Z_round0011_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T030407Z_round0011_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T030407Z",
+      "row_count": 31,
+      "unique_pair_count": 31,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 31,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "GoogleContainerTools/jib",
+          "sha": "aac44d35da214e55cc2b98ed138b84737e061005"
+        },
+        {
+          "repo": "Netflix/zuul",
+          "sha": "6cf60f37728daaedc2d0f624ad5e5be94bcb63a0"
+        },
+        {
+          "repo": "Netflix/zuul",
+          "sha": "efd2f88d9f3a3affcf15b1602348d562cc3c66f1"
+        },
+        {
+          "repo": "abpframework/abp",
+          "sha": "2b08100f0d2de1cfc7909993dacbef68998fcc93"
+        },
+        {
+          "repo": "apache/dolphinscheduler",
+          "sha": "5f11cc2d28437f163f5a3a5f4909c22b21e8442c"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T030407Z/batchcrawl_20260526T030407Z_round0012_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T030407Z_round0012_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T030407Z",
+      "row_count": 30,
+      "unique_pair_count": 30,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 30,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "JessYanCoding/AndroidAutoSize",
+          "sha": "2d071d3203821587e97cc149865c541d7f45585b"
+        },
+        {
+          "repo": "Kotlin/kotlinx.coroutines",
+          "sha": "b872360a0d322654e8b89972aef26668245f2bbe"
+        },
+        {
+          "repo": "Kotlin/kotlinx.coroutines",
+          "sha": "d0539bc4460c160b7605abe51fb0e69dd2238bcb"
+        },
+        {
+          "repo": "OJ/gobuster",
+          "sha": "e063d83c19ddfdecf98f248dbb9b468ea9bf0b6b"
+        },
+        {
+          "repo": "OpenNHP/opennhp",
+          "sha": "8b4c869ab227fdf86714f927351af2ad85671edd"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031105Z/batchcrawl_20260526T031105Z_round0013_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T031105Z_round0013_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T031105Z",
+      "row_count": 24,
+      "unique_pair_count": 24,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 24,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "BasedHardware/omi",
+          "sha": "c1a4d8ffca4ffb55e5b4d4413c71822568d40059"
+        },
+        {
+          "repo": "Jguer/yay",
+          "sha": "3b799336382efd0eaf935612eefa9c382d970c46"
+        },
+        {
+          "repo": "Jguer/yay",
+          "sha": "733e6a6b17d480d50cef53cb96e6728cc0606a0b"
+        },
+        {
+          "repo": "PHP-CS-Fixer/PHP-CS-Fixer",
+          "sha": "259c20e99e0500422b3a5941becf705248a332f9"
+        },
+        {
+          "repo": "Qloapps/QloApps",
+          "sha": "01715952a26e934b2b588053a98ac0cd43289c2f"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031105Z/batchcrawl_20260526T031105Z_round0014_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T031105Z_round0014_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T031105Z",
+      "row_count": 37,
+      "unique_pair_count": 37,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 37,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "BYVoid/OpenCC",
+          "sha": "527b2f2cb0a1fe52d2d892e7fa2f20670b33b240"
+        },
+        {
+          "repo": "BYVoid/OpenCC",
+          "sha": "a8e67cd5a362b239a3ae585f36207f8479df79be"
+        },
+        {
+          "repo": "KDE/krita",
+          "sha": "b6ca38b13ea02fc9c0f67e80f2c66c297ab392e6"
+        },
+        {
+          "repo": "LMMS/lmms",
+          "sha": "a45a2b86a0893fbf5a0772e2aa1dbb87ea17500b"
+        },
+        {
+          "repo": "LMMS/lmms",
+          "sha": "c62b42a7c9cbcc1eb61da00808968d6dbabe2ed9"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031105Z/batchcrawl_20260526T031105Z_round0015_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T031105Z_round0015_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T031105Z",
+      "row_count": 33,
+      "unique_pair_count": 33,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 33,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "AGWA/git-crypt",
+          "sha": "4dd5c202434afac2525fb556179eac6d5c58bd9e"
+        },
+        {
+          "repo": "ClassicOldSong/Apollo",
+          "sha": "2aa5a396d1e6b6f46ccc959e3653084b7b15ee96"
+        },
+        {
+          "repo": "Kuberwastaken/claurst",
+          "sha": "8da4a2974ddc7c85aa8b3920c56341633675c10e"
+        },
+        {
+          "repo": "Kuberwastaken/claurst",
+          "sha": "a4992cfe611b76af1ed7c149eb4faa237b2a830b"
+        },
+        {
+          "repo": "SeaQL/sea-orm",
+          "sha": "86f69b51640b1a6edaa7ef6bc27448c46352ea26"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031105Z/batchcrawl_20260526T031105Z_round0016_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T031105Z_round0016_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T031105Z",
+      "row_count": 24,
+      "unique_pair_count": 24,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 24,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "AppImage/AppImageKit",
+          "sha": "b119bbe7ebdb3e48774cca87d83c915d4ce63825"
+        },
+        {
+          "repo": "FyroxEngine/Fyrox",
+          "sha": "768df4600d59a038a11713b624930628e5a4b2b2"
+        },
+        {
+          "repo": "H-M-H/Weylus",
+          "sha": "296d5de0a4fba71a5c4db29338a60b82c9e53a88"
+        },
+        {
+          "repo": "H-M-H/Weylus",
+          "sha": "ffa05daeb4832e624f8e372abaca931a9425f80a"
+        },
+        {
+          "repo": "NVIDIA/cuda-samples",
+          "sha": "547f65851fafdb6a66f47ce56b4c0603db885910"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031715Z/batchcrawl_20260526T031715Z_round0017_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T031715Z_round0017_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T031715Z",
+      "row_count": 26,
+      "unique_pair_count": 26,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 26,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Next-Flip/Momentum-Firmware",
+          "sha": "56620ab62f3204756332fb445fe7a6afa0cff624"
+        },
+        {
+          "repo": "Next-Flip/Momentum-Firmware",
+          "sha": "a663836b7065ac181fcd733bd0d9dd9f9b60a032"
+        },
+        {
+          "repo": "Xfennec/progress",
+          "sha": "c608c6dded1734e2eb38ad38b551ce5506c3e42b"
+        },
+        {
+          "repo": "antirez/kilo",
+          "sha": "d65f4c92e8ed405937a7bac3248d24fa6b40eb6f"
+        },
+        {
+          "repo": "apache/datafusion",
+          "sha": "50013e5569112b2f17b66cb00af003d827a96eda"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031715Z/batchcrawl_20260526T031715Z_round0018_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T031715Z_round0018_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T031715Z",
+      "row_count": 31,
+      "unique_pair_count": 31,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 31,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "BoundaryML/baml",
+          "sha": "338e5f2a19878cd5bc6159e0cd3205d2749b1370"
+        },
+        {
+          "repo": "BoundaryML/baml",
+          "sha": "5739534d5239e57b569a1b341814c0a7bc54f5d3"
+        },
+        {
+          "repo": "apache/arrow",
+          "sha": "3d6e138aef27741c0915fc8311872be44e9a1feb"
+        },
+        {
+          "repo": "apache/arrow",
+          "sha": "876d50c6cc30ad1a26620529b6ad7da3ee209f41"
+        },
+        {
+          "repo": "apache/beam",
+          "sha": "2203c8d4469ed216275d09858c461f8b9b4daf95"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T031715Z/batchcrawl_20260526T031715Z_round0019_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T031715Z_round0019_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T031715Z",
+      "row_count": 18,
+      "unique_pair_count": 18,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 18,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "apache/spark",
+          "sha": "30bdf0b39fa6b28ea149ddd43ecd962b2b3c0cd2"
+        },
+        {
+          "repo": "apache/spark",
+          "sha": "4bbf75e9e672ccbcf762f5c7258be501b0ea7f5a"
+        },
+        {
+          "repo": "bitcoin/bitcoin",
+          "sha": "59918de329ae8773080e1a9f72ee6c1eb7b22a0a"
+        },
+        {
+          "repo": "bitcoin/bitcoin",
+          "sha": "acea6f2caf89d97f898818f565e8affe319513c2"
+        },
+        {
+          "repo": "django/django",
+          "sha": "0e1d950fbb44878f6972a0e5730f69f98caf468e"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T071501Z/batchcrawl_20260526T071501Z_round0020_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T071501Z_round0020_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T071501Z",
+      "row_count": 30,
+      "unique_pair_count": 30,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 30,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Alamofire/Alamofire",
+          "sha": "17c7f9b03121cea798fe281c37a7133f2675aa72"
+        },
+        {
+          "repo": "Alamofire/Alamofire",
+          "sha": "c279eda711944b5fe0c1ce410f2d934353e7bf65"
+        },
+        {
+          "repo": "LizardByte/Sunshine",
+          "sha": "68f671809cbb707a6caaee69d19cfc48827d2d9f"
+        },
+        {
+          "repo": "ShareX/ShareX",
+          "sha": "2524605cbe364c16f67a9a8ab9b774bd4f601df3"
+        },
+        {
+          "repo": "ShareX/ShareX",
+          "sha": "27c3bbc8bd1b15e9d39f1f36e6c9881e50e3b041"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T071501Z/batchcrawl_20260526T071501Z_round0021_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T071501Z_round0021_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T071501Z",
+      "row_count": 34,
+      "unique_pair_count": 34,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 34,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "BVLC/caffe",
+          "sha": "dabbc91ecda54d8d4bb69e2457289d2e7216b136"
+        },
+        {
+          "repo": "ItzCrazyKns/Vane",
+          "sha": "e0aac65e6477168101a3f9b6ddedfbe03d4f38ae"
+        },
+        {
+          "repo": "SerenityOS/serenity",
+          "sha": "1ad8304b1d0c1bafaed8a0e8e4182f2ee3249bab"
+        },
+        {
+          "repo": "SerenityOS/serenity",
+          "sha": "4c5d784603cef5ea171321df42a3e4f2d9b036df"
+        },
+        {
+          "repo": "apache/kafka",
+          "sha": "16306d9475de9abe3f71ef49261fe84289849209"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T071501Z/batchcrawl_20260526T071501Z_round0022_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T071501Z_round0022_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T071501Z",
+      "row_count": 31,
+      "unique_pair_count": 31,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 31,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "FreeCAD/FreeCAD",
+          "sha": "e3ba765cea9605d21518598d6d1a7f70d484bcaa"
+        },
+        {
+          "repo": "FreeCAD/FreeCAD",
+          "sha": "ebd237ea9c63b3d41f4dd7de08c0d683e3f8d459"
+        },
+        {
+          "repo": "FujiwaraChoki/MoneyPrinterV2",
+          "sha": "31bba003a936b30f4f0616c77f816497c844a921"
+        },
+        {
+          "repo": "FujiwaraChoki/MoneyPrinterV2",
+          "sha": "754aec467dc4363b5966856346c793bf8218ed88"
+        },
+        {
+          "repo": "Lightning-AI/pytorch-lightning",
+          "sha": "0d6ad3e3c6cd4682cbbe7bd52f544450e610767b"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T071501Z/batchcrawl_20260526T071501Z_round0023_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T071501Z_round0023_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T071501Z",
+      "row_count": 30,
+      "unique_pair_count": 30,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 30,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Anuken/Mindustry",
+          "sha": "3f649aea1fd65ce034366e4750da6d1da301ba22"
+        },
+        {
+          "repo": "Anuken/Mindustry",
+          "sha": "865536ebf4a4611280fd301c7fbe9ef702256970"
+        },
+        {
+          "repo": "ChartsOrg/Charts",
+          "sha": "afc7c983d2f98c4d81cac28b1169951cc7323bb5"
+        },
+        {
+          "repo": "Gitlawb/openclaude",
+          "sha": "90360d3e383314304dc19b29bd786b59e966be15"
+        },
+        {
+          "repo": "Gitlawb/openclaude",
+          "sha": "b3dc674dbea8e1a740832fdde54d8fd820d501bd"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T124753Z/batchcrawl_20260526T124753Z_round0024_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T124753Z_round0024_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T124753Z",
+      "row_count": 19,
+      "unique_pair_count": 19,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 19,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "apple/container",
+          "sha": "a967399d4837f70fb70e31fee5cd06983d179548"
+        },
+        {
+          "repo": "apple/container",
+          "sha": "b73933eb2d7a621e8fac2cbdf129028b5ae47557"
+        },
+        {
+          "repo": "arendst/Tasmota",
+          "sha": "07154d430af5fbff9a00e753deb1d434be3d7774"
+        },
+        {
+          "repo": "arendst/Tasmota",
+          "sha": "c7042c767c6bec865384656d2f86105e9f547a6e"
+        },
+        {
+          "repo": "bagisto/bagisto",
+          "sha": "affc19732be94f0c4c2c544d802a00b77a11baae"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T124753Z/batchcrawl_20260526T124753Z_round0025_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T124753Z_round0025_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T124753Z",
+      "row_count": 36,
+      "unique_pair_count": 36,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 36,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "CodeEditApp/CodeEdit",
+          "sha": "334357fb0d95303b3e6eb5fd15680738b8efd798"
+        },
+        {
+          "repo": "CodeEditApp/CodeEdit",
+          "sha": "cfbca15210c0ab72b4f7bc2293b2bdf50d80572b"
+        },
+        {
+          "repo": "HandBrake/HandBrake",
+          "sha": "946cea5215fad74ec141eb27d6d4d7d7975ed0e5"
+        },
+        {
+          "repo": "HandBrake/HandBrake",
+          "sha": "a76194379033a66fec8afbe65495132ad01c4062"
+        },
+        {
+          "repo": "QL-Win/QuickLook",
+          "sha": "829963d7317eb18e3f27de68e6d796911f75706d"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T124753Z/batchcrawl_20260526T124753Z_round0026_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T124753Z_round0026_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T124753Z",
+      "row_count": 27,
+      "unique_pair_count": 27,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 27,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Caldis/Mos",
+          "sha": "5831767e8c22f3abbaa3a922edf749486eefbee9"
+        },
+        {
+          "repo": "DarkFlippers/unleashed-firmware",
+          "sha": "c4ef54c71afa5fb892b0f84d1022333b70eafce2"
+        },
+        {
+          "repo": "DarkFlippers/unleashed-firmware",
+          "sha": "d5fad4f38b1ef0f5774e6ef0b95dcf71392a91dc"
+        },
+        {
+          "repo": "DesignPatternsPHP/DesignPatternsPHP",
+          "sha": "00d4ca8d912ffad87d77d11b457e98c3321a60c9"
+        },
+        {
+          "repo": "PHPMailer/PHPMailer",
+          "sha": "a5495d0c7d582ac153fb22e3138688debf6cb85e"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T124753Z/batchcrawl_20260526T124753Z_round0027_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T124753Z_round0027_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T124753Z",
+      "row_count": 19,
+      "unique_pair_count": 19,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 19,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "JetBrains/compose-multiplatform",
+          "sha": "419f82c073906f40063c162810d72e6d7fb6f1b5"
+        },
+        {
+          "repo": "browsh-org/browsh",
+          "sha": "6ccf2afd07235a1ec65680acedbc1c7ec9df6d7a"
+        },
+        {
+          "repo": "browsh-org/browsh",
+          "sha": "84f5382eda69e206c49bfaa777b3c1445f3a3a96"
+        },
+        {
+          "repo": "decaporg/decap-cms",
+          "sha": "78fb8af5dc0cfefe4f0dc7d2e0c9b43ae1121423"
+        },
+        {
+          "repo": "decaporg/decap-cms",
+          "sha": "90f3a84e7e4400dfa500f419bca4c9ae253a632b"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T125513Z/batchcrawl_20260526T125513Z_round0028_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T125513Z_round0028_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T125513Z",
+      "row_count": 24,
+      "unique_pair_count": 24,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 24,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "BookStackApp/BookStack",
+          "sha": "5d429ea9bb5d48b4a4b3bab4b09fe21dea00b752"
+        },
+        {
+          "repo": "BookStackApp/BookStack",
+          "sha": "b5d3ba2726dc2f3792f580a8d00cf8d6bbe01126"
+        },
+        {
+          "repo": "alibaba/ice",
+          "sha": "8e27933423d786ebdefe5343c2d93895a92d7b4d"
+        },
+        {
+          "repo": "alibaba/ice",
+          "sha": "cc0792b0fd8876da1e805b24792bc9aeb5fc9a67"
+        },
+        {
+          "repo": "alyssaxuu/screenity",
+          "sha": "ee5fba556c1b4b4d4fc3e2c7632b63c3db496a0e"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T125513Z/batchcrawl_20260526T125513Z_round0029_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T125513Z_round0029_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T125513Z",
+      "row_count": 18,
+      "unique_pair_count": 18,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 18,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "OpenEmu/OpenEmu",
+          "sha": "bb51781f3f508dc74bfed065ee878d288f386180"
+        },
+        {
+          "repo": "emotion-js/emotion",
+          "sha": "532ff57cafd8ba04f3b624074556ea47ec76fc9a"
+        },
+        {
+          "repo": "flarum/flarum",
+          "sha": "4ffaf91ec42f68b1008b21a71723bd5ffe19e351"
+        },
+        {
+          "repo": "flarum/flarum",
+          "sha": "c5304b93f1f107ff64e8051f0f56e12b84a42261"
+        },
+        {
+          "repo": "getgrav/grav",
+          "sha": "e460ed6613fb55bf29d35f1a83d9c93b795e5cf4"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T125513Z/batchcrawl_20260526T125513Z_round0030_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T125513Z_round0030_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T125513Z",
+      "row_count": 19,
+      "unique_pair_count": 19,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 19,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Billionmail/BillionMail",
+          "sha": "4074e02a728323b488507815add0dfdb7b7510cd"
+        },
+        {
+          "repo": "Billionmail/BillionMail",
+          "sha": "fdb7b7ee138d87a78f5dec1c2e6d7a08af306b56"
+        },
+        {
+          "repo": "Carthage/Carthage",
+          "sha": "89251a6f3e581d15508814b1f104187e35f94052"
+        },
+        {
+          "repo": "FreshRSS/FreshRSS",
+          "sha": "1ff27fea215479c6949852bba5b50b96b8277a38"
+        },
+        {
+          "repo": "FreshRSS/FreshRSS",
+          "sha": "93f989b977842d97975e162f7830d473d4306950"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T125513Z/batchcrawl_20260526T125513Z_round0031_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T125513Z_round0031_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T125513Z",
+      "row_count": 30,
+      "unique_pair_count": 30,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 30,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "GoogleContainerTools/jib",
+          "sha": "aac44d35da214e55cc2b98ed138b84737e061005"
+        },
+        {
+          "repo": "Netflix/zuul",
+          "sha": "6cf60f37728daaedc2d0f624ad5e5be94bcb63a0"
+        },
+        {
+          "repo": "Netflix/zuul",
+          "sha": "efd2f88d9f3a3affcf15b1602348d562cc3c66f1"
+        },
+        {
+          "repo": "apache/dolphinscheduler",
+          "sha": "5f11cc2d28437f163f5a3a5f4909c22b21e8442c"
+        },
+        {
+          "repo": "apache/druid",
+          "sha": "375dfd128cdc613e8385e71bfefd63df0a932ee0"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T130226Z/batchcrawl_20260526T130226Z_round0032_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T130226Z_round0032_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T130226Z",
+      "row_count": 30,
+      "unique_pair_count": 30,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 30,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "JessYanCoding/AndroidAutoSize",
+          "sha": "2d071d3203821587e97cc149865c541d7f45585b"
+        },
+        {
+          "repo": "Kotlin/kotlinx.coroutines",
+          "sha": "b872360a0d322654e8b89972aef26668245f2bbe"
+        },
+        {
+          "repo": "Kotlin/kotlinx.coroutines",
+          "sha": "d0539bc4460c160b7605abe51fb0e69dd2238bcb"
+        },
+        {
+          "repo": "OJ/gobuster",
+          "sha": "e063d83c19ddfdecf98f248dbb9b468ea9bf0b6b"
+        },
+        {
+          "repo": "OpenNHP/opennhp",
+          "sha": "095221052e406f82123ecdf5e5b84071956d3530"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T130226Z/batchcrawl_20260526T130226Z_round0033_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T130226Z_round0033_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T130226Z",
+      "row_count": 24,
+      "unique_pair_count": 24,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 24,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "BasedHardware/omi",
+          "sha": "c1a4d8ffca4ffb55e5b4d4413c71822568d40059"
+        },
+        {
+          "repo": "BasedHardware/omi",
+          "sha": "c9a833fe36478466b11c191eea50dbaa99628b72"
+        },
+        {
+          "repo": "Jguer/yay",
+          "sha": "3b799336382efd0eaf935612eefa9c382d970c46"
+        },
+        {
+          "repo": "Jguer/yay",
+          "sha": "733e6a6b17d480d50cef53cb96e6728cc0606a0b"
+        },
+        {
+          "repo": "PHP-CS-Fixer/PHP-CS-Fixer",
+          "sha": "259c20e99e0500422b3a5941becf705248a332f9"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T130226Z/batchcrawl_20260526T130226Z_round0034_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T130226Z_round0034_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T130226Z",
+      "row_count": 39,
+      "unique_pair_count": 39,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 39,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "BYVoid/OpenCC",
+          "sha": "527b2f2cb0a1fe52d2d892e7fa2f20670b33b240"
+        },
+        {
+          "repo": "BYVoid/OpenCC",
+          "sha": "a8e67cd5a362b239a3ae585f36207f8479df79be"
+        },
+        {
+          "repo": "KDE/krita",
+          "sha": "b6ca38b13ea02fc9c0f67e80f2c66c297ab392e6"
+        },
+        {
+          "repo": "LMMS/lmms",
+          "sha": "a45a2b86a0893fbf5a0772e2aa1dbb87ea17500b"
+        },
+        {
+          "repo": "LMMS/lmms",
+          "sha": "c62b42a7c9cbcc1eb61da00808968d6dbabe2ed9"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T130226Z/batchcrawl_20260526T130226Z_round0035_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T130226Z_round0035_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T130226Z",
+      "row_count": 33,
+      "unique_pair_count": 33,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 33,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "AGWA/git-crypt",
+          "sha": "4dd5c202434afac2525fb556179eac6d5c58bd9e"
+        },
+        {
+          "repo": "ClassicOldSong/Apollo",
+          "sha": "2aa5a396d1e6b6f46ccc959e3653084b7b15ee96"
+        },
+        {
+          "repo": "Kuberwastaken/claurst",
+          "sha": "8da4a2974ddc7c85aa8b3920c56341633675c10e"
+        },
+        {
+          "repo": "Kuberwastaken/claurst",
+          "sha": "a4992cfe611b76af1ed7c149eb4faa237b2a830b"
+        },
+        {
+          "repo": "SeaQL/sea-orm",
+          "sha": "86f69b51640b1a6edaa7ef6bc27448c46352ea26"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T131044Z/batchcrawl_20260526T131044Z_round0036_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T131044Z_round0036_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T131044Z",
+      "row_count": 24,
+      "unique_pair_count": 24,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 24,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "AppImage/AppImageKit",
+          "sha": "b119bbe7ebdb3e48774cca87d83c915d4ce63825"
+        },
+        {
+          "repo": "FyroxEngine/Fyrox",
+          "sha": "768df4600d59a038a11713b624930628e5a4b2b2"
+        },
+        {
+          "repo": "H-M-H/Weylus",
+          "sha": "296d5de0a4fba71a5c4db29338a60b82c9e53a88"
+        },
+        {
+          "repo": "H-M-H/Weylus",
+          "sha": "ffa05daeb4832e624f8e372abaca931a9425f80a"
+        },
+        {
+          "repo": "NVIDIA/cuda-samples",
+          "sha": "547f65851fafdb6a66f47ce56b4c0603db885910"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T131044Z/batchcrawl_20260526T131044Z_round0037_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T131044Z_round0037_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T131044Z",
+      "row_count": 26,
+      "unique_pair_count": 26,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 26,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Next-Flip/Momentum-Firmware",
+          "sha": "56620ab62f3204756332fb445fe7a6afa0cff624"
+        },
+        {
+          "repo": "Next-Flip/Momentum-Firmware",
+          "sha": "a663836b7065ac181fcd733bd0d9dd9f9b60a032"
+        },
+        {
+          "repo": "Xfennec/progress",
+          "sha": "c608c6dded1734e2eb38ad38b551ce5506c3e42b"
+        },
+        {
+          "repo": "antirez/kilo",
+          "sha": "d65f4c92e8ed405937a7bac3248d24fa6b40eb6f"
+        },
+        {
+          "repo": "apache/datafusion",
+          "sha": "50013e5569112b2f17b66cb00af003d827a96eda"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T131044Z/batchcrawl_20260526T131044Z_round0038_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T131044Z_round0038_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T131044Z",
+      "row_count": 30,
+      "unique_pair_count": 30,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 30,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "BoundaryML/baml",
+          "sha": "338e5f2a19878cd5bc6159e0cd3205d2749b1370"
+        },
+        {
+          "repo": "BoundaryML/baml",
+          "sha": "5739534d5239e57b569a1b341814c0a7bc54f5d3"
+        },
+        {
+          "repo": "apache/arrow",
+          "sha": "3d6e138aef27741c0915fc8311872be44e9a1feb"
+        },
+        {
+          "repo": "apache/arrow",
+          "sha": "876d50c6cc30ad1a26620529b6ad7da3ee209f41"
+        },
+        {
+          "repo": "apache/beam",
+          "sha": "2203c8d4469ed216275d09858c461f8b9b4daf95"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T131044Z/batchcrawl_20260526T131044Z_round0039_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T131044Z_round0039_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T131044Z",
+      "row_count": 21,
+      "unique_pair_count": 21,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 21,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "apache/httpd",
+          "sha": "5c65023441022154a221b3e0a97f45dd1789bd1c"
+        },
+        {
+          "repo": "apache/spark",
+          "sha": "30bdf0b39fa6b28ea149ddd43ecd962b2b3c0cd2"
+        },
+        {
+          "repo": "apache/spark",
+          "sha": "4bbf75e9e672ccbcf762f5c7258be501b0ea7f5a"
+        },
+        {
+          "repo": "bitcoin/bitcoin",
+          "sha": "9767e80b213818fcb614ff5b99f3be4e4186eed8"
+        },
+        {
+          "repo": "bitcoin/bitcoin",
+          "sha": "a4157fc24a29118b1c9d1ac5b7977104217bcee9"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T132427Z/batchcrawl_20260526T132427Z_round0040_api_filelist_candidates_remote_diff.csv",
+      "basename": "batchcrawl_20260526T132427Z_round0040_api_filelist_candidates_remote_diff.csv",
+      "group": "batchcrawl/20260526T132427Z",
+      "row_count": 1,
+      "unique_pair_count": 1,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 1,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "titanwings/colleague-skill",
+          "sha": "c3e9d8c8f7fd310fa3e46121916653ba7445c4de"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/newcrawl/20260525/20260525_newcrawl_api_filelist_candidates_token_remote_diff.csv",
+      "basename": "20260525_newcrawl_api_filelist_candidates_token_remote_diff.csv",
+      "group": "newcrawl/20260525",
+      "row_count": 22,
+      "unique_pair_count": 22,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 22,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Homebrew/brew",
+          "sha": "ba52eced93d32ac5110a0aec694f09b015343a3e"
+        },
+        {
+          "repo": "ReactiveX/RxJava",
+          "sha": "0892c6f4481cf6415a8ad50e58ba71b6f41efce1"
+        },
+        {
+          "repo": "TheAlgorithms/Python",
+          "sha": "8e70e2e77bc534d09f655410fd1a8a38d2404928"
+        },
+        {
+          "repo": "TheAlgorithms/Python",
+          "sha": "fc2f947e0fabb84862737aa7fed05e6322389f0b"
+        },
+        {
+          "repo": "codecrafters-io/build-your-own-x",
+          "sha": "2fb5a067dfc4a6bb0673b19789d7b387851f17a8"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/newcrawl/20260525/20260525_newcrawl_api_filelist_candidates_token_round2_remote_diff.csv",
+      "basename": "20260525_newcrawl_api_filelist_candidates_token_round2_remote_diff.csv",
+      "group": "newcrawl/20260525",
+      "row_count": 20,
+      "unique_pair_count": 20,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 20,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "NousResearch/hermes-agent",
+          "sha": "ac5359a3f30a180bc3d5722fe26dac564f0fc5d5"
+        },
+        {
+          "repo": "NousResearch/hermes-agent",
+          "sha": "fae815adc21baba6d12024c94e4dc3a39ae4df5e"
+        },
+        {
+          "repo": "astral-sh/ruff",
+          "sha": "8c04080b5e449b077500fff1cf1d83c2a69af4c9"
+        },
+        {
+          "repo": "astral-sh/ruff",
+          "sha": "bd2d6f635312d6fd9d85ea77181b50ae0eddbf8e"
+        },
+        {
+          "repo": "bigskysoftware/htmx",
+          "sha": "2d76223b585f4295bbe0a3059e3f33b0798a997d"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/newcrawl/20260525/20260525_newcrawl_api_filelist_candidates_token_round3_remote_diff.csv",
+      "basename": "20260525_newcrawl_api_filelist_candidates_token_round3_remote_diff.csv",
+      "group": "newcrawl/20260525",
+      "row_count": 45,
+      "unique_pair_count": 45,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 45,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "9001/copyparty",
+          "sha": "348b4bb5c762f851d866e200ee0c4c44ea477f3a"
+        },
+        {
+          "repo": "9001/copyparty",
+          "sha": "f4f97b6cc3044700bb0b5cb3dc32baaf634c3095"
+        },
+        {
+          "repo": "DIYgod/RSSHub",
+          "sha": "0788983eac2b0028df25ea640c33f96453ae3c24"
+        },
+        {
+          "repo": "KeygraphHQ/shannon",
+          "sha": "ccb530310633c84286e1ab106cf5cacc3d7a215c"
+        },
+        {
+          "repo": "Raphire/Win11Debloat",
+          "sha": "24a6f1bcf84b82587068dec557123804bfbc0aa0"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/newcrawl/20260526/20260526_newcrawl_api_filelist_candidates_token_round4_remote_diff.csv",
+      "basename": "20260526_newcrawl_api_filelist_candidates_token_round4_remote_diff.csv",
+      "group": "newcrawl/20260526",
+      "row_count": 34,
+      "unique_pair_count": 34,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 34,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "ChromeDevTools/chrome-devtools-mcp",
+          "sha": "3ade962a8da6b100800304146dc3e50e6419a6ee"
+        },
+        {
+          "repo": "ChromeDevTools/chrome-devtools-mcp",
+          "sha": "6992106d1ca3bcd9390165035e7b0a3acb7e7317"
+        },
+        {
+          "repo": "FuelLabs/fuels-ts",
+          "sha": "b03dad84d171ee3972dccb339243cefbb5d1af63"
+        },
+        {
+          "repo": "FuelLabs/fuels-ts",
+          "sha": "f4be76c0b0fcbfa76d9b30b30b70ec85269018ed"
+        },
+        {
+          "repo": "HKUDS/CLI-Anything",
+          "sha": "f7690c9efe1f2eb13d0f87d918a75db5bbec72af"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/newcrawl/20260526/20260526_newcrawl_api_filelist_candidates_token_round5_remote_diff.csv",
+      "basename": "20260526_newcrawl_api_filelist_candidates_token_round5_remote_diff.csv",
+      "group": "newcrawl/20260526",
+      "row_count": 40,
+      "unique_pair_count": 40,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 40,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "DioxusLabs/dioxus",
+          "sha": "ddefccdeb0f284f6f379d9afb8d3b82daf9035c6"
+        },
+        {
+          "repo": "GyulyVGC/sniffnet",
+          "sha": "a1dbc46179729540018d3500615404a6c804f977"
+        },
+        {
+          "repo": "ToolJet/ToolJet",
+          "sha": "7a27c4d1c7f2a8b3d13588d1d2dbe641e012ced1"
+        },
+        {
+          "repo": "ToolJet/ToolJet",
+          "sha": "c2d8ba08eac4e9ac6ba353b7252c1fe24eb718be"
+        },
+        {
+          "repo": "XTLS/Xray-core",
+          "sha": "81d993f49dc4c9a036bc285864f3ed348bbdd36c"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/newcrawl/20260526/20260526_newcrawl_api_filelist_candidates_token_round6_remote_diff.csv",
+      "basename": "20260526_newcrawl_api_filelist_candidates_token_round6_remote_diff.csv",
+      "group": "newcrawl/20260526",
+      "row_count": 36,
+      "unique_pair_count": 36,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 36,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "1Panel-dev/1Panel",
+          "sha": "00afa748e0a06ce513bafc914a1f22b327884862"
+        },
+        {
+          "repo": "1Panel-dev/1Panel",
+          "sha": "d0faee4eeb7f6bad504d30e069a3cd6a14b2acad"
+        },
+        {
+          "repo": "AdguardTeam/AdGuardHome",
+          "sha": "9e3d913e72aa167ca8494b61ef841042bb709171"
+        },
+        {
+          "repo": "IceWhaleTech/CasaOS",
+          "sha": "ba285cb8bddb85fbd93060b3a8b944f35dd7a7ad"
+        },
+        {
+          "repo": "QuantumNous/new-api",
+          "sha": "032993ed4935a357cad4bc0bd21b1fcc3473e24f"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/newcrawl/20260526/20260526_newcrawl_api_filelist_candidates_token_round7_remote_diff.csv",
+      "basename": "20260526_newcrawl_api_filelist_candidates_token_round7_remote_diff.csv",
+      "group": "newcrawl/20260526",
+      "row_count": 30,
+      "unique_pair_count": 30,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 30,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "11ty/eleventy",
+          "sha": "d3c5c2618091cf71bf7e4ec2413685a5f599a58a"
+        },
+        {
+          "repo": "FredKSchott/snowpack",
+          "sha": "f77639b81f61c47b69f7a5df27648f36146ab25f"
+        },
+        {
+          "repo": "JimLiu/baoyu-skills",
+          "sha": "e0b861c148186235011e7fd631d02416ad838c50"
+        },
+        {
+          "repo": "agentskills/agentskills",
+          "sha": "c33d0c7f1fff13414d0fa0861788eb84587a6910"
+        },
+        {
+          "repo": "agentskills/agentskills",
+          "sha": "f86c6bbc009796c18037a1cb745055b713c5442c"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    },
+    {
+      "path": "datasets/m_verified/workspace/round_runs/newcrawl/20260526/20260526_newcrawl_api_filelist_candidates_token_v2_round1_remote_diff.csv",
+      "basename": "20260526_newcrawl_api_filelist_candidates_token_v2_round1_remote_diff.csv",
+      "group": "newcrawl/20260526",
+      "row_count": 31,
+      "unique_pair_count": 31,
+      "matched_pair_count": 0,
+      "unmatched_pair_count": 31,
+      "match_rate": 0.0,
+      "canonical_source_file_match_count": 0,
+      "sample_unmatched_pairs": [
+        {
+          "repo": "Alamofire/Alamofire",
+          "sha": "17c7f9b03121cea798fe281c37a7133f2675aa72"
+        },
+        {
+          "repo": "Alamofire/Alamofire",
+          "sha": "c279eda711944b5fe0c1ce410f2d934353e7bf65"
+        },
+        {
+          "repo": "LizardByte/Sunshine",
+          "sha": "68f671809cbb707a6caaee69d19cfc48827d2d9f"
+        },
+        {
+          "repo": "ShareX/ShareX",
+          "sha": "2524605cbe364c16f67a9a8ab9b774bd4f601df3"
+        },
+        {
+          "repo": "ShareX/ShareX",
+          "sha": "27c3bbc8bd1b15e9d39f1f36e6c9881e50e3b041"
+        }
+      ],
+      "eligible_for_archive_by_canonical_repo_sha": false
+    }
+  ]
+}

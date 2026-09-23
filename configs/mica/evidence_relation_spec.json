@@ -1,0 +1,78 @@
+{
+  "spec_status": "implementation_ready_default_safe",
+  "relation_weights": {
+    "same_file": 1.0,
+    "same_hunk": 1.2,
+    "path_distance": -0.1,
+    "same_symbol": 0.6,
+    "same_identifier": 0.6,
+    "same_language": 0.2,
+    "test_target": 0.7,
+    "doc_refers_to": 0.5,
+    "config_build_lockfile": -0.2,
+    "generated_file": -0.5,
+    "identifier_jaccard": 0.8
+  },
+  "relations": {
+    "same_file": {
+      "enabled": true,
+      "weight": 1.0,
+      "default_inference_allowed": true
+    },
+    "same_hunk": {
+      "enabled": true,
+      "weight": 1.2,
+      "default_inference_allowed": true
+    },
+    "path_distance": {
+      "enabled": true,
+      "weight": -0.1,
+      "default_inference_allowed": true
+    },
+    "same_symbol": {
+      "enabled": true,
+      "weight": 0.6,
+      "default_inference_allowed": true
+    },
+    "same_identifier": {
+      "enabled": true,
+      "weight": 0.6,
+      "default_inference_allowed": true
+    },
+    "same_language": {
+      "enabled": true,
+      "weight": 0.2,
+      "default_inference_allowed": true
+    },
+    "test_target": {
+      "enabled": true,
+      "weight": 0.7,
+      "default_inference_allowed": true
+    },
+    "doc_refers_to": {
+      "enabled": true,
+      "weight": 0.5,
+      "default_inference_allowed": true
+    },
+    "config_build_lockfile": {
+      "enabled": true,
+      "weight": -0.2,
+      "default_inference_allowed": true
+    },
+    "generated_file": {
+      "enabled": true,
+      "weight": -0.5,
+      "default_inference_allowed": true
+    },
+    "identifier_jaccard": {
+      "enabled": true,
+      "weight": 0.8,
+      "default_inference_allowed": true
+    },
+    "message_keyword_overlap": {
+      "enabled": false,
+      "weight": 0.0,
+      "default_inference_allowed": false
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "_evidence_mode": "filelist_fallback",
+      "_needs_diff_verify": "1",
+      "batch_sources_seen": "m_mining_gitlog_pilot\\labels\\gitlog_round10_highstar_code_m_full_diff_recovery_batch.csv\nm_mining_gitlog_pilot\\labels\\gitlog_round10_highstar_code_m_full_diff_recovery_retry_batch.csv\nm_mining_gitlog_pilot\\labels\\gitlog_round10_highstar_code_m_full_diff_retry_needed.csv\nm_mining_gitlog_pilot\\labels\\gitlog_round10_highstar_code_off000_filelist_batch.csv",
+      "changed_files": "inference/server/oasst_inference_server/plugins/__init__.py\ninference/server/oasst_inference_server/plugins/gale_pleaser/ai-plugin.json\ninference/server/oasst_inference_server/plugins/gale_pleaser/main.py\ninference/server/oasst_inference_server/plugins/gale_roaster/ai-plugin.json\ninference/server/oasst_inference_server/plugins/gale_roaster/main.py\ninference/server/oasst_inference_server/plugins/web_retriever/ai-plugin.json\ninference/server/oasst_inference_server/plugins/web_retriever/icon.png\ninference/server/oasst_inference_server/plugins/web_retriever/main.py\ninference/server/requirements.txt",
+      "commit_date": "2023-06-04T20:26:27Z",
+      "commit_url": "https://github.com/LAION-AI/Open-Assistant/commit/54b2081946ed5f0aa3dd7ae087a68e61c961eab8",
+      "diff_error": "",
+      "diff_status": "",
+      "evidence_mode": "missing_diff",
+      "git_diff": "",
+      "git_error": "repo_dir_missing: m_mining_gitlog_pilot\\repos\\LAION-AI__Open-Assistant\nremote_diff_error: remote_diff_disabled",
+      "llm_label": "M",
+      "manual_mark": "skip_after_retry",
+      "manual_mark_reason": "remaining_failed_after_targeted_retry_http_403",
+      "manual_marked_at_utc": "2026-05-25T13:00:00Z",
+      "missing_reason": "no_real_diff_from_local_git_remote_or_batch",
+      "remote_diff_error": "HTTPError: HTTP Error 403: Forbidden",
+      "repo": "LAION-AI/Open-Assistant",
+      "sha": "54b2081946ed5f0aa3dd7ae087a68e61c961eab8",
+      "shortstat": "9 files changed, 388 insertions(+), 11 deletions(-)",
+      "subject": "Add Dragan's web retriever plugin (#3277)"
+    }
+  ],
+  "rows": 1
+}

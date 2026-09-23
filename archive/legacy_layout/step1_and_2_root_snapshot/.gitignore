@@ -1,0 +1,13 @@
+.DS_Store
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# Nested repo backup
+.git-nested-backups/
+
+# Local backup artifact, not part of the canonical annotation set
+待实验step1文件包/data/annotated_overlap_annotator_b.pre_relabel_backup.csv
+
+# Generated outputs are ignored by default; selected formal artifacts can be force-added.
+待实验step2文件包/outputs/

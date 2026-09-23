@@ -1,0 +1,206 @@
+{
+  "Kmax_asset_ready": false,
+  "alignment_adjudication_rate": 0.0,
+  "alignment_agreement_metrics": {},
+  "alignment_double_annotation_rate": 0.0,
+  "alignment_pilot_queue_ready": true,
+  "annotation_assets_formal_ready": false,
+  "annotation_campaign_blocked": true,
+  "annotation_staffing_complete": false,
+  "annotators_qualified": false,
+  "background_annotation_ready": true,
+  "benchmark_strata_adjudicated": false,
+  "benchmark_strata_provisional": true,
+  "blind_review_complete": false,
+  "calibration_agreement_passed": false,
+  "calibration_round_complete": false,
+  "campaign_progress": {},
+  "guideline_final_frozen": false,
+  "guideline_pilot_version": "stage1-v2-alignment-guideline-pilot-v1",
+  "human_annotation_track": {
+    "blind_review": "pending",
+    "calibration": "pending",
+    "complete": false,
+    "formal_evidence": false,
+    "pilot": "pending",
+    "qualification": "pending",
+    "staffing": "pending"
+  },
+  "human_staffing_incomplete": true,
+  "llm_annotation_track": {
+    "R2_gate_result": "blocked_by_incomplete_annotation",
+    "adjudication_completion": 0.0,
+    "calibration_round_1": {
+      "result": "revision_required",
+      "status": "completed"
+    },
+    "calibration_round_2": {
+      "adjudication_completion": 0.0,
+      "gate_result": "blocked_by_incomplete_annotation",
+      "integrity_passed": false,
+      "status": "incomplete"
+    },
+    "codex_r2_markings": {
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_verified": true,
+      "record_count": 30,
+      "reviewed_artifact_id": "human_reviewed_codex_calibration_round_2_markings",
+      "reviewed_at": "2026-07-27T01:06:59Z",
+      "source_artifact_id": "codex_calibration_round_2_llm_markings",
+      "status": "human_reviewed_diagnostic_markings"
+    },
+    "formal_human_evidence": false,
+    "guideline_diagnostic_status": "blocked_by_incomplete_annotation",
+    "p0_codex_review_filled": {
+      "artifact_id": "calibration_round_2_p0_codex_review_filled",
+      "decisions": {
+        "overflow_stress": 3,
+        "usable_k_le_4": 1
+      },
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_review_receipt_artifact_id": "human_review_receipt_calibration_round_2_p0_codex_review",
+      "human_reviewed_artifact_id": "human_reviewed_calibration_round_2_p0_codex_review",
+      "human_verified": true,
+      "record_count": 4,
+      "status": "human_reviewed_diagnostic_decisions"
+    },
+    "p1_codex_review_filled": {
+      "artifact_id": "calibration_round_2_p1_codex_review_filled",
+      "decisions": {
+        "usable_k_le_4": 5
+      },
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_review_receipt_artifact_id": "human_review_receipt_calibration_round_2_p1_codex_review",
+      "human_reviewed_artifact_id": "human_reviewed_calibration_round_2_p1_codex_review",
+      "human_verified": true,
+      "record_count": 5,
+      "reviewed_exact_k_distribution": {
+        "1": 2,
+        "2": 3
+      },
+      "status": "human_reviewed_diagnostic_decisions"
+    },
+    "p2_codex_review_filled": {
+      "artifact_id": "calibration_round_2_p2_codex_review_filled",
+      "changed_from_original_codex_exact_k": [
+        {
+          "codex_exact_k": 4,
+          "reviewed_exact_k": 3,
+          "sample_id": "calibration_round_2_0022"
+        },
+        {
+          "codex_exact_k": 4,
+          "reviewed_exact_k": 2,
+          "sample_id": "calibration_round_2_0027"
+        }
+      ],
+      "decisions": {
+        "usable_k_le_4": 14
+      },
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_review_receipt_artifact_id": "human_review_receipt_calibration_round_2_p2_codex_review",
+      "human_reviewed_artifact_id": "human_reviewed_calibration_round_2_p2_codex_review",
+      "human_verified": true,
+      "record_count": 14,
+      "reviewed_exact_k_distribution": {
+        "1": 5,
+        "2": 5,
+        "3": 3,
+        "4": 1
+      },
+      "status": "human_reviewed_diagnostic_decisions"
+    },
+    "p3_codex_review_filled": {
+      "artifact_id": "calibration_round_2_p3_codex_review_filled",
+      "decisions": {
+        "accepted_low_risk_diagnostic": 7
+      },
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_verified": true,
+      "record_count": 7,
+      "reviewed_exact_k_distribution": {
+        "1": 6,
+        "3": 1
+      },
+      "status": "human_reviewed_diagnostic_decisions",
+      "human_review_receipt_artifact_id": "human_review_receipt_calibration_round_2_p3_codex_review",
+      "human_reviewed_artifact_id": "human_reviewed_calibration_round_2_p3_codex_review"
+    },
+    "qualification": {
+      "status": "completed_under_llm_amendment"
+    },
+    "reviewed_diagnostic_analysis": {
+      "followup_queue_artifact_id": "calibration_round_2_review_followup_queue",
+      "followup_queue_count": 23,
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "guideline_revision_draft": "docs/annotation/STAGE1_V2_GUIDELINE_PILOT_V3_REVISION_DRAFT.md",
+      "guideline_revision_status": "revision_draft_only",
+      "highest_priority_sample_ids": [
+        "calibration_round_2_0004",
+        "calibration_round_2_0008",
+        "calibration_round_2_0009",
+        "calibration_round_2_0016"
+      ],
+      "p1_review_status": "human_reviewed_diagnostic_decisions",
+      "p1_reviewed_count": 5,
+      "p2_review_status": "human_reviewed_diagnostic_decisions",
+      "p2_reviewed_count": 14,
+      "p3_review_status": "human_reviewed_diagnostic_decisions",
+      "p3_reviewed_count": 7,
+      "priority_distribution": {
+        "p0_blocking_review": 4,
+        "p1_guideline_review": 5,
+        "p2_secondary_review": 14,
+        "p3_low": 7
+      },
+      "report_artifact_id": "calibration_round_2_reviewed_diagnostic_analysis",
+      "status": "diagnostic_revision_input_only"
+    },
+    "source_prescreen": {
+      "human_verified": false,
+      "llm_accept": 552,
+      "llm_reject": 61,
+      "llm_second_review": 92,
+      "row_count": 613,
+      "status": "completed"
+    }
+  },
+  "pilot_adjudication_complete": false,
+  "pilot_double_annotation_complete": false,
+  "pilot_guideline_frozen": false,
+  "pilot_quality_gates_passed": false,
+  "protocol_version": "stage1-v2-protocol",
+  "real_adjudicated_candidate_pool_ready": true,
+  "real_count_adjudication_rate": 0.0,
+  "real_count_agreement_metrics": {
+    "status_counts": {
+      "pending": 200
+    }
+  },
+  "real_count_candidate_pool_ready": true,
+  "real_count_double_annotation_rate": 0.0,
+  "real_count_pilot_queue_ready": true,
+  "required_atomic_sources_human_verified": false,
+  "schema_version": "mica-stage1-v2-annotation-readiness-v1",
+  "stage1_v2_training_allowed": false,
+  "stage2_entry_allowed": false,
+  "synthetic_assets": {
+    "candidate_v2_counts": {
+      "synthetic_control_test": 119,
+      "synthetic_dev": 100,
+      "synthetic_train": 128
+    },
+    "formal_frozen_status": false,
+    "llm_screened_candidate_status": "llm_screened_candidate",
+    "original_candidate_status": "candidate_quarantined_by_llm_source_review",
+    "quarantined_sample_count": 45,
+    "required_sources_human_verified": false
+  },
+  "synthetic_scale_sufficient": false
+}

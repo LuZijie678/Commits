@@ -1,0 +1,66 @@
+{
+  "manifest_version": "step2_experiment_manifest_v1",
+  "created_at_utc": "2026-05-13T00:00:00Z",
+  "project_root": "/path/to/step2_package",
+  "git": {
+    "commit": "abc123def456",
+    "branch": "main",
+    "dirty": false
+  },
+  "run": {
+    "run_id": "formal_example_run_1234abcd5678",
+    "run_purpose": "formal",
+    "config_path": "configs/step2_runtime_config.json",
+    "output_dir": "outputs/example_formal_run",
+    "random_seed": 42
+  },
+  "inputs": {
+    "source_data": {
+      "path": "../../datasets/derived/step2_bridge/current/step2_source_candidates_from_step1.csv",
+      "exists": true,
+      "kind": "file",
+      "sha256": "source_sha256_placeholder",
+      "size_bytes": 123456
+    },
+    "fewshot_pool": {
+      "path": "examples/fewshot_pool_formal.sqlite",
+      "exists": true,
+      "kind": "file",
+      "sha256": "fewshot_sha256_placeholder",
+      "size_bytes": 654321,
+      "type": "sqlite"
+    },
+    "config": {
+      "path": "configs/step2_runtime_config.json",
+      "exists": true,
+      "kind": "file",
+      "sha256": "config_sha256_placeholder",
+      "size_bytes": 4096
+    },
+    "source_manifest": {
+      "path": "../../datasets/derived/step2_bridge/current/step2_source_candidates_from_step1_manifest.json",
+      "exists": true,
+      "kind": "file",
+      "sha256": "source_manifest_sha256_placeholder",
+      "size_bytes": 2048
+    },
+    "fewshot_build_manifest": {
+      "path": "artifacts/fewshot_pool/build_manifest.json",
+      "exists": true,
+      "kind": "file",
+      "sha256": "fewshot_build_manifest_sha256_placeholder",
+      "size_bytes": 3072
+    }
+  },
+  "protocol": {
+    "message_stage_mandatory": true,
+    "message_gate_mandatory": true,
+    "few_shot_mandatory": true,
+    "formal_assets_ready": true,
+    "run_valid_for_paper": true,
+    "blockers": []
+  },
+  "notes": [
+    "Example only. Replace hashes and paths with real values."
+  ]
+}

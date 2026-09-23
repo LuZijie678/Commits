@@ -1,0 +1,15 @@
+{
+  "created_at_utc": "2026-05-26T03:17:14.471450+00:00",
+  "diff_missing": 0,
+  "diff_ok": 24,
+  "enriched": 24,
+  "incremental": true,
+  "input_csv": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/batchcrawl_20260526T031105Z_round0016_api_filelist_candidates.csv",
+  "new_enriched_rows": 24,
+  "output_csv": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/batchcrawl_20260526T031105Z_round0016_api_filelist_candidates_remote_diff.csv",
+  "output_jsonl": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/batchcrawl_20260526T031105Z_round0016_api_filelist_candidates_remote_diff.jsonl",
+  "resume": true,
+  "resume_skipped": 0,
+  "selected": 24,
+  "skipped": 0
+}

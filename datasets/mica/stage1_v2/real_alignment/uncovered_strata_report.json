@@ -1,0 +1,21 @@
+{
+  "required_strata": [
+    "ambiguous_boundary",
+    "background_heavy",
+    "cross_module",
+    "large_commit",
+    "probable_k1_hard_single",
+    "probable_k1_regular",
+    "probable_k2",
+    "probable_k3",
+    "probable_k4_or_complex",
+    "same_file_multi_intent",
+    "source_docs_config",
+    "source_test"
+  ],
+  "uncovered_strata": [
+    "source_docs_config",
+    "source_test"
+  ],
+  "formal_ready": false
+}

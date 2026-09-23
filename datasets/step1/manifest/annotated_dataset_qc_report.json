@@ -1,0 +1,14 @@
+{
+  "dataset": "datasets/step1/canonical/annotated_dataset.csv",
+  "rows": 505,
+  "diff_non_empty_rows": 505,
+  "label_counts": {
+    "1": 255,
+    "0": 250
+  },
+  "invalid_diff_feature_rows": 0,
+  "invalid_diff_feature_examples": [],
+  "prefilter_overlap_sha_count": 0,
+  "prefilter_overlap_sha_examples": [],
+  "qa_conclusion": "strict-ready: no invalid diff features and no annotated/prefilter overlap"
+}

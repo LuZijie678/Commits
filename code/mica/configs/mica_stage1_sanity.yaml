@@ -1,0 +1,26 @@
+# Leave synthetic_jsonl unset in the committed config.
+# Pass the local runtime-only path via --synthetic-jsonl or MICA_STAGE1_SYNTHETIC_JSONL.
+atomic_csv: datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv
+synthetic_jsonl: null
+max_train_samples: 200
+max_dev_samples: 50
+batch_size: 8
+epochs: 3
+Kmax: 4
+learning_rate: 0.001
+seed: 42
+device: cpu
+output_root: null
+sanity_only: true
+assignment_temperature: 0.7
+assignment_tau_start: 1.5
+assignment_tau_end: 0.7
+existence_mass_coupling_strength: 1.5
+count_pb_coupling_strength: 0.0
+lambda_align: 1.0
+lambda_count: 0.5
+lambda_exist: 0.5
+alpha_pb: 0.5
+lambda_stab: 0.03
+lambda_bg: 0.2
+k2_min_second_slot_mass_ratio: 0.2

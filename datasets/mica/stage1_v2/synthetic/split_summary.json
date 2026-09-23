@@ -1,0 +1,35 @@
+{
+  "dev": {
+    "record_count": 109,
+    "repository_count": 10,
+    "atomic_family_count": 21,
+    "construction_group_count": 109,
+    "gold_k_distribution": {
+      "2": 109
+    },
+    "controlled_synthetic_evaluation_only": false,
+    "real_paper_main_test": false
+  },
+  "synthetic_control_test": {
+    "record_count": 143,
+    "repository_count": 30,
+    "atomic_family_count": 34,
+    "construction_group_count": 143,
+    "gold_k_distribution": {
+      "2": 143
+    },
+    "controlled_synthetic_evaluation_only": true,
+    "real_paper_main_test": false
+  },
+  "train": {
+    "record_count": 140,
+    "repository_count": 18,
+    "atomic_family_count": 36,
+    "construction_group_count": 140,
+    "gold_k_distribution": {
+      "2": 140
+    },
+    "controlled_synthetic_evaluation_only": false,
+    "real_paper_main_test": false
+  }
+}

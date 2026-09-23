@@ -1,0 +1,19 @@
+{
+  "schema_version": "mica-stage1-v2-annotation-progress-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "creation_git_sha": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+  "created_at": "2026-07-26T05:43:22+00:00",
+  "campaign_id": "stage1_v2_annotation_campaign",
+  "batch_count": 10,
+  "total_samples": 365,
+  "completed_samples": 30,
+  "double_annotated_samples": 30,
+  "adjudicated_samples": 30,
+  "blind_review_completed_samples": 0,
+  "progress_fraction": 0.0822,
+  "annotation_campaign_blocked": true,
+  "annotation_track": "llm_annotation_track (stage1-v2-llm-annotation-amendment-v1)",
+  "calibration_round_1_status": "completed_agreement_gates_failed_revision_required",
+  "pilot_batches_blocked_reason": "calibration_agreement_gates_failed (split_no_split_kappa=0.664, pairwise_unit_agreement=0.750)",
+  "updated_at": "2026-07-26T11:00:00+00:00"
+}

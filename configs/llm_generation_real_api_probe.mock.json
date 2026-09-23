@@ -1,0 +1,58 @@
+{
+  "experiment_name": "llm_generation_real_api_probe_mock",
+  "random_seed": 42,
+  "pilot_sample_size": {
+    "atomic_simple": 1,
+    "hard_b": 1,
+    "synthetic_multi": 1,
+    "M_real_multi": 1
+  },
+  "data_sources": {
+    "step3_source_root": "outputs/step3_balanced_diagnostic_readiness_20260604T014128Z",
+    "step1_atomic_csv": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+    "hard_b_csv": "datasets/hard_b/canonical/usable_hard_b_with_real_diff.csv",
+    "m_csv": "datasets/m_verified/canonical/usable_m_with_real_diff.csv"
+  },
+  "strategy_plan": {
+    "atomic_simple": ["G1"],
+    "hard_b": ["G1"],
+    "synthetic_multi": ["G4", "G5"],
+    "M_real_multi": ["G4"]
+  },
+  "few_shot_k": 3,
+  "retrieval_method": "tfidf_cosine",
+  "retrieval_low_similarity_threshold": 0.10,
+  "output_root": "",
+  "resume": true,
+  "context_window": "requires_user_input",
+  "rate_limit": "requires_user_input",
+  "probe_budget_cap": "requires_user_input",
+  "probe_budget_cap_usd": "requires_user_input",
+  "backend": {
+    "provider": "mock",
+    "base_url": "",
+    "api_key_env": "",
+    "model": "mock-commit-message-generator",
+    "temperature": 0.2,
+    "top_p": 1.0,
+    "max_output_tokens": 64,
+    "timeout_seconds": 60,
+    "max_retries": 0,
+    "thinking": {
+      "type": "disabled"
+    },
+    "allow_real_api": false,
+    "cache_path": "outputs/llm_generation_real_api_probe_mock_cache.json"
+  },
+  "pricing": {
+    "input_per_1m_tokens": null,
+    "output_per_1m_tokens": null
+  },
+  "judge": {
+    "enabled": false,
+    "provider": "mock",
+    "model": "mock-judge",
+    "cache_path": "outputs/llm_generation_judge_probe_mock_cache.json",
+    "sample_size": 0
+  }
+}

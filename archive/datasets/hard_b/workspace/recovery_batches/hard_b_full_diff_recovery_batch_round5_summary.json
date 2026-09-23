@@ -1,0 +1,14 @@
+{
+  "already_ok": 239,
+  "attempted": 1,
+  "created_at_utc": "2026-05-25T12:59:56.444004+00:00",
+  "diff_ok_final": 240,
+  "failed": 0,
+  "fetch_max_bytes": 25000000,
+  "input_csv": "data/hard_b_full_diff_recovery_batch_round4.csv",
+  "output_csv": "data/hard_b_full_diff_recovery_batch_round5.csv",
+  "output_jsonl": "data/hard_b_full_diff_recovery_batch_round5.jsonl",
+  "recovered": 1,
+  "rows": 240,
+  "workers": 2
+}

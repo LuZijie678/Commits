@@ -1,0 +1,19 @@
+{
+  "schema_version": "mica-stage1-v2-protocol-reset-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "status": "planned_not_yet_frozen",
+  "supersedes_execution_interpretation_of": "stage1-v1",
+  "stage1_v1_audit_status_record": "configs/mica/official_results/stage1_v1_audit_status.json",
+  "prior_kmax_decision": {
+    "decision_version": "stage1-kmax-v1",
+    "status_for_stage1_v2": "invalidated_by_data_audit",
+    "reason": "the historical Kmax freeze path mixed strict_synthetic, strict_replay, and duplicate combined-manifest rows, so it cannot be reused as real-data evidence for Stage1-v2"
+  },
+  "prior_threshold_decision": {
+    "decision_version": "frozen_dev_thresholds_v1",
+    "status_for_stage1_v2": "historical_stage1_v1_only",
+    "reason": "Stage1-v2 requires a fresh dev-only selection on rebuilt Stage1-v2 assets"
+  },
+  "required_next_protocol_doc": "docs/MICA_STAGE1_V2_REAL_ADJUDICATED_PROTOCOL.md",
+  "stage2_entry_policy": "no_go_until_stage1_v2_gates_pass"
+}

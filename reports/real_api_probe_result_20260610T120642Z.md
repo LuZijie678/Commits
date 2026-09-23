@@ -1,0 +1,30 @@
+# Real API Probe Result
+
+- Probe valid: `True`
+- Invalidated by repo leakage: `False`
+- Planned request count: `5`
+- Completed request count: `5`
+- Failed request count: `0`
+- API success rate: `1.0`
+- Single-line rate: `1.0`
+- Retry count: `0`
+- Cache hit count: `5`
+- Resume skip count: `5`
+- Actual usage available: `True`
+- Actual input tokens total: `52152`
+- Actual output tokens total: `45`
+- Estimated actual cost USD: `0.007313880000000001`
+- Strategy distribution: `{'G1': 2, 'G4': 2, 'G5': 1}`
+- Category distribution: `{'atomic_simple': 1, 'hard_b': 1, 'synthetic_multi': 2, 'M_real_multi': 1}`
+- Thinking mode: `disabled`
+- Key leakage detected: `False`
+- same_repo_canonical_any: `False`
+- source_sha_overlap_any: `False`
+- diff_fingerprint_overlap_any: `False`
+- normalized_subject_overlap_any: `False`
+- Retrieval quality summary: `{'log_count': 3, 'status_counts': {'usable_with_diagnostics': 3}, 'low_similarity_warning_count': 2}`
+- Low similarity warning count: `2`
+- Automatic gate passed: `True`
+- Manual review completed: `False`
+- Recommend 65-request Canary: `False`
+- Reason: `pending_manual_review`

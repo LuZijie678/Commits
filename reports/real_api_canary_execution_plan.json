@@ -1,0 +1,55 @@
+{
+  "schema_version": "real_api_canary_execution_plan_v1",
+  "provider": "mock",
+  "model": "mock-commit-message-generator",
+  "sample_count": 20,
+  "strategy_distribution": {
+    "G0": 20,
+    "G1": 20,
+    "G4": 20,
+    "G5": 5
+  },
+  "planned_request_count": 65,
+  "estimated_input_tokens_total": 0,
+  "estimated_output_tokens_total": 4160,
+  "estimated_tokens_by_strategy": {
+    "G0": {
+      "estimated_input_tokens": "see canary_prompt_summary",
+      "estimated_output_tokens": 1280
+    },
+    "G1": {
+      "estimated_input_tokens": "see canary_prompt_summary",
+      "estimated_output_tokens": 1280
+    },
+    "G4": {
+      "estimated_input_tokens": "see canary_prompt_summary",
+      "estimated_output_tokens": 1280
+    },
+    "G5": {
+      "estimated_input_tokens": "see canary_prompt_summary",
+      "estimated_output_tokens": 320
+    }
+  },
+  "few_shot_k": 3,
+  "cache_enabled": true,
+  "resume_enabled": true,
+  "output_root": "outputs/llm_generation_canary_20260609T052538Z",
+  "api_key_env": "",
+  "context_window": "requires_user_input",
+  "rate_limit": "requires_user_input",
+  "estimated_cost": "not_available",
+  "cost_formula": "input_tokens * input_per_1m / 1e6 + output_tokens * output_per_1m / 1e6",
+  "cost_status": "requires_manual_provider_pricing",
+  "go_no_go_criteria": [
+    "dataset leakage gate passed",
+    "exemplar leakage gate passed",
+    "planned_request_count = 65",
+    "G5 only runs on synthetic_multi",
+    "prompt rendering completed",
+    "no unexpected truncation",
+    "cache works",
+    "resume works",
+    "evaluation schema works",
+    "API key absent from logs and metadata"
+  ]
+}

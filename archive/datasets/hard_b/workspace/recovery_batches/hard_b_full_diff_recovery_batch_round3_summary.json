@@ -1,0 +1,14 @@
+{
+  "already_ok": 0,
+  "attempted": 240,
+  "created_at_utc": "2026-05-24T14:59:02.441874+00:00",
+  "diff_ok_final": 227,
+  "failed": 13,
+  "fetch_max_bytes": 25000000,
+  "input_csv": "hard_b_mining_pilot\\hard_b_need_full_diff_round3.csv",
+  "output_csv": "hard_b_mining_pilot\\hard_b_full_diff_recovery_batch_round3.csv",
+  "output_jsonl": "hard_b_mining_pilot\\hard_b_full_diff_recovery_batch_round3.jsonl",
+  "recovered": 227,
+  "rows": 240,
+  "workers": 2
+}

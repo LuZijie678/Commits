@@ -1,0 +1,11 @@
+$ /opt/homebrew/opt/python@3.14/bin/python3.14 -m src.analysis.proxy_gap --selection-batch-csv ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/selection/selection_batch.csv --resolved-candidates-csv ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/enriched/resolved_candidates.csv --validation-dir ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/validation --annotated-csv ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/proxy_gap.csv --proxy-calibration-json ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/calibration/message_only_calibration.json --primary-calibration-json ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/calibration/atomic_calibration_full_diff.json --output-dir ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/analysis --audit-target 300 --annotated-split-plan-json ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/annotated_split_plan.json
+
+<frozen runpy>:128: RuntimeWarning: 'src.analysis.proxy_gap' found in sys.modules after import of package 'src.analysis', but prior to execution of 'src.analysis.proxy_gap'; this may result in unpredictable behaviour
+proxy_gap_json=../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/analysis/proxy_gap_analysis.json
+proxy_gap_markdown=../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/analysis/proxy_gap_analysis.md
+message_only_auc=0.9539007092198581
+full_diff_auc=0.8191489361702128
+tier_consistency=0.28963210702341136
+downgrade_rate_message_only_a_to_full_diff_c=None
+
+## EXIT_CODE=0

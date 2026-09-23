@@ -1,0 +1,257 @@
+{
+  "schema_version": "mica-stage1-v2-role-assignment-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "creation_git_sha": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+  "created_at": "2026-07-26T05:43:22+00:00",
+  "campaign_assignments": [
+    {
+      "campaign_id": "real_alignment_pilot",
+      "batch_id": "calibration_round_1",
+      "required_roles": [
+        "annotator_a",
+        "annotator_b",
+        "adjudicator"
+      ],
+      "assignments": [
+        {
+          "role": "annotator_a",
+          "assigned_actor_id": "claude_stage1_v2_annotator_a",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "annotator_b",
+          "assigned_actor_id": "claude_stage1_v2_annotator_b",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "adjudicator",
+          "assigned_actor_id": "claude_stage1_v2_adjudicator",
+          "assignment_status": "assigned_llm_under_amendment"
+        }
+      ]
+    },
+    {
+      "campaign_id": "real_alignment_pilot",
+      "batch_id": "pilot_batch_2",
+      "required_roles": [
+        "annotator_a",
+        "annotator_b",
+        "adjudicator"
+      ],
+      "assignments": [
+        {
+          "role": "annotator_a",
+          "assigned_actor_id": "claude_stage1_v2_annotator_a",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "annotator_b",
+          "assigned_actor_id": "claude_stage1_v2_annotator_b",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "adjudicator",
+          "assigned_actor_id": "claude_stage1_v2_adjudicator",
+          "assignment_status": "assigned_llm_under_amendment"
+        }
+      ]
+    },
+    {
+      "campaign_id": "real_alignment_pilot",
+      "batch_id": "pilot_batch_3",
+      "required_roles": [
+        "annotator_a",
+        "annotator_b",
+        "adjudicator"
+      ],
+      "assignments": [
+        {
+          "role": "annotator_a",
+          "assigned_actor_id": "claude_stage1_v2_annotator_a",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "annotator_b",
+          "assigned_actor_id": "claude_stage1_v2_annotator_b",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "adjudicator",
+          "assigned_actor_id": "claude_stage1_v2_adjudicator",
+          "assignment_status": "assigned_llm_under_amendment"
+        }
+      ]
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_01",
+      "required_roles": [
+        "annotator_a",
+        "annotator_b",
+        "adjudicator"
+      ],
+      "assignments": [
+        {
+          "role": "annotator_a",
+          "assigned_actor_id": "claude_stage1_v2_annotator_a",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "annotator_b",
+          "assigned_actor_id": "claude_stage1_v2_annotator_b",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "adjudicator",
+          "assigned_actor_id": "claude_stage1_v2_adjudicator",
+          "assignment_status": "assigned_llm_under_amendment"
+        }
+      ]
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_02",
+      "required_roles": [
+        "annotator_a",
+        "annotator_b",
+        "adjudicator"
+      ],
+      "assignments": [
+        {
+          "role": "annotator_a",
+          "assigned_actor_id": "claude_stage1_v2_annotator_a",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "annotator_b",
+          "assigned_actor_id": "claude_stage1_v2_annotator_b",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "adjudicator",
+          "assigned_actor_id": "claude_stage1_v2_adjudicator",
+          "assignment_status": "assigned_llm_under_amendment"
+        }
+      ]
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_03",
+      "required_roles": [
+        "annotator_a",
+        "annotator_b",
+        "adjudicator"
+      ],
+      "assignments": [
+        {
+          "role": "annotator_a",
+          "assigned_actor_id": "claude_stage1_v2_annotator_a",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "annotator_b",
+          "assigned_actor_id": "claude_stage1_v2_annotator_b",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "adjudicator",
+          "assigned_actor_id": "claude_stage1_v2_adjudicator",
+          "assignment_status": "assigned_llm_under_amendment"
+        }
+      ]
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_04",
+      "required_roles": [
+        "annotator_a",
+        "annotator_b",
+        "adjudicator"
+      ],
+      "assignments": [
+        {
+          "role": "annotator_a",
+          "assigned_actor_id": "claude_stage1_v2_annotator_a",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "annotator_b",
+          "assigned_actor_id": "claude_stage1_v2_annotator_b",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "adjudicator",
+          "assigned_actor_id": "claude_stage1_v2_adjudicator",
+          "assignment_status": "assigned_llm_under_amendment"
+        }
+      ]
+    },
+    {
+      "campaign_id": "background_pilot",
+      "batch_id": "pilot_batch_01",
+      "required_roles": [
+        "annotator_a",
+        "annotator_b",
+        "adjudicator"
+      ],
+      "assignments": [
+        {
+          "role": "annotator_a",
+          "assigned_actor_id": "claude_stage1_v2_annotator_a",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "annotator_b",
+          "assigned_actor_id": "claude_stage1_v2_annotator_b",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "adjudicator",
+          "assigned_actor_id": "claude_stage1_v2_adjudicator",
+          "assignment_status": "assigned_llm_under_amendment"
+        }
+      ]
+    },
+    {
+      "campaign_id": "background_pilot",
+      "batch_id": "pilot_batch_02",
+      "required_roles": [
+        "annotator_a",
+        "annotator_b",
+        "adjudicator"
+      ],
+      "assignments": [
+        {
+          "role": "annotator_a",
+          "assigned_actor_id": "claude_stage1_v2_annotator_a",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "annotator_b",
+          "assigned_actor_id": "claude_stage1_v2_annotator_b",
+          "assignment_status": "assigned_llm_under_amendment"
+        },
+        {
+          "role": "adjudicator",
+          "assigned_actor_id": "claude_stage1_v2_adjudicator",
+          "assignment_status": "assigned_llm_under_amendment"
+        }
+      ]
+    },
+    {
+      "campaign_id": "real_alignment_blind_review",
+      "batch_id": "blind_review_pending",
+      "required_roles": [
+        "independent_blind_reviewer"
+      ],
+      "assignments": [
+        {
+          "role": "independent_blind_reviewer",
+          "assigned_actor_id": "claude_stage1_v2_blind_reviewer",
+          "assignment_status": "assigned_llm_under_amendment"
+        }
+      ]
+    }
+  ],
+  "llm_annotation_amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+}

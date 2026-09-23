@@ -1,0 +1,66 @@
+{
+  "total_selected": 3000,
+  "previously_labeled_excluded": 800,
+  "sampling_plan": [
+    {
+      "band": "p00_10",
+      "pool": 8549,
+      "selected": 900
+    },
+    {
+      "band": "p10_20",
+      "pool": 8609,
+      "selected": 650
+    },
+    {
+      "band": "p20_30",
+      "pool": 8641,
+      "selected": 450
+    },
+    {
+      "band": "p30_40",
+      "pool": 8653,
+      "selected": 300
+    },
+    {
+      "band": "p40_50",
+      "pool": 8657,
+      "selected": 200
+    },
+    {
+      "band": "p50_60",
+      "pool": 8657,
+      "selected": 100
+    },
+    {
+      "band": "p60_70",
+      "pool": 8659,
+      "selected": 100
+    },
+    {
+      "band": "p70_80",
+      "pool": 8658,
+      "selected": 100
+    },
+    {
+      "band": "p80_90",
+      "pool": 8659,
+      "selected": 100
+    },
+    {
+      "band": "p90_100",
+      "pool": 8661,
+      "selected": 100
+    }
+  ],
+  "label_schema": {
+    "A": "strong single-intent",
+    "B": "broad but cohesive single-intent",
+    "U": "uncertain/boundary",
+    "M": "true multi-intent"
+  },
+  "paths": {
+    "csv": "D:\\Multi-intent\\sample_label\\annotation_round3_atomicity_spectrum_3000_minimal.csv",
+    "guide": "D:\\Multi-intent\\sample_label\\annotation_round3_atomicity_spectrum_3000_minimal.md"
+  }
+}

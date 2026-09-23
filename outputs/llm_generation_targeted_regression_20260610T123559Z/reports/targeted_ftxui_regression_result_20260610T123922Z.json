@@ -1,0 +1,20 @@
+{
+  "schema_version": "targeted_ftxui_regression_result_v1",
+  "report_timestamp": "20260610T123922Z",
+  "planned_request_count": 1,
+  "completed_request_count": 1,
+  "failed_request_count": 0,
+  "new_real_request_count": 1,
+  "cache_hit_count": 1,
+  "resume_skip_count": 0,
+  "actual_input_tokens_total": 8326,
+  "actual_output_tokens_total": 11,
+  "estimated_actual_cost_usd": 0.00116872,
+  "generated_subject": "Refactor ComponentBase internals and flatten screen cell storage",
+  "retrieved_exemplar_ids": [
+    "ex:f4e65aede2b319fc",
+    "ex:3c4a54f4125d12f0",
+    "ex:f7f991b3d96d730a"
+  ],
+  "retrieval_quality_status": "usable_with_diagnostics"
+}

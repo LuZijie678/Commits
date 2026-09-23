@@ -1,0 +1,23 @@
+{
+  "schema_version": "mica-stage1-v2-annotation-overlap-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "creation_git_sha": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+  "created_at": "2026-07-26T05:43:22+00:00",
+  "raw_total_tasks": 5099,
+  "unique_commit_count": 4868,
+  "unique_real_commit_annotation_count": 232,
+  "unique_atomic_source_review_count": 4679,
+  "full_alignment_anchor_count": 100,
+  "count_reusable_from_full_alignment": 100,
+  "background_reusable_from_full_alignment": 55,
+  "remaining_count_only_tasks": 67,
+  "remaining_background_only_tasks": 32,
+  "deduplicated_real_annotation_count": 199,
+  "human_workload_group_counts": {
+    "atomic_source_review_only": 4636,
+    "background_only": 32,
+    "count_only": 67,
+    "count_plus_background": 33,
+    "full_alignment_anchor": 100
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "policy": "pilot categories may share repos in raw assets, but exact source SHA, subject, and diff fingerprint overlaps are blocked",
+  "overlaps": {
+    "repo": [],
+    "source_sha": [],
+    "diff_fingerprint": [],
+    "subject_reference": []
+  }
+}

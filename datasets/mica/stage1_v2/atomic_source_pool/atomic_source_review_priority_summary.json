@@ -1,0 +1,16 @@
+{
+  "schema_version": "mica-stage1-v2-atomic-source-review-queue-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "creation_git_sha": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+  "created_at": "2026-07-26T05:43:22+00:00",
+  "critical_count": 4679,
+  "deferred_count": 420,
+  "priority_counts": {
+    "critical_current_and_formal": 363,
+    "critical_current_materialized_use": 70,
+    "critical_formal_scale_required": 4073,
+    "critical_high_ambiguity": 173,
+    "deferred_not_currently_blocking": 420
+  },
+  "required_atomic_sources_human_verified": false
+}

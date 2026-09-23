@@ -1,0 +1,17 @@
+{
+  "created_at_utc": "2026-05-30T11:32:01.949371+00:00",
+  "dedupe_skipped": 0,
+  "diff_missing": 0,
+  "diff_ok": 53,
+  "enriched": 53,
+  "incremental": true,
+  "input_csv": "/Users/lifulin/Downloads/Commits/datasets/m_verified/tooling/../../../archive/datasets/m_verified/workspace/crawl_state_relaxed/batchcrawl_20260530T112249Z_round0110_api_filelist_candidates.csv",
+  "new_enriched_rows": 53,
+  "output_csv": "/Users/lifulin/Downloads/Commits/datasets/m_verified/tooling/../../../archive/datasets/m_verified/workspace/crawl_state_relaxed/batchcrawl_20260530T112249Z_round0110_api_filelist_candidates_remote_diff.csv",
+  "output_jsonl": "/Users/lifulin/Downloads/Commits/datasets/m_verified/tooling/../../../archive/datasets/m_verified/workspace/crawl_state_relaxed/batchcrawl_20260530T112249Z_round0110_api_filelist_candidates_remote_diff.jsonl",
+  "resume": true,
+  "resume_skipped": 0,
+  "selected": 53,
+  "skipped": 0,
+  "workers": 8
+}

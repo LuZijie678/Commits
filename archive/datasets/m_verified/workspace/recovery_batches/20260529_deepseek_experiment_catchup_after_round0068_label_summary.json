@@ -1,0 +1,16 @@
+{
+  "created_at_utc": "2026-05-29T13:04:05.947131+00:00",
+  "dedupe_skipped": 0,
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "error_count": 0,
+  "errors": [],
+  "input_csv": "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/recovery_batches/20260529_deepseek_experiment_catchup_after_round0068_label_input.csv",
+  "labeled_new_rows": 509,
+  "model": "deepseek-chat",
+  "output_csv": "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/20260529_deepseek_experiment_catchup_after_round0068_labeled.csv",
+  "output_jsonl": "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/20260529_deepseek_experiment_catchup_after_round0068_labeled.jsonl",
+  "output_total_rows": 509,
+  "resume_skipped": 0,
+  "selected": 509,
+  "workers": 4
+}

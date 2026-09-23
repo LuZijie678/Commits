@@ -1,0 +1,227 @@
+{
+  "blocklist_count": 0,
+  "created_at_utc": "2026-05-26T00:54:39.905456+00:00",
+  "excluded_local_count": 0,
+  "output_csv": "data/20260526_newcrawl_high_star_repo_discovery.csv",
+  "output_txt": "data/20260526_newcrawl_repo_targets_high_star.txt",
+  "query_summaries": [
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:>50000 fork:false archived:false",
+      "rate_remaining": "9"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 15,
+      "page": 1,
+      "query": "stars:20000..50000 fork:false archived:false language:Python",
+      "rate_remaining": "8"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 18,
+      "page": 1,
+      "query": "stars:5000..20000 fork:false archived:false language:Python",
+      "rate_remaining": "7"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 16,
+      "page": 1,
+      "query": "stars:20000..50000 fork:false archived:false language:JavaScript",
+      "rate_remaining": "6"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 37,
+      "page": 1,
+      "query": "stars:5000..20000 fork:false archived:false language:JavaScript",
+      "rate_remaining": "5"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 9,
+      "page": 1,
+      "query": "stars:20000..50000 fork:false archived:false language:TypeScript",
+      "rate_remaining": "4"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 36,
+      "page": 1,
+      "query": "stars:5000..20000 fork:false archived:false language:TypeScript",
+      "rate_remaining": "3"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 28,
+      "page": 1,
+      "query": "stars:15000..50000 fork:false archived:false language:Go",
+      "rate_remaining": "2"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 39,
+      "page": 1,
+      "query": "stars:5000..15000 fork:false archived:false language:Go",
+      "rate_remaining": "1"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 20,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false language:Rust",
+      "rate_remaining": "0"
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..10000 fork:false archived:false language:Rust",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:15000..50000 fork:false archived:false language:Java",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..15000 fork:false archived:false language:Java",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false language:C++",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..10000 fork:false archived:false language:C++",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false language:C",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..10000 fork:false archived:false language:C",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:C#",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:PHP",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:Ruby",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:Swift",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..50000 fork:false archived:false language:Kotlin",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..50000 fork:false archived:false language:Dart",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false topic:database",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false topic:cli",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false topic:web-framework",
+      "rate_remaining": ""
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false topic:machine-learning",
+      "rate_remaining": ""
+    }
+  ],
+  "repo_count": 120,
+  "token_used": false
+}

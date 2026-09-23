@@ -1,0 +1,67 @@
+{
+ "schema_version": "mica-stage1-v2-source-review-summary-v1",
+ "protocol_version": "stage1-v2-protocol",
+ "amendment_id": "stage1-v2-llm-annotation-amendment-v1",
+ "reviewer_id": "claude_stage1_v2_source_reviewer",
+ "actor_type": "llm",
+ "human_verified": false,
+ "created_at": "2026-07-26T10:00:00+00:00",
+ "creation_git_sha": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+ "scope": "critical_current_materialized_use + critical_current_and_formal + critical_high_ambiguity (603 items; 3 items of these priorities were already covered by codex batch 0001)",
+ "batch_files": [
+  "claude_atomic_source_review_batch_0001.jsonl",
+  "claude_atomic_source_review_batch_0002.jsonl",
+  "claude_atomic_source_review_batch_0003.jsonl",
+  "claude_atomic_source_review_batch_0004.jsonl",
+  "claude_atomic_source_review_batch_0005.jsonl",
+  "claude_atomic_source_review_batch_0006.jsonl",
+  "claude_atomic_source_review_batch_0007.jsonl",
+  "claude_atomic_source_review_batch_0008.jsonl",
+  "claude_atomic_source_review_batch_0009.jsonl",
+  "claude_atomic_source_review_batch_0010.jsonl",
+  "claude_atomic_source_review_batch_0011.jsonl",
+  "claude_atomic_source_review_batch_0012.jsonl",
+  "claude_atomic_source_review_batch_0013.jsonl",
+  "claude_atomic_source_review_batch_0014.jsonl",
+  "claude_atomic_source_review_batch_0015.jsonl",
+  "claude_atomic_source_review_batch_0016.jsonl",
+  "claude_atomic_source_review_batch_0017.jsonl",
+  "claude_atomic_source_review_batch_0018.jsonl",
+  "claude_atomic_source_review_batch_0019.jsonl",
+  "claude_atomic_source_review_batch_0020.jsonl",
+  "claude_atomic_source_review_batch_0021.jsonl"
+ ],
+ "total_reviewed": 603,
+ "decision_counts": {
+  "accept_atomic": 543,
+  "reject_mechanical_or_generated": 32,
+  "reject_multi_intent": 28
+ },
+ "needs_second_review": 92,
+ "by_priority": {
+  "critical_current_and_formal": {
+   "accept_atomic": 342,
+   "reject_multi_intent": 8,
+   "reject_mechanical_or_generated": 11
+  },
+  "critical_current_materialized_use": {
+   "accept_atomic": 63,
+   "reject_mechanical_or_generated": 5,
+   "reject_multi_intent": 1
+  },
+  "critical_high_ambiguity": {
+   "accept_atomic": 138,
+   "reject_multi_intent": 19,
+   "reject_mechanical_or_generated": 16
+  }
+ },
+ "remaining_unreviewed": {
+  "critical_formal_scale_required": 4064,
+  "deferred_not_currently_blocking": 420
+ },
+ "notes": [
+  "LLM pre-screening under stage1-v2-llm-annotation-amendment-v1; does NOT satisfy required_atomic_sources_human_verified.",
+  "needs_second_review rows should be prioritized in any later human verification pass.",
+  "remaining critical_formal_scale_required count approximate: 9 of the 4073 were covered by codex batch 0001."
+ ]
+}

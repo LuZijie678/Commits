@@ -1,0 +1,8 @@
+{
+  "stage": "eval_message_utility",
+  "dryrun_only": true,
+  "final_test_eval_only": true,
+  "no_threshold_tuning_on_final_test": true,
+  "proxy_metrics_only": true,
+  "human_judgment_required_for_formal_claims": true
+}

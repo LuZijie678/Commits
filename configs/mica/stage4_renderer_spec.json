@@ -1,0 +1,17 @@
+{
+  "stage": "stage4_evidence_locked_renderer",
+  "advisor_stage4_approved": false,
+  "advisor_stage4_trainable_renderer_approved": false,
+  "default_mode": "dry_run",
+  "stage4_scope": "deterministic_evidence_locked_renderer",
+  "trainable_renderer_main_result": false,
+  "trainable_renderer_allowed_as_future_or_ablation": true,
+  "attribution_frozen_required": true,
+  "renderer_updates_attribution": false,
+  "renderer_reads_only_plan_and_assigned_evidence": true,
+  "raw_full_diff_forbidden_as_ungrounded_context": true,
+  "retrieval_enabled": false,
+  "verifier_enabled": false,
+  "llm_api_enabled": false,
+  "lambda_copy": 0.1
+}

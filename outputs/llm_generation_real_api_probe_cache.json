@@ -1,0 +1,142 @@
+{
+  "6c4934468dbc5b1fa658dbe0d261a1199964efc5286cf1a4800fe6134b16dff4": {
+    "generated_subject": "Add signal event validation tests",
+    "status": "generated",
+    "failure_reason": "",
+    "latency_ms": 912,
+    "usage": {
+      "prompt_tokens": 2993,
+      "completion_tokens": 5,
+      "total_tokens": 2998,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2993
+    },
+    "cache_hit": false,
+    "retry_count": 0,
+    "http_status": 200,
+    "thinking_mode": "disabled"
+  },
+  "c5da75e310a46dc7cb78c6dbb9588f32e363b641b686479f9c123e2c2ff6fe07": {
+    "generated_subject": "Implement $lookup-based eager loading for associations",
+    "status": "generated",
+    "failure_reason": "",
+    "latency_ms": 2070,
+    "usage": {
+      "prompt_tokens": 20648,
+      "completion_tokens": 9,
+      "total_tokens": 20657,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 20648
+    },
+    "cache_hit": false,
+    "retry_count": 0,
+    "http_status": 200,
+    "thinking_mode": "disabled"
+  },
+  "da8c97639840e2ccace8ee8428145d41fb45faa0a3820c37bba666fe759ed149": {
+    "generated_subject": "Add unsafe comparison and improve docs page generation",
+    "status": "generated",
+    "failure_reason": "",
+    "latency_ms": 1179,
+    "usage": {
+      "prompt_tokens": 2431,
+      "completion_tokens": 8,
+      "total_tokens": 2439,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2431
+    },
+    "cache_hit": false,
+    "retry_count": 0,
+    "http_status": 200,
+    "thinking_mode": "disabled"
+  },
+  "2757b2167f835a8651d9c58f6d1fa0f1eb512c610480c002a371f1b9d6b7bff9": {
+    "generated_subject": "Add tests for greaterThanOrEqual and fix docs path generation",
+    "status": "generated",
+    "failure_reason": "",
+    "latency_ms": 1112,
+    "usage": {
+      "prompt_tokens": 2522,
+      "completion_tokens": 12,
+      "total_tokens": 2534,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2522
+    },
+    "cache_hit": false,
+    "retry_count": 0,
+    "http_status": 200,
+    "thinking_mode": "disabled"
+  },
+  "cbc72a490f871068bd8c7dab037b8c91172ce864abbe064498d7fbb5579cbfe9": {
+    "generated_subject": "Refactor ComponentBase internals and flatten Surface cell storage for ABI stability",
+    "status": "generated",
+    "failure_reason": "",
+    "latency_ms": 1600,
+    "usage": {
+      "prompt_tokens": 8248,
+      "completion_tokens": 15,
+      "total_tokens": 8263,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 8248
+    },
+    "cache_hit": false,
+    "retry_count": 0,
+    "http_status": 200,
+    "thinking_mode": "disabled"
+  },
+  "ffad6436e438c33fbf0d708da90dfca26c63d5404d057f84ebbfe8d135b5ae9b": {
+    "generated_subject": "Add engineering agent orchestrators and Mistral Vibe support",
+    "status": "generated",
+    "failure_reason": "",
+    "latency_ms": 1569,
+    "usage": {
+      "prompt_tokens": 23558,
+      "completion_tokens": 11,
+      "total_tokens": 23569,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 23558
+    },
+    "cache_hit": false,
+    "retry_count": 0,
+    "http_status": 200,
+    "thinking_mode": "disabled"
+  },
+  "e57f8c5d9de1ecb0284f54da3cc29254ae198959c71983e8d2e31391c27ce78a": {
+    "generated_subject": "Refactor ComponentBase internals and flatten screen cell storage",
+    "status": "generated",
+    "failure_reason": "",
+    "latency_ms": 1632,
+    "usage": {
+      "prompt_tokens": 8326,
+      "completion_tokens": 11,
+      "total_tokens": 8337,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 8326
+    },
+    "cache_hit": false,
+    "retry_count": 0,
+    "http_status": 200,
+    "thinking_mode": "disabled"
+  }
+}

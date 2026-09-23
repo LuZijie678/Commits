@@ -1,0 +1,22 @@
+{
+  "created_at_utc": "2026-05-27T08:30:10.510320+00:00",
+  "dedupe_skipped": 0,
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "error_count": 1,
+  "errors": [
+    {
+      "error": "HTTPError: HTTP Error 402: Payment Required",
+      "repo": "ytdl-org/youtube-dl",
+      "sha": "bd2ded59f218bed637514f3aaf11787fa7b87ccf"
+    }
+  ],
+  "input_csv": "../../../archive/datasets/m_verified/workspace/crawl_state_relaxed/batchcrawl_20260527T081601Z_round0001_api_filelist_candidates_remote_diff.csv",
+  "labeled_new_rows": 0,
+  "model": "deepseek-chat",
+  "output_csv": "../../../archive/datasets/m_verified/workspace/crawl_state_relaxed/_smoke_label.csv",
+  "output_jsonl": "../../../archive/datasets/m_verified/workspace/crawl_state_relaxed/_smoke_label.jsonl",
+  "output_total_rows": 0,
+  "resume_skipped": 0,
+  "selected": 1,
+  "workers": 1
+}

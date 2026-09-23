@@ -1,0 +1,66 @@
+{
+  "a_b_sample_sets_match": true,
+  "actor_type_required": "llm",
+  "adjudication_allowed": false,
+  "agreement_allowed": false,
+  "annotation_track": "llm_annotation_track",
+  "annotator_a_package": {
+    "alignment_guideline_versions": [
+      "stage1-v2-alignment-guideline-pilot-v2"
+    ],
+    "contains_other_annotator_result": false,
+    "duplicate_sample_ids": [],
+    "forbidden_key_hits": [],
+    "guideline_versions": [
+      "stage1-v2-count-guideline-pilot-v2"
+    ],
+    "hidden_flags_ok": true,
+    "package": "annotator_a",
+    "row_count": 30,
+    "unique_sample_count": 30
+  },
+  "annotator_b_package": {
+    "alignment_guideline_versions": [
+      "stage1-v2-alignment-guideline-pilot-v2"
+    ],
+    "contains_other_annotator_result": false,
+    "duplicate_sample_ids": [],
+    "forbidden_key_hits": [],
+    "guideline_versions": [
+      "stage1-v2-count-guideline-pilot-v2"
+    ],
+    "hidden_flags_ok": true,
+    "package": "annotator_b",
+    "row_count": 30,
+    "unique_sample_count": 30
+  },
+  "audit_log_chain": {
+    "chain_valid": true,
+    "chained_events": 0,
+    "errors": [],
+    "total_events": 0,
+    "unchained_legacy_events": 0
+  },
+  "blocking_reasons": [
+    "missing_actor_type_llm",
+    "missing_annotation_a_context_id",
+    "missing_annotation_b_context_id",
+    "missing_annotator_a_id",
+    "missing_annotator_b_id",
+    "missing_human_verified_false",
+    "missing_r2_audit_log_events"
+  ],
+  "combined_ab_row_count": 30,
+  "combined_ab_unique_sample_count": 30,
+  "created_at": "2026-07-26T15:22:29+00:00",
+  "creation_git_sha": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+  "error_count": 181,
+  "expected_sample_count": 30,
+  "human_verified_required": false,
+  "integrity_passed": false,
+  "protocol_version": "stage1-v2-protocol",
+  "raw_ab_file_preserved": true,
+  "round_label": "calibration_round_2",
+  "schema_version": "mica-stage1-v2-r2-annotation-integrity-v1",
+  "status": "r2_annotation_incomplete"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "available",
+  "shared_sha_count": 76,
+  "raw_agreement": 1.0,
+  "cohen_kappa": 1.0,
+  "confusion_summary": {
+    "1->1": 75,
+    "0->0": 1
+  },
+  "adjudication_coverage": 0.0
+}

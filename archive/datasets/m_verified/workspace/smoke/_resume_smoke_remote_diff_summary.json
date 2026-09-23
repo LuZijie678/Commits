@@ -1,0 +1,15 @@
+{
+  "created_at_utc": "2026-05-25T16:21:05.541480+00:00",
+  "diff_missing": 0,
+  "diff_ok": 1,
+  "enriched": 1,
+  "incremental": true,
+  "input_csv": "data/20260525_newcrawl_api_filelist_candidates.csv",
+  "new_enriched_rows": 0,
+  "output_csv": "data/_resume_smoke_remote_diff.csv",
+  "output_jsonl": "data/_resume_smoke_remote_diff.jsonl",
+  "resume": true,
+  "resume_skipped": 1,
+  "selected": 1,
+  "skipped": 0
+}

@@ -1,0 +1,22 @@
+Evaluate the generated commit subject against the diff and reference context.
+
+Return JSON with these fields:
+- correctness
+- completeness
+- faithfulness
+- conciseness
+- readability
+- overall_score
+- brief_reason
+
+Do not treat this judgment as absolute truth; it is for calibrated diagnostic use.
+
+Diff:
+{diff_text}
+
+Reference subject:
+{reference_subject}
+
+Generated subject:
+{generated_subject}
+

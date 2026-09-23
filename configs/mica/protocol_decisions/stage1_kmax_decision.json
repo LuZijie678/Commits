@@ -1,0 +1,99 @@
+{
+  "schema_version": "mica-kmax-decision-packet-v1",
+  "decision_version": "stage1-kmax-v1",
+  "status": "approved",
+  "amendment_type": "pre_test_protocol_amendment",
+  "predeclared": false,
+  "proposed_tau": 0.95,
+  "selected_Kmax": 4,
+  "full_coverage_curve": [
+    {
+      "candidate_kmax": 1,
+      "sample_count": 3910,
+      "covered_count": 1660,
+      "overflow_count": 2250,
+      "coverage_at_kmax": 0.42455242966751916,
+      "overflow_rate": 0.5754475703324808,
+      "values_status": "values_populated"
+    },
+    {
+      "candidate_kmax": 2,
+      "sample_count": 3910,
+      "covered_count": 3910,
+      "overflow_count": 0,
+      "coverage_at_kmax": 1.0,
+      "overflow_rate": 0.0,
+      "values_status": "values_populated"
+    },
+    {
+      "candidate_kmax": 3,
+      "sample_count": 3910,
+      "covered_count": 3910,
+      "overflow_count": 0,
+      "coverage_at_kmax": 1.0,
+      "overflow_rate": 0.0,
+      "values_status": "values_populated"
+    },
+    {
+      "candidate_kmax": 4,
+      "sample_count": 3910,
+      "covered_count": 3910,
+      "overflow_count": 0,
+      "coverage_at_kmax": 1.0,
+      "overflow_rate": 0.0,
+      "values_status": "values_populated"
+    }
+  ],
+  "confidence_interval": {
+    "cluster_unit": "repository",
+    "bootstrap_samples": 500,
+    "metric": "coverage_at_kmax",
+    "mean": 1.0,
+    "lower": 1.0,
+    "upper": 1.0,
+    "eligible_repo_count": 350,
+    "level": 0.95
+  },
+  "count_distribution": {
+    "k=1": 1660,
+    "k=2": 2250,
+    "k=3": 0,
+    "k=4": 0,
+    "k>4": 0
+  },
+  "exact_real_row_counts": {
+    "eligible_exact_real_rows": 4483,
+    "eligible_train_dev_rows": 3910,
+    "eligible_train_dev_multi_intent_rows": 2250
+  },
+  "attestations": {
+    "train_dev_only_selection": true,
+    "final_test_not_used": true,
+    "synthetic_excluded_from_selection": true,
+    "censored_counts_excluded_from_selection": true,
+    "exact_real_only_selection": true
+  },
+  "rationale": "Train/dev exact-count coverage was reviewed after the distribution had been observed, so this approval freezes Kmax via a pre-test protocol amendment rather than as a predeclared protocol constant.",
+  "report_hashes": {
+    "kmax_report": "e6aa90d9f708e3fe1277ff8f6c50cd66fceaa99f53a3335232bfa7687286eb7c"
+  },
+  "manifest_hashes": {
+    "hard_b_dev": "446bf1825a41058e9faecb1880ddb352d1f03a998b1057564c5135052db23888",
+    "hard_b_test": "f2d30d3549b2fb16dc746ae53e4849380c1a91f007cfd0267db810e87647f310",
+    "hard_b_train": "a63ebc1dbe6fdae65280602050c0de1ac4ab0358769dccb8b735bb7f6afd335c",
+    "m_final_test": "468cc48c1411a9f56e3fa0e728168dfe11f284c4139647720b717790873d21b6",
+    "m_weak_dev": "44884c526afb7236d0b6d4da39dc2642dfe2c950db86bc359e2dfed989e18863",
+    "m_weak_train": "936c99378cee236d582018730267df742433332cb83ed560cd8eace7eab09c8d",
+    "stage1_official_final_test": "0c0ca7acdbce65f9533b0119193b480db0f9304abe29367349c7c51c2e3ee3d8",
+    "stage1_official_validation_dev": "3758ba97ae0902cba98d9f4a17d04a5d871b342741976c545ed6cb3a2e7aecdf",
+    "step1_high_conf_single_train": "61d6d214b5ecac3d4dd930e96ec0d0875808a8f12fd45a019538374bdc2da618",
+    "strict_replay": "f8f767e7a2bfe0c51dabd547bfd6ca2f5711047a1210d8ce72e25f6b121c6916",
+    "strict_synthetic_train": "ab8b8100114d8a266010bc0db049cc53cd0d1c483f0a6023f343996a14fb7a06"
+  },
+  "approved_by": "fulin",
+  "approved_at": "2026-07-23T16:45:14+08:00",
+  "final_test_used": false,
+  "no_further_Kmax_tuning_after_approval": true,
+  "source_runtime_packet_path": "outputs/mica_stage1_clean_candidate_20260723T081816Z/approval_packets/stage1_kmax_decision_packet.json",
+  "source_kmax_report_path": "outputs/mica_stage1_clean_candidate_20260723T081816Z/kmax_audit/kmax_exact_count_report.json"
+}

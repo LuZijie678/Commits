@@ -1,0 +1,23 @@
+{
+  "source_csv": "datasets/step1/canonical/annotated_dataset.csv",
+  "output_csv": "datasets/step1/canonical/annotated_dataset.csv",
+  "row_count": 505,
+  "label_col": "is_single_intent",
+  "label_usage_summary": {
+    "label_col": "is_single_intent",
+    "labeled_rows": 505,
+    "missing_label_rows": 0,
+    "source_counts": {
+      "raw_label": 505
+    },
+    "label_source_counts": {
+      "diff_audit_v1": 505
+    },
+    "adjudicated_ratio": 0.0,
+    "fallback_ratio": 1.0,
+    "conflict_rows": 0
+  },
+  "pre_materialization_source_counts": {
+    "is_single_intent": 505
+  }
+}

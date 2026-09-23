@@ -1,0 +1,6 @@
+sample_id,data_category,strategy,generated_subject,reference_subject,manual_format_ok,manual_faithful,manual_complete,manual_concise,manual_oversegmentation,manual_omission,manual_hallucination,notes
+atomic_simple:107ab6618db141f2,atomic_simple,G1,Fix generated subject,Update atomic behavior 0,,,,,,,,
+hard_b:97d9f4f39b348550,hard_b,G1,Fix generated subject,Refine hard single intent 1,,,,,,,,
+synthetic_multi:aa2f4fa70b74a4b8,synthetic_multi,G4,Fix generated subject,Update parser and validation 2,,,,,,,,
+synthetic_multi:aa2f4fa70b74a4b8,synthetic_multi,G5,Fix generated subject,Update parser and validation 2,,,,,,,,
+M_real_multi:3f307d4074ebf254,M_real_multi,G4,Fix generated subject,Update service and tests 1,,,,,,,,

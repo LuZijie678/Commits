@@ -1,0 +1,8 @@
+{
+  "schema_version": "mica-stage1-v2-qualification-execution-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "submission_status": "pending_human_submission",
+  "annotator_id": null,
+  "guideline_version": "stage1-v2-alignment-guideline-pilot-v1",
+  "results": []
+}

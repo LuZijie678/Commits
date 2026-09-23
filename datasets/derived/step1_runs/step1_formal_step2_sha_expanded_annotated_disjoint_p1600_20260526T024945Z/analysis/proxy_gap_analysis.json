@@ -1,0 +1,374 @@
+{
+  "selection_count": 6400,
+  "resolved_count": 6400,
+  "audit_target": 300,
+  "probability_bins": [
+    {
+      "lower": 0.921242,
+      "label": "[0.92,0.95]"
+    },
+    {
+      "lower": 0.89618,
+      "label": "[0.90,0.92)"
+    },
+    {
+      "lower": 0.633723,
+      "label": "[0.63,0.90)"
+    },
+    {
+      "lower": 0.038978,
+      "label": "[0.04,0.63)"
+    }
+  ],
+  "proxy_probability_gap": {
+    "annotated_metric_sample_count": 106,
+    "message_only_auc": 0.9539007092198581,
+    "full_diff_auc": 0.8191489361702128,
+    "message_only_brier": 0.09212123451787596,
+    "full_diff_brier": 0.22192024251293582,
+    "message_only_logloss": 0.3369870437637489,
+    "full_diff_logloss": 0.6014481658366431,
+    "auc_gap_primary_minus_proxy": -0.13475177304964536,
+    "brier_gap_proxy_minus_primary": -0.12979900799505986,
+    "logloss_gap_proxy_minus_primary": -0.2644611220728942,
+    "annotated_tier_consistency": 0.5849056603773585
+  },
+  "conversion_metrics": {
+    "missing_tier_policy": "missing_as_unknown",
+    "is_sensitivity_analysis": false,
+    "proxy_to_primary_tier_matrix": {
+      "B->A": 1142,
+      "B->C": 456,
+      "B->UNKNOWN": 2,
+      "C->A": 2908,
+      "C->B": 1,
+      "C->C": 1871,
+      "C->UNKNOWN": 20
+    },
+    "tier_consistency_denominator_policy": "known_primary_tier_only",
+    "tier_consistency": 0.2933521480087802,
+    "known_primary_tier_count": 6378,
+    "unknown_count": 22,
+    "unknown_rate": 0.0034375,
+    "message_only_tier_counts": {
+      "C": 4800,
+      "B": 1600
+    },
+    "message_only_tier_a_count": 0,
+    "message_only_tier_a_known_primary_count": 0,
+    "message_only_tier_a_unknown_count": 0,
+    "message_only_tier_a_unknown_rate": null,
+    "message_only_tier_a_to_full_diff_c_count": 0,
+    "downgrade_denominator_policy": "proxy_a_with_known_primary_tier_only",
+    "downgrade_rate_message_only_a_to_full_diff_c": null,
+    "selection_to_full_diff_matrix": {
+      "B->A": 1142,
+      "B->C": 456,
+      "B->UNKNOWN": 2,
+      "C->A": 2908,
+      "C->B": 1,
+      "C->C": 1871,
+      "C->UNKNOWN": 20
+    },
+    "full_diff_tier_by_type": {
+      "feat": {
+        "A": 771,
+        "C": 828,
+        "UNKNOWN": 1
+      },
+      "fix": {
+        "A": 1142,
+        "C": 456,
+        "UNKNOWN": 2
+      },
+      "refactor": {
+        "A": 958,
+        "C": 627,
+        "UNKNOWN": 14,
+        "B": 1
+      },
+      "test": {
+        "A": 1179,
+        "C": 416,
+        "UNKNOWN": 5
+      }
+    },
+    "full_diff_tier_by_type_and_message_only_band": {
+      "feat::[0.04,0.63)": {
+        "A": 342,
+        "C": 438,
+        "UNKNOWN": 1
+      },
+      "feat::[0.63,0.90)": {
+        "A": 429,
+        "C": 390
+      },
+      "fix::[0.92,0.95]": {
+        "A": 1142,
+        "C": 456,
+        "UNKNOWN": 2
+      },
+      "refactor::[0.04,0.63)": {
+        "A": 324,
+        "C": 215,
+        "UNKNOWN": 3,
+        "B": 1
+      },
+      "refactor::[0.63,0.90)": {
+        "C": 79,
+        "A": 120,
+        "UNKNOWN": 1
+      },
+      "refactor::[0.90,0.92)": {
+        "A": 514,
+        "C": 333,
+        "UNKNOWN": 10
+      },
+      "test::[0.04,0.63)": {
+        "C": 113,
+        "A": 91,
+        "UNKNOWN": 2
+      },
+      "test::[0.63,0.90)": {
+        "A": 498,
+        "C": 151,
+        "UNKNOWN": 2
+      },
+      "test::[0.90,0.92)": {
+        "A": 1
+      },
+      "test::[0.92,0.95]": {
+        "A": 589,
+        "C": 152,
+        "UNKNOWN": 1
+      }
+    },
+    "observed_full_diff_tier_counts": {
+      "A": 4050,
+      "C": 2327,
+      "UNKNOWN": 22,
+      "B": 1
+    },
+    "observed_tier_b_yield": 1,
+    "observed_tier_b_gap_vs_target": -299
+  },
+  "feasibility": {
+    "target_tier": "B",
+    "selected_count": 6400,
+    "expected_target_tier_yield": 0.0,
+    "conservative_target_tier_lower_bound": 0.0,
+    "bucket_expectations": {
+      "feat::[0.04,0.63)": {
+        "selected_count": 781,
+        "reference_total": 8,
+        "reference_target_tier_count": 0,
+        "estimated_rate": 0.0,
+        "wilson95_lower": 0.0,
+        "source": "bucket"
+      },
+      "feat::[0.63,0.90)": {
+        "selected_count": 819,
+        "reference_total": 5,
+        "reference_target_tier_count": 0,
+        "estimated_rate": 0.0,
+        "wilson95_lower": 0.0,
+        "source": "bucket"
+      },
+      "fix::[0.92,0.95]": {
+        "selected_count": 1600,
+        "reference_total": 11,
+        "reference_target_tier_count": 0,
+        "estimated_rate": 0.0,
+        "wilson95_lower": 0.0,
+        "source": "bucket"
+      },
+      "refactor::[0.04,0.63)": {
+        "selected_count": 543,
+        "reference_total": 9,
+        "reference_target_tier_count": 0,
+        "estimated_rate": 0.0,
+        "wilson95_lower": 0.0,
+        "source": "bucket"
+      },
+      "refactor::[0.63,0.90)": {
+        "selected_count": 200,
+        "reference_total": 2,
+        "reference_target_tier_count": 0,
+        "estimated_rate": 0.0,
+        "wilson95_lower": 0.0,
+        "source": "bucket"
+      },
+      "refactor::[0.90,0.92)": {
+        "selected_count": 857,
+        "reference_total": 2,
+        "reference_target_tier_count": 0,
+        "estimated_rate": 0.0,
+        "wilson95_lower": 0.0,
+        "source": "bucket"
+      },
+      "test::[0.04,0.63)": {
+        "selected_count": 206,
+        "reference_total": 5,
+        "reference_target_tier_count": 0,
+        "estimated_rate": 0.0,
+        "wilson95_lower": 0.0,
+        "source": "type"
+      },
+      "test::[0.63,0.90)": {
+        "selected_count": 651,
+        "reference_total": 5,
+        "reference_target_tier_count": 0,
+        "estimated_rate": 0.0,
+        "wilson95_lower": 0.0,
+        "source": "bucket"
+      },
+      "test::[0.90,0.92)": {
+        "selected_count": 1,
+        "reference_total": 5,
+        "reference_target_tier_count": 0,
+        "estimated_rate": 0.0,
+        "wilson95_lower": 0.0,
+        "source": "type"
+      },
+      "test::[0.92,0.95]": {
+        "selected_count": 742,
+        "reference_total": 5,
+        "reference_target_tier_count": 0,
+        "estimated_rate": 0.0,
+        "wilson95_lower": 0.0,
+        "source": "type"
+      }
+    },
+    "fallback_usage": {
+      "bucket": 5451,
+      "type": 949
+    },
+    "source": "cached_plus_reference_tail",
+    "cached_observed_target_tier_yield": 0,
+    "cached_coverage_ratio": 0.996563,
+    "audit_target": 300,
+    "expected_gap_vs_target": -300.0,
+    "conservative_gap_vs_target": -300.0,
+    "cached_precheck": {
+      "covered_selection_count": 6378,
+      "missing_selection_count": 22,
+      "observed_tier_counts": {
+        "A": 4051,
+        "C": 2327
+      },
+      "observed_target_tier_yield": 0,
+      "coverage_ratio": 0.996563
+    }
+  },
+  "sensitivity_analysis": {
+    "missing_as_c": {
+      "missing_tier_policy": "missing_as_c",
+      "is_sensitivity_analysis": true,
+      "proxy_to_primary_tier_matrix": {
+        "B->A": 1142,
+        "B->C": 458,
+        "C->A": 2908,
+        "C->B": 1,
+        "C->C": 1891
+      },
+      "tier_consistency_denominator_policy": "known_primary_tier_only",
+      "tier_consistency": 0.29546875,
+      "known_primary_tier_count": 6400,
+      "unknown_count": 0,
+      "unknown_rate": 0.0,
+      "message_only_tier_counts": {
+        "C": 4800,
+        "B": 1600
+      },
+      "message_only_tier_a_count": 0,
+      "message_only_tier_a_known_primary_count": 0,
+      "message_only_tier_a_unknown_count": 0,
+      "message_only_tier_a_unknown_rate": null,
+      "message_only_tier_a_to_full_diff_c_count": 0,
+      "downgrade_denominator_policy": "proxy_a_with_known_primary_tier_only",
+      "downgrade_rate_message_only_a_to_full_diff_c": null,
+      "selection_to_full_diff_matrix": {
+        "B->A": 1142,
+        "B->C": 458,
+        "C->A": 2908,
+        "C->B": 1,
+        "C->C": 1891
+      },
+      "full_diff_tier_by_type": {
+        "feat": {
+          "A": 771,
+          "C": 829
+        },
+        "fix": {
+          "A": 1142,
+          "C": 458
+        },
+        "refactor": {
+          "A": 958,
+          "C": 641,
+          "B": 1
+        },
+        "test": {
+          "A": 1179,
+          "C": 421
+        }
+      },
+      "full_diff_tier_by_type_and_message_only_band": {
+        "feat::[0.04,0.63)": {
+          "A": 342,
+          "C": 439
+        },
+        "feat::[0.63,0.90)": {
+          "A": 429,
+          "C": 390
+        },
+        "fix::[0.92,0.95]": {
+          "A": 1142,
+          "C": 458
+        },
+        "refactor::[0.04,0.63)": {
+          "A": 324,
+          "C": 218,
+          "B": 1
+        },
+        "refactor::[0.63,0.90)": {
+          "C": 80,
+          "A": 120
+        },
+        "refactor::[0.90,0.92)": {
+          "A": 514,
+          "C": 343
+        },
+        "test::[0.04,0.63)": {
+          "C": 115,
+          "A": 91
+        },
+        "test::[0.63,0.90)": {
+          "A": 498,
+          "C": 153
+        },
+        "test::[0.90,0.92)": {
+          "A": 1
+        },
+        "test::[0.92,0.95]": {
+          "A": 589,
+          "C": 153
+        }
+      },
+      "observed_full_diff_tier_counts": {
+        "A": 4050,
+        "C": 2349,
+        "B": 1
+      },
+      "analysis_role": "sensitivity_only"
+    }
+  },
+  "conclusion": {
+    "classification": "usable_with_risk",
+    "reason": "Proxy quality is mixed; message-only should stay subordinate to full-diff.",
+    "paper_sentence": "The message-only proxy is usable for broad prefiltering but remains subordinate to the full-diff primary model.",
+    "policy_note": "Primary proxy-gap statistics use missing_as_unknown; missing_as_C is reported only as a sensitivity analysis.",
+    "missing_tier_policy": "missing_as_unknown",
+    "unknown_rate": 0.0034375
+  }
+}

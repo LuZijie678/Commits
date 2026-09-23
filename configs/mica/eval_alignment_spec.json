@@ -1,0 +1,8 @@
+{
+  "stage": "eval_alignment",
+  "dryrun_only": true,
+  "final_test_eval_only": true,
+  "no_threshold_tuning_on_final_test": true,
+  "formal_pass_fail_pending": true,
+  "final_test_forbidden_for_calibration": true
+}

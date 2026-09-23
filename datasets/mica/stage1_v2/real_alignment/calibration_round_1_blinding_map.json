@@ -1,0 +1,299 @@
+{
+  "schema_version": "mica-stage1-v2-calibration-round-v1",
+  "rows": [
+    {
+      "sample_id": "calibration_round_1_0001",
+      "original_sample_id": "m_weak::AykutSarac/jsoncrack.com@ffa54dea01e111b4a2c41f74a24b1be9fb36b181",
+      "commit_id": "ffa54dea01e111b4a2c41f74a24b1be9fb36b181",
+      "repository": "AykutSarac/jsoncrack.com",
+      "provisional_tags": [
+        "probable_k2",
+        "background_heavy",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0002",
+      "original_sample_id": "hard_b::AvaloniaUI/Avalonia@837e1aa91dd34bbd9e4d4c932a18878be2a4d753",
+      "commit_id": "837e1aa91dd34bbd9e4d4c932a18878be2a4d753",
+      "repository": "AvaloniaUI/Avalonia",
+      "provisional_tags": [
+        "probable_k1_hard_single",
+        "cross_module",
+        "ambiguous_boundary"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0003",
+      "original_sample_id": "atomic::Byron/gitoxide@469406dc0d9fece4a06230ef0d8018846202f0ad",
+      "commit_id": "469406dc0d9fece4a06230ef0d8018846202f0ad",
+      "repository": "Byron/gitoxide",
+      "provisional_tags": [
+        "probable_k1_regular"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0004",
+      "original_sample_id": "m_weak::CodeEditApp/CodeEdit@f919bbb1eeaa0e8dcad24fd415758ae545fa3bd7",
+      "commit_id": "f919bbb1eeaa0e8dcad24fd415758ae545fa3bd7",
+      "repository": "CodeEditApp/CodeEdit",
+      "provisional_tags": [
+        "probable_k3",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0005",
+      "original_sample_id": "m_weak::ActivityWatch/activitywatch@dc1371ca3db08bfa21d195b6569f9180760b675c",
+      "commit_id": "dc1371ca3db08bfa21d195b6569f9180760b675c",
+      "repository": "ActivityWatch/activitywatch",
+      "provisional_tags": [
+        "probable_k4_or_complex",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0006",
+      "original_sample_id": "m_weak::0x192/universal-android-debloater@a73e0e5577d1c803c165dc35069c0e3d01f8162d",
+      "commit_id": "a73e0e5577d1c803c165dc35069c0e3d01f8162d",
+      "repository": "0x192/universal-android-debloater",
+      "provisional_tags": [
+        "probable_k2"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0007",
+      "original_sample_id": "m_weak::CSSLint/csslint@0f920bbd700a544acb11c5f5916c3ba10c17bd79",
+      "commit_id": "0f920bbd700a544acb11c5f5916c3ba10c17bd79",
+      "repository": "CSSLint/csslint",
+      "provisional_tags": [
+        "probable_k2"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0008",
+      "original_sample_id": "m_weak::Attendize/Attendize@e8cf696c0757112da16505985a2218b39068f7cd",
+      "commit_id": "e8cf696c0757112da16505985a2218b39068f7cd",
+      "repository": "Attendize/Attendize",
+      "provisional_tags": [
+        "probable_k2",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0009",
+      "original_sample_id": "atomic::Byron/gitoxide@47ca6ab2ff0cbf8801d0a82cebbbeb8c4f62cdae",
+      "commit_id": "47ca6ab2ff0cbf8801d0a82cebbbeb8c4f62cdae",
+      "repository": "Byron/gitoxide",
+      "provisional_tags": [
+        "probable_k1_regular"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0010",
+      "original_sample_id": "atomic::Byron/gitoxide@5732303180d26374016b70bdd7fa0278dd84cff3",
+      "commit_id": "5732303180d26374016b70bdd7fa0278dd84cff3",
+      "repository": "Byron/gitoxide",
+      "provisional_tags": [
+        "probable_k1_regular"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0011",
+      "original_sample_id": "m_weak::ArthurBrussee/brush@814e523fd80cc8f83cf33393c8da3e5326192803",
+      "commit_id": "814e523fd80cc8f83cf33393c8da3e5326192803",
+      "repository": "ArthurBrussee/brush",
+      "provisional_tags": [
+        "probable_k2",
+        "background_heavy",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0012",
+      "original_sample_id": "atomic::Byron/gitoxide@3d16c36d7288d9a5fae5b9d23715e043d4d8ce76",
+      "commit_id": "3d16c36d7288d9a5fae5b9d23715e043d4d8ce76",
+      "repository": "Byron/gitoxide",
+      "provisional_tags": [
+        "probable_k1_regular"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0013",
+      "original_sample_id": "m_weak::Aidoku/Aidoku@fa99b0a1caddd2886afa164eb227aa08f07d1025",
+      "commit_id": "fa99b0a1caddd2886afa164eb227aa08f07d1025",
+      "repository": "Aidoku/Aidoku",
+      "provisional_tags": [
+        "probable_k4_or_complex",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0014",
+      "original_sample_id": "m_weak::BurntSushi/toml@99c5690ca9e0b7a0b747f5fee0d8ef736c67b14e",
+      "commit_id": "99c5690ca9e0b7a0b747f5fee0d8ef736c67b14e",
+      "repository": "BurntSushi/toml",
+      "provisional_tags": [
+        "probable_k2",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0015",
+      "original_sample_id": "m_weak::BerriAI/litellm@f35e7eb2f6ac0ac84b3b470cadeb3fc5b0b379a3",
+      "commit_id": "f35e7eb2f6ac0ac84b3b470cadeb3fc5b0b379a3",
+      "repository": "BerriAI/litellm",
+      "provisional_tags": [
+        "probable_k2"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0016",
+      "original_sample_id": "m_weak::EasyCorp/EasyAdminBundle@a6d211e95087540f81fc4cf0e94b985a8d2d499b",
+      "commit_id": "a6d211e95087540f81fc4cf0e94b985a8d2d499b",
+      "repository": "EasyCorp/EasyAdminBundle",
+      "provisional_tags": [
+        "probable_k3",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0017",
+      "original_sample_id": "m_weak::78/xiaozhi-esp32@589485e31c70bdc6d5841cb561d2d8123250233c",
+      "commit_id": "589485e31c70bdc6d5841cb561d2d8123250233c",
+      "repository": "78/xiaozhi-esp32",
+      "provisional_tags": [
+        "probable_k4_or_complex",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0018",
+      "original_sample_id": "m_weak::ArthurBrussee/brush@48ca31c28b74d85bbd938f03e53cb66c7b94789a",
+      "commit_id": "48ca31c28b74d85bbd938f03e53cb66c7b94789a",
+      "repository": "ArthurBrussee/brush",
+      "provisional_tags": [
+        "probable_k4_or_complex",
+        "background_heavy",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0019",
+      "original_sample_id": "m_weak::ArthurBrussee/brush@40d3137d969048e22e959b2eac197d22b333357b",
+      "commit_id": "40d3137d969048e22e959b2eac197d22b333357b",
+      "repository": "ArthurBrussee/brush",
+      "provisional_tags": [
+        "probable_k2",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0020",
+      "original_sample_id": "m_weak::AudioKit/AudioKit@e05284f3481a1dad208fbcfdc073e8a403c19006",
+      "commit_id": "e05284f3481a1dad208fbcfdc073e8a403c19006",
+      "repository": "AudioKit/AudioKit",
+      "provisional_tags": [
+        "probable_k2"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0021",
+      "original_sample_id": "hard_b::AndyMik90/Aperant@3cb05781faa5b43f38801449d2a04699817a1800",
+      "commit_id": "3cb05781faa5b43f38801449d2a04699817a1800",
+      "repository": "AndyMik90/Aperant",
+      "provisional_tags": [
+        "probable_k1_hard_single",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0022",
+      "original_sample_id": "atomic::Byron/gitoxide@25e795f4fe858d646ae7a3c4706e14a3837c3e66",
+      "commit_id": "25e795f4fe858d646ae7a3c4706e14a3837c3e66",
+      "repository": "Byron/gitoxide",
+      "provisional_tags": [
+        "probable_k1_regular"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0023",
+      "original_sample_id": "hard_b::CherryHQ/cherry-studio@63be624f7c0500e2cf8ab8af01f050df6d32c9f8",
+      "commit_id": "63be624f7c0500e2cf8ab8af01f050df6d32c9f8",
+      "repository": "CherryHQ/cherry-studio",
+      "provisional_tags": [
+        "probable_k1_hard_single",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0024",
+      "original_sample_id": "hard_b::DapperLib/Dapper@20d81380cac6452ad56d7635f578e3912d577080",
+      "commit_id": "20d81380cac6452ad56d7635f578e3912d577080",
+      "repository": "DapperLib/Dapper",
+      "provisional_tags": [
+        "probable_k1_hard_single",
+        "large_commit",
+        "cross_module"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0025",
+      "original_sample_id": "atomic::Byron/gitoxide@05794383cb7c903ab30b5d6ef0178dffdf66feee",
+      "commit_id": "05794383cb7c903ab30b5d6ef0178dffdf66feee",
+      "repository": "Byron/gitoxide",
+      "provisional_tags": [
+        "probable_k1_regular"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0026",
+      "original_sample_id": "hard_b::CarGuo/gsy_github_app_flutter@45f337bc589080f933391c374419950f50611e01",
+      "commit_id": "45f337bc589080f933391c374419950f50611e01",
+      "repository": "CarGuo/gsy_github_app_flutter",
+      "provisional_tags": [
+        "probable_k1_hard_single",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0027",
+      "original_sample_id": "atomic::Byron/gitoxide@64bc2ec666dacba486bd1de2fbd95f97f2efc7a5",
+      "commit_id": "64bc2ec666dacba486bd1de2fbd95f97f2efc7a5",
+      "repository": "Byron/gitoxide",
+      "provisional_tags": [
+        "probable_k1_regular"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0028",
+      "original_sample_id": "m_weak::AlexsJones/llmfit@149c114112005db53aa26559a1e461c0f5a127b7",
+      "commit_id": "149c114112005db53aa26559a1e461c0f5a127b7",
+      "repository": "AlexsJones/llmfit",
+      "provisional_tags": [
+        "probable_k4_or_complex",
+        "background_heavy",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0029",
+      "original_sample_id": "hard_b::ClementTsang/bottom@beaeb03e90c18526c6fbe7a2ceebcc66ea076c6a",
+      "commit_id": "beaeb03e90c18526c6fbe7a2ceebcc66ea076c6a",
+      "repository": "ClementTsang/bottom",
+      "provisional_tags": [
+        "probable_k1_hard_single",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_1_0030",
+      "original_sample_id": "atomic::Byron/gitoxide@23f8402964b57c8928c8a53212afc58e937023ca",
+      "commit_id": "23f8402964b57c8928c8a53212afc58e937023ca",
+      "repository": "Byron/gitoxide",
+      "provisional_tags": [
+        "probable_k1_regular"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "training_run": true,
+  "sanity_only": true,
+  "synthetic_source": "local_runtime_only",
+  "synthetic_source_committed": false,
+  "local_runtime_only_path_available": true,
+  "max_train_samples": 8,
+  "max_dev_samples": 4,
+  "epochs": 2,
+  "batch_size": 4,
+  "device": "cpu",
+  "assignment_temperature": 0.7,
+  "assignment_tau_first_epoch": 1.5,
+  "assignment_tau_last_epoch": 0.7,
+  "existence_mass_coupling_strength": 1.5,
+  "count_pb_coupling_strength": 0.5,
+  "with_stabilizer": true,
+  "lambda_stab": 0.03,
+  "train_loss_first_epoch": 2.8810575008392334,
+  "train_loss_last_epoch": 2.824128031730652,
+  "dev_loss": 2.4902820587158203,
+  "count_accuracy": 1.0,
+  "binary_multi_accuracy": 1.0,
+  "over_split_rate_on_k1": 0.0,
+  "under_split_rate_on_k2": 0.0,
+  "slot_collapse_rate": 0.0,
+  "assignment_entropy": 2.247814178466797,
+  "oracle_k_alignment_pairwise_f1": 1.0,
+  "predicted_k_alignment_pairwise_f1": 1.0,
+  "alignment_pairwise_f1_all_one_cluster": 1.0,
+  "alignment_pairwise_f1_file_path_baseline": 1.0,
+  "alignment_pairwise_f1_random_gold_k_mean": 1.0,
+  "alignment_gain_over_all_one": 0.0,
+  "alignment_gain_over_file_path": 0.0,
+  "alignment_gain_over_random_gold_k": 0.0,
+  "attribution_gain": false,
+  "sanity_status": "failed",
+  "failure_or_warning_notes": [
+    "all_samples_predicted_same_count"
+  ],
+  "next_recommended_action": "debug training collapse or data issues before attempting any Stage 2 calibration",
+  "comparison_to_previous_a294243": {
+    "count_accuracy": {
+      "previous": 1.0,
+      "current": 1.0,
+      "delta": 0.0
+    },
+    "binary_multi_accuracy": {
+      "previous": 1.0,
+      "current": 1.0,
+      "delta": 0.0
+    },
+    "over_split_rate_on_k1": {
+      "previous": 0.0,
+      "current": 0.0,
+      "delta": 0.0
+    },
+    "under_split_rate_on_k2": {
+      "previous": 0.0,
+      "current": 0.0,
+      "delta": 0.0
+    },
+    "slot_collapse_rate": {
+      "previous": 0.0,
+      "current": 0.0,
+      "delta": 0.0
+    },
+    "assignment_entropy": {
+      "previous": 2.2488338947296143,
+      "current": 2.247814178466797,
+      "delta": -0.0010197162628173828
+    },
+    "oracle_k_alignment_pairwise_f1": {
+      "previous": 1.0,
+      "current": 1.0,
+      "delta": 0.0
+    },
+    "predicted_k_alignment_pairwise_f1": {
+      "previous": 1.0,
+      "current": 1.0,
+      "delta": 0.0
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "mica-protocol-amendment-v1",
+  "decision_id": "stage1-v2-guideline-pilot-v2-revision",
+  "amends_protocol_version": "stage1-v2-protocol",
+  "amendment_type": "pre_pilot_guideline_revision",
+  "created_at": "2026-07-26T12:00:00+00:00",
+  "directed_by": "fulin",
+  "direction_channel": "interactive_session_instruction_2026-07-26 (\"继续吧，修复当前暴露出的问题\")",
+  "executed_by": "claude_fable_5",
+  "trigger": {
+    "calibration_round_1_agreement_passed": false,
+    "failed_gates": {
+      "split_no_split_kappa": {"observed": 0.6637, "threshold": 0.8},
+      "pairwise_unit_agreement": {"observed": 0.7499, "threshold": 0.8}
+    },
+    "guideline_status_was": "revision_required",
+    "evidence": [
+      "datasets/mica/stage1_v2/real_alignment/calibration_round_1_agreement_report.json",
+      "datasets/mica/stage1_v2/real_alignment/calibration_round_1_adjudicated.jsonl",
+      "docs/annotation/STAGE1_V2_GUIDELINE_PILOT_V2_REVISION_DRAFT.md"
+    ]
+  },
+  "revised_guidelines": {
+    "stage1-v2-alignment-guideline-pilot-v2": "docs/annotation/STAGE1_V2_ALIGNMENT_GUIDELINE_PILOT_V2.md",
+    "stage1-v2-count-guideline-pilot-v2": "docs/annotation/STAGE1_V2_COUNT_GUIDELINE_PILOT_V2.md",
+    "background_guideline_amended_in_place": "docs/annotation/STAGE1_V2_BACKGROUND_ANNOTATION_GUIDELINE.md#6"
+  },
+  "supersedes": {
+    "stage1-v2-alignment-guideline-pilot-v1": "docs/annotation/STAGE1_V2_ALIGNMENT_GUIDELINE_PILOT_V1.md",
+    "stage1-v2-count-guideline-pilot-v1": "docs/annotation/STAGE1_V2_COUNT_GUIDELINE_PILOT_V1.md"
+  },
+  "rule_summary": [
+    "R1 intent text normalization (controlled action verbs, symbol-level objects)",
+    "R2 mixed must enumerate component_intent_ids",
+    "R3 anti-umbrella-intent rule",
+    "R4 behavior-preservation test for refactor merge/split",
+    "R5 enabler two-question test",
+    "R6 mechanism-level splitting; issue ids never merge",
+    "R7 visible-evidence-only merging; no theme inference",
+    "R8 counterfactual config test + riding-along micro-cleanup default",
+    "R9 unit-level judgment; no file-level inheritance",
+    "R10 supporting-test target-object rule",
+    "R11 dependency-manifest units without in-diff usage -> uncertain",
+    "R12 conditional-gating scope as assignment evidence",
+    "R13 interim Kmax operational rule (k>6 -> overflow_candidate note)"
+  ],
+  "constraints": {
+    "gate_thresholds_unchanged": true,
+    "calibration_round_2_required_before_pilot": true,
+    "round_1_samples_not_reused_in_round_2": true,
+    "annotation_track": "llm_annotation_track (stage1-v2-llm-annotation-amendment-v1)"
+  },
+  "status": "guideline_pilot_v2_frozen_for_calibration_round_2"
+}

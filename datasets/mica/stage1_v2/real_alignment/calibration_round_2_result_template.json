@@ -1,0 +1,13 @@
+{
+  "schema_version": "mica-stage1-v2-calibration-round-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "creation_git_sha": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+  "created_at": "2026-07-26T12:20:00+00:00",
+  "campaign_id": "real_alignment_pilot",
+  "batch_id": "calibration_round_2",
+  "completed": false,
+  "sample_count": 30,
+  "guideline_status": "pending_human_execution",
+  "guideline_version": "stage1-v2-count-guideline-pilot-v2",
+  "alignment_guideline_version": "stage1-v2-alignment-guideline-pilot-v2"
+}

@@ -1,0 +1,12 @@
+$ /opt/homebrew/opt/python@3.14/bin/python3.14 -m src.pipeline.validation --candidates ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/enriched/resolved_candidates.csv --pilot ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/evaluation.csv --output-dir ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/validation --sample-per-tier 30 --seed 31 --audit-size 300 --audit-tier A --threshold-mode full_diff --tier-a-audit-labeled-csv  --tier-b-audit-labeled-csv  --primary-calibration-json ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/calibration/atomic_calibration_full_diff.json --proxy-calibration-json ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/calibration/message_only_calibration.json --annotated-split-plan-json ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/annotated_split_plan.json --diff-required --export-audit-samples
+
+<frozen runpy>:128: RuntimeWarning: 'src.pipeline.validation' found in sys.modules after import of package 'src.pipeline', but prior to execution of 'src.pipeline.validation'; this may result in unpredictable behaviour
+tier_a=7642
+tier_b=1
+tier_c=4317
+tier_a_sample=30
+tier_b_sample=1
+tier_a_audit_sample=300
+tier_b_audit_sample=1
+
+## EXIT_CODE=0

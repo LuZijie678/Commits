@@ -1,0 +1,94 @@
+{
+  "generated_at_utc": "2026-05-27T02:12:45.318704+00:00",
+  "reviewer": "codex-agent",
+  "review_round": "2026-05-27-agent-fewshot-v1",
+  "review_path": "datasets/step2/review/m_only_review_sheet.csv",
+  "accepted_total": 167,
+  "rejected_total": 606,
+  "accepted_signature_counts": {
+    "feat+docs": 13,
+    "feat+fix": 65,
+    "feat+test": 14,
+    "fix+test": 19,
+    "fix+refactor": 12,
+    "perf+refactor": 3,
+    "fix+docs": 9,
+    "fix+perf": 4,
+    "feat+refactor": 17,
+    "docs+test": 5,
+    "refactor+test": 3,
+    "docs+perf": 2,
+    "docs+refactor": 1
+  },
+  "rejected_reason_counts": {
+    "reject_signature_out_of_formal_fewshot_scope": 184,
+    "reject_not_exact2_or_primary_pair_unclear": 422
+  },
+  "manual_override_accepts": [
+    {
+      "repo": "DapperLib/Dapper",
+      "sha": "522d150e25639453496043df71f2ee42512604cc",
+      "signature": "perf+refactor",
+      "intent_k": "2"
+    },
+    {
+      "repo": "PaddlePaddle/Paddle",
+      "sha": "3d2583434816172863243cea777b243b208a49bb",
+      "signature": "fix+perf",
+      "intent_k": "2"
+    },
+    {
+      "repo": "affaan-m/everything-claude-code",
+      "sha": "e4f4c2c36d7bd6d30cfce0d3a81935271a29bb43",
+      "signature": "docs+test",
+      "intent_k": "2"
+    },
+    {
+      "repo": "antlr/antlr4",
+      "sha": "95fd266931b8eafa5fddf513f9852b32dd82b845",
+      "signature": "docs+test",
+      "intent_k": "3"
+    },
+    {
+      "repo": "ollama/ollama",
+      "sha": "8968740836d30dc2e96671d829c370b1d6fcd6b6",
+      "signature": "fix+perf",
+      "intent_k": "2"
+    },
+    {
+      "repo": "openzipkin/zipkin",
+      "sha": "524b74e26e07f39a6a8a819fc281b5b247ccccb7",
+      "signature": "fix+perf",
+      "intent_k": "2"
+    },
+    {
+      "repo": "servo/servo",
+      "sha": "0d36eee456dd822e8493cd651784b1debf78fc32",
+      "signature": "perf+refactor",
+      "intent_k": "2"
+    },
+    {
+      "repo": "taosdata/TDengine",
+      "sha": "63e4a309bbf324f4c3c825aa9d5b636d70b38464",
+      "signature": "docs+test",
+      "intent_k": "2"
+    },
+    {
+      "repo": "vercel/next.js",
+      "sha": "7429f7ce86accf790414553d4b8c066fbf41e6e6",
+      "signature": "perf+refactor",
+      "intent_k": "3"
+    }
+  ],
+  "common_signature_coverage": {
+    "fix+test": 19,
+    "feat+test": 14,
+    "fix+docs": 9,
+    "feat+docs": 13,
+    "fix+refactor": 12,
+    "feat+refactor": 17,
+    "docs+test": 5,
+    "perf+refactor": 3,
+    "fix+perf": 4
+  }
+}

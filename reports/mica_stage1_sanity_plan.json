@@ -1,0 +1,54 @@
+{
+  "branch": "experiment/mica-v3-attribution-mvp",
+  "base_checkpoint_commit": "b15eb20",
+  "checkpoint_doc": "docs/current-experiment-checkpoint.md",
+  "stage": "mica_v3_stage1_attribution_mvp",
+  "goal": "count-aware evidence-grounded latent intent attribution skeleton",
+  "available_data": {
+    "step1_atomic_csv": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+    "step2_bridge_csv": "datasets/derived/step2_bridge/current/step2_source_candidates_from_step1.csv",
+    "step2_bridge_manifest": "datasets/derived/step2_bridge/current/step2_source_candidates_from_step1_manifest.json",
+    "step1_split_report": "datasets/step1/manifest/dataset_split_report.json",
+    "strict_candidate_source_csv": "datasets/step2/candidate_sources/strict_repo_sha_disjoint_candidates.csv",
+    "strict_candidate_source_report": "datasets/step2/candidate_sources/strict_repo_sha_disjoint_candidates_report.json",
+    "local_step2_step3_ready_jsonl": "/Users/lifulin/Downloads/Commits/code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples_step3_ready.jsonl",
+    "local_step2_fullscale_summary": "/Users/lifulin/Downloads/Commits/code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/fullscale_summary.json"
+  },
+  "unavailable_or_not_tracked": {
+    "code_step3_dir": false,
+    "tracked_stage1_bootstrap_split_manifest": false,
+    "tracked_step2_step3_ready_jsonl": false,
+    "tracked_real_domain_binary": false
+  },
+  "stage1_training_scope": {
+    "use_atomic_k1": true,
+    "use_synthetic_k2": true,
+    "use_hard_b": false,
+    "use_m_weak_as_k2": false,
+    "use_m_alignment": false,
+    "use_real_domain_binary": false
+  },
+  "losses": {
+    "lambda_align": 1.0,
+    "lambda_count": 0.5,
+    "lambda_exist": 0.5,
+    "alpha_pb": 0.5,
+    "lambda_cal": 0.0,
+    "l_multi_enabled": false,
+    "l_gen_enabled": false,
+    "l_faith_enabled": false,
+    "l_role_enabled": false,
+    "l_cohesion_enabled": false
+  },
+  "implementation_status": {
+    "schema": "implemented",
+    "loader": "implemented",
+    "evidence_features": "implemented",
+    "model_skeleton": "implemented",
+    "loss_skeleton": "implemented",
+    "sanity_script": "implemented",
+    "training_not_run": true,
+    "reason": "implementation_skeleton_only"
+  },
+  "next_step": "run Stage 1 synthetic attribution sanity against a vetted local strict Step2 synthetic source"
+}

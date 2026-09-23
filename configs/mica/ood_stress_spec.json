@@ -1,0 +1,17 @@
+{
+  "stage": "ood_stress_eval",
+  "dryrun_only": true,
+  "final_test_eval_only": true,
+  "no_threshold_tuning_on_final_test": true,
+  "metric_keys": [
+    "pairwise_f1",
+    "unit_accuracy",
+    "count_accuracy"
+  ],
+  "file_count_low_max": 1,
+  "file_count_medium_max": 3,
+  "diff_size_low_max": 2,
+  "diff_size_medium_max": 5,
+  "identifier_overlap_high_min": 0.6,
+  "path_diversity_high_min": 2.0
+}

@@ -1,0 +1,11 @@
+{
+  "created_at_utc": "2026-05-25T15:52:04.349625+00:00",
+  "diff_missing": 0,
+  "diff_ok": 20,
+  "enriched": 20,
+  "input_csv": "data/20260525_newcrawl_api_filelist_candidates_token_round2.csv",
+  "output_csv": "data/20260525_newcrawl_api_filelist_candidates_token_round2_remote_diff.csv",
+  "output_jsonl": "data/20260525_newcrawl_api_filelist_candidates_token_round2_remote_diff.jsonl",
+  "selected": 20,
+  "skipped": 0
+}

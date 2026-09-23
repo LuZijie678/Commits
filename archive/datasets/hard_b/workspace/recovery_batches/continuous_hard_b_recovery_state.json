@@ -1,0 +1,31 @@
+{
+  "created_at_utc": "2026-05-29T01:21:38.911311+00:00",
+  "last_build_finished_at_utc": "2026-05-30T16:05:41.698373+00:00",
+  "last_build_started_at_utc": "2026-05-30T16:05:13.215351+00:00",
+  "last_error": "",
+  "last_loop_finished_at_utc": "2026-05-30T16:05:41.700038+00:00",
+  "last_loop_started_at_utc": "2026-05-30T16:05:13.215347+00:00",
+  "last_recovery_finished_at_utc": "2026-05-29T03:04:41.575668+00:00",
+  "last_recovery_input_rows": 32,
+  "last_recovery_input_sha256": "ae053f2484bc268fbc9fdd0acbc211fa90f7e2ea31e14747578810a3b4b8c3a9",
+  "last_recovery_started_at_utc": "2026-05-29T03:04:33.691086+00:00",
+  "last_status": "empty_backlog",
+  "need_diff_rows": 0,
+  "need_diff_sha256": "",
+  "recovery_summary": {
+    "already_ok": 0,
+    "attempted": 32,
+    "created_at_utc": "2026-05-29T03:04:41.559345+00:00",
+    "diff_ok_final": 32,
+    "failed": 0,
+    "fetch_max_bytes": 25000000,
+    "input_csv": "/Users/lifulin/Downloads/Commits/archive/datasets/hard_b/workspace/recovery_batches/hard_b_need_full_diff.csv",
+    "output_csv": "/Users/lifulin/Downloads/Commits/archive/datasets/hard_b/workspace/recovery_batches/hard_b_full_diff_recovery_batch.csv",
+    "output_jsonl": "/Users/lifulin/Downloads/Commits/archive/datasets/hard_b/workspace/recovery_batches/hard_b_full_diff_recovery_batch.jsonl",
+    "recovered": 32,
+    "rows": 32,
+    "workers": 8
+  },
+  "recovery_triggered": false,
+  "sleep_seconds": 600
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "mica-stage1-v2-synthetic-target-plan-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "creation_git_sha": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+  "created_at": "2026-07-26T05:43:22+00:00",
+  "status": "candidate_plan_pending_human_confirmation",
+  "current_status": {
+    "candidate_materialized": true,
+    "pipeline_validation_complete": true,
+    "scale_insufficient_for_formal_training": true,
+    "not_frozen_training_asset": true
+  },
+  "proposed_split_targets": {
+    "train": {
+      "minimum": 3000,
+      "target_range": [
+        5000,
+        8000
+      ]
+    },
+    "dev": {
+      "minimum": 400,
+      "target_range": [
+        500,
+        800
+      ]
+    },
+    "synthetic_control_test": {
+      "minimum": 400,
+      "target_range": [
+        500,
+        800
+      ]
+    }
+  },
+  "proposed_materialization_counts": {
+    "train": 3000,
+    "dev": 400,
+    "synthetic_control_test": 400
+  },
+  "source_reuse_policy": {
+    "max_samples_per_atomic_source_per_split": 3,
+    "atomic_family_fraction_caps": {
+      "train_max_fraction": 0.1,
+      "dev_max_fraction": 0.05,
+      "synthetic_control_test_max_fraction": 0.05
+    },
+    "repository_concentration_limits": {
+      "train_single_repository_max_fraction": 0.1,
+      "dev_single_repository_max_fraction": 0.05,
+      "synthetic_control_test_single_repository_max_fraction": 0.05
+    }
+  },
+  "suggested_k_distribution": {
+    "status": "pending_human_confirmation",
+    "suggested_mix": {
+      "2": 0.6,
+      "3": 0.25,
+      "4": 0.15
+    }
+  },
+  "same_file_cross_file_policy": {
+    "status": "pending_human_confirmation",
+    "required_reporting": true
+  },
+  "context_mix_policy": {
+    "source_test": "pending_human_confirmation",
+    "source_docs_config": "pending_human_confirmation"
+  },
+  "capacity_estimate": {
+    "accepted_source_count": 3754,
+    "manual_review_source_count": 1345,
+    "accepted_only_pair_capacity_at_reuse_cap": 5631,
+    "accepted_plus_manual_pair_capacity_at_reuse_cap": 7648,
+    "planned_minimum_total_samples": 3800
+  },
+  "constructor_support": {
+    "supported_gold_k": [
+      2
+    ],
+    "unsupported_required_gold_k": [
+      3,
+      4
+    ],
+    "formal_scale_freeze_blocked": true
+  },
+  "formal_scale_freeze_blocked": true,
+  "blocking_reasons": [
+    "k3_k4_construction_not_implemented",
+    "required_atomic_sources_need_human_verification"
+  ]
+}

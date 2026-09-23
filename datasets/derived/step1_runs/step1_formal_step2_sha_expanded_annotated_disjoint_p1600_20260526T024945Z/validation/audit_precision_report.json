@@ -1,0 +1,47 @@
+{
+  "independent_evaluation_split": {
+    "candidate_rows": 6378,
+    "pilot_rows": 239,
+    "overlap_sha_count": 0,
+    "overlap_sha_examples": [],
+    "is_disjoint": true
+  },
+  "tier_a": {
+    "sample_count": 300,
+    "positive_count": 283,
+    "precision": 0.9433333333333334,
+    "wilson95_low": 0.9111333346485289,
+    "wilson95_high": 0.9643228240868122,
+    "misclassification_pattern_summary_csv": "outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/validation/tier_a_misclassification_patterns.csv",
+    "label_usage_summary": {
+      "label_col": "audit_is_single_intent",
+      "labeled_rows": 300,
+      "missing_label_rows": 0,
+      "source_counts": {
+        "audit_is_single_intent": 300
+      },
+      "label_source_counts": {},
+      "adjudicated_ratio": 0.0,
+      "fallback_ratio": 1.0,
+      "conflict_rows": 0
+    }
+  },
+  "tier_b": {
+    "sample_count": 0,
+    "positive_count": 0,
+    "precision": null,
+    "wilson95_low": 0.0,
+    "wilson95_high": 0.0,
+    "misclassification_pattern_summary_csv": "outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/validation/tier_b_misclassification_patterns.csv",
+    "label_usage_summary": {
+      "label_col": "audit_is_single_intent",
+      "labeled_rows": 0,
+      "missing_label_rows": 1,
+      "source_counts": {},
+      "label_source_counts": {},
+      "adjudicated_ratio": null,
+      "fallback_ratio": null,
+      "conflict_rows": 0
+    }
+  }
+}

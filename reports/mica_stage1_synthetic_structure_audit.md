@@ -1,0 +1,23 @@
+# MICA Stage 1 Synthetic Structure Audit
+
+- synthetic_total: 19137
+- synthetic_loaded: 19137
+- synthetic_skipped_missing_alignment: 0
+- synthetic_skipped_empty_units: 0
+- singleton_intent_fraction: 0.684642
+- both_intents_singleton_fraction: 0.201547
+- same_file_k2_fraction: 0.000000
+- cross_file_k2_fraction: 1.000000
+- same_directory_k2_fraction: 0.040132
+- different_file_role_k2_fraction: 0.407587
+- file_path_baseline_mean: 0.764746
+- file_path_baseline_p50: 1.000000
+- file_path_baseline_p90: 1.000000
+- random_gold_k_mean: 0.537584
+- random_gold_k_p50: 0.475000
+- random_gold_k_p90: 1.000000
+- nondegenerate_candidate_count: 3276
+- path_dominated_candidate_count: 2432
+- singleton_dominated_candidate_count: 13102
+- source_path_is_local_runtime_only: true
+- sanity_only: true

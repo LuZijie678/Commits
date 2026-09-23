@@ -1,0 +1,492 @@
+{
+  "blocklist_count": 0,
+  "created_at_utc": "2026-05-29T16:58:17.012595+00:00",
+  "excluded_local_count": 0,
+  "extra_target_count": 0,
+  "extra_targets_file": "",
+  "output_csv": "/Users/lifulin/Downloads/Commits/datasets/m_verified/tooling/../../../archive/datasets/m_verified/workspace/crawl_state_relaxed/batchcrawl_20260529T165502Z_repo_discovery.csv",
+  "output_txt": "/Users/lifulin/Downloads/Commits/datasets/m_verified/tooling/../../../archive/datasets/m_verified/workspace/crawl_state_relaxed/batchcrawl_20260529T165502Z_repo_targets.txt",
+  "query_file": "",
+  "query_summaries": [
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:>50000 fork:false archived:false",
+      "rate_remaining": "29"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:>50000 fork:false archived:false",
+      "rate_remaining": "28"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:20000..50000 fork:false archived:false language:Python",
+      "rate_remaining": "27"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:20000..50000 fork:false archived:false language:Python",
+      "rate_remaining": "26"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..20000 fork:false archived:false language:Python",
+      "rate_remaining": "25"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:5000..20000 fork:false archived:false language:Python",
+      "rate_remaining": "24"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:20000..50000 fork:false archived:false language:JavaScript",
+      "rate_remaining": "23"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:20000..50000 fork:false archived:false language:JavaScript",
+      "rate_remaining": "22"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..20000 fork:false archived:false language:JavaScript",
+      "rate_remaining": "21"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:5000..20000 fork:false archived:false language:JavaScript",
+      "rate_remaining": "20"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:20000..50000 fork:false archived:false language:TypeScript",
+      "rate_remaining": "19"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:20000..50000 fork:false archived:false language:TypeScript",
+      "rate_remaining": "18"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..20000 fork:false archived:false language:TypeScript",
+      "rate_remaining": "17"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:5000..20000 fork:false archived:false language:TypeScript",
+      "rate_remaining": "16"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:15000..50000 fork:false archived:false language:Go",
+      "rate_remaining": "15"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:15000..50000 fork:false archived:false language:Go",
+      "rate_remaining": "14"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..15000 fork:false archived:false language:Go",
+      "rate_remaining": "29"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:5000..15000 fork:false archived:false language:Go",
+      "rate_remaining": "28"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false language:Rust",
+      "rate_remaining": "27"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:10000..50000 fork:false archived:false language:Rust",
+      "rate_remaining": "26"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..10000 fork:false archived:false language:Rust",
+      "rate_remaining": "25"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:3000..10000 fork:false archived:false language:Rust",
+      "rate_remaining": "24"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:15000..50000 fork:false archived:false language:Java",
+      "rate_remaining": "23"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:15000..50000 fork:false archived:false language:Java",
+      "rate_remaining": "22"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..15000 fork:false archived:false language:Java",
+      "rate_remaining": "21"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:5000..15000 fork:false archived:false language:Java",
+      "rate_remaining": "20"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false language:C++",
+      "rate_remaining": "19"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:10000..50000 fork:false archived:false language:C++",
+      "rate_remaining": "18"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..10000 fork:false archived:false language:C++",
+      "rate_remaining": "17"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:3000..10000 fork:false archived:false language:C++",
+      "rate_remaining": "16"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false language:C",
+      "rate_remaining": "15"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:10000..50000 fork:false archived:false language:C",
+      "rate_remaining": "14"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..10000 fork:false archived:false language:C",
+      "rate_remaining": "13"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:3000..10000 fork:false archived:false language:C",
+      "rate_remaining": "12"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:C#",
+      "rate_remaining": "29"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:5000..50000 fork:false archived:false language:C#",
+      "rate_remaining": "28"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:PHP",
+      "rate_remaining": "27"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:5000..50000 fork:false archived:false language:PHP",
+      "rate_remaining": "26"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:Ruby",
+      "rate_remaining": "25"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:5000..50000 fork:false archived:false language:Ruby",
+      "rate_remaining": "24"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:Swift",
+      "rate_remaining": "23"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:5000..50000 fork:false archived:false language:Swift",
+      "rate_remaining": "22"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..50000 fork:false archived:false language:Kotlin",
+      "rate_remaining": "21"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:3000..50000 fork:false archived:false language:Kotlin",
+      "rate_remaining": "20"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..50000 fork:false archived:false language:Dart",
+      "rate_remaining": "19"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:3000..50000 fork:false archived:false language:Dart",
+      "rate_remaining": "18"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false topic:database",
+      "rate_remaining": "17"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:10000..50000 fork:false archived:false topic:database",
+      "rate_remaining": "16"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false topic:cli",
+      "rate_remaining": "15"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:5000..50000 fork:false archived:false topic:cli",
+      "rate_remaining": "14"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 25,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false topic:web-framework",
+      "rate_remaining": "13"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false topic:machine-learning",
+      "rate_remaining": "12"
+    },
+    {
+      "attempts": 1,
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 2,
+      "query": "stars:5000..50000 fork:false archived:false topic:machine-learning",
+      "rate_remaining": "29"
+    }
+  ],
+  "repo_count": 0,
+  "search_query_count": 27,
+  "token_used": true
+}

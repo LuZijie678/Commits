@@ -1,0 +1,1619 @@
+{
+  "assets": {
+    "stage1_v2_annotation_audit_log": {
+      "artifact_id": "stage1_v2_annotation_audit_log",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/campaign/annotation_event_log.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 60,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-annotation-audit-log-v1",
+      "sha256": "df0717f487d436d2bd62985623d2988a64ee2ffdbd733551b5780646fbaad869",
+      "source_pool": "stage1_v2_campaign",
+      "split": "audit_log",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_annotation_audit_log_spec": {
+      "artifact_id": "stage1_v2_annotation_audit_log_spec",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/campaign/annotation_event_log_spec.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-annotation-audit-log-template-v1",
+      "sha256": "02d450163d6ec6bec32873bb1972b778e70a00d14a361b2e44363aa4523da2e9",
+      "source_pool": "stage1_v2_campaign",
+      "split": "audit_log_spec",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_annotation_batch_schedule": {
+      "artifact_id": "stage1_v2_annotation_batch_schedule",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/campaign/annotation_batch_schedule.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 10,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-annotation-campaign-v1",
+      "sha256": "4e3d7af575778147e594e8c5414a813fccd157a9a9fd1cd4766637fa25830ef1",
+      "source_pool": "stage1_v2_campaign",
+      "split": "schedule",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_annotation_campaign_manifest": {
+      "artifact_id": "stage1_v2_annotation_campaign_manifest",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/campaign/annotation_campaign_manifest.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 10,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-annotation-campaign-v1",
+      "sha256": "1c316dc79a51ee39517707371f4e71822eed674a10613f9c23ab794196874281",
+      "source_pool": "stage1_v2_campaign",
+      "split": "manifest",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_annotation_campaign_progress": {
+      "artifact_id": "stage1_v2_annotation_campaign_progress",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/campaign/annotation_campaign_progress.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-annotation-progress-v1",
+      "sha256": "020472be1042f5f5567448a5eba17b0fa692808ccdc35370d36d611d0dca9792",
+      "source_pool": "stage1_v2_campaign",
+      "split": "progress",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_annotation_queue_overlap_report": {
+      "artifact_id": "stage1_v2_annotation_queue_overlap_report",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/campaign/annotation_queue_overlap_report.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-annotation-overlap-v1",
+      "sha256": "c27ef2c87e677ddc2169195c522038cd3bd3507ff2a51688a876e4480332bf98",
+      "source_pool": "stage1_v2_campaign",
+      "split": "n/a",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_annotator_registry": {
+      "artifact_id": "stage1_v2_annotator_registry",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/campaign/annotator_registry.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-annotator-registry-v1",
+      "sha256": "0cd60f9c10c932c54b123fa1a8d1ae2f2cc135480285c6979d3b93aa2d71c3ce",
+      "source_pool": "stage1_v2_campaign",
+      "split": "staffing",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_atomic_source_quality_report": {
+      "artifact_id": "stage1_v2_atomic_source_quality_report",
+      "checksum": null,
+      "created_at": "2026-07-24T02:40:42+00:00",
+      "created_by": "c6a79c7b4f89158d9a369a9b68ebcf0e41d065e9",
+      "leakage_group_key": "source_atomic_commit_id",
+      "path": "datasets/mica/stage1_v2/atomic_source_pool/atomic_source_quality_report.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-atomic-source-audit-v1",
+      "sha256": "fa389d68edbd46fd4fe8e9e9294c00fbbbddfe2c27214fe30e059f19545067cd",
+      "source_pool": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+      "split": "source_pool",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_atomic_source_review_critical": {
+      "artifact_id": "stage1_v2_atomic_source_review_critical",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/atomic_source_pool/atomic_source_review_critical.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 4679,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-atomic-source-review-queue-v1",
+      "sha256": "634535b47577046e6979aa90c27c468c36e02f50db4bc713591a0b84da3e87ef",
+      "source_pool": "stage1_v2_atomic_source_quality_report",
+      "split": "critical_review",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_atomic_source_review_deferred": {
+      "artifact_id": "stage1_v2_atomic_source_review_deferred",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/atomic_source_pool/atomic_source_review_deferred.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 420,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-atomic-source-review-queue-v1",
+      "sha256": "b0c3e9f8be1249b45be96b929bfc97f559fa9e9481256285510a7fea4cde6d89",
+      "source_pool": "stage1_v2_atomic_source_quality_report",
+      "split": "deferred_review",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_background_annotation_pilot": {
+      "artifact_id": "stage1_v2_background_annotation_pilot",
+      "checksum": null,
+      "created_at": "2026-07-24T02:40:42+00:00",
+      "created_by": "c6a79c7b4f89158d9a369a9b68ebcf0e41d065e9",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/background/background_annotation_queue_pilot.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 120,
+      "required_for": [
+        "stage1_v2_real_adjudicated"
+      ],
+      "schema_version": "mica-stage1-v2-background-annotation-queue-v1",
+      "sha256": "68125fcaf7a42880c3fd0c60f872e946dcb50e2f35bbdfc35273c4937629eea9",
+      "source_pool": "stage1_v2_real_alignment_candidate_pool",
+      "split": "pilot",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_blind_review_asset": {
+      "artifact_id": "stage1_v2_blind_review_asset",
+      "checksum": null,
+      "created_at": null,
+      "created_by": "c6a79c7b4f89158d9a369a9b68ebcf0e41d065e9",
+      "leakage_group_key": "sample_id",
+      "path": null,
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_real_adjudicated"
+      ],
+      "schema_version": "mica-stage1-v2-annotation-workflow-v1",
+      "sha256": null,
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "pilot",
+      "status": "pending_generation"
+    },
+    "stage1_v2_calibration_round_1_adjudication_template": {
+      "artifact_id": "stage1_v2_calibration_round_1_adjudication_template",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_1_adjudication_template.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 30,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-calibration-round-v1",
+      "sha256": "c297464bf9d5e473bb872def8f3aea1cdc3742e0b075a4ba1b0611eb976788d6",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "adjudication",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_calibration_round_1_annotator_a": {
+      "artifact_id": "stage1_v2_calibration_round_1_annotator_a",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_1_annotator_a.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 30,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-calibration-round-v1",
+      "sha256": "979d1254047cb40e0a838797fb9a9823cd67c7ff625c9b975a36bd599f5aeb47",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "annotator_a",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_calibration_round_1_annotator_b": {
+      "artifact_id": "stage1_v2_calibration_round_1_annotator_b",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_1_annotator_b.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 30,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-calibration-round-v1",
+      "sha256": "e070ec3e85314773c7c3973686819fa08ea394cd2a6e00a925f9c14125912d84",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "annotator_b",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_calibration_round_1_blinding_map": {
+      "artifact_id": "stage1_v2_calibration_round_1_blinding_map",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_1_blinding_map.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 30,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-calibration-round-v1",
+      "sha256": "f750bb0e8e25c1bcde89be676507bdd984bf7fa6ded27103e516d31141f5e2c7",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "private",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_calibration_round_1_result_template": {
+      "artifact_id": "stage1_v2_calibration_round_1_result_template",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_1_result_template.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 30,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-calibration-round-v1",
+      "sha256": "c16a67fd8be43012ab4c66cafef2887dfc781ce7b58ce6894b66d402407aa7a6",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "pending_result",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_calibration_round_2_a_recovery_package": {
+      "artifact_id": "stage1_v2_calibration_round_2_a_recovery_package",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "human_verified": false,
+      "leakage_group_key": "sample_id",
+      "llm_annotation_track": true,
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_annotator_a_recovery_package.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 30,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-calibration-round-v1",
+      "sha256": "828020d6ae39c053dced8216ac584344e26d14a477e037512e9bf816f9dd2c97",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "calibration_round_2",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_calibration_round_2_adjudication_report": {
+      "adjudication_status": "adjudication_not_started_due_to_integrity_failure",
+      "artifact_id": "stage1_v2_calibration_round_2_adjudication_report",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "formal_human_evidence": false,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_adjudication_report.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-r2-adjudication-report-v1",
+      "sha256": "d2bbaa12215578dcd12cef68ab2a45c76f1bedccd31ef3369d97ce28e09f0538",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "calibration_round_2",
+      "status": "adjudication_pending"
+    },
+    "stage1_v2_calibration_round_2_annotation_errors": {
+      "artifact_id": "stage1_v2_calibration_round_2_annotation_errors",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "formal_human_evidence": false,
+      "leakage_group_key": "sample_id",
+      "llm_annotation_track": true,
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_annotation_errors.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 181,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-r2-annotation-error-v1",
+      "sha256": "efed1821374d1b5efacae5aaec7c6c301fca74d5dc21fc88736cde64bd3d473c",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_calibration_round_2_b_recovery_package": {
+      "artifact_id": "stage1_v2_calibration_round_2_b_recovery_package",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "human_verified": false,
+      "leakage_group_key": "sample_id",
+      "llm_annotation_track": true,
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_annotator_b_recovery_package.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 30,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-calibration-round-v1",
+      "sha256": "1517910bdca84ed767dc0936a71cd486b57fac928cd204203b09f3c24b8d6c83",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "calibration_round_2",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_calibration_round_2_gate_report": {
+      "artifact_id": "stage1_v2_calibration_round_2_gate_report",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "formal_human_evidence": false,
+      "gate_status": "blocked_by_incomplete_annotation",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_gate_report.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-r2-gate-report-v1",
+      "sha256": "e1419697abaa9c04955bb10b3a3c9c2ceb576972a683c51e573cedb7a1765712",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_calibration_round_2_guideline_decision": {
+      "artifact_id": "stage1_v2_calibration_round_2_guideline_decision",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "formal_human_evidence": false,
+      "guideline_status": "blocked_by_incomplete_annotation",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_guideline_decision.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-r2-guideline-decision-v1",
+      "sha256": "9bad788b961988cabdc44266bbf0aee964960ab14750bf51ee7c4b5317b67972",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_calibration_round_2_integrity_report": {
+      "artifact_id": "stage1_v2_calibration_round_2_integrity_report",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "formal_human_evidence": false,
+      "leakage_group_key": "sample_id",
+      "llm_annotation_track": true,
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_annotation_integrity_report.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-r2-annotation-integrity-v1",
+      "sha256": "b9dd65818c01863c145e2d488a81f4a11cb23950e5ed9f933a08bcd7afc81611",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_calibration_round_2_p0_codex_review_filled": {
+      "artifact_id": "stage1_v2_calibration_round_2_p0_codex_review_filled",
+      "checksum": null,
+      "created_at": "2026-07-27T03:27:24Z",
+      "created_by": "917680e7e14e5bd9e265c4fdf0dbc7f866170468",
+      "diagnostic_status": "codex_filled_pending_user_review",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_p0_codex_review_filled.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 4,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-p0-codex-review-filled-v1",
+      "sha256": "ca9d618e44e1ed4337399a8cadaeaa10f5865281800686ac56e556375ffa9e5b",
+      "source_pool": "stage1_v2_calibration_round_2_p0_human_review_template",
+      "split": "calibration_round_2",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_calibration_round_2_p0_human_review_sheet": {
+      "artifact_id": "stage1_v2_calibration_round_2_p0_human_review_sheet",
+      "checksum": null,
+      "created_at": "2026-07-27T01:40:00Z",
+      "created_by": "a4c6281b901121e560d0fee4e12fbcbd46b74534",
+      "diagnostic_status": "p0_human_review_required",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "leakage_group_key": "sample_id",
+      "path": "docs/annotation/CALIBRATION_ROUND_2_P0_HUMAN_REVIEW_SHEET.md",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 4,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-p0-human-review-sheet-v1",
+      "sha256": "85f9dd913e55a25d0e0b5f33d37c205ca63f5843da3c530617e77d3685f05e99",
+      "source_pool": "stage1_v2_calibration_round_2_review_followup_queue",
+      "split": "calibration_round_2",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_calibration_round_2_p0_human_review_template": {
+      "artifact_id": "stage1_v2_calibration_round_2_p0_human_review_template",
+      "checksum": null,
+      "created_at": "2026-07-27T01:40:00Z",
+      "created_by": "a4c6281b901121e560d0fee4e12fbcbd46b74534",
+      "diagnostic_status": "p0_human_review_required",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_p0_human_review_template.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 4,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-p0-human-review-template-v1",
+      "sha256": "57700dc5a76b790673ade096b76cc5d2506fdc3412c343fa14792342620a880c",
+      "source_pool": "stage1_v2_calibration_round_2_review_followup_queue",
+      "split": "calibration_round_2",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_calibration_round_2_p1_codex_review_filled": {
+      "artifact_id": "stage1_v2_calibration_round_2_p1_codex_review_filled",
+      "checksum": null,
+      "created_at": "2026-07-27T03:35:07Z",
+      "created_by": "3b0614e77753126c864d47ad96909569b38409e3",
+      "diagnostic_status": "codex_filled_user_reviewed_via_separate_receipt",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_review_receipt_artifact_id": "human_review_receipt_calibration_round_2_p1_codex_review",
+      "human_reviewed_artifact_id": "human_reviewed_calibration_round_2_p1_codex_review",
+      "human_verified": false,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_p1_codex_review_filled.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 5,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-p1-codex-review-filled-v1",
+      "sha256": "3da7c49a44844ed8972b29fd424740bafc14c1457b1ce471c3bad5965025b5fb",
+      "source_pool": "stage1_v2_calibration_round_2_review_followup_queue",
+      "split": "calibration_round_2",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_calibration_round_2_p2_codex_review_filled": {
+      "artifact_id": "stage1_v2_calibration_round_2_p2_codex_review_filled",
+      "checksum": null,
+      "created_at": "2026-07-27T04:53:55Z",
+      "created_by": "e086a955a4d9fca3815f906d5d6f46e539267d8c",
+      "diagnostic_status": "codex_filled_user_reviewed_via_separate_receipt",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_review_receipt_artifact_id": "human_review_receipt_calibration_round_2_p2_codex_review",
+      "human_reviewed_artifact_id": "human_reviewed_calibration_round_2_p2_codex_review",
+      "human_verified": false,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_p2_codex_review_filled.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 14,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-p2-codex-review-filled-v1",
+      "sha256": "8ddff6f077f2a0975d7a8d97e5b6f788f2620217c4f28ce491ad11fe01191d14",
+      "source_pool": "stage1_v2_calibration_round_2_review_followup_queue",
+      "split": "calibration_round_2",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_calibration_round_2_p3_codex_review_filled": {
+      "artifact_id": "stage1_v2_calibration_round_2_p3_codex_review_filled",
+      "checksum": null,
+      "created_at": "2026-07-27T06:48:28Z",
+      "created_by": "411bb6108f3a495244d483458a49a293fa6a8b0f",
+      "diagnostic_status": "codex_filled_user_reviewed_via_separate_receipt",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_verified": false,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_p3_codex_review_filled.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 7,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-p3-codex-review-filled-v1",
+      "sha256": "c123c22005b3a203a86a5f82af1cb1e072d7c5d4ceccbfe7f52746e8ebd55b19",
+      "source_pool": "stage1_v2_human_reviewed_codex_calibration_round_2_markings",
+      "split": "calibration_round_2",
+      "status": "annotation_pending",
+      "human_review_receipt_artifact_id": "human_review_receipt_calibration_round_2_p3_codex_review",
+      "human_reviewed_artifact_id": "human_reviewed_calibration_round_2_p3_codex_review"
+    },
+    "stage1_v2_calibration_round_2_pre_adjudication_agreement": {
+      "artifact_id": "stage1_v2_calibration_round_2_pre_adjudication_agreement",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "formal_human_evidence": false,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_pre_adjudication_agreement.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-r2-pre-adjudication-agreement-v1",
+      "sha256": "fb41c3ccb06c4bdafa68cb35376d339d7e1c6a76d49cf43108fc7f7f2efa6af7",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "calibration_round_2",
+      "status": "not_computed_due_to_integrity_failure"
+    },
+    "stage1_v2_calibration_round_2_review_followup_queue": {
+      "artifact_id": "stage1_v2_calibration_round_2_review_followup_queue",
+      "checksum": null,
+      "created_at": "2026-07-27T01:26:03Z",
+      "created_by": "9692849a79e47809cb88f47518cbf013ba7c2c08",
+      "diagnostic_status": "human_followup_required",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_review_followup_queue.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 23,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-reviewed-diagnostic-followup-v1",
+      "sha256": "5b4280052e763210f98fc9aff67210baaef1b991aad0213558b0140648b74659",
+      "source_pool": "stage1_v2_human_reviewed_codex_calibration_round_2_markings",
+      "split": "calibration_round_2",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_calibration_round_2_reviewed_diagnostic_analysis": {
+      "artifact_id": "stage1_v2_calibration_round_2_reviewed_diagnostic_analysis",
+      "checksum": null,
+      "created_at": "2026-07-27T01:26:03Z",
+      "created_by": "9692849a79e47809cb88f47518cbf013ba7c2c08",
+      "diagnostic_status": "diagnostic_revision_input_only",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/calibration_round_2_reviewed_diagnostic_analysis.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 30,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-reviewed-diagnostic-analysis-v1",
+      "sha256": "81d984ea8c9e5244ce65db3f4f9492e3d1e2a4ff9c7f427e0e7343f3dcc66dc6",
+      "source_pool": "stage1_v2_human_reviewed_codex_calibration_round_2_markings",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_campaign_role_assignment": {
+      "artifact_id": "stage1_v2_campaign_role_assignment",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/campaign/campaign_role_assignment.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-role-assignment-v1",
+      "sha256": "64afcd188be2dbc045dfcb7ae446d55aeae9699df1c2a083637a6c433bbcac37",
+      "source_pool": "stage1_v2_campaign",
+      "split": "staffing",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_codex_calibration_round_2_llm_marking_summary": {
+      "artifact_id": "stage1_v2_codex_calibration_round_2_llm_marking_summary",
+      "checksum": null,
+      "created_at": "2026-07-27T01:06:59Z",
+      "created_by": "d53e086fcf0f891bbbb3fd631a3928cff7b866a9",
+      "diagnostic_status": "codex_llm_markings_complete",
+      "formal_human_evidence": false,
+      "human_verified": false,
+      "leakage_group_key": "sample_id",
+      "llm_annotation_track": true,
+      "path": "datasets/mica/stage1_v2/real_alignment/codex_calibration_round_2_llm_marking_summary.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 30,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-codex-llm-marking-summary-v1",
+      "sha256": "e9095c511cb4ac6109e74a4e8a1fc0fd3df27c8672e3c7926b2d061a187c516c",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_codex_calibration_round_2_llm_markings": {
+      "artifact_id": "stage1_v2_codex_calibration_round_2_llm_markings",
+      "checksum": null,
+      "created_at": "2026-07-27T01:06:59Z",
+      "created_by": "d53e086fcf0f891bbbb3fd631a3928cff7b866a9",
+      "diagnostic_status": "codex_llm_markings_complete",
+      "formal_human_evidence": false,
+      "human_verified": false,
+      "leakage_group_key": "sample_id",
+      "llm_annotation_track": true,
+      "path": "datasets/mica/stage1_v2/real_alignment/codex_calibration_round_2_llm_markings.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 30,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-codex-llm-marking-v1",
+      "sha256": "a2df85b7c3a412ebcdaf5e976e798348bc6c17f7b41f565d9c8cddbcf5bd8919",
+      "source_pool": "stage1_v2_real_adjudicated_queue",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_deduplicated_human_workload_report": {
+      "artifact_id": "stage1_v2_deduplicated_human_workload_report",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/campaign/deduplicated_human_workload_report.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-annotation-overlap-v1",
+      "sha256": "2b1941744cd76e86cc34d66a95979335440cf4a8b2906ddd98820cfe0a642ce2",
+      "source_pool": "stage1_v2_campaign",
+      "split": "pilot",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_formal_synthetic_composition_plan": {
+      "artifact_id": "stage1_v2_formal_synthetic_composition_plan",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/synthetic/formal_synthetic_composition_plan.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 3800,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-composition-plan-v1",
+      "sha256": "087d2678949c69b69922facf5969a7ffd8f3174176a01198366ef4a0a8c88de3",
+      "source_pool": "stage1_v2_synthetic_train",
+      "split": "candidate_plan",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_human_review_receipt_calibration_round_2_p0_codex_review": {
+      "artifact_id": "stage1_v2_human_review_receipt_calibration_round_2_p0_codex_review",
+      "checksum": null,
+      "created_at": "2026-07-27T03:35:07Z",
+      "created_by": "3b0614e77753126c864d47ad96909569b38409e3",
+      "diagnostic_status": "chat_confirmed_human_review_receipt",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_verified": true,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/human_review_receipt_calibration_round_2_p0_codex_review.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 4,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-human-review-receipt-v1",
+      "sha256": "a7802647341a6f0df641b96815f9b4a2fd36c749cd7e97708798eeaf967d86c3",
+      "source_pool": "stage1_v2_calibration_round_2_p0_codex_review_filled",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_human_review_receipt_calibration_round_2_p1_codex_review": {
+      "artifact_id": "stage1_v2_human_review_receipt_calibration_round_2_p1_codex_review",
+      "checksum": null,
+      "created_at": "2026-07-27T03:57:31Z",
+      "created_by": "e086a955a4d9fca3815f906d5d6f46e539267d8c",
+      "diagnostic_status": "chat_confirmed_human_review_receipt",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_verified": true,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/human_review_receipt_calibration_round_2_p1_codex_review.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 5,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-human-review-receipt-v1",
+      "sha256": "6b38a68f24461363fdb78ca7e4ffa5e4b3a1d48c6c3de97ec71eb04bd8abfbda",
+      "source_pool": "stage1_v2_calibration_round_2_p1_codex_review_filled",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_human_review_receipt_calibration_round_2_p2_codex_review": {
+      "artifact_id": "stage1_v2_human_review_receipt_calibration_round_2_p2_codex_review",
+      "checksum": null,
+      "created_at": "2026-07-27T06:44:58Z",
+      "created_by": "411bb6108f3a495244d483458a49a293fa6a8b0f",
+      "diagnostic_status": "chat_confirmed_human_review_receipt",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_verified": true,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/human_review_receipt_calibration_round_2_p2_codex_review.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 14,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-human-review-receipt-v1",
+      "sha256": "e487a244a455098d69f731855817ad549885df75781bd05eb64448181d495d81",
+      "source_pool": "stage1_v2_calibration_round_2_p2_codex_review_filled",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_human_review_receipt_calibration_round_2_p3_codex_review": {
+      "artifact_id": "stage1_v2_human_review_receipt_calibration_round_2_p3_codex_review",
+      "checksum": null,
+      "created_at": "2026-07-27T07:07:39Z",
+      "created_by": "95ff7f09df29b272553eb7e8f5934009e5c227fa",
+      "diagnostic_status": "chat_confirmed_human_review_receipt",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_verified": true,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/human_review_receipt_calibration_round_2_p3_codex_review.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 7,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-human-review-receipt-v1",
+      "sha256": "1ff401089300175bbdb33c146888fe7be3b2760dff44385368c6fde12b6174d2",
+      "source_pool": "stage1_v2_calibration_round_2_p3_codex_review_filled",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_human_review_receipt_codex_calibration_round_2": {
+      "artifact_id": "stage1_v2_human_review_receipt_codex_calibration_round_2",
+      "checksum": null,
+      "created_at": "2026-07-27T01:06:59Z",
+      "created_by": "d53e086fcf0f891bbbb3fd631a3928cff7b866a9",
+      "diagnostic_status": "chat_confirmed_human_review_receipt",
+      "formal_human_evidence": false,
+      "human_verified": true,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/human_review_receipt_codex_calibration_round_2.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 30,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-human-review-receipt-v1",
+      "sha256": "8ed9e63e171c89a3a811ffbad622b726955959c00dd0d626aaaa0c290eb184d6",
+      "source_pool": "stage1_v2_codex_calibration_round_2_llm_markings",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_human_reviewed_calibration_round_2_p0_codex_review": {
+      "artifact_id": "stage1_v2_human_reviewed_calibration_round_2_p0_codex_review",
+      "checksum": null,
+      "created_at": "2026-07-27T03:35:07Z",
+      "created_by": "3b0614e77753126c864d47ad96909569b38409e3",
+      "diagnostic_status": "human_reviewed_diagnostic_decisions",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_verified": true,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/human_reviewed_calibration_round_2_p0_codex_review.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 4,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-human-reviewed-codex-p0-review-v1",
+      "sha256": "e2224bf262c4b138bb077f5cdcd554f91682b6fb521fd22049edb86895dc420e",
+      "source_pool": "stage1_v2_calibration_round_2_p0_codex_review_filled",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_human_reviewed_calibration_round_2_p1_codex_review": {
+      "artifact_id": "stage1_v2_human_reviewed_calibration_round_2_p1_codex_review",
+      "checksum": null,
+      "created_at": "2026-07-27T03:57:31Z",
+      "created_by": "e086a955a4d9fca3815f906d5d6f46e539267d8c",
+      "diagnostic_status": "human_reviewed_diagnostic_decisions",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_verified": true,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/human_reviewed_calibration_round_2_p1_codex_review.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 5,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-human-reviewed-codex-p1-review-v1",
+      "sha256": "d99b36d888edef1c9416a95c92b56826e9049d47eca015cba4309cf5273051a1",
+      "source_pool": "stage1_v2_calibration_round_2_p1_codex_review_filled",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_human_reviewed_calibration_round_2_p2_codex_review": {
+      "artifact_id": "stage1_v2_human_reviewed_calibration_round_2_p2_codex_review",
+      "checksum": null,
+      "created_at": "2026-07-27T06:44:58Z",
+      "created_by": "411bb6108f3a495244d483458a49a293fa6a8b0f",
+      "diagnostic_status": "human_reviewed_diagnostic_decisions",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_verified": true,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/human_reviewed_calibration_round_2_p2_codex_review.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 14,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-human-reviewed-codex-p2-review-v1",
+      "sha256": "3aa9ec6424d28ba7edbe10c33af61bffb9af5bf280a30516ec79260b8f339aae",
+      "source_pool": "stage1_v2_calibration_round_2_p2_codex_review_filled",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_human_reviewed_calibration_round_2_p3_codex_review": {
+      "artifact_id": "stage1_v2_human_reviewed_calibration_round_2_p3_codex_review",
+      "checksum": null,
+      "created_at": "2026-07-27T07:07:39Z",
+      "created_by": "95ff7f09df29b272553eb7e8f5934009e5c227fa",
+      "diagnostic_status": "human_reviewed_diagnostic_decisions",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_verified": true,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/human_reviewed_calibration_round_2_p3_codex_review.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 7,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-human-reviewed-codex-p3-review-v1",
+      "sha256": "12f57fee3db921bfeb6d26ce4426cbb158cbc55d130459d26bc262be84890541",
+      "source_pool": "stage1_v2_calibration_round_2_p3_codex_review_filled",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_human_reviewed_codex_calibration_round_2_marking_summary": {
+      "artifact_id": "stage1_v2_human_reviewed_codex_calibration_round_2_marking_summary",
+      "checksum": null,
+      "created_at": "2026-07-27T01:06:59Z",
+      "created_by": "d53e086fcf0f891bbbb3fd631a3928cff7b866a9",
+      "diagnostic_status": "human_reviewed_diagnostic_markings",
+      "formal_human_evidence": false,
+      "human_verified": true,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/human_reviewed_codex_calibration_round_2_summary.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 30,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-human-reviewed-llm-marking-summary-v1",
+      "sha256": "fb72725e274e43c9ef0c1a1e2180aa4768445365dcf3fe6b8dc661f5c4309e0e",
+      "source_pool": "stage1_v2_human_reviewed_codex_calibration_round_2_markings",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_human_reviewed_codex_calibration_round_2_markings": {
+      "artifact_id": "stage1_v2_human_reviewed_codex_calibration_round_2_markings",
+      "checksum": null,
+      "created_at": "2026-07-27T01:06:59Z",
+      "created_by": "d53e086fcf0f891bbbb3fd631a3928cff7b866a9",
+      "diagnostic_status": "human_reviewed_diagnostic_markings",
+      "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+      "formal_human_evidence": false,
+      "human_verified": true,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/real_alignment/human_reviewed_codex_calibration_round_2_markings.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 30,
+      "required_for": [
+        "stage1_v2_llm_calibration"
+      ],
+      "schema_version": "mica-stage1-v2-human-reviewed-llm-marking-v1",
+      "sha256": "8be12eb3829d51bbb12ec0e63f64863fff068d90ff921046825018e90519729e",
+      "source_pool": "stage1_v2_codex_calibration_round_2_llm_markings",
+      "split": "calibration_round_2",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_human_source_review_priority_queue": {
+      "artifact_id": "stage1_v2_human_source_review_priority_queue",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "human_verified_sources": false,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/atomic_source_pool/human_source_review_priority_queue.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 613,
+      "required_for": [
+        "stage1_v2_source_review"
+      ],
+      "schema_version": "mica-stage1-v2-human-source-review-priority-v1",
+      "sha256": "9da58077272f8a5b52606e956af9bdc5fce5cdc93c74b35950b5931260556db4",
+      "source_pool": "stage1_v2_atomic_source_review_sidecars",
+      "split": "source_review",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_qualification_package_annotator_a": {
+      "artifact_id": "stage1_v2_qualification_package_annotator_a",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/qualification/qualification_package_annotator_a.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 20,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-qualification-record-v1",
+      "sha256": "fc00dcd4be969d73f03a47130f63f02dda827031357dfbbf0c911370fded90b9",
+      "source_pool": "stage1_v2_qualification",
+      "split": "annotator_a",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_qualification_package_annotator_b": {
+      "artifact_id": "stage1_v2_qualification_package_annotator_b",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/qualification/qualification_package_annotator_b.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 20,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-qualification-record-v1",
+      "sha256": "0e13433ebc54a838ba8c3b35d4eb22ca7f8e97b2db56dbe3a7d7694badeb5670",
+      "source_pool": "stage1_v2_qualification",
+      "split": "annotator_b",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_qualification_result_template": {
+      "artifact_id": "stage1_v2_qualification_result_template",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/qualification/qualification_result_template.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-qualification-execution-v1",
+      "sha256": "f22988be178be74dfa837312784b44fb1ca9f659fd8d453a819f37830d922f4c",
+      "source_pool": "stage1_v2_qualification",
+      "split": "pending_result",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_qualification_scoring_manifest": {
+      "artifact_id": "stage1_v2_qualification_scoring_manifest",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/qualification/qualification_scoring_manifest.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-qualification-execution-v1",
+      "sha256": "b2f6516f43760c6048af3ee08af506ff081ed6bcb51d7f2dc0a935f9a3d5f350",
+      "source_pool": "stage1_v2_qualification",
+      "split": "n/a",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_quarantined_synthetic_samples": {
+      "artifact_id": "stage1_v2_quarantined_synthetic_samples",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "formal_frozen": false,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/synthetic/quarantined_synthetic_samples.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "quarantine_status": "candidate_quarantined_by_llm_source_review",
+      "record_count": 45,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-manifest-v1",
+      "sha256": "35330e2cbd7b84d95512932c0170693556862a78d59e10ec0e4576b9053d4c59",
+      "source_pool": "stage1_v2_synthetic_candidate_v1",
+      "split": "quarantine",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_real_adjudicated_queue": {
+      "artifact_id": "stage1_v2_real_adjudicated_queue",
+      "checksum": null,
+      "created_at": "2026-07-24T02:40:42+00:00",
+      "created_by": "c6a79c7b4f89158d9a369a9b68ebcf0e41d065e9",
+      "leakage_group_key": "leakage_group",
+      "path": "datasets/mica/stage1_v2/real_alignment/real_adjudicated_pilot_candidates.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 100,
+      "required_for": [
+        "stage1_v2_real_adjudicated"
+      ],
+      "schema_version": "mica-stage1-v2-real-adjudicated-record-v1",
+      "sha256": "8542e1b88c4762286e42e1ab17bc36891c0adbba113a59250b5ec6320e307665",
+      "source_pool": "stage1_v2_real_alignment_candidate_pool",
+      "split": "pilot",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_real_adjudicated_test": {
+      "artifact_id": "stage1_v2_real_adjudicated_test",
+      "checksum": null,
+      "created_at": null,
+      "created_by": "build_adjudicated_asset",
+      "leakage_group_key": "leakage_group",
+      "path": null,
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_real_adjudicated"
+      ],
+      "schema_version": "mica-stage1-v2-real-adjudicated-record-v1",
+      "source_pool": "stage1_v2_real_alignment_candidate_pool",
+      "split": "final_test",
+      "status": "pending_generation"
+    },
+    "stage1_v2_real_alignment_candidate_pool": {
+      "artifact_id": "stage1_v2_real_alignment_candidate_pool",
+      "checksum": null,
+      "created_at": "2026-07-24T02:40:42+00:00",
+      "created_by": "c6a79c7b4f89158d9a369a9b68ebcf0e41d065e9",
+      "leakage_group_key": "leakage_group",
+      "path": "datasets/mica/stage1_v2/real_alignment/real_adjudicated_candidate_pool.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 1800,
+      "required_for": [
+        "stage1_v2_real_adjudicated"
+      ],
+      "schema_version": "mica-stage1-v2-real-adjudicated-candidate-v1",
+      "sha256": "e0ae9b2f4c8a56c3b269a6d38bb61fa4a4d33b743876d127e90e6d98183ab569",
+      "source_pool": "stage1_v2_real_count_candidate_pool",
+      "split": "candidate_pool",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_real_count_adjudicated_dev": {
+      "artifact_id": "stage1_v2_real_count_adjudicated_dev",
+      "checksum": null,
+      "created_at": null,
+      "created_by": "import_adjudicated_annotations",
+      "leakage_group_key": "leakage_group",
+      "path": null,
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_real_count"
+      ],
+      "schema_version": "mica-stage1-v2-real-count-kmax-asset-v1",
+      "source_pool": "stage1_v2_real_count_candidate_pool",
+      "split": "dev",
+      "status": "pending_generation"
+    },
+    "stage1_v2_real_count_adjudicated_train": {
+      "artifact_id": "stage1_v2_real_count_adjudicated_train",
+      "checksum": null,
+      "created_at": null,
+      "created_by": "import_adjudicated_annotations",
+      "leakage_group_key": "leakage_group",
+      "path": null,
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_real_count"
+      ],
+      "schema_version": "mica-stage1-v2-real-count-kmax-asset-v1",
+      "source_pool": "stage1_v2_real_count_candidate_pool",
+      "split": "train",
+      "status": "pending_generation"
+    },
+    "stage1_v2_real_count_candidate_pool": {
+      "artifact_id": "stage1_v2_real_count_candidate_pool",
+      "checksum": null,
+      "created_at": "2026-07-24T02:40:42+00:00",
+      "created_by": "c6a79c7b4f89158d9a369a9b68ebcf0e41d065e9",
+      "leakage_group_key": "leakage_group",
+      "path": "datasets/mica/stage1_v2/real_count/real_count_candidate_pool.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 5856,
+      "required_for": [
+        "stage1_v2_real_count"
+      ],
+      "schema_version": "mica-stage1-v2-real-count-candidate-v1",
+      "sha256": "380a1aed488226df265dbcb26b96ca51e557cb9ae46418970492505de80e1db3",
+      "source_pool": "accepted_atomic_sources + hard_b + m_weak",
+      "split": "train_dev_candidates",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_real_count_queue": {
+      "artifact_id": "stage1_v2_real_count_queue",
+      "checksum": null,
+      "created_at": "2026-07-24T02:40:42+00:00",
+      "created_by": "c6a79c7b4f89158d9a369a9b68ebcf0e41d065e9",
+      "leakage_group_key": "leakage_group",
+      "path": "datasets/mica/stage1_v2/real_count/real_count_annotation_queue_pilot.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 200,
+      "required_for": [
+        "stage1_v2_real_count"
+      ],
+      "schema_version": "mica-stage1-v2-real-count-candidate-v1",
+      "sha256": "c67edcd0a92b6b4602130962b086a0b442ee074bd16417a81a9f36fd408fcbda",
+      "source_pool": "stage1_v2_real_count_candidate_pool",
+      "split": "pilot",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_rejected_source_impact_map": {
+      "artifact_id": "stage1_v2_rejected_source_impact_map",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/synthetic/rejected_source_impact_map.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 25,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-rejected-source-impact-v1",
+      "sha256": "c84f6b79548609e69b4ba5b60cd7124c6e9dba373975fe99271e9b58b703f594",
+      "source_pool": "stage1_v2_synthetic_candidate_v1",
+      "split": "impact_map",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_required_atomic_sources": {
+      "artifact_id": "stage1_v2_required_atomic_sources",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/synthetic/required_atomic_sources.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 4436,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-atomic-source-review-queue-v1",
+      "sha256": "c66141d2e91acc665bdadc5bb7453f47d15acc2c263b4ca4975cfc18c114164c",
+      "source_pool": "stage1_v2_atomic_source_quality_report",
+      "split": "candidate_plan",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_role_conflict_report": {
+      "artifact_id": "stage1_v2_role_conflict_report",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/campaign/role_conflict_report.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-role-conflict-report-v1",
+      "sha256": "2fd4293667df783da2802eeae98f64a51a54082931a34869c9cba052591785b5",
+      "source_pool": "stage1_v2_campaign",
+      "split": "staffing",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_source_review_human_gate_report": {
+      "artifact_id": "stage1_v2_source_review_human_gate_report",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "formal_synthetic_freeze_allowed": false,
+      "human_verified_sources": false,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/atomic_source_pool/source_review_human_gate_report.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_source_review"
+      ],
+      "schema_version": "mica-stage1-v2-source-review-human-gate-v1",
+      "sha256": "af4a75b0c05699e6eaf09fc7a85e1304840e77e97e5f6174a712a25a35e27bd1",
+      "source_pool": "stage1_v2_atomic_source_review_sidecars",
+      "split": "source_review",
+      "status": "annotation_pending"
+    },
+    "stage1_v2_source_review_status_summary": {
+      "artifact_id": "stage1_v2_source_review_status_summary",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/atomic_source_pool/source_review_status_summary.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 613,
+      "required_for": [
+        "stage1_v2_source_review"
+      ],
+      "schema_version": "mica-stage1-v2-source-review-status-v1",
+      "sha256": "762691bf7a956ec0c3ef524d1d04b6fb835172b172dffabdc4979c22713679a8",
+      "source_pool": "stage1_v2_atomic_source_review_sidecars",
+      "split": "source_review",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_candidate_supersession_record": {
+      "artifact_id": "stage1_v2_synthetic_candidate_supersession_record",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "formal_frozen": false,
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/synthetic/synthetic_candidate_supersession_record.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 45,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-supersession-v1",
+      "sha256": "d381666a3ab4cb0f5ec869f9732552e7f84cce0f41f667bdb470734b7755d3cc",
+      "source_pool": "stage1_v2_synthetic_candidate_v1",
+      "split": "supersession",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_candidate_v2_control_test": {
+      "artifact_id": "stage1_v2_synthetic_candidate_v2_control_test",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "formal_frozen": false,
+      "human_verified_sources": false,
+      "leakage_group_key": "sample_id",
+      "llm_screened_candidate": true,
+      "path": "datasets/mica/stage1_v2/synthetic/synthetic_candidate_v2_control_test.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 119,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-manifest-v1",
+      "sha256": "e076740c5055994e6f3630e0c042a25f8f4eb080798b032e3a9a3edb8f63209c",
+      "source_pool": "stage1_v2_synthetic_candidate_v1",
+      "split": "synthetic_control_test",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_candidate_v2_dev": {
+      "artifact_id": "stage1_v2_synthetic_candidate_v2_dev",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "formal_frozen": false,
+      "human_verified_sources": false,
+      "leakage_group_key": "sample_id",
+      "llm_screened_candidate": true,
+      "path": "datasets/mica/stage1_v2/synthetic/synthetic_candidate_v2_dev.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 100,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-manifest-v1",
+      "sha256": "612e24d7ff80059b2616cd8d24ff42a33adfca2f81395b403a9c08445ec7a947",
+      "source_pool": "stage1_v2_synthetic_candidate_v1",
+      "split": "dev",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_candidate_v2_leakage_report": {
+      "artifact_id": "stage1_v2_synthetic_candidate_v2_leakage_report",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/synthetic/synthetic_candidate_v2_leakage_report.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-candidate-v2-leakage-v1",
+      "sha256": "f20a180852a65adf37599b44d8d4a6e743d91ee3881f551c0800a812f8273d6b",
+      "source_pool": "stage1_v2_synthetic_candidate_v2",
+      "split": "leakage_report",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_candidate_v2_summary": {
+      "artifact_id": "stage1_v2_synthetic_candidate_v2_summary",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "formal_frozen": false,
+      "human_verified_sources": false,
+      "leakage_group_key": "sample_id",
+      "llm_screened_candidate": true,
+      "path": "datasets/mica/stage1_v2/synthetic/synthetic_candidate_v2_summary.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 45,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-candidate-v2-summary-v1",
+      "sha256": "cfff0b6503846f4c51847e90b9e2a5e41d72f2ae1a2611a524316f78fa42c1e4",
+      "source_pool": "stage1_v2_synthetic_candidate_v2",
+      "split": "summary",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_candidate_v2_train": {
+      "artifact_id": "stage1_v2_synthetic_candidate_v2_train",
+      "checksum": null,
+      "created_at": "2026-07-26T15:22:29+00:00",
+      "created_by": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+      "formal_frozen": false,
+      "human_verified_sources": false,
+      "leakage_group_key": "sample_id",
+      "llm_screened_candidate": true,
+      "path": "datasets/mica/stage1_v2/synthetic/synthetic_candidate_v2_train.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 128,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-manifest-v1",
+      "sha256": "273439172b554864ad96c79f9c09daffec13b049448f6847e00f888a0261e427",
+      "source_pool": "stage1_v2_synthetic_candidate_v1",
+      "split": "train",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_control_test": {
+      "artifact_id": "stage1_v2_synthetic_control_test",
+      "checksum": null,
+      "created_at": "2026-07-24T02:40:42+00:00",
+      "created_by": "c6a79c7b4f89158d9a369a9b68ebcf0e41d065e9",
+      "leakage_group_key": "source_atomic_commit_ids",
+      "path": "datasets/mica/stage1_v2/synthetic/synthetic_control_test.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 143,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-manifest-v1",
+      "sha256": "36d690174ce373670b161026a2fec313bd11fcea7e6801c22dfd76ef5b3405be",
+      "source_pool": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+      "split": "synthetic_control_test",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_dev": {
+      "artifact_id": "stage1_v2_synthetic_dev",
+      "checksum": null,
+      "created_at": "2026-07-24T02:40:42+00:00",
+      "created_by": "c6a79c7b4f89158d9a369a9b68ebcf0e41d065e9",
+      "leakage_group_key": "source_atomic_commit_ids",
+      "path": "datasets/mica/stage1_v2/synthetic/synthetic_dev.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 109,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-manifest-v1",
+      "sha256": "215d970cd059ee6abde2f8f6f36a948e8f341b08137832db3aff269f4667df66",
+      "source_pool": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+      "split": "dev",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_family_map": {
+      "artifact_id": "stage1_v2_synthetic_family_map",
+      "checksum": null,
+      "created_at": "2026-07-24T02:40:42+00:00",
+      "created_by": "c6a79c7b4f89158d9a369a9b68ebcf0e41d065e9",
+      "leakage_group_key": "atomic_family_id",
+      "path": "datasets/mica/stage1_v2/synthetic/atomic_family_map.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 3754,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-atomic-family-map-v1",
+      "sha256": "b1ca337150a6f9c719c035836dbef2518775dda832337ae6b981b4d4fea25ffd",
+      "source_pool": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+      "split": "n/a",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_formal_target_plan": {
+      "artifact_id": "stage1_v2_synthetic_formal_target_plan",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/synthetic/synthetic_formal_target_plan.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-target-plan-v1",
+      "sha256": "5c97b6907f8a989c89558d525f06f8b05d8b5ddf04e986a6272ec4e6b3a72fa5",
+      "source_pool": "stage1_v2_synthetic_train",
+      "split": "n/a",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_leakage_report": {
+      "artifact_id": "stage1_v2_synthetic_leakage_report",
+      "checksum": null,
+      "created_at": "2026-07-24T02:40:42+00:00",
+      "created_by": "c6a79c7b4f89158d9a369a9b68ebcf0e41d065e9",
+      "leakage_group_key": "n/a",
+      "path": "datasets/mica/stage1_v2/synthetic/cross_split_leakage_report.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-leakage-report-v1",
+      "sha256": "c75444ff7c78cd8b20b2fdfe46f86f27de6d8444793b060a604bc470d26e43ea",
+      "source_pool": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+      "split": "n/a",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_scale_audit": {
+      "artifact_id": "stage1_v2_synthetic_scale_audit",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/synthetic/synthetic_scale_audit.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-scale-audit-v1",
+      "sha256": "0619f1c894689e5ea50a726d4cd330ccb9d417d966c9880d6ce01a5b9059fc7c",
+      "source_pool": "stage1_v2_synthetic_train",
+      "split": "n/a",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_scale_gap_report": {
+      "artifact_id": "stage1_v2_synthetic_scale_gap_report",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/synthetic/synthetic_scale_gap_report.json",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": null,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-scale-audit-v1",
+      "sha256": "45021dbaf3609c145a70051b97160f1bc414f77af31c4e06c9518fb31b6e820f",
+      "source_pool": "stage1_v2_synthetic_train",
+      "split": "n/a",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_synthetic_train": {
+      "artifact_id": "stage1_v2_synthetic_train",
+      "checksum": null,
+      "created_at": "2026-07-24T02:40:42+00:00",
+      "created_by": "c6a79c7b4f89158d9a369a9b68ebcf0e41d065e9",
+      "leakage_group_key": "source_atomic_commit_ids",
+      "path": "datasets/mica/stage1_v2/synthetic/synthetic_train.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 140,
+      "required_for": [
+        "stage1_v2_synthetic_split"
+      ],
+      "schema_version": "mica-stage1-v2-synthetic-manifest-v1",
+      "sha256": "afb31c898fde6ea6a11ca4ba053951ffc3e63e2eadd71e2f733a611b5b7c1ead",
+      "source_pool": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+      "split": "train",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_unified_pilot_annotation_index": {
+      "artifact_id": "stage1_v2_unified_pilot_annotation_index",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/campaign/unified_pilot_annotation_index.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 4868,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-unified-annotation-index-v1",
+      "sha256": "70f93d776bc8506682ba434d16d2d6ad5f1546f17daa5a4dc768b2c8322266f2",
+      "source_pool": "stage1_v2_campaign",
+      "split": "pilot",
+      "status": "candidate_materialized"
+    },
+    "stage1_v2_unresolved_atomic_sources": {
+      "artifact_id": "stage1_v2_unresolved_atomic_sources",
+      "checksum": null,
+      "created_at": "2026-07-26T05:43:33+00:00",
+      "created_by": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+      "leakage_group_key": "sample_id",
+      "path": "datasets/mica/stage1_v2/synthetic/unresolved_atomic_sources.jsonl",
+      "protocol_version": "stage1-v2-protocol",
+      "record_count": 4436,
+      "required_for": [
+        "stage1_v2_annotation_campaign"
+      ],
+      "schema_version": "mica-stage1-v2-atomic-source-review-queue-v1",
+      "sha256": "c66141d2e91acc665bdadc5bb7453f47d15acc2c263b4ca4975cfc18c114164c",
+      "source_pool": "stage1_v2_atomic_source_quality_report",
+      "split": "candidate_plan",
+      "status": "annotation_pending"
+    }
+  },
+  "legacy_blocklist": {
+    "stage1_v1_checkpoint_artifact_ids": [
+      "stage1_candidate_22bcd358766e_f280eebdf24a_9320b20f609e_seed42"
+    ],
+    "stage1_v1_result_records": [
+      "configs/mica/official_results/stage1_official_validation_20260723T091921Z.json"
+    ]
+  },
+  "protocol_version": "stage1-v2-protocol",
+  "registry_status": "assets_pending",
+  "schema_version": "mica-data-asset-registry-v2"
+}

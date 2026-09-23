@@ -1,0 +1,43 @@
+{
+  "basis": "LLM diagnostic source review quarantine; human_verified_sources=false",
+  "candidate_status": "llm_screened_candidate",
+  "counts": {
+    "synthetic_control_test": 119,
+    "synthetic_dev": 100,
+    "synthetic_train": 128
+  },
+  "created_at": "2026-07-26T15:22:29+00:00",
+  "creation_git_sha": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+  "family_counts": {
+    "synthetic_control_test": 34,
+    "synthetic_dev": 20,
+    "synthetic_train": 35
+  },
+  "formal_frozen": false,
+  "human_verified_sources": false,
+  "k_distribution": {
+    "synthetic_control_test": {
+      "2": 119
+    },
+    "synthetic_dev": {
+      "2": 100
+    },
+    "synthetic_train": {
+      "2": 128
+    }
+  },
+  "leakage_clean": true,
+  "llm_screened_candidate": true,
+  "near_duplicate_candidate_pair_count": 39932,
+  "near_duplicate_skipped_due_to_size": false,
+  "original_candidate_status": "candidate_quarantined_by_llm_source_review",
+  "protocol_version": "stage1-v2-protocol",
+  "quarantined_sample_count": 45,
+  "repository_counts": {
+    "synthetic_control_test": 30,
+    "synthetic_dev": 10,
+    "synthetic_train": 18
+  },
+  "schema_version": "mica-stage1-v2-synthetic-candidate-v2-summary-v1",
+  "unique_rejected_sources_in_quarantine": 25
+}

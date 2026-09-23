@@ -1,0 +1,49 @@
+{
+  "schema_version": "mica-stage1-v2-atomic-source-audit-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "creation_git_sha": "c6a79c7b4f89158d9a369a9b68ebcf0e41d065e9",
+  "created_at": "2026-07-24T02:40:17+00:00",
+  "source_pool_path": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+  "total_rows": 5099,
+  "accepted_count": 3754,
+  "manual_review_count": 1345,
+  "rejected_count": 0,
+  "reason_counts": {
+    "background_marker_in_path": 207,
+    "duplicate_normalized_diff_requires_manual_review": 8,
+    "high_changed_lines": 390,
+    "high_file_count": 265,
+    "high_hunk_count": 715,
+    "manual_review_subject_pattern": 29,
+    "non_semantic_or_background_heavy_only": 279,
+    "possible_generated_or_vendor_change": 84
+  },
+  "status_counts": {
+    "accepted": 3754,
+    "manual_review": 1345,
+    "rejected": 0
+  },
+  "accepted_path": "datasets/mica/stage1_v2/atomic_source_pool/accepted_atomic_sources.jsonl",
+  "manual_review_path": "datasets/mica/stage1_v2/atomic_source_pool/manual_review_queue.jsonl",
+  "rejected_path": "datasets/mica/stage1_v2/atomic_source_pool/rejected_atomic_sources.jsonl",
+  "accepted_file_count_summary": {
+    "min": 1,
+    "median": 1.0,
+    "max": 4,
+    "mean": 1.244273
+  },
+  "accepted_hunk_count_summary": {
+    "min": 1,
+    "median": 2.0,
+    "max": 6,
+    "mean": 2.103356
+  },
+  "accepted_changed_lines_summary": {
+    "min": 1,
+    "median": 9.0,
+    "max": 160,
+    "mean": 20.907299
+  },
+  "formal_ready": false,
+  "source_quality_status": "source_quality_unverified"
+}

@@ -1,0 +1,12 @@
+{
+  "input_csv": "archive/datasets/step1/workspace/upstream_candidate_pool/prefilter_allcommits_step2_sha_disjoint.csv",
+  "step2_source_csv": "archive/runs/step1/legacy_outputs/probe_kp6_kn4/probe_kp6_final_20260520T105706Z/strategy_compare_20260525T000000Z/conservative_atomic_sources.csv",
+  "output_csv": "datasets/step1/canonical/prefilter_allcommits_step2_sha_and_expanded_annotated_disjoint.csv",
+  "input_row_count": 84035,
+  "output_row_count": 82594,
+  "step2_row_count": 339,
+  "additional_exclusion_csv_count": 1,
+  "excluded_sha_overlap_count": 1441,
+  "excluded_repo_overlap_count": 0,
+  "exclude_repo_overlap": false
+}

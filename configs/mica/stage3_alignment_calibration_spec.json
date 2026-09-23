@@ -1,0 +1,48 @@
+{
+  "stage": "stage3_real_alignment_calibration",
+  "advisor_stage3_approved": false,
+  "default_mode": "dry_run",
+  "m_final_test_forbidden": true,
+  "strict_replay_required": true,
+  "freeze_base_encoder": true,
+  "null_slot": {
+    "enabled": false,
+    "null_slot_id": "slot_null"
+  },
+  "dual_cardinality": {
+    "alpha_pb": 0.5,
+    "lambda_cal_max": 0.05,
+    "lambda_cal_warmup_fraction": 0.2,
+    "stopgrad_count_for_kl": true
+  },
+  "assignment_schedule": {
+    "tau_start": 2.0,
+    "tau_end": 1.0,
+    "warmup_fraction": 0.2,
+    "entropy_coeff_start": 0.02,
+    "entropy_coeff_end": 0.0
+  },
+  "evidence_graph": {
+    "relation_spec_path": "configs/mica/evidence_relation_spec.json",
+    "use_attention_bias": true,
+    "inference_safe_only": true
+  },
+  "consistency": {
+    "enabled": false
+  },
+  "trainable_components": [
+    "slot_decoder_adapter",
+    "count_head",
+    "existence_head",
+    "thresholds"
+  ],
+  "loss_weights": {
+    "lambda_align_real": 1.0,
+    "lambda_count_real": 0.5,
+    "lambda_exist": 0.3,
+    "lambda_replay": 0.3
+  },
+  "min_recommended_full_alignment_overall": 300,
+  "min_recommended_final_test_aligned": 100,
+  "min_recommended_double_annotated": 100
+}

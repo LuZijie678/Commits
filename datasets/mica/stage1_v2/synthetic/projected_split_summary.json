@@ -1,0 +1,47 @@
+{
+  "dev": {
+    "planned_record_count": 400,
+    "repository_count": 11,
+    "max_repository_share": 0.1075,
+    "top5_repository_share": 0.52,
+    "planned_k_distribution": {
+      "2": 400
+    },
+    "required_strata_counts": {
+      "background_or_support_risk": 7,
+      "source_docs_config": 47,
+      "source_test": 78
+    },
+    "supports_only_k2": true
+  },
+  "synthetic_control_test": {
+    "planned_record_count": 400,
+    "repository_count": 44,
+    "max_repository_share": 0.08,
+    "top5_repository_share": 0.3325,
+    "planned_k_distribution": {
+      "2": 400
+    },
+    "required_strata_counts": {
+      "background_or_support_risk": 4,
+      "source_docs_config": 57,
+      "source_test": 49
+    },
+    "supports_only_k2": true
+  },
+  "train": {
+    "planned_record_count": 3000,
+    "repository_count": 19,
+    "max_repository_share": 0.239,
+    "top5_repository_share": 0.638,
+    "planned_k_distribution": {
+      "2": 3000
+    },
+    "required_strata_counts": {
+      "background_or_support_risk": 44,
+      "source_docs_config": 156,
+      "source_test": 1241
+    },
+    "supports_only_k2": true
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "protocol_status": "candidate_frozen",
+  "candidate_schedule": "naive_balanced_mixed_large_scale",
+  "formal_manifest_status": "frozen_runtime_manifest_created",
+  "stage2_allowed": false,
+  "next_action": "run_official_stage1_validation",
+  "runtime_manifest_not_committed": true,
+  "runtime_manifest_path": "outputs/mica_stage1_formal_manifest_20260615T000000Z/stage1_formal_manifest.json",
+  "formal_manifest_downgraded": false,
+  "counts": {
+    "train": {
+      "atomic_k1": 1000,
+      "synthetic_k2": 1000,
+      "total": 2000
+    },
+    "dev": {
+      "atomic_k1": 250,
+      "synthetic_k2": 250,
+      "total": 500
+    },
+    "test": {
+      "atomic_k1": 250,
+      "synthetic_k2": 250,
+      "total": 500
+    }
+  },
+  "leakage_checks": {
+    "sample_id_overlap_count": 0,
+    "sample_id_hard_leakage_zero": true,
+    "sha_overlap_checks": {
+      "available": true,
+      "hard_overlap_count": 0,
+      "hard_leakage_zero": true
+    },
+    "synthetic_id_overlap_checks": {
+      "available": true,
+      "hard_overlap_count": 0,
+      "hard_leakage_zero": true
+    },
+    "normalized_subject_overlap_checks": {
+      "available": true,
+      "overlap_count": 674
+    },
+    "repo_overlap_count": 125,
+    "repo_overlap_allowed_for_stage1_synthetic": true,
+    "repo_overlap_reason": "Stage 1 synthetic attribution splits are sample-disjoint; repo-disjointness is not guaranteed by current local Step1/Step2 pools."
+  },
+  "explicitly_not_included": [
+    "hard_b",
+    "M weak",
+    "M alignment",
+    "RealDomainBinary",
+    "Stage 2",
+    "generation",
+    "retrieval",
+    "verifier",
+    "LLM Judge",
+    "real API"
+  ]
+}

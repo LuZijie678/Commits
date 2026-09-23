@@ -1,0 +1,17 @@
+{
+  "batch_name": "ingest_round0117_20260531",
+  "combined_csv": "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/gitlog_all_pilot_labels_combined.csv",
+  "created_at_utc": "2026-05-31T11:29:08.377253+00:00",
+  "existing_labeled_keys": 10510,
+  "hard_b_output_csv": "/Users/lifulin/Downloads/Commits/datasets/hard_b/canonical/usable_hard_b_with_real_diff.csv",
+  "input_file_count": 1,
+  "input_paths": [
+    "archive/datasets/m_verified/workspace/crawl_state_relaxed/batchcrawl_20260531T112341Z_round0117_api_filelist_candidates_remote_diff.csv"
+  ],
+  "label_input_csv": "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/recovery_batches/ingest_round0117_20260531_label_input.csv",
+  "label_output_csv": "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/ingest_round0117_20260531_labeled.csv",
+  "m_candidates_csv": "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/candidates/gitlog_current_m_candidates.csv",
+  "m_output_csv": "/Users/lifulin/Downloads/Commits/datasets/m_verified/canonical/usable_m_with_real_diff.csv",
+  "new_label_rows_written": 2,
+  "new_unlabeled_rows": 2
+}

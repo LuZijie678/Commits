@@ -1,0 +1,83 @@
+{
+  "schema_version": "mica-stage1-official-result-record-v1",
+  "stage": "stage1",
+  "run_id": "stage1_official_validation_20260723T091921Z",
+  "execution_status": "official_executed",
+  "official_validation_executed": true,
+  "formal_ready": true,
+  "paper_ready": false,
+  "paper_ready_reason": "Frozen acceptance criterion `unit_accuracy_gain_over_all_one_min` has no observed value in the official aggregate metrics, so paper acceptance remains fail-closed.",
+  "git_commit": "f85b5260057a213a04bb4ea0a3c8cb720caa5dff",
+  "checkpoint_artifact_id": "stage1_candidate_22bcd358766e_f280eebdf24a_9320b20f609e_seed42",
+  "checkpoint_sha256": "4c292e0b4f6d7e2b0a291fd9ab1117552922076f3ffb6b28eff06484c33f8c11",
+  "threshold_version": "frozen_dev_thresholds_v1",
+  "kmax_decision_version": "stage1-kmax-v1",
+  "selected_kmax": 4,
+  "final_test_manifest_hash": "0c0ca7acdbce65f9533b0119193b480db0f9304abe29367349c7c51c2e3ee3d8",
+  "registry_hash": "f9a17c1d304f04f65ad51dab28b1471caf392819c0304447b039dd6f78036b6e",
+  "stage0_readiness_hash": "45e15cc939b9f39cffc411c603d97aab61750994b7555a5e04935418890574f3",
+  "official_preflight_hash": "977d50d4c525d6bd6365660d05d315aec2b3ac5a66f1509381abfff8054077eb",
+  "artifact_materialization": "local_only",
+  "local_output_root": "outputs/mica_stage1_official_validation_20260723T091744Z/official_run",
+  "sample_counts": {
+    "manifest_rows": 500,
+    "prediction_rows": 500,
+    "prediction_export_errors": 0,
+    "excluded_manifest_rows": 0
+  },
+  "aggregate_metric_summary": {
+    "count_accuracy": 0.916,
+    "k2_split_recall": 0.884,
+    "over_split_rate_on_k1": 0.088,
+    "second_slot_gold_recall": 0.7073333333333334,
+    "slot_collapse_rate": 0.076,
+    "unit_accuracy_gain_over_all_one": null
+  },
+  "official_gate_results": {
+    "count_accuracy_min": {
+      "threshold": 0.55,
+      "observed": 0.916,
+      "passed": true
+    },
+    "k2_split_recall_min": {
+      "threshold": 0.5,
+      "observed": 0.884,
+      "passed": true
+    },
+    "over_split_rate_on_k1_max": {
+      "threshold": 0.45,
+      "observed": 0.088,
+      "passed": true
+    },
+    "second_slot_gold_recall_min": {
+      "threshold": 0.4,
+      "observed": 0.7073333333333334,
+      "passed": true
+    },
+    "slot_collapse_rate_max": {
+      "threshold": 0.45,
+      "observed": 0.076,
+      "passed": true
+    },
+    "unit_accuracy_gain_over_all_one_min": {
+      "threshold": 0.03,
+      "observed": null,
+      "passed": false
+    }
+  },
+  "output_hashes": {
+    "stage1_official_validation_manifest.json": "32943fae2925943aa183a7404da4e6546fa4a11dc231e65d007cad3f4d482e49",
+    "stage1_official_validation_plan.json": "5d57221d0ab22c8adeba7aadb5fc093f958f0c628bccf0dce3901896f9ed1a49",
+    "stage1_official_validation_summary.json": "0eb950eb0c9da06aba2126c9593dbf9a215b3edc4495db97cf827dd03d2f93a5",
+    "stage1_official_validation_metrics.json": "f0ad589d5517115917981b30f7a66327ed8d434143e0dd89368404dbdb70b71b",
+    "stage1_official_validation_aggregate_metrics.json": "1205e61d2343384d50aa32e424ac4977fbd367fb96a40497340791d543b20f33",
+    "stage1_official_validation_readiness.json": "bbcff886ac41aef09b24e87ab8d094b0e997ccfdd9a443b815b2bd6d78b6576c",
+    "stage1_official_validation_leakage_report.json": "f620c89f63cd7b410640fbd9264cc9d05ea685676fd5956940fa4f14dbee2481",
+    "stage1_official_validation_checkpoint_metadata.json": "c568a3dda8aabaab993ce1c6b2190cb56dcb25fb0c61e890fe3aefa47f83aeef",
+    "stage1_official_validation_predictions.jsonl": "9fd0a710817e0860ae477813e38f4ab8dc0e1a383b8d25b598a295a968a67ad6",
+    "stage1_official_validation_prediction_export_errors.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stage1_official_validation_completion.json": "6f6cb09ff459c4cb7a3484e1312b7fd9aefa57d8b46435f703f3eb0f5e564d0a",
+    "stage1_official_validation_stage0_readiness_snapshot.json": "45e15cc939b9f39cffc411c603d97aab61750994b7555a5e04935418890574f3",
+    "stage1_official_validation_preflight_snapshot.json": "977d50d4c525d6bd6365660d05d315aec2b3ac5a66f1509381abfff8054077eb"
+  }
+}

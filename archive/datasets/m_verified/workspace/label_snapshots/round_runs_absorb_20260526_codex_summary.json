@@ -1,0 +1,19 @@
+{
+  "created_at_utc": "2026-05-26T14:41:05.709354+00:00",
+  "input_unlabeled_csv": "datasets/m_verified/workspace/label_snapshots/round_runs_absorb_20260526_unlabeled_candidates.csv",
+  "label_counts": {
+    "A": 184,
+    "B": 449,
+    "M": 8
+  },
+  "manual_review_csv": "datasets/m_verified/workspace/label_snapshots/round_runs_absorb_20260526_manual_review.csv",
+  "method": "codex_local_classifier_plus_manual_m_review",
+  "model_counts": {
+    "codex_local_clf_v1": 619,
+    "codex_manual_review_v1": 22
+  },
+  "new_current_m_count": 8,
+  "new_usable_real_diff_count": 8,
+  "output_labeled_csv": "datasets/m_verified/workspace/label_snapshots/round_runs_absorb_20260526_codex_labeled.csv",
+  "total_labeled": 641
+}

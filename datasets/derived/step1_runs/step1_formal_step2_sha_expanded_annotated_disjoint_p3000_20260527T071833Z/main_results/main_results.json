@@ -1,0 +1,73 @@
+{
+  "artifact_version": "step1_rule_model_main_results_v1",
+  "rule_model_comparison": {
+    "evaluation_split_role": "evaluation",
+    "rule_only": {
+      "tier_a_precision": 1.0,
+      "tier_a_recall": 0.7430167597765364,
+      "tier_a_yield": 133,
+      "gold_positive_count": 179,
+      "rule_abstain_rate": 0.0794979079497908,
+      "brier": null,
+      "logloss": null,
+      "ece": null,
+      "mce": null,
+      "probabilistic_metrics_applicable": false
+    },
+    "model_on_rule_labels": {
+      "tier_a_precision": 1.0,
+      "tier_a_recall": 0.770949720670391,
+      "tier_a_yield": 138,
+      "gold_positive_count": 179,
+      "positive_support": 179,
+      "tier_a_positive_recall_from_thresholds": 0.770949720670391,
+      "tier_b_or_higher_positive_recall": 0.770949720670391,
+      "brier": 0.06666506487892893,
+      "logloss": 0.20920356927962375,
+      "ece": 0.026646,
+      "mce": 0.165408,
+      "probabilistic_metrics_applicable": true
+    },
+    "feature_reduced_model": {
+      "tier_a_precision": 0.9696969696969697,
+      "tier_a_recall": 0.3575418994413408,
+      "tier_a_yield": 66,
+      "gold_positive_count": 179,
+      "brier": 0.09216285904141135,
+      "logloss": 0.430429283310696,
+      "ece": 0.140568,
+      "mce": 0.429309,
+      "removed_features": [
+        "file_count",
+        "module_count",
+        "file_role_purity",
+        "has_single_prefix",
+        "multi_intent_markers",
+        "single_issue_link",
+        "doc_or_test_only",
+        "repo_norm_size",
+        "repo_norm_module_span"
+      ],
+      "retained_feature_count": 8,
+      "probabilistic_metrics_applicable": true
+    },
+    "gain_summary": {
+      "tier_a_precision_gain_model_minus_rule": 0.0,
+      "tier_a_recall_gain_model_minus_rule": 0.027932960893854664,
+      "tier_a_yield_gain_model_minus_rule": 5,
+      "tier_a_precision_gain_reduced_minus_rule": -0.030303030303030276,
+      "tier_a_recall_gain_reduced_minus_rule": -0.38547486033519557,
+      "tier_a_yield_gain_reduced_minus_rule": -67,
+      "tier_a_precision_delta_full_minus_reduced": 0.030303030303030276,
+      "tier_a_recall_delta_full_minus_reduced": 0.41340782122905023,
+      "tier_a_yield_delta_full_minus_reduced": 72,
+      "summary": "Full model improves over rule-only, and feature ablation quantifies how much of that gain survives after removing rule-adjacent features."
+    }
+  },
+  "independent_audit_precision": {
+    "tier_a_precision": null,
+    "tier_a_sample_count": 0,
+    "tier_b_precision": null,
+    "tier_b_sample_count": 0
+  }
+}

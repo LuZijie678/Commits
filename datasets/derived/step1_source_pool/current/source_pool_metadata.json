@@ -1,0 +1,14 @@
+{
+  "source_pool_name": "conservative_atomic_sources",
+  "selection_strategy": "model_rule_refilter",
+  "source_confidence_formula": "calibrated_model_prob * rule_weight",
+  "input_candidate_count": 12000,
+  "model_tier_a_count": 7647,
+  "rule_retained_count": 5099,
+  "final_source_count": 5099,
+  "tau_a": 0.94732,
+  "tau_b": 0.834592,
+  "calibration_artifact": "../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/calibration/atomic_calibration_full_diff.json",
+  "rule_protocol_version": "independent_rule_protocol_v1",
+  "created_at": "20260527T080926Z"
+}

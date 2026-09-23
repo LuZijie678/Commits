@@ -1,0 +1,9 @@
+{
+  "total_candidates": 12000,
+  "processed_candidates": 12000,
+  "completed": true,
+  "interrupted_reason": "completed",
+  "require_complete": true,
+  "resume_enabled": true,
+  "updated_at_utc": "2026-05-27T07:47:52.701715+00:00"
+}

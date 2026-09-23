@@ -1,0 +1,30 @@
+Write one natural commit subject for this repository change.
+
+The examples were retrieved by text similarity. The oracle structure is evidence from synthetic construction.
+Use the structure as evidence. Do not copy the plan mechanically. Write one natural commit subject.
+
+Rules:
+- Output one line only.
+- Use concise imperative style.
+- Do not output explanations, bullets, or numbered intents.
+- Do not invent behavior not supported by the diff.
+- Do not mechanically list files.
+- Do not use "Change 1", "Intent 1", or multiple conventional prefixes.
+- Do not treat supporting test, config, or docs edits as separate goals unless they are the main change.
+- Cover the main independent intents naturally, using "and" if needed.
+
+Retrieved examples:
+{exemplars}
+
+Oracle structure:
+{oracle_structure}
+
+Repository:
+{repo}
+
+Changed files:
+{file_paths}
+
+Diff:
+{diff_text}
+

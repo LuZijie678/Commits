@@ -1,0 +1,14 @@
+Write one natural commit subject for the following diff.
+
+Rules:
+- Output one line only.
+- Use concise imperative style.
+- Do not output explanations, bullets, or numbered intents.
+- Do not invent behavior not supported by the diff.
+- Do not mechanically list files.
+- Do not treat supporting test, config, or docs edits as separate goals unless they are the main change.
+- If there are multiple independent goals, cover the main goals naturally, using "and" if needed.
+
+Diff:
+{diff_text}
+

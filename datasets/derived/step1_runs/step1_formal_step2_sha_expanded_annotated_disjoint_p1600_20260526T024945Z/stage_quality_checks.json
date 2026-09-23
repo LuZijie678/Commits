@@ -1,0 +1,537 @@
+{
+  "stage_checks": [
+    {
+      "stage": "annotated_split",
+      "metrics": {
+        "seed": 31,
+        "is_sha_disjoint": true,
+        "splits": {
+          "protocol": {
+            "row_count": 177,
+            "positive_count": 162,
+            "negative_count": 15,
+            "repo_count": 5
+          },
+          "gbdt_train": {
+            "row_count": 1085,
+            "positive_count": 909,
+            "negative_count": 176,
+            "repo_count": 50
+          },
+          "calibration": {
+            "row_count": 65,
+            "positive_count": 45,
+            "negative_count": 20,
+            "repo_count": 5
+          },
+          "evaluation": {
+            "row_count": 239,
+            "positive_count": 179,
+            "negative_count": 60,
+            "repo_count": 5
+          },
+          "proxy_gap": {
+            "row_count": 115,
+            "positive_count": 94,
+            "negative_count": 21,
+            "repo_count": 5
+          }
+        }
+      }
+    },
+    {
+      "stage": "annotation_agreement",
+      "metrics": {
+        "status": "available",
+        "shared_sha_count": 76,
+        "raw_agreement": 1.0,
+        "cohen_kappa": 1.0,
+        "adjudication_coverage": 0.0,
+        "annotation_agreement_json": "outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/annotation_agreement.json"
+      }
+    },
+    {
+      "stage": "calibration",
+      "metrics": {
+        "tau_a": 0.980841,
+        "tau_b": 0.9497,
+        "feature_count": 0,
+        "threshold_source": "constraint_from_labeled_precision_message_only_platt_explicit_split",
+        "threshold_fallback_used": false,
+        "calibration_mode": "message_only_platt",
+        "is_message_only": true,
+        "model_mode": "message_only",
+        "model_role": "proxy",
+        "repo_disjoint_eval": true,
+        "protocol_violation": false,
+        "message_only_tau_a": 0.980841,
+        "message_only_tau_b": 0.9497,
+        "full_diff_tau_a": 0.94732,
+        "full_diff_tau_b": 0.834592,
+        "full_diff_threshold_source": "constraint_from_labeled_precision_explicit_annotated_split_protocol",
+        "calibration_diagnostics_json": "outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/calibration/calibration_diagnostics.json"
+      }
+    },
+    {
+      "stage": "select_batch",
+      "metrics": {
+        "all_candidates": 49136,
+        "substantive_type_counts": {
+          "fix": 22628,
+          "feat": 14069,
+          "refactor": 7716,
+          "test": 4692,
+          "perf": 31
+        },
+        "min_substantive_pool": 31,
+        "tier_a_count": 19,
+        "observed_tier_a_ratio": 0.000387,
+        "compute_message_only_prior": true,
+        "selection_model_mode": "message_only",
+        "selection_model_role": "proxy",
+        "selected": 6400,
+        "per_type": 1600,
+        "type_distribution": {
+          "test": 1600,
+          "refactor": 1600,
+          "feat": 1600,
+          "fix": 1600
+        },
+        "debug_artifacts_written": false,
+        "debug_top_candidates": 0,
+        "output_csv": "outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/selection/selection_batch.csv"
+      }
+    },
+    {
+      "stage": "enrich_attempt_1",
+      "metrics": {
+        "processed_rows": 6400,
+        "resolved_count": 6400,
+        "resolved_ratio": 1.0,
+        "diff_count": 6400,
+        "diff_ratio": 1.0,
+        "completed": true,
+        "status_path": "outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/enriched/enrich_status.json",
+        "min_resolved_ratio": 0.046875,
+        "min_resolved_ratio_source": "constraint_audit_coverage"
+      }
+    },
+    {
+      "stage": "analysis",
+      "metrics": {
+        "selection_count": 6400,
+        "resolved_count": 6400,
+        "audit_target": 300,
+        "probability_bins": [
+          {
+            "lower": 0.921242,
+            "label": "[0.92,0.95]"
+          },
+          {
+            "lower": 0.89618,
+            "label": "[0.90,0.92)"
+          },
+          {
+            "lower": 0.633723,
+            "label": "[0.63,0.90)"
+          },
+          {
+            "lower": 0.038978,
+            "label": "[0.04,0.63)"
+          }
+        ],
+        "proxy_probability_gap": {
+          "annotated_metric_sample_count": 106,
+          "message_only_auc": 0.9539007092198581,
+          "full_diff_auc": 0.8191489361702128,
+          "message_only_brier": 0.09212123451787596,
+          "full_diff_brier": 0.22192024251293582,
+          "message_only_logloss": 0.3369870437637489,
+          "full_diff_logloss": 0.6014481658366431,
+          "auc_gap_primary_minus_proxy": -0.13475177304964536,
+          "brier_gap_proxy_minus_primary": -0.12979900799505986,
+          "logloss_gap_proxy_minus_primary": -0.2644611220728942,
+          "annotated_tier_consistency": 0.5849056603773585
+        },
+        "conversion_metrics": {
+          "missing_tier_policy": "missing_as_unknown",
+          "is_sensitivity_analysis": false,
+          "proxy_to_primary_tier_matrix": {
+            "B->A": 1142,
+            "B->C": 456,
+            "B->UNKNOWN": 2,
+            "C->A": 2908,
+            "C->B": 1,
+            "C->C": 1871,
+            "C->UNKNOWN": 20
+          },
+          "tier_consistency_denominator_policy": "known_primary_tier_only",
+          "tier_consistency": 0.2933521480087802,
+          "known_primary_tier_count": 6378,
+          "unknown_count": 22,
+          "unknown_rate": 0.0034375,
+          "message_only_tier_counts": {
+            "C": 4800,
+            "B": 1600
+          },
+          "message_only_tier_a_count": 0,
+          "message_only_tier_a_known_primary_count": 0,
+          "message_only_tier_a_unknown_count": 0,
+          "message_only_tier_a_unknown_rate": null,
+          "message_only_tier_a_to_full_diff_c_count": 0,
+          "downgrade_denominator_policy": "proxy_a_with_known_primary_tier_only",
+          "downgrade_rate_message_only_a_to_full_diff_c": null,
+          "selection_to_full_diff_matrix": {
+            "B->A": 1142,
+            "B->C": 456,
+            "B->UNKNOWN": 2,
+            "C->A": 2908,
+            "C->B": 1,
+            "C->C": 1871,
+            "C->UNKNOWN": 20
+          },
+          "full_diff_tier_by_type": {
+            "feat": {
+              "A": 771,
+              "C": 828,
+              "UNKNOWN": 1
+            },
+            "fix": {
+              "A": 1142,
+              "C": 456,
+              "UNKNOWN": 2
+            },
+            "refactor": {
+              "A": 958,
+              "C": 627,
+              "UNKNOWN": 14,
+              "B": 1
+            },
+            "test": {
+              "A": 1179,
+              "C": 416,
+              "UNKNOWN": 5
+            }
+          },
+          "full_diff_tier_by_type_and_message_only_band": {
+            "feat::[0.04,0.63)": {
+              "A": 342,
+              "C": 438,
+              "UNKNOWN": 1
+            },
+            "feat::[0.63,0.90)": {
+              "A": 429,
+              "C": 390
+            },
+            "fix::[0.92,0.95]": {
+              "A": 1142,
+              "C": 456,
+              "UNKNOWN": 2
+            },
+            "refactor::[0.04,0.63)": {
+              "A": 324,
+              "C": 215,
+              "UNKNOWN": 3,
+              "B": 1
+            },
+            "refactor::[0.63,0.90)": {
+              "C": 79,
+              "A": 120,
+              "UNKNOWN": 1
+            },
+            "refactor::[0.90,0.92)": {
+              "A": 514,
+              "C": 333,
+              "UNKNOWN": 10
+            },
+            "test::[0.04,0.63)": {
+              "C": 113,
+              "A": 91,
+              "UNKNOWN": 2
+            },
+            "test::[0.63,0.90)": {
+              "A": 498,
+              "C": 151,
+              "UNKNOWN": 2
+            },
+            "test::[0.90,0.92)": {
+              "A": 1
+            },
+            "test::[0.92,0.95]": {
+              "A": 589,
+              "C": 152,
+              "UNKNOWN": 1
+            }
+          },
+          "observed_full_diff_tier_counts": {
+            "A": 4050,
+            "C": 2327,
+            "UNKNOWN": 22,
+            "B": 1
+          },
+          "observed_tier_b_yield": 1,
+          "observed_tier_b_gap_vs_target": -299
+        },
+        "feasibility": {
+          "target_tier": "B",
+          "selected_count": 6400,
+          "expected_target_tier_yield": 0.0,
+          "conservative_target_tier_lower_bound": 0.0,
+          "bucket_expectations": {
+            "feat::[0.04,0.63)": {
+              "selected_count": 781,
+              "reference_total": 8,
+              "reference_target_tier_count": 0,
+              "estimated_rate": 0.0,
+              "wilson95_lower": 0.0,
+              "source": "bucket"
+            },
+            "feat::[0.63,0.90)": {
+              "selected_count": 819,
+              "reference_total": 5,
+              "reference_target_tier_count": 0,
+              "estimated_rate": 0.0,
+              "wilson95_lower": 0.0,
+              "source": "bucket"
+            },
+            "fix::[0.92,0.95]": {
+              "selected_count": 1600,
+              "reference_total": 11,
+              "reference_target_tier_count": 0,
+              "estimated_rate": 0.0,
+              "wilson95_lower": 0.0,
+              "source": "bucket"
+            },
+            "refactor::[0.04,0.63)": {
+              "selected_count": 543,
+              "reference_total": 9,
+              "reference_target_tier_count": 0,
+              "estimated_rate": 0.0,
+              "wilson95_lower": 0.0,
+              "source": "bucket"
+            },
+            "refactor::[0.63,0.90)": {
+              "selected_count": 200,
+              "reference_total": 2,
+              "reference_target_tier_count": 0,
+              "estimated_rate": 0.0,
+              "wilson95_lower": 0.0,
+              "source": "bucket"
+            },
+            "refactor::[0.90,0.92)": {
+              "selected_count": 857,
+              "reference_total": 2,
+              "reference_target_tier_count": 0,
+              "estimated_rate": 0.0,
+              "wilson95_lower": 0.0,
+              "source": "bucket"
+            },
+            "test::[0.04,0.63)": {
+              "selected_count": 206,
+              "reference_total": 5,
+              "reference_target_tier_count": 0,
+              "estimated_rate": 0.0,
+              "wilson95_lower": 0.0,
+              "source": "type"
+            },
+            "test::[0.63,0.90)": {
+              "selected_count": 651,
+              "reference_total": 5,
+              "reference_target_tier_count": 0,
+              "estimated_rate": 0.0,
+              "wilson95_lower": 0.0,
+              "source": "bucket"
+            },
+            "test::[0.90,0.92)": {
+              "selected_count": 1,
+              "reference_total": 5,
+              "reference_target_tier_count": 0,
+              "estimated_rate": 0.0,
+              "wilson95_lower": 0.0,
+              "source": "type"
+            },
+            "test::[0.92,0.95]": {
+              "selected_count": 742,
+              "reference_total": 5,
+              "reference_target_tier_count": 0,
+              "estimated_rate": 0.0,
+              "wilson95_lower": 0.0,
+              "source": "type"
+            }
+          },
+          "fallback_usage": {
+            "bucket": 5451,
+            "type": 949
+          },
+          "source": "cached_plus_reference_tail",
+          "cached_observed_target_tier_yield": 0,
+          "cached_coverage_ratio": 0.996563,
+          "audit_target": 300,
+          "expected_gap_vs_target": -300.0,
+          "conservative_gap_vs_target": -300.0,
+          "cached_precheck": {
+            "covered_selection_count": 6378,
+            "missing_selection_count": 22,
+            "observed_tier_counts": {
+              "A": 4051,
+              "C": 2327
+            },
+            "observed_target_tier_yield": 0,
+            "coverage_ratio": 0.996563
+          }
+        },
+        "sensitivity_analysis": {
+          "missing_as_c": {
+            "missing_tier_policy": "missing_as_c",
+            "is_sensitivity_analysis": true,
+            "proxy_to_primary_tier_matrix": {
+              "B->A": 1142,
+              "B->C": 458,
+              "C->A": 2908,
+              "C->B": 1,
+              "C->C": 1891
+            },
+            "tier_consistency_denominator_policy": "known_primary_tier_only",
+            "tier_consistency": 0.29546875,
+            "known_primary_tier_count": 6400,
+            "unknown_count": 0,
+            "unknown_rate": 0.0,
+            "message_only_tier_counts": {
+              "C": 4800,
+              "B": 1600
+            },
+            "message_only_tier_a_count": 0,
+            "message_only_tier_a_known_primary_count": 0,
+            "message_only_tier_a_unknown_count": 0,
+            "message_only_tier_a_unknown_rate": null,
+            "message_only_tier_a_to_full_diff_c_count": 0,
+            "downgrade_denominator_policy": "proxy_a_with_known_primary_tier_only",
+            "downgrade_rate_message_only_a_to_full_diff_c": null,
+            "selection_to_full_diff_matrix": {
+              "B->A": 1142,
+              "B->C": 458,
+              "C->A": 2908,
+              "C->B": 1,
+              "C->C": 1891
+            },
+            "full_diff_tier_by_type": {
+              "feat": {
+                "A": 771,
+                "C": 829
+              },
+              "fix": {
+                "A": 1142,
+                "C": 458
+              },
+              "refactor": {
+                "A": 958,
+                "C": 641,
+                "B": 1
+              },
+              "test": {
+                "A": 1179,
+                "C": 421
+              }
+            },
+            "full_diff_tier_by_type_and_message_only_band": {
+              "feat::[0.04,0.63)": {
+                "A": 342,
+                "C": 439
+              },
+              "feat::[0.63,0.90)": {
+                "A": 429,
+                "C": 390
+              },
+              "fix::[0.92,0.95]": {
+                "A": 1142,
+                "C": 458
+              },
+              "refactor::[0.04,0.63)": {
+                "A": 324,
+                "C": 218,
+                "B": 1
+              },
+              "refactor::[0.63,0.90)": {
+                "C": 80,
+                "A": 120
+              },
+              "refactor::[0.90,0.92)": {
+                "A": 514,
+                "C": 343
+              },
+              "test::[0.04,0.63)": {
+                "C": 115,
+                "A": 91
+              },
+              "test::[0.63,0.90)": {
+                "A": 498,
+                "C": 153
+              },
+              "test::[0.90,0.92)": {
+                "A": 1
+              },
+              "test::[0.92,0.95]": {
+                "A": 589,
+                "C": 153
+              }
+            },
+            "observed_full_diff_tier_counts": {
+              "A": 4050,
+              "C": 2349,
+              "B": 1
+            },
+            "analysis_role": "sensitivity_only"
+          }
+        },
+        "conclusion": {
+          "classification": "usable_with_risk",
+          "reason": "Proxy quality is mixed; message-only should stay subordinate to full-diff.",
+          "paper_sentence": "The message-only proxy is usable for broad prefiltering but remains subordinate to the full-diff primary model.",
+          "policy_note": "Primary proxy-gap statistics use missing_as_unknown; missing_as_C is reported only as a sensitivity analysis.",
+          "missing_tier_policy": "missing_as_unknown",
+          "unknown_rate": 0.0034375
+        }
+      }
+    },
+    {
+      "stage": "validate",
+      "metrics": {
+        "tier_a": 4050,
+        "tier_b": 1,
+        "audit_tier": "A",
+        "audit_sample": 300,
+        "audit_completion": {},
+        "tier_a_precision": null,
+        "tier_b_precision": null,
+        "tier_a_precision_sample_count": 0,
+        "tier_b_precision_sample_count": 0,
+        "audit_precision_report_json": "outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/validation/audit_precision_report.json"
+      }
+    },
+    {
+      "stage": "main_results",
+      "metrics": {
+        "main_results_json": "outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/main_results/main_results.json",
+        "rule_tier_a_precision": 1.0,
+        "model_tier_a_precision": 1.0,
+        "feature_reduced_tier_a_precision": 0.9696969696969697,
+        "tier_a_recall_gain_model_minus_rule": 0.027932960893854664,
+        "tier_a_recall_delta_full_minus_reduced": 0.41340782122905023
+      }
+    },
+    {
+      "stage": "strategy_compare",
+      "metrics": {
+        "selection_strategies": [
+          "rule_only",
+          "model_only",
+          "model_rule_refilter"
+        ],
+        "strategy_target_count": 0,
+        "strategy_comparison_json": "outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/strategy_compare_20260526T024945Z/comparison/strategy_comparison.json",
+        "conservative_atomic_sources_csv": "outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/strategy_compare_20260526T024945Z/conservative_atomic_sources.csv",
+        "source_pool_metadata_json": "outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/strategy_compare_20260526T024945Z/source_pool_metadata.json"
+      }
+    }
+  ]
+}

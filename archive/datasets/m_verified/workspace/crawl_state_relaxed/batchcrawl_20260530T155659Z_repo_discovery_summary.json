@@ -1,0 +1,546 @@
+{
+  "blocklist_count": 0,
+  "created_at_utc": "2026-05-30T16:03:00.119628+00:00",
+  "excluded_local_count": 0,
+  "extra_target_count": 0,
+  "extra_targets_file": "",
+  "output_csv": "/Users/lifulin/Downloads/Commits/datasets/m_verified/tooling/../../../archive/datasets/m_verified/workspace/crawl_state_relaxed/batchcrawl_20260530T155659Z_repo_discovery.csv",
+  "output_txt": "/Users/lifulin/Downloads/Commits/datasets/m_verified/tooling/../../../archive/datasets/m_verified/workspace/crawl_state_relaxed/batchcrawl_20260530T155659Z_repo_targets.txt",
+  "query_file": "/Users/lifulin/Downloads/Commits/datasets/m_verified/tooling/../../../archive/datasets/m_verified/workspace/crawl_state_relaxed/auto_relaxed_discovery_queries.txt",
+  "query_summaries": [
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:>50000 fork:false archived:false",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:20000..50000 fork:false archived:false language:Python",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..20000 fork:false archived:false language:Python",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:20000..50000 fork:false archived:false language:JavaScript",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..20000 fork:false archived:false language:JavaScript",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:20000..50000 fork:false archived:false language:TypeScript",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..20000 fork:false archived:false language:TypeScript",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:15000..50000 fork:false archived:false language:Go",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..15000 fork:false archived:false language:Go",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false language:Rust",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..10000 fork:false archived:false language:Rust",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:15000..50000 fork:false archived:false language:Java",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..15000 fork:false archived:false language:Java",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false language:C++",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..10000 fork:false archived:false language:C++",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false language:C",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..10000 fork:false archived:false language:C",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:C#",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:PHP",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:Ruby",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:Swift",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..50000 fork:false archived:false language:Kotlin",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..50000 fork:false archived:false language:Dart",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false topic:database",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false topic:cli",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false topic:web-framework",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false topic:machine-learning",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:8000..15000 fork:false archived:false language:Python",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..8000 fork:false archived:false language:Python",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:8000..15000 fork:false archived:false language:JavaScript",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..8000 fork:false archived:false language:JavaScript",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:8000..15000 fork:false archived:false language:TypeScript",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..8000 fork:false archived:false language:TypeScript",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:8000..15000 fork:false archived:false language:Go",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..8000 fork:false archived:false language:Go",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:6000..12000 fork:false archived:false language:Rust",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..6000 fork:false archived:false language:Rust",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:8000..15000 fork:false archived:false language:Java",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..8000 fork:false archived:false language:Java",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:6000..12000 fork:false archived:false language:C++",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..6000 fork:false archived:false language:C++",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..10000 fork:false archived:false language:C",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..5000 fork:false archived:false language:C",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..10000 fork:false archived:false language:Ruby",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..5000 fork:false archived:false language:Ruby",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..10000 fork:false archived:false language:PHP",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..5000 fork:false archived:false language:PHP",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:4000..9000 fork:false archived:false language:Kotlin",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..4000 fork:false archived:false language:Kotlin",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:4000..9000 fork:false archived:false language:Swift",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..4000 fork:false archived:false language:Swift",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..7000 fork:false archived:false topic:database",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..7000 fork:false archived:false topic:testing",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..7000 fork:false archived:false topic:api",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..7000 fork:false archived:false topic:developer-tools",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..7000 fork:false archived:false topic:compiler",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..7000 fork:false archived:false topic:security",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..7000 fork:false archived:false topic:observability",
+      "rate_remaining": ""
+    },
+    {
+      "attempts": 3,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>",
+      "items": 0,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..7000 fork:false archived:false topic:networking",
+      "rate_remaining": ""
+    }
+  ],
+  "repo_count": 0,
+  "search_query_count": 59,
+  "token_used": true
+}

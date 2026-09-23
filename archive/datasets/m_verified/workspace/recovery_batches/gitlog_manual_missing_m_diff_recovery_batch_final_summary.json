@@ -1,0 +1,23 @@
+{
+  "base_csv": "data/gitlog_manual_missing_m_diff_recovery_batch_round2.csv",
+  "diff_ok_final": 87,
+  "failed_final": 1,
+  "output_csv": "data/gitlog_manual_missing_m_diff_recovery_batch_final.csv",
+  "output_jsonl": "data/gitlog_manual_missing_m_diff_recovery_batch_final.jsonl",
+  "remaining_failed": [
+    {
+      "diff_status": "",
+      "remote_diff_error": "HTTPError: HTTP Error 403: Forbidden",
+      "repo": "LAION-AI/Open-Assistant",
+      "sha": "54b2081946ed5f0aa3dd7ae087a68e61c961eab8"
+    }
+  ],
+  "remaining_failed_mark_file_csv": "data/gitlog_manual_missing_m_diff_recovery_batch_final_remaining_failed_marked.csv",
+  "remaining_failed_mark_file_json": "data/gitlog_manual_missing_m_diff_recovery_batch_final_remaining_failed_marked.json",
+  "remaining_failed_mark_reason": "skip_after_retry_http_403",
+  "remaining_failed_marked": true,
+  "replaced_rows": 3,
+  "retry_csv": "data/gitlog_manual_missing_m_diff_recovery_batch_round3_failed_only.csv",
+  "retry_rows": 3,
+  "rows": 88
+}

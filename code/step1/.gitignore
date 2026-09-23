@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated experiment artifacts (large, reproducible)
+outputs/
+data/allcommits_local_backfill/

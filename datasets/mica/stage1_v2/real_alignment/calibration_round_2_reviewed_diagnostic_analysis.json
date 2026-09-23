@@ -1,0 +1,78 @@
+{
+  "schema_version": "mica-stage1-v2-reviewed-diagnostic-analysis-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "artifact_id": "calibration_round_2_reviewed_diagnostic_analysis",
+  "created_at": "2026-07-27T01:26:03Z",
+  "input_artifact_id": "human_reviewed_codex_calibration_round_2_markings",
+  "round_label": "calibration_round_2",
+  "record_count": 30,
+  "formal_human_evidence": false,
+  "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+  "stage1_v2_training_allowed": false,
+  "stage2_entry_allowed": false,
+  "kmax_for_diagnostic_triage": 4,
+  "exact_k_distribution": {
+    "1": 13,
+    "2": 7,
+    "3": 3,
+    "4": 3,
+    "5": 1,
+    "None": 3
+  },
+  "exact_k_status_distribution": {
+    "overflow_gt_kmax_or_ambiguous": 3,
+    "proposed": 18,
+    "proposed_needs_close_review": 1,
+    "proposed_needs_review": 7,
+    "proposed_over_kmax": 1
+  },
+  "unit_label_distribution": {
+    "background": 4,
+    "foreground": 59,
+    "shared_support": 3,
+    "uncertain": 2
+  },
+  "background_type_distribution": {
+    "generated": 1,
+    "generated_or_sample_data": 1,
+    "lockfile": 1,
+    "mechanical": 1
+  },
+  "provisional_tag_distribution": {
+    "ambiguous_boundary": 1,
+    "background_heavy": 3,
+    "cross_module": 4,
+    "large_commit": 20,
+    "probable_k1_hard_single": 4,
+    "probable_k1_regular": 3,
+    "probable_k2": 10,
+    "probable_k3": 8,
+    "probable_k4_or_complex": 5
+  },
+  "priority_distribution": {
+    "p0_blocking_review": 4,
+    "p1_guideline_review": 5,
+    "p2_secondary_review": 14,
+    "p3_low": 7
+  },
+  "diagnostic_counts": {
+    "rows_with_background": 3,
+    "rows_with_shared_or_uncertain_or_mixed": 5,
+    "rows_with_review_notes": 23,
+    "rows_with_overflow_or_ambiguous_status": 3,
+    "rows_with_exact_k_gt_kmax": 1,
+    "followup_queue_count": 23
+  },
+  "gate_interpretation": {
+    "pre_adjudication_agreement_usable": false,
+    "adjudicated_gold_usable": false,
+    "guideline_status": "diagnostic_revision_input_only",
+    "reason": "Reviewed Codex markings are not independent A/B annotations and cannot satisfy formal human gates."
+  },
+  "highest_priority_sample_ids": [
+    "calibration_round_2_0004",
+    "calibration_round_2_0008",
+    "calibration_round_2_0009",
+    "calibration_round_2_0016"
+  ]
+}

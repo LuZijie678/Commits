@@ -1,0 +1,40 @@
+{
+  "suite_name": "paper_postrun_analysis_example",
+  "run_purpose": "analysis",
+  "output_dir": "outputs/example_run",
+  "config_path": "configs/step2_api_smoke_config.json",
+  "source_data": "../../datasets/derived/step2_bridge/current/step2_source_candidates_from_step1.csv",
+  "source_manifest": "../../datasets/derived/step2_bridge/current/step2_source_candidates_from_step1_manifest.json",
+  "fewshot_pool": "examples/synthetic_index_harder.csv",
+  "fewshot_build_manifest": "examples/build_manifest.example.json",
+  "random_seed": 42,
+  "steps": {
+    "manifest": true,
+    "metrics": true,
+    "report": true,
+    "leakage": true,
+    "audit_export": true
+  },
+  "leakage": {
+    "require_sha_disjoint": true,
+    "require_repo_disjoint": true,
+    "max_examples": 8,
+    "datasets": [
+      "eval_dev=data/step3_eval_dev.csv",
+      "eval_test=data/step3_eval_test.csv"
+    ]
+  },
+  "audit_export": {
+    "seed": 42,
+    "message_n": 50,
+    "structural_n": 50,
+    "source_n": 50,
+    "message_stratify": [
+      "message_status",
+      "few_shot_source"
+    ],
+    "structural_stratify": [
+      "difficulty_level"
+    ]
+  }
+}

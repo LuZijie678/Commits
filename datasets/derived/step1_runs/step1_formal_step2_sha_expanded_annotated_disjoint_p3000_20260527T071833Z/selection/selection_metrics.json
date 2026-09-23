@@ -1,0 +1,27 @@
+{
+  "all_candidates": 49136,
+  "substantive_type_counts": {
+    "fix": 22628,
+    "feat": 14069,
+    "refactor": 7716,
+    "test": 4692,
+    "perf": 31
+  },
+  "min_substantive_pool": 31,
+  "tier_a_count": 19,
+  "observed_tier_a_ratio": 0.000387,
+  "compute_message_only_prior": true,
+  "selection_model_mode": "message_only",
+  "selection_model_role": "proxy",
+  "selected": 12000,
+  "per_type": 3000,
+  "type_distribution": {
+    "refactor": 3000,
+    "fix": 3000,
+    "test": 3000,
+    "feat": 3000
+  },
+  "debug_artifacts_written": false,
+  "debug_top_candidates": 0,
+  "output_csv": "../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/selection/selection_batch.csv"
+}

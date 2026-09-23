@@ -1,0 +1,54 @@
+{
+  "schema_version": "mica-stage1-v2-synthetic-scale-audit-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "current_status": {
+    "candidate_materialized": true,
+    "pipeline_validation_complete": true,
+    "scale_insufficient_for_formal_training": true,
+    "not_frozen_training_asset": true
+  },
+  "per_split_gap": {
+    "train": {
+      "current_record_count": 140,
+      "minimum_required": 3000,
+      "target_range": [
+        5000,
+        8000
+      ],
+      "missing_to_minimum": 2860,
+      "missing_to_lower_target": 4860,
+      "missing_to_upper_target": 7860,
+      "meets_minimum": false
+    },
+    "dev": {
+      "current_record_count": 109,
+      "minimum_required": 400,
+      "target_range": [
+        500,
+        800
+      ],
+      "missing_to_minimum": 291,
+      "missing_to_lower_target": 391,
+      "missing_to_upper_target": 691,
+      "meets_minimum": false
+    },
+    "synthetic_control_test": {
+      "current_record_count": 143,
+      "minimum_required": 400,
+      "target_range": [
+        500,
+        800
+      ],
+      "missing_to_minimum": 257,
+      "missing_to_lower_target": 357,
+      "missing_to_upper_target": 657,
+      "meets_minimum": false
+    }
+  },
+  "synthetic_scale_sufficient": false,
+  "formal_scale_freeze_blocked": true,
+  "blocking_reasons": [
+    "k3_k4_construction_not_implemented",
+    "required_atomic_sources_need_human_verification"
+  ]
+}

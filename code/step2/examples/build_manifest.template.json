@@ -1,0 +1,65 @@
+{
+  "asset_name": "fewshot_pool_formal_v1",
+  "asset_version": "v1",
+  "build_date_utc": "YYYY-MM-DDTHH:MM:SSZ",
+  "builder": "",
+  "db_filename": "fewshot_pool.db",
+  "schema_table": "fewshot_examples",
+  "source_datasets": [
+    {
+      "name": "",
+      "path": "",
+      "sha256": "",
+      "rows_in": 0,
+      "rows_selected": 0,
+      "selection_rule": ""
+    }
+  ],
+  "total_rows_train": 0,
+  "eligible_rows_train": 0,
+  "verified_rows_train": 0,
+  "common_signature_coverage": {
+    "fix+test": 0,
+    "feat+test": 0,
+    "fix+docs": 0,
+    "feat+docs": 0,
+    "fix+refactor": 0,
+    "feat+refactor": 0,
+    "docs+test": 0,
+    "perf+refactor": 0,
+    "fix+perf": 0
+  },
+  "style_cleaning_policy": {
+    "strict_style": true,
+    "max_subject_chars": 120,
+    "max_subject_tokens": 20,
+    "blocked_reasons": [
+      "double_prefix",
+      "label_template",
+      "bullet_list",
+      "numbered_list",
+      "mechanical_semicolon",
+      "overlong_subject",
+      "generic_subject"
+    ]
+  },
+  "leakage_policy": {
+    "sha_disjoint_from_step2_source": true,
+    "sha_disjoint_from_step3_eval_test": true,
+    "repo_disjoint_from_step3_eval_test_if_required": false,
+    "notes": ""
+  },
+  "validation": {
+    "audit_command": "python code/audit_fewshot_pool.py --db ../../datasets/step2/delivery/current/fewshot_pool.db --json",
+    "audit_pass": false,
+    "retrieval_probe_ok": false,
+    "preflight_command": "python code/construct_simple_two_intent.py --preflight --config configs/step2_from_step1_source_config.json --fewshot-db ../../datasets/step2/delivery/current/fewshot_pool.db --fewshot-build-manifest-path ../../datasets/step2/delivery/current/build_manifest.json",
+    "preflight_passed": false,
+    "preflight_report_path": "../../datasets/step2/delivery/current/preflight_report.json"
+  },
+  "step3_target": {
+    "purpose": "Support Step2 formal generation of synthetic_samples_step3_ready.jsonl for Step3 training/evaluation preparation.",
+    "expected_step2_ready_file": "synthetic_samples_step3_ready.jsonl"
+  },
+  "notes": ""
+}

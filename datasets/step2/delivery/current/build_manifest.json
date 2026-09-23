@@ -1,0 +1,97 @@
+{
+  "asset_name": "fewshot_pool_formal_m_only",
+  "asset_version": "v1",
+  "build_date_utc": "2026-05-27T06:54:54Z",
+  "builder": "codex",
+  "db_filename": "fewshot_pool.db",
+  "schema_table": "fewshot_examples",
+  "source_datasets": [
+    {
+      "name": "canonical_m_only",
+      "path": "datasets/m_verified/canonical/usable_m_with_real_diff.csv",
+      "sha256": "58528cd3c1dec4dca9be72477a74ab3332f6fde4f7723770407939304281d7b1",
+      "rows_in": 773,
+      "rows_selected": 130,
+      "selection_rule": "review_decision=accept and verified_multi_intent=1 and fewshot_eligible=1 and quality_status=pass and message_status=pass and strict_repo_sha_disjoint=1"
+    },
+    {
+      "name": "manual_review_sheet",
+      "path": "datasets/step2/review/m_only_review_sheet.csv",
+      "sha256": "1502c73ac606cded03c0ffcf2110ffa5cc19ba07fff9f930c34c6896c8c9a434",
+      "rows_in": 773,
+      "rows_selected": 130,
+      "selection_rule": "final reviewed pool source of truth"
+    }
+  ],
+  "source_policy": "m_only",
+  "subject_policy": "manual_normalized_with_traceability",
+  "leakage_policy": {
+    "sha_disjoint_from_step2_source": true,
+    "repo_disjoint_from_step2_source": true,
+    "sha_disjoint_from_step3_eval_test": false,
+    "repo_disjoint_from_step3_eval_test_if_required": false,
+    "notes": "step3_eval_leakage_status=pending_missing_frozen_eval_assets"
+  },
+  "target_size": {
+    "target_final_size": 130,
+    "accepted_size_range": [
+      120,
+      150
+    ],
+    "final_selected_count": 130
+  },
+  "total_rows_train": 130,
+  "eligible_rows_train": 130,
+  "verified_rows_train": 130,
+  "common_signature_coverage": {
+    "fix+test": 14,
+    "feat+test": 12,
+    "fix+docs": 7,
+    "feat+docs": 6,
+    "fix+refactor": 10,
+    "feat+refactor": 15,
+    "docs+test": 4,
+    "perf+refactor": 3,
+    "fix+perf": 4
+  },
+  "style_cleaning_policy": {
+    "strict_style": true,
+    "max_subject_chars": 120,
+    "max_subject_tokens": 20,
+    "blocked_reasons": [
+      "double_prefix",
+      "label_template",
+      "bullet_list",
+      "numbered_list",
+      "mechanical_semicolon",
+      "overlong_subject",
+      "generic_subject"
+    ]
+  },
+  "thresholds": {
+    "min_total": 80,
+    "min_per_common_signature": 3,
+    "probe_type_signature": "fix+test",
+    "probe_k": 1
+  },
+  "validation": {
+    "audit_command": "python3 code/step2/code/audit_fewshot_pool.py --db datasets/step2/delivery/current/fewshot_pool.db --json",
+    "audit_pass": true,
+    "retrieval_probe_ok": true,
+    "preflight_command": "python3 code/step2/code/construct_simple_two_intent.py --preflight --config code/step2/configs/step2_runtime_config.json --fewshot-db datasets/step2/delivery/current/fewshot_pool.db --fewshot-build-manifest-path datasets/step2/delivery/current/build_manifest.json",
+    "preflight_passed": true,
+    "preflight_report_path": "datasets/step2/delivery/current/preflight_20260527T065437Z/preflight_report.json"
+  },
+  "build_inputs": {
+    "generator_script": "code/step2/code/build_formal_fewshot_pool.py",
+    "audit_script": "code/step2/code/audit_fewshot_pool.py",
+    "protocol_doc": "code/step2/docs/plan-1-step2-experiment-protocol.md",
+    "review_sheet_csv": "datasets/step2/review/m_only_review_sheet.csv"
+  },
+  "step3_target": {
+    "purpose": "Support Step2 formal generation of synthetic_samples_step3_ready.jsonl.",
+    "expected_step2_ready_file": "synthetic_samples_step3_ready.jsonl",
+    "step3_eval_leakage_status": "pending_missing_frozen_eval_assets"
+  },
+  "notes": "Final formal-ready acceptance still requires frozen Step3 eval/test leakage audit once those assets exist."
+}

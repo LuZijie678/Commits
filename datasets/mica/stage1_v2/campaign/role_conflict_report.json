@@ -1,0 +1,240 @@
+{
+  "schema_version": "mica-stage1-v2-role-conflict-report-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "creation_git_sha": "d379a43_worktree_amendment",
+  "created_at": "2026-07-26T07:45:00+00:00",
+  "human_staffing_incomplete": false,
+  "annotation_campaign_blocked": false,
+  "conflicts": [],
+  "forbidden_assignments": [],
+  "staffing_complete": true,
+  "llm_annotation_track_active": true,
+  "llm_annotation_amendment_id": "stage1-v2-llm-annotation-amendment-v1",
+  "amendment_permitted_assignments": [
+    {
+      "campaign_id": "real_alignment_pilot",
+      "batch_id": "calibration_round_1",
+      "role": "annotator_a",
+      "actor_id": "claude_stage1_v2_annotator_a",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_alignment_pilot",
+      "batch_id": "calibration_round_1",
+      "role": "annotator_b",
+      "actor_id": "claude_stage1_v2_annotator_b",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_alignment_pilot",
+      "batch_id": "calibration_round_1",
+      "role": "adjudicator",
+      "actor_id": "claude_stage1_v2_adjudicator",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_alignment_pilot",
+      "batch_id": "pilot_batch_2",
+      "role": "annotator_a",
+      "actor_id": "claude_stage1_v2_annotator_a",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_alignment_pilot",
+      "batch_id": "pilot_batch_2",
+      "role": "annotator_b",
+      "actor_id": "claude_stage1_v2_annotator_b",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_alignment_pilot",
+      "batch_id": "pilot_batch_2",
+      "role": "adjudicator",
+      "actor_id": "claude_stage1_v2_adjudicator",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_alignment_pilot",
+      "batch_id": "pilot_batch_3",
+      "role": "annotator_a",
+      "actor_id": "claude_stage1_v2_annotator_a",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_alignment_pilot",
+      "batch_id": "pilot_batch_3",
+      "role": "annotator_b",
+      "actor_id": "claude_stage1_v2_annotator_b",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_alignment_pilot",
+      "batch_id": "pilot_batch_3",
+      "role": "adjudicator",
+      "actor_id": "claude_stage1_v2_adjudicator",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_01",
+      "role": "annotator_a",
+      "actor_id": "claude_stage1_v2_annotator_a",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_01",
+      "role": "annotator_b",
+      "actor_id": "claude_stage1_v2_annotator_b",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_01",
+      "role": "adjudicator",
+      "actor_id": "claude_stage1_v2_adjudicator",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_02",
+      "role": "annotator_a",
+      "actor_id": "claude_stage1_v2_annotator_a",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_02",
+      "role": "annotator_b",
+      "actor_id": "claude_stage1_v2_annotator_b",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_02",
+      "role": "adjudicator",
+      "actor_id": "claude_stage1_v2_adjudicator",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_03",
+      "role": "annotator_a",
+      "actor_id": "claude_stage1_v2_annotator_a",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_03",
+      "role": "annotator_b",
+      "actor_id": "claude_stage1_v2_annotator_b",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_03",
+      "role": "adjudicator",
+      "actor_id": "claude_stage1_v2_adjudicator",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_04",
+      "role": "annotator_a",
+      "actor_id": "claude_stage1_v2_annotator_a",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_04",
+      "role": "annotator_b",
+      "actor_id": "claude_stage1_v2_annotator_b",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_count_pilot",
+      "batch_id": "pilot_batch_04",
+      "role": "adjudicator",
+      "actor_id": "claude_stage1_v2_adjudicator",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "background_pilot",
+      "batch_id": "pilot_batch_01",
+      "role": "annotator_a",
+      "actor_id": "claude_stage1_v2_annotator_a",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "background_pilot",
+      "batch_id": "pilot_batch_01",
+      "role": "annotator_b",
+      "actor_id": "claude_stage1_v2_annotator_b",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "background_pilot",
+      "batch_id": "pilot_batch_01",
+      "role": "adjudicator",
+      "actor_id": "claude_stage1_v2_adjudicator",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "background_pilot",
+      "batch_id": "pilot_batch_02",
+      "role": "annotator_a",
+      "actor_id": "claude_stage1_v2_annotator_a",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "background_pilot",
+      "batch_id": "pilot_batch_02",
+      "role": "annotator_b",
+      "actor_id": "claude_stage1_v2_annotator_b",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "background_pilot",
+      "batch_id": "pilot_batch_02",
+      "role": "adjudicator",
+      "actor_id": "claude_stage1_v2_adjudicator",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    },
+    {
+      "campaign_id": "real_alignment_blind_review",
+      "batch_id": "blind_review_pending",
+      "role": "independent_blind_reviewer",
+      "actor_id": "claude_stage1_v2_blind_reviewer",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+    }
+  ],
+  "human_annotation_evidence": false
+}

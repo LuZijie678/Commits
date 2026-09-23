@@ -1,0 +1,48 @@
+{
+  "experiment_name": "llm_generation_canary_real_template",
+  "random_seed": 42,
+  "pilot_sample_size": {
+    "atomic_simple": 5,
+    "hard_b": 5,
+    "synthetic_multi": 5,
+    "M_real_multi": 5
+  },
+  "data_sources": {
+    "step3_source_root": "outputs/step3_balanced_diagnostic_readiness_20260604T014128Z",
+    "step1_atomic_csv": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+    "hard_b_csv": "datasets/hard_b/canonical/usable_hard_b_with_real_diff.csv",
+    "m_csv": "datasets/m_verified/canonical/usable_m_with_real_diff.csv"
+  },
+  "generation_strategies": ["G0", "G1", "G4", "G5"],
+  "few_shot_k": 3,
+  "retrieval_method": "tfidf_cosine",
+  "retrieval_low_similarity_threshold": 0.10,
+  "output_root": "",
+  "resume": true,
+  "context_window": "",
+  "rate_limit": "",
+  "pricing": {
+    "input_per_1m_tokens": null,
+    "output_per_1m_tokens": null
+  },
+  "backend": {
+    "provider": "openai_compatible",
+    "base_url": "",
+    "api_key_env": "",
+    "model": "",
+    "temperature": 0.2,
+    "top_p": 1.0,
+    "max_output_tokens": 64,
+    "timeout_seconds": 60,
+    "max_retries": 2,
+    "allow_real_api": false,
+    "cache_path": "outputs/llm_generation_canary_real_cache.json"
+  },
+  "judge": {
+    "enabled": false,
+    "provider": "mock",
+    "model": "mock-judge",
+    "cache_path": "outputs/llm_generation_judge_canary_cache.json",
+    "sample_size": 0
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "stage": "eval_real_domain_detection",
+  "dryrun_only": true,
+  "final_test_eval_only": true,
+  "no_threshold_tuning_on_final_test": true,
+  "real_domain_split_test_forbidden_for_training": true,
+  "real_domain_selective_test_forbidden_for_training": true,
+  "hard_b_test_eval_allowed": true,
+  "m_final_test_eval_allowed": true
+}

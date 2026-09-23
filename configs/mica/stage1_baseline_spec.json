@@ -1,0 +1,15 @@
+{
+  "baseline_status": "dryrun_diagnostic_only",
+  "baselines": [
+    "all_one",
+    "file_path",
+    "random_gold_k",
+    "size_heuristic_count",
+    "flat_classifier",
+    "no_slot_decoder"
+  ],
+  "advisor_stage1_baselines_approved": false,
+  "flat_classifier_baseline_status": "lightweight_diagnostic_implemented",
+  "no_slot_decoder_baseline_status": "lightweight_diagnostic_implemented",
+  "thresholds_are_not_final": true
+}

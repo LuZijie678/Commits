@@ -1,0 +1,40 @@
+{
+  "schema_version": "real_api_probe_result_v1",
+  "report_timestamp": "20260610T082333Z",
+  "planned_request_count": 5,
+  "completed_request_count": 5,
+  "failed_request_count": 0,
+  "api_success_rate": 1.0,
+  "parse_success_rate": 1.0,
+  "empty_output_rate": 0.0,
+  "single_line_rate": 1.0,
+  "artifact_rate": 0.0,
+  "retry_count": 0,
+  "timeout_count": 0,
+  "cache_hit_count": 0,
+  "resume_skip_count": 5,
+  "new_real_request_count": 0,
+  "latency_p50_ms": 1179,
+  "latency_p90_ms": 2070,
+  "actual_usage_available": true,
+  "actual_input_tokens_total": 36842,
+  "actual_output_tokens_total": 49,
+  "estimated_actual_cost_usd": 0.0051716,
+  "strategy_distribution": {
+    "G1": 2,
+    "G4": 2,
+    "G5": 1
+  },
+  "category_distribution": {
+    "atomic_simple": 1,
+    "hard_b": 1,
+    "synthetic_multi": 2,
+    "M_real_multi": 1
+  },
+  "thinking_mode": "disabled",
+  "key_leakage_detected": false,
+  "recommend_65_request_canary": false,
+  "report_json_path": "reports/real_api_probe_result_20260610T082333Z.json",
+  "report_md_path": "reports/real_api_probe_result_20260610T082333Z.md",
+  "manual_review_path": "reports/real_api_probe_manual_review_20260610T082333Z.csv"
+}

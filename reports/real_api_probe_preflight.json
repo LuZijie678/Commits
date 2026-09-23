@@ -1,0 +1,20 @@
+{
+  "schema_version": "real_api_probe_preflight_v1",
+  "provider": "openai_compatible",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-v4-flash",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "key_present": true,
+  "http_status": 402,
+  "available_model_match": true,
+  "parse_success": false,
+  "content_non_empty": false,
+  "single_line": false,
+  "latency_ms": 0,
+  "usage": {},
+  "thinking_mode": "disabled",
+  "passed": false,
+  "blocker": "HTTP 402: Payment Required",
+  "models_http_status": 200,
+  "models_latency_ms": 268
+}

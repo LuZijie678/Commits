@@ -1,0 +1,31 @@
+{
+  "schema_version": "mica-stage1-v2-calibration-round-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "creation_git_sha": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+  "created_at": "2026-07-26T11:00:00+00:00",
+  "campaign_id": "real_alignment_pilot",
+  "batch_id": "calibration_round_1",
+  "completed": true,
+  "sample_count": 30,
+  "annotation_track": "llm_annotation_track (stage1-v2-llm-annotation-amendment-v1)",
+  "annotator_a": "claude_stage1_v2_annotator_a",
+  "annotator_b": "claude_stage1_v2_annotator_b",
+  "adjudicator": "claude_stage1_v2_adjudicator",
+  "double_annotation_complete": true,
+  "adjudication_complete": true,
+  "disagreement_count": 15,
+  "agreement_report_path": "datasets/mica/stage1_v2/real_alignment/calibration_round_1_agreement_report.json",
+  "adjudicated_rows_path": "datasets/mica/stage1_v2/real_alignment/calibration_round_1_adjudicated.jsonl",
+  "gates_passed": {
+    "exact_k_weighted_kappa": true,
+    "split_no_split_kappa": false,
+    "foreground_background_agreement": true,
+    "bcubed_agreement": true,
+    "pairwise_unit_agreement": false
+  },
+  "calibration_agreement_passed": false,
+  "guideline_status": "revision_required",
+  "guideline_revision_proposal_path": "datasets/mica/stage1_v2/real_alignment/calibration_round_1_guideline_revision_proposal.md",
+  "human_verified": false,
+  "next_step": "guideline pilot_v2 revision, then calibration round 2 before any pilot batch annotation"
+}

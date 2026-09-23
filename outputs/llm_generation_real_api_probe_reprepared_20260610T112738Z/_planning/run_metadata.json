@@ -1,0 +1,53 @@
+{
+  "schema_version": "llm_generation_pilot_run_v1",
+  "output_root": "outputs/llm_generation_real_api_probe_reprepared_20260610T112738Z/_planning",
+  "provider": "mock",
+  "model": "mock-commit-message-generator",
+  "allow_real_api": false,
+  "dry_run": true,
+  "sample_count": 4,
+  "strategy_count": 3,
+  "planned_request_count": 5,
+  "real_api_called": false,
+  "thinking_mode": "disabled",
+  "backend_metadata": {
+    "provider": "mock",
+    "model": "mock-commit-message-generator",
+    "thinking_mode": "disabled"
+  },
+  "dataset_manifest": {
+    "schema_version": "llm_generation_real_api_probe_dataset_v1",
+    "source_root": "outputs/llm_generation_pilot_20260609T045027Z",
+    "output_root": "outputs/llm_generation_real_api_probe_reprepared_20260610T112738Z/_planning",
+    "seed": 42,
+    "requested_sizes": {
+      "atomic_simple": 1,
+      "hard_b": 1,
+      "synthetic_multi": 1,
+      "M_real_multi": 1
+    },
+    "selected_counts": {
+      "atomic_simple": 1,
+      "hard_b": 1,
+      "synthetic_multi": 1,
+      "M_real_multi": 1
+    },
+    "shortfalls": {},
+    "leakage_passed": true,
+    "data_categories": {
+      "atomic_simple": "simple single-intent real commits from strict Step3 test",
+      "hard_b": "complex single-intent real commits",
+      "synthetic_multi": "Step2 synthetic multi-intent commits with structure labels",
+      "M_real_multi": "real multi-intent commits with commit-level labels"
+    },
+    "canary_scope": "4-sample real API provider probe"
+  },
+  "exemplar_pool_manifest": {
+    "schema_version": "llm_generation_exemplar_pool_v1",
+    "source_root": "outputs/llm_generation_pilot_20260609T045027Z",
+    "pool_count": 3215,
+    "filter_reasons": {},
+    "pilot_sample_count": 4,
+    "leakage_policy": "exclude pilot canonical repos, source SHAs, exact diff fingerprints, and exact normalized subjects"
+  }
+}

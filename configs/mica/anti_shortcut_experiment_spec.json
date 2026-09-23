@@ -1,0 +1,15 @@
+{
+  "stage": "anti_shortcut_experiment",
+  "masking_modes": [
+    "path_masked",
+    "identifier_masked",
+    "marker_masked",
+    "template_subject_masked",
+    "file_order_permuted"
+  ],
+  "execute_model_by_default": false,
+  "requires_explicit_approval_for_execution": true,
+  "model_command": [],
+  "thresholds_applied_to_pass_fail": false,
+  "advisor_pending": true
+}

@@ -1,0 +1,33 @@
+{
+  "generated_at_utc": "2026-05-27T01:51:29Z",
+  "source_policy": "m_only_canonical",
+  "input_csv": "datasets/m_verified/canonical/usable_m_with_real_diff.csv",
+  "input_csv_sha256": "58528cd3c1dec4dca9be72477a74ab3332f6fde4f7723770407939304281d7b1",
+  "step2_source_csv": "datasets/derived/step2_bridge/current/step2_source_candidates_from_step1.csv",
+  "step2_source_csv_sha256": "19fda4f7506a27c031d685f18b6d3c54ca74b4b6ea3968b6e2bc477c3fb8a678",
+  "candidate_csv": "datasets/step2/candidate_sources/m_only_disjoint_candidates.csv",
+  "review_sheet_csv": "datasets/step2/review/m_only_review_sheet.csv",
+  "stats": {
+    "total_rows": 773,
+    "strict_repo_sha_disjoint_rows": 773,
+    "repo_overlap_rows": 0,
+    "sha_overlap_rows": 0,
+    "style_clean_rows": 598,
+    "style_bad_rows": 175,
+    "candidate_repo_count": 341,
+    "step2_source_repo_count": 74,
+    "step2_source_sha_count": 2712,
+    "style_reason_counts": {
+      "mechanical_semicolon": 126,
+      "overlong_subject": 58,
+      "double_prefix": 15,
+      "numbered_list": 4,
+      "generic_subject": 7,
+      "bullet_list": 1
+    }
+  },
+  "notes": [
+    "review sheet 仅包含 strict_repo_sha_disjoint=1 的候选。",
+    "type_signature_canonical / intent_k / subject_normalized 需人工复核后填写。"
+  ]
+}

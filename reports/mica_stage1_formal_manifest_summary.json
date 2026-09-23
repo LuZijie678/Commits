@@ -1,0 +1,137 @@
+{
+  "created_at_utc": "20260615T071559Z",
+  "seed": 42,
+  "schedule_candidate": "naive_balanced_mixed_large_scale",
+  "formal_manifest_status": "frozen_runtime_manifest_created",
+  "runtime_manifest_path": "outputs/mica_stage1_formal_manifest_20260615T000000Z/stage1_formal_manifest.json",
+  "runtime_manifest_not_committed": true,
+  "synthetic_source_path_is_local_runtime_only": true,
+  "allowed_data_sources": {
+    "step1_atomic_k1": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+    "step2_synthetic_k2": "local_runtime_synthetic_samples_step3_ready_jsonl"
+  },
+  "forbidden_data_sources": {
+    "hard_b": false,
+    "M_weak": false,
+    "M_alignment": false,
+    "RealDomainBinary": false,
+    "stage2_loss": false,
+    "M_censored_loss": false,
+    "generation_outputs": false,
+    "retrieval": false,
+    "verifier": false,
+    "llm_judge": false,
+    "real_api": false
+  },
+  "stage2_allowed": false,
+  "requested_counts": {
+    "train": {
+      "atomic_k1": 1000,
+      "synthetic_k2": 1000
+    },
+    "dev": {
+      "atomic_k1": 250,
+      "synthetic_k2": 250
+    },
+    "test": {
+      "atomic_k1": 250,
+      "synthetic_k2": 250
+    }
+  },
+  "counts": {
+    "train": {
+      "atomic_k1": 1000,
+      "synthetic_k2": 1000,
+      "total": 2000
+    },
+    "dev": {
+      "atomic_k1": 250,
+      "synthetic_k2": 250,
+      "total": 500
+    },
+    "test": {
+      "atomic_k1": 250,
+      "synthetic_k2": 250,
+      "total": 500
+    }
+  },
+  "medium_candidate_count_available": 3599,
+  "fallback_applied": false,
+  "fallback_reason": [],
+  "formal_manifest_downgraded": false,
+  "downgrade_reason": [],
+  "post_fallback_baseline_distribution": {
+    "train": {
+      "file_path_baseline_mean": 0.5616505422227354,
+      "random_gold_k_baseline_mean": 0.42876916266694814
+    },
+    "dev": {
+      "file_path_baseline_mean": 0.5609802496782211,
+      "random_gold_k_baseline_mean": 0.42949664495706497
+    },
+    "test": {
+      "file_path_baseline_mean": 0.5587463270776124,
+      "random_gold_k_baseline_mean": 0.4242078746011447
+    }
+  },
+  "split_diagnostics": {
+    "train": {
+      "singleton_intent_fraction": 0.0,
+      "file_path_baseline_mean": 0.5616505422227354,
+      "random_gold_k_baseline_mean": 0.42876916266694814,
+      "avg_edit_units": 8.212,
+      "p50_edit_units": 7.0,
+      "p90_edit_units": 14.0
+    },
+    "dev": {
+      "singleton_intent_fraction": 0.0,
+      "file_path_baseline_mean": 0.5609802496782211,
+      "random_gold_k_baseline_mean": 0.42949664495706497,
+      "avg_edit_units": 8.032,
+      "p50_edit_units": 7.0,
+      "p90_edit_units": 13.0
+    },
+    "test": {
+      "singleton_intent_fraction": 0.0,
+      "file_path_baseline_mean": 0.5587463270776124,
+      "random_gold_k_baseline_mean": 0.4242078746011447,
+      "avg_edit_units": 8.092,
+      "p50_edit_units": 6.0,
+      "p90_edit_units": 15.0
+    }
+  },
+  "leakage_checks": {
+    "sample_id_overlap_count": 0,
+    "sample_id_hard_leakage_zero": true,
+    "sha_overlap_checks": {
+      "available": true,
+      "hard_overlap_count": 0,
+      "hard_leakage_zero": true
+    },
+    "synthetic_id_overlap_checks": {
+      "available": true,
+      "hard_overlap_count": 0,
+      "hard_leakage_zero": true
+    },
+    "normalized_subject_overlap_checks": {
+      "available": true,
+      "overlap_count": 674
+    },
+    "repo_overlap_count": 125,
+    "repo_overlap_allowed_for_stage1_synthetic": true,
+    "repo_overlap_reason": "Stage 1 synthetic attribution splits are sample-disjoint; repo-disjointness is not guaranteed by current local Step1/Step2 pools."
+  },
+  "source_stats": {
+    "atomic_candidates_total": 5099,
+    "atomic_loaded": 5099,
+    "atomic_skipped_empty_units": 0,
+    "synthetic_candidates_total": 19137,
+    "synthetic_loaded": 19137,
+    "synthetic_skipped": 0,
+    "synthetic_skipped_missing_alignment": 0,
+    "synthetic_skipped_empty_units": 0,
+    "synthetic_skipped_non_k2": 0,
+    "synthetic_skipped_length_mismatch": 0,
+    "synthetic_skipped_other": 0
+  }
+}

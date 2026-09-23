@@ -1,0 +1,42 @@
+{
+  "schema_version": "mica-stage1-v2-qualification-execution-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "scoring_mode": "llm_annotation_track (stage1-v2-llm-annotation-amendment-v1)",
+  "scored_by": "claude_fable_5_orchestrator (holds private key; annotator contexts never saw it)",
+  "metric_definition_note": "pairwise_partition_f1 uses the empty-linkage convention: when both gold and annotator partitions contain zero same-intent pairs over the same unit set, the item scores 1.0 (agreement on all-singleton partition). The raw pairwise_f1_from_assignments returns 0.0 for tp=fp=fn=0, which mis-scores correct annotations on 2-unit k=2 samples; thresholds are unchanged.",
+  "annotators": [
+    {
+      "annotator_id": "claude_stage1_v2_annotator_a",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1",
+      "items_scored": 20,
+      "items_missing": [],
+      "exact_k_accuracy": 1.0,
+      "pairwise_partition_f1": 1.0,
+      "background_classification_f1": 1.0,
+      "thresholds": {
+        "exact_k_accuracy": 0.85,
+        "pairwise_partition_f1": 0.8,
+        "background_classification_f1": 0.85
+      },
+      "passed": true
+    },
+    {
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "actor_type": "llm",
+      "amendment_id": "stage1-v2-llm-annotation-amendment-v1",
+      "items_scored": 20,
+      "items_missing": [],
+      "exact_k_accuracy": 1.0,
+      "pairwise_partition_f1": 1.0,
+      "background_classification_f1": 1.0,
+      "thresholds": {
+        "exact_k_accuracy": 0.85,
+        "pairwise_partition_f1": 0.8,
+        "background_classification_f1": 0.85
+      },
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

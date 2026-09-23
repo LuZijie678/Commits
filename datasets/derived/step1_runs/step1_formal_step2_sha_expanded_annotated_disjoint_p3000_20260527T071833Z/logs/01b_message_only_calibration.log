@@ -1,0 +1,8 @@
+$ /opt/homebrew/opt/python@3.14/bin/python3.14 -m src.pipeline.message_only_calibration --input ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/calibration.csv --calibration-input ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/calibration.csv --evaluation-input ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/evaluation.csv --annotated-split-plan-json ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/annotated_split_plan.json --base-calibration ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/calibration/atomic_calibration_full_diff.json --output ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/calibration/message_only_calibration.json --calibration-mode platt --labeled-calibration-scheme cv --labeled-cv-folds 5 --tau-a-precision 0.9 --tau-b-precision 0.7 --threshold-fallback-policy error
+
+<frozen runpy>:128: RuntimeWarning: 'src.pipeline.message_only_calibration' found in sys.modules after import of package 'src.pipeline', but prior to execution of 'src.pipeline.message_only_calibration'; this may result in unpredictable behaviour
+tau_a=0.980841
+tau_b=0.949700
+../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/calibration/message_only_calibration.json
+
+## EXIT_CODE=0

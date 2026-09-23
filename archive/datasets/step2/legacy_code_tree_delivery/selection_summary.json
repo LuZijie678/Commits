@@ -1,0 +1,39 @@
+{
+  "generated_at_utc": "2026-05-27T03:23:50Z",
+  "input_csv": "/Users/lifulin/Downloads/Commits/datasets/m_verified/canonical/usable_m_with_real_diff.csv",
+  "review_sheet_csv": "fewshot待制备/manual_review/m_only_review_sheet.csv",
+  "delivery_dir": "fewshot待制备/delivery",
+  "selection_policy": "common_signature_cover_first_then_repo_diverse_fill",
+  "min_final_size": 120,
+  "target_final_size": 130,
+  "max_final_size": 150,
+  "selected_count": 130,
+  "eligible_accept_rows": 167,
+  "pending_rows": 0,
+  "invalid_accept_rows": 0,
+  "audit_pass": true,
+  "retrieval_probe_ok": true,
+  "preflight_attempted": true,
+  "preflight_passed": true,
+  "common_signature_coverage_selected": {
+    "fix+test": 14,
+    "feat+test": 12,
+    "fix+docs": 7,
+    "feat+docs": 6,
+    "fix+refactor": 10,
+    "feat+refactor": 15,
+    "docs+test": 4,
+    "perf+refactor": 3,
+    "fix+perf": 4
+  },
+  "style_policy": "subject_normalized must pass strict style",
+  "step3_eval_leakage_status": "pending_missing_frozen_eval_assets",
+  "blockers": [],
+  "warnings": [],
+  "artifacts": {
+    "fewshot_db": "fewshot待制备/delivery/fewshot_pool.db",
+    "build_manifest": "fewshot待制备/delivery/build_manifest.json",
+    "fewshot_audit": "fewshot待制备/delivery/fewshot_audit.json",
+    "preflight_report": "fewshot待制备/delivery/preflight_report.json"
+  }
+}

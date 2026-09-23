@@ -1,0 +1,42 @@
+{
+  "schema_version": "mica-stage1-v2-human-review-receipt-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "round_label": "calibration_round_2",
+  "artifact_id": "human_review_receipt_calibration_round_2_p2_codex_review",
+  "source_artifact_id": "calibration_round_2_p2_codex_review_filled",
+  "reviewed_artifact_id": "human_reviewed_calibration_round_2_p2_codex_review",
+  "reviewer_id": "stage1_v2_user_reviewer",
+  "reviewer_actor_type": "human",
+  "review_evidence_type": "chat_confirmation",
+  "review_evidence_text": "复审完毕，无需改动，继续",
+  "review_decision": "accepted_current_codex_p2_diagnostic_decisions",
+  "reviewed_at": "2026-07-27T06:44:58Z",
+  "record_count": 14,
+  "decision_distribution": {
+    "usable_k_le_4": 14
+  },
+  "reviewed_exact_k_distribution": {
+    "1": 5,
+    "2": 5,
+    "3": 3,
+    "4": 1
+  },
+  "changed_from_original_codex_exact_k": [
+    {
+      "sample_id": "calibration_round_2_0022",
+      "codex_exact_k": 4,
+      "reviewed_exact_k": 3
+    },
+    {
+      "sample_id": "calibration_round_2_0027",
+      "codex_exact_k": 4,
+      "reviewed_exact_k": 2
+    }
+  ],
+  "human_verified": true,
+  "formal_human_evidence": false,
+  "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+  "eligible_for_formal_calibration": false,
+  "stage1_v2_training_allowed": false,
+  "stage2_entry_allowed": false
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "real_api_probe_result_v1",
+  "planned_request_count": 5,
+  "completed_request_count": 5,
+  "failed_request_count": 0,
+  "api_success_rate": 1.0,
+  "parse_success_rate": 1.0,
+  "empty_output_rate": 0.0,
+  "single_line_rate": 1.0,
+  "artifact_rate": 0.0,
+  "retry_count": 0,
+  "timeout_count": 0,
+  "cache_hit_count": 0,
+  "resume_skip_count": 5,
+  "new_real_request_count": 0,
+  "latency_p50_ms": 1,
+  "latency_p90_ms": 1,
+  "input_tokens_total": 50,
+  "output_tokens_total": 15,
+  "estimated_cost_usd": 1.1200000000000001e-05,
+  "strategy_distribution": {
+    "G1": 2,
+    "G4": 2,
+    "G5": 1
+  },
+  "category_distribution": {
+    "atomic_simple": 1,
+    "hard_b": 1,
+    "synthetic_multi": 2,
+    "M_real_multi": 1
+  },
+  "thinking_mode": "disabled"
+}

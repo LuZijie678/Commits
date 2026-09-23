@@ -1,0 +1,9 @@
+$ /opt/homebrew/opt/python@3.14/bin/python3.14 -m src.pipeline.selection --input ../../datasets/step1/canonical/prefilter_allcommits_step2_sha_and_expanded_annotated_disjoint.csv --output ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/selection/selection_batch.csv --audit-target 300 --per-type 3000 --seed 31 --proxy-calibration-json ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/calibration/message_only_calibration.json --min-prefilter-prob 0.0 --debug-top-count 20000 --metrics-json ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/selection/selection_metrics.json --prefer-high-tier
+
+<frozen runpy>:128: RuntimeWarning: 'src.pipeline.selection' found in sys.modules after import of package 'src.pipeline', but prior to execution of 'src.pipeline.selection'; this may result in unpredictable behaviour
+all_candidates=49136
+selected=12000
+per_type=3000
+../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/selection/selection_batch.csv
+
+## EXIT_CODE=0

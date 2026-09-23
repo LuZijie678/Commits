@@ -1,0 +1,49 @@
+{
+  "checked_at_utc": "2026-05-26T14:43:57.552802+00:00",
+  "check_kind": "final_state_after_formal_absorb_and_archive",
+  "workspace_round_runs": {
+    "remaining_group_count": 0,
+    "remaining_groups": []
+  },
+  "formal_layers": {
+    "combined_labels_row_count": 7063,
+    "current_m_candidates_row_count": 861,
+    "canonical_m_row_count": 773
+  },
+  "assistant_absorption_round": {
+    "round_name": "round_runs_absorb_20260526",
+    "assistant_labeled_count": 641,
+    "assistant_m_count": 8,
+    "manual_review_count": 22
+  },
+  "archive": {
+    "archived_group_count": 17,
+    "archived_groups": [
+      "batchcrawl/20260526T024705Z",
+      "batchcrawl/20260526T025527Z",
+      "batchcrawl/20260526T030407Z",
+      "batchcrawl/20260526T031105Z",
+      "batchcrawl/20260526T031715Z",
+      "batchcrawl/20260526T040333Z",
+      "batchcrawl/20260526T071501Z",
+      "batchcrawl/20260526T124753Z",
+      "batchcrawl/20260526T125513Z",
+      "batchcrawl/20260526T130226Z",
+      "batchcrawl/20260526T131044Z",
+      "batchcrawl/20260526T131803Z",
+      "batchcrawl/20260526T132427Z",
+      "batchcrawl/20260526T132558Z",
+      "batchcrawl/20260526T133228Z",
+      "newcrawl/20260525",
+      "newcrawl/20260526"
+    ]
+  },
+  "decision": {
+    "decision": "workspace_round_runs_fully_absorbed_and_archived",
+    "reason": [
+      "all remaining data-bearing round_runs commits were absorbed into the formal combined label layer",
+      "the M-labeled subset was additionally propagated into current M candidates and canonical M",
+      "therefore the round_runs directories became redundant evidence and were archived out of workspace"
+    ]
+  }
+}

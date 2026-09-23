@@ -1,0 +1,234 @@
+{
+  "formal_protocol_version": "step2_formal_protocol_v2_2026_04_30",
+  "preflight_timestamp_utc": "2026-05-27T06:27:16.159677+00:00",
+  "passed": true,
+  "preflight_target_run_purpose": "formal",
+  "report_dir": "/Users/lifulin/Downloads/Commits/datasets/step2/delivery/current/preflight_20260527T062659Z",
+  "report_path": "/Users/lifulin/Downloads/Commits/datasets/step2/delivery/current/preflight_20260527T062659Z/preflight_report.json",
+  "diff_evidence": {
+    "diff_evidence_card_version": "diff_evidence_card_v1_2026_05_11",
+    "diff_evidence_policy": "lightweight_diff_evidence_required",
+    "diff_evidence_required_for_formal": true
+  },
+  "checks": {
+    "output": {
+      "passed": true,
+      "report_dir": "/Users/lifulin/Downloads/Commits/datasets/step2/delivery/current/preflight_20260527T062659Z",
+      "detail": ""
+    },
+    "generator": {
+      "passed": true,
+      "generator_mode": "api",
+      "generator_model": "deepseek-v4-pro",
+      "api_key_present": true,
+      "api_key_source": "env",
+      "detail": "",
+      "api_ping": null
+    },
+    "scoring": {
+      "passed": true,
+      "scorer_backend": "bertscore_only_v1",
+      "detail": "bert-score importable",
+      "guidance": ""
+    },
+    "input_data": {
+      "passed": true,
+      "source_csv": "../../datasets/derived/step2_bridge/current/step2_source_candidates_from_step1.csv",
+      "normalized_required_columns": [
+        "git_diff",
+        "message",
+        "repo",
+        "sha",
+        "subject",
+        "type"
+      ],
+      "a_tier_count": 2712,
+      "pool_stats": {
+        "a_tier_rows": 2712,
+        "repo_count": 74,
+        "type_count": 4
+      },
+      "detail": ""
+    },
+    "fewshot": {
+      "passed": true,
+      "resolved_db": "/Users/lifulin/Downloads/Commits/datasets/step2/delivery/current/fewshot_pool.db",
+      "resolution": {
+        "source": "explicit_db",
+        "built_default_pool": false,
+        "resolved_db": "/Users/lifulin/Downloads/Commits/datasets/step2/delivery/current/fewshot_pool.db"
+      },
+      "example_count": 130,
+      "raw_example_count": 130,
+      "retrieval_probe": {
+        "examples": [
+          {
+            "example_id": "mfs__alibaba__Sentinel__cd02b1dc8d7cdf86925f8316f5de88a7b01af5fe",
+            "repo": "alibaba/Sentinel",
+            "sha": "cd02b1dc8d7cdf86925f8316f5de88a7b01af5fe",
+            "type_signature_canonical": "fix+test",
+            "type_pair": "fix+test",
+            "subject": "fix flaky tests and fix passDefaultLocalCheck"
+          }
+        ],
+        "few_shot_source": "exact_kway",
+        "retrieval_backend": "sqlite_formal_kway_v2",
+        "retrieval_result_count": 1,
+        "retrieval_error": "",
+        "retrieval_status": "exact",
+        "few_shot_retrieval_log": {
+          "requested_type_signature": "fix+test",
+          "requested_types_canonical": [
+            "fix",
+            "test"
+          ],
+          "intent_k": 2,
+          "few_shot_requested_k": 1,
+          "query_levels_attempted": [
+            {
+              "level": "exact_kway",
+              "candidate_count": 14,
+              "selected_count": 1
+            }
+          ],
+          "examples_found_per_level": {
+            "exact_kway": 14
+          },
+          "selected_example_ids": [
+            "mfs__alibaba__Sentinel__cd02b1dc8d7cdf86925f8316f5de88a7b01af5fe"
+          ],
+          "selected_example_type_signatures": [
+            "fix+test"
+          ],
+          "selected_example_repos": [
+            "alibaba/Sentinel"
+          ],
+          "retrieval_status": "exact",
+          "failure_reason": "",
+          "excluded_same_repo_count": 0,
+          "excluded_source_sha_count": 0,
+          "excluded_non_train_count": 0,
+          "excluded_ineligible_count": 0,
+          "excluded_unverified_count": 0,
+          "excluded_bad_style_count": 0,
+          "eligibility_policy": "train_split + (fewshot_eligible==1 if present) + (verified_multi_intent==1 if present) + style_clean"
+        }
+      },
+      "fewshot_pool_audit": {
+        "total_examples": 130,
+        "verified_examples": 130,
+        "eligible_examples_for_retrieval": 130,
+        "type_signature_counts": {
+          "docs+perf": 1,
+          "docs+refactor": 1,
+          "docs+test": 4,
+          "feat+docs": 6,
+          "feat+fix": 51,
+          "feat+refactor": 15,
+          "feat+test": 12,
+          "fix+docs": 7,
+          "fix+perf": 4,
+          "fix+refactor": 10,
+          "fix+test": 14,
+          "perf+refactor": 3,
+          "refactor+test": 2
+        },
+        "common_signature_coverage": {
+          "fix+test": 14,
+          "feat+test": 12,
+          "fix+docs": 7,
+          "feat+docs": 6,
+          "fix+refactor": 10,
+          "feat+refactor": 15,
+          "docs+test": 4,
+          "perf+refactor": 3,
+          "fix+perf": 4
+        },
+        "bad_style_count": 0,
+        "bad_style_examples": [],
+        "double_prefix_count": 0,
+        "overlong_count": 0,
+        "generic_subject_count": 0,
+        "audit_pass": true,
+        "blockers": [],
+        "warnings": [],
+        "eligibility_policy": "train_split + (fewshot_eligible==1 if present) + (verified_multi_intent==1 if present) + style_clean",
+        "retrieval_filter_stats": {
+          "filtered_non_train": 0,
+          "filtered_ineligible_flag": 0,
+          "filtered_unverified_flag": 0,
+          "filtered_bad_style": 0
+        },
+        "common_signatures_checked": [
+          "fix+test",
+          "feat+test",
+          "fix+docs",
+          "feat+docs",
+          "fix+refactor",
+          "feat+refactor",
+          "docs+test",
+          "perf+refactor",
+          "fix+perf"
+        ],
+        "min_total_required": 80,
+        "min_per_common_signature_required": 3,
+        "strict_style": true
+      },
+      "fewshot_pool_formal_ready": true,
+      "fewshot_pool_total_examples": 130,
+      "fewshot_pool_verified_examples": 130,
+      "common_signature_coverage": {
+        "fix+test": 14,
+        "feat+test": 12,
+        "fix+docs": 7,
+        "feat+docs": 6,
+        "fix+refactor": 10,
+        "feat+refactor": 15,
+        "docs+test": 4,
+        "perf+refactor": 3,
+        "fix+perf": 4
+      },
+      "bad_style_count": 0,
+      "fewshot_eligibility_policy": "train_split + (fewshot_eligible==1 if present) + (verified_multi_intent==1 if present) + style_clean",
+      "formal_required_for_target": true,
+      "target_run_purpose": "formal",
+      "detail": ""
+    },
+    "formal_assets": {
+      "source_manifest": {
+        "path": "../../datasets/derived/step2_bridge/current/step2_source_candidates_from_step1_manifest.json",
+        "exists": true,
+        "sha256": "08c2ec081343acc87fe09aaa14911e735cba237498a107bda1c13d2485b20bec",
+        "size_bytes": 2772,
+        "required": true,
+        "valid": true,
+        "ready": true,
+        "blockers": [],
+        "detail": "",
+        "recorded_csv_path": "../../datasets/derived/step2_bridge/current/step2_source_candidates_from_step1.csv",
+        "matches_source_csv": true
+      },
+      "fewshot_build_manifest": {
+        "path": "/Users/lifulin/Downloads/Commits/datasets/step2/delivery/current/build_manifest.json",
+        "exists": true,
+        "sha256": "f46bde5fe0edeead4b3b5a55dca6d562b90611352c2aaa4a020e0a0de2444381",
+        "size_bytes": 3538,
+        "required": true,
+        "valid": true,
+        "ready": true,
+        "blockers": [],
+        "detail": "",
+        "db_filename": "fewshot_pool.db",
+        "matches_fewshot_pool": true,
+        "validation": {
+          "audit_pass": true,
+          "retrieval_probe_ok": true,
+          "preflight_passed": false
+        }
+      },
+      "formal_assets_ready": true,
+      "blockers": [],
+      "passed": true
+    }
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "checked_at_utc": "2026-05-26T14:03:52.428040+00:00",
+  "check_kind": "second_pass_absorption_and_archive_audit",
+  "canonical_manifest": "datasets/m_verified/manifest/usable_m_with_real_diff_manifest.json",
+  "canonical_manifest_created_at_utc": "2026-05-24T15:29:59.790517+00:00",
+  "canonical_assets": {
+    "datasets/m_verified/canonical/usable_m_with_real_diff.csv": {
+      "exists": true,
+      "is_lfs_pointer": true,
+      "size_bytes": 133
+    },
+    "datasets/m_verified/canonical/usable_m_with_real_diff.jsonl": {
+      "exists": true,
+      "is_lfs_pointer": true,
+      "size_bytes": 133
+    }
+  },
+  "content_level_absorption_check": {
+    "possible": false,
+    "reason": "canonical usable_m_with_real_diff assets are still git-lfs pointers locally, so repo/sha-level absorption comparison cannot be executed in this workspace"
+  },
+  "round_runs_root": "datasets/m_verified/workspace/round_runs",
+  "workspace_remaining_file_count": 391,
+  "workspace_remaining_group_count": 13,
+  "workspace_remaining_group_counts": {
+    "newcrawl/20260525": 34,
+    "newcrawl/20260526": 43,
+    "batchcrawl/20260526T024705Z": 31,
+    "batchcrawl/20260526T025527Z": 31,
+    "batchcrawl/20260526T030407Z": 31,
+    "batchcrawl/20260526T031105Z": 31,
+    "batchcrawl/20260526T031715Z": 24,
+    "batchcrawl/20260526T071501Z": 31,
+    "batchcrawl/20260526T124753Z": 31,
+    "batchcrawl/20260526T125513Z": 31,
+    "batchcrawl/20260526T130226Z": 31,
+    "batchcrawl/20260526T131044Z": 31,
+    "batchcrawl/20260526T132427Z": 10
+  },
+  "group_details": {
+    "newcrawl/20260525": {
+      "file_count": 34,
+      "repo_count": 40,
+      "candidate_summary_files": 4,
+      "candidate_rows_total": 90,
+      "new_enriched_rows_total": 88,
+      "has_remote_diff_outputs": true,
+      "evidence_file_basename_matches": []
+    },
+    "newcrawl/20260526": {
+      "file_count": 43,
+      "repo_count": 120,
+      "candidate_summary_files": 5,
+      "candidate_rows_total": 172,
+      "new_enriched_rows_total": 342,
+      "has_remote_diff_outputs": true,
+      "evidence_file_basename_matches": []
+    },
+    "batchcrawl/20260526T024705Z": {
+      "file_count": 31,
+      "repo_count": 120,
+      "candidate_summary_files": 4,
+      "candidate_rows_total": 116,
+      "new_enriched_rows_total": 230,
+      "has_remote_diff_outputs": true,
+      "evidence_file_basename_matches": []
+    },
+    "batchcrawl/20260526T025527Z": {
+      "file_count": 31,
+      "repo_count": 120,
+      "candidate_summary_files": 4,
+      "candidate_rows_total": 109,
+      "new_enriched_rows_total": 216,
+      "has_remote_diff_outputs": true,
+      "evidence_file_basename_matches": []
+    },
+    "batchcrawl/20260526T030407Z": {
+      "file_count": 31,
+      "repo_count": 120,
+      "candidate_summary_files": 4,
+      "candidate_rows_total": 103,
+      "new_enriched_rows_total": 200,
+      "has_remote_diff_outputs": true,
+      "evidence_file_basename_matches": []
+    },
+    "batchcrawl/20260526T031105Z": {
+      "file_count": 31,
+      "repo_count": 120,
+      "candidate_summary_files": 4,
+      "candidate_rows_total": 120,
+      "new_enriched_rows_total": 236,
+      "has_remote_diff_outputs": true,
+      "evidence_file_basename_matches": []
+    },
+    "batchcrawl/20260526T031715Z": {
+      "file_count": 24,
+      "repo_count": 79,
+      "candidate_summary_files": 3,
+      "candidate_rows_total": 76,
+      "new_enriched_rows_total": 150,
+      "has_remote_diff_outputs": true,
+      "evidence_file_basename_matches": []
+    },
+    "batchcrawl/20260526T071501Z": {
+      "file_count": 31,
+      "repo_count": 120,
+      "candidate_summary_files": 4,
+      "candidate_rows_total": 96,
+      "new_enriched_rows_total": 220,
+      "has_remote_diff_outputs": true,
+      "evidence_file_basename_matches": []
+    },
+    "batchcrawl/20260526T124753Z": {
+      "file_count": 31,
+      "repo_count": 120,
+      "candidate_summary_files": 4,
+      "candidate_rows_total": 102,
+      "new_enriched_rows_total": 202,
+      "has_remote_diff_outputs": true,
+      "evidence_file_basename_matches": []
+    },
+    "batchcrawl/20260526T125513Z": {
+      "file_count": 31,
+      "repo_count": 120,
+      "candidate_summary_files": 4,
+      "candidate_rows_total": 93,
+      "new_enriched_rows_total": 182,
+      "has_remote_diff_outputs": true,
+      "evidence_file_basename_matches": []
+    },
+    "batchcrawl/20260526T130226Z": {
+      "file_count": 31,
+      "repo_count": 120,
+      "candidate_summary_files": 4,
+      "candidate_rows_total": 128,
+      "new_enriched_rows_total": 252,
+      "has_remote_diff_outputs": true,
+      "evidence_file_basename_matches": []
+    },
+    "batchcrawl/20260526T131044Z": {
+      "file_count": 31,
+      "repo_count": 109,
+      "candidate_summary_files": 4,
+      "candidate_rows_total": 103,
+      "new_enriched_rows_total": 202,
+      "has_remote_diff_outputs": true,
+      "evidence_file_basename_matches": []
+    },
+    "batchcrawl/20260526T132427Z": {
+      "file_count": 10,
+      "repo_count": 1,
+      "candidate_summary_files": 1,
+      "candidate_rows_total": 1,
+      "new_enriched_rows_total": 2,
+      "has_remote_diff_outputs": true,
+      "evidence_file_basename_matches": []
+    }
+  },
+  "file_level_absorption_evidence_match_count": 0,
+  "file_level_absorption_evidence_matches": [],
+  "zero_candidate_round_summary_files_retained": [
+    "datasets/m_verified/workspace/round_runs/batchcrawl/20260526T071501Z/batchcrawl_20260526T071501Z_round0020_api_filelist_candidates_summary.json"
+  ],
+  "archive_actions": {
+    "archive_destination_root": "archive/crawl_rounds/m_verified/batchcrawl",
+    "archived_empty_groups": [
+      {
+        "group": "batchcrawl/20260526T040333Z",
+        "repo_count": 0,
+        "candidate_files": 0,
+        "candidate_total": 0,
+        "reason": "empty_repo_discovery_only"
+      },
+      {
+        "group": "batchcrawl/20260526T131803Z",
+        "repo_count": 0,
+        "candidate_files": 0,
+        "candidate_total": 0,
+        "reason": "empty_repo_discovery_only"
+      },
+      {
+        "group": "batchcrawl/20260526T132558Z",
+        "repo_count": 0,
+        "candidate_files": 0,
+        "candidate_total": 0,
+        "reason": "empty_repo_discovery_only"
+      },
+      {
+        "group": "batchcrawl/20260526T133228Z",
+        "repo_count": 0,
+        "candidate_files": 0,
+        "candidate_total": 0,
+        "reason": "empty_repo_discovery_only"
+      }
+    ],
+    "archived_group_count": 4,
+    "archived_file_count": 12
+  },
+  "decision": {
+    "absorption_archive_count": 0,
+    "empty_run_archive_count": 4,
+    "retain_in_workspace_count": 13,
+    "decision": "archive_empty_discovery_only_groups_and_retain_all_data_bearing_groups",
+    "reason": [
+      "no remaining workspace file basename matches current canonical evidence_files_scanned, so there is still no strict file-level proof that data-bearing round outputs have been absorbed into the current canonical dataset",
+      "content-level repo/sha absorption check is blocked locally because canonical usable_m_with_real_diff assets are still git-lfs pointers",
+      "four batchcrawl groups had repo_count=0 and produced no candidate or remote-diff outputs, so they are archived as empty discovery-only runs rather than retained in the main workspace"
+    ]
+  }
+}

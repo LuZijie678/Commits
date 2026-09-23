@@ -1,0 +1,8 @@
+{
+  "schema_version": "llm_generation_exemplar_pool_v1",
+  "source_root": "outputs/llm_generation_pilot_20260609T045027Z",
+  "pool_count": 3215,
+  "filter_reasons": {},
+  "pilot_sample_count": 4,
+  "leakage_policy": "exclude pilot repos, source SHAs, exact diff fingerprints, and exact normalized subjects"
+}

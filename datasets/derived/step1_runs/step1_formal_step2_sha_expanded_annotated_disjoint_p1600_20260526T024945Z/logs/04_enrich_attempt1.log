@@ -1,0 +1,1290 @@
+$ /opt/homebrew/opt/python@3.14/bin/python3.14 -u -m src.pipeline.enrichment --input outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/selection/selection_batch.csv --repo-list data/allcommits_local_backfill/resolved_metadata.csv --repo-cache outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/repo_metadata.json --output-dir outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/enriched --max-candidates 6400 --min-atomic-prior 0.0 --search-sleep-seconds 1.0 --retry-on-429 4 --progress-every 10 --checkpoint-interval 10 --reference-time-utc 2026-05-26T02:49:45.763467Z --primary-calibration-json outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/calibration/atomic_calibration_full_diff.json --proxy-calibration-json outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/calibration/message_only_calibration.json --fetch-diff --reset-output --require-complete
+
+<frozen runpy>:128: RuntimeWarning: 'src.pipeline.enrichment' found in sys.modules after import of package 'src.pipeline', but prior to execution of 'src.pipeline.enrichment'; this may result in unpredictable behaviour
+[start] candidates=6400 | fetch_diff=True | progress_every=10 | checkpoint_interval=10 | resume_enabled=True
+[progress] 10/6400 (0.2%) | resolved_repo=rolling-scopes/rsschool-app status=resolved_local_jsonl
+processed=10
+[progress] 20/6400 (0.3%) | resolved_repo=goreleaser/goreleaser status=resolved_local_jsonl
+processed=20
+[progress] 30/6400 (0.5%) | resolved_repo=aidenybai/million status=resolved_local_jsonl
+processed=30
+[progress] 40/6400 (0.6%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=40
+[progress] 50/6400 (0.8%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=50
+[progress] 60/6400 (0.9%) | resolved_repo=cube-js/cube status=resolved_local_jsonl
+processed=60
+[progress] 70/6400 (1.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=70
+[progress] 80/6400 (1.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=80
+[progress] 90/6400 (1.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=90
+[progress] 100/6400 (1.6%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=100
+[progress] 110/6400 (1.7%) | resolved_repo=aidenybai/million status=resolved_local_jsonl
+processed=110
+[progress] 120/6400 (1.9%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=120
+[progress] 130/6400 (2.0%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=130
+[progress] 140/6400 (2.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=140
+[progress] 150/6400 (2.3%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=150
+[progress] 160/6400 (2.5%) | resolved_repo=logto-io/logto status=resolved_local_jsonl
+processed=160
+[progress] 170/6400 (2.7%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=170
+[progress] 180/6400 (2.8%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=180
+[progress] 190/6400 (3.0%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=190
+[progress] 200/6400 (3.1%) | resolved_repo=cube-js/cube status=resolved_local_jsonl
+processed=200
+[progress] 210/6400 (3.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=210
+[progress] 220/6400 (3.4%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=220
+[progress] 230/6400 (3.6%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=230
+[progress] 240/6400 (3.8%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=240
+[progress] 250/6400 (3.9%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=250
+[progress] 260/6400 (4.1%) | resolved_repo=clap-rs/clap status=resolved_local_jsonl
+processed=260
+[progress] 270/6400 (4.2%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=270
+[progress] 280/6400 (4.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=280
+[progress] 290/6400 (4.5%) | resolved_repo=goreleaser/goreleaser status=resolved_local_jsonl
+processed=290
+[progress] 300/6400 (4.7%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=300
+[progress] 310/6400 (4.8%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=310
+[progress] 320/6400 (5.0%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=320
+[progress] 330/6400 (5.2%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=330
+[progress] 340/6400 (5.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=340
+[progress] 350/6400 (5.5%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=350
+[progress] 360/6400 (5.6%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=360
+[progress] 370/6400 (5.8%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=370
+[progress] 380/6400 (5.9%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=380
+[progress] 390/6400 (6.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=390
+[progress] 400/6400 (6.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=400
+[progress] 410/6400 (6.4%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=410
+[progress] 420/6400 (6.6%) | resolved_repo=callstack/react-native-paper status=resolved_local_jsonl
+processed=420
+[progress] 430/6400 (6.7%) | resolved_repo=clap-rs/clap status=resolved_local_jsonl
+processed=430
+[progress] 440/6400 (6.9%) | resolved_repo=orhun/git-cliff status=resolved_local_jsonl
+processed=440
+[progress] 450/6400 (7.0%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=450
+[progress] 460/6400 (7.2%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=460
+[progress] 470/6400 (7.3%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=470
+[progress] 480/6400 (7.5%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=480
+[progress] 490/6400 (7.7%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=490
+[progress] 500/6400 (7.8%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=500
+[progress] 510/6400 (8.0%) | resolved_repo=doczjs/docz status=resolved_local_jsonl
+processed=510
+[progress] 520/6400 (8.1%) | resolved_repo=Byron/gitoxide status=resolved_local_jsonl
+processed=520
+[progress] 530/6400 (8.3%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=530
+[progress] 540/6400 (8.4%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=540
+[progress] 550/6400 (8.6%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=550
+[progress] 560/6400 (8.8%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=560
+[progress] 570/6400 (8.9%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=570
+[progress] 580/6400 (9.1%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=580
+[progress] 590/6400 (9.2%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=590
+[progress] 600/6400 (9.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=600
+[progress] 610/6400 (9.5%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=610
+[progress] 620/6400 (9.7%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=620
+[progress] 630/6400 (9.8%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=630
+[progress] 640/6400 (10.0%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=640
+[progress] 650/6400 (10.2%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=650
+[progress] 660/6400 (10.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=660
+[progress] 670/6400 (10.5%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=670
+[progress] 680/6400 (10.6%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=680
+[progress] 690/6400 (10.8%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=690
+[progress] 700/6400 (10.9%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=700
+[progress] 710/6400 (11.1%) | resolved_repo=didi/LogicFlow status=resolved_local_jsonl
+processed=710
+[progress] 720/6400 (11.2%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=720
+[progress] 730/6400 (11.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=730
+[progress] 740/6400 (11.6%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=740
+[progress] 750/6400 (11.7%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=750
+[progress] 760/6400 (11.9%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=760
+[progress] 770/6400 (12.0%) | resolved_repo=biomejs/biome status=resolved_local_jsonl
+processed=770
+[progress] 780/6400 (12.2%) | resolved_repo=infracost/infracost status=resolved_local_jsonl
+processed=780
+[progress] 790/6400 (12.3%) | resolved_repo=ueberdosis/tiptap status=resolved_local_jsonl
+processed=790
+[progress] 800/6400 (12.5%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=800
+[progress] 810/6400 (12.7%) | resolved_repo=linkedin/css-blocks status=resolved_local_jsonl
+processed=810
+[progress] 820/6400 (12.8%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=820
+[progress] 830/6400 (13.0%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=830
+[progress] 840/6400 (13.1%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=840
+[progress] 850/6400 (13.3%) | resolved_repo=clap-rs/clap status=resolved_local_jsonl
+processed=850
+[progress] 860/6400 (13.4%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=860
+[progress] 870/6400 (13.6%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=870
+[progress] 880/6400 (13.8%) | resolved_repo=tsparticles/tsparticles status=resolved_local_jsonl
+processed=880
+[progress] 890/6400 (13.9%) | resolved_repo=linkedin/css-blocks status=resolved_local_jsonl
+processed=890
+[progress] 900/6400 (14.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=900
+[progress] 910/6400 (14.2%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=910
+[progress] 920/6400 (14.4%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=920
+[progress] 930/6400 (14.5%) | resolved_repo=denoland/deno status=resolved_local_jsonl
+processed=930
+[progress] 940/6400 (14.7%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=940
+[progress] 950/6400 (14.8%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=950
+[progress] 960/6400 (15.0%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=960
+[progress] 970/6400 (15.2%) | resolved_repo=goreleaser/goreleaser status=resolved_local_jsonl
+processed=970
+[progress] 980/6400 (15.3%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=980
+[progress] 990/6400 (15.5%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=990
+[progress] 1000/6400 (15.6%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=1000
+[progress] 1010/6400 (15.8%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=1010
+[progress] 1020/6400 (15.9%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=1020
+[progress] 1030/6400 (16.1%) | resolved_repo=angular-ui/ui-grid status=resolved_local_jsonl
+processed=1030
+[progress] 1040/6400 (16.2%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=1040
+[progress] 1050/6400 (16.4%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=1050
+[progress] 1060/6400 (16.6%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=1060
+[progress] 1070/6400 (16.7%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=1070
+[progress] 1080/6400 (16.9%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=1080
+[progress] 1090/6400 (17.0%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=1090
+[progress] 1100/6400 (17.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1100
+[progress] 1110/6400 (17.3%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=1110
+[progress] 1120/6400 (17.5%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1120
+[progress] 1130/6400 (17.7%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=1130
+[progress] 1140/6400 (17.8%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1140
+[progress] 1150/6400 (18.0%) | resolved_repo=didi/LogicFlow status=resolved_local_jsonl
+processed=1150
+[progress] 1160/6400 (18.1%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=1160
+[progress] 1170/6400 (18.3%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=1170
+[progress] 1180/6400 (18.4%) | resolved_repo=react-navigation/react-navigation status=resolved_local_jsonl
+processed=1180
+[progress] 1190/6400 (18.6%) | resolved_repo=rolling-scopes/rsschool-app status=resolved_local_jsonl
+processed=1190
+[progress] 1200/6400 (18.8%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=1200
+[progress] 1210/6400 (18.9%) | resolved_repo=cube-js/cube status=resolved_local_jsonl
+processed=1210
+[progress] 1220/6400 (19.1%) | resolved_repo=DioxusLabs/dioxus status=resolved_local_jsonl
+processed=1220
+[progress] 1230/6400 (19.2%) | resolved_repo=mikro-orm/mikro-orm status=resolved_local_jsonl
+processed=1230
+[progress] 1240/6400 (19.4%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=1240
+[progress] 1250/6400 (19.5%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1250
+[progress] 1260/6400 (19.7%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=1260
+[progress] 1270/6400 (19.8%) | resolved_repo=element-plus/element-plus status=resolved_local_jsonl
+processed=1270
+[progress] 1280/6400 (20.0%) | resolved_repo=infracost/infracost status=resolved_local_jsonl
+processed=1280
+[progress] 1290/6400 (20.2%) | resolved_repo=cube-js/cube status=resolved_local_jsonl
+processed=1290
+[progress] 1300/6400 (20.3%) | resolved_repo=benawad/dogehouse status=resolved_local_jsonl
+processed=1300
+[progress] 1310/6400 (20.5%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=1310
+[progress] 1320/6400 (20.6%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=1320
+[progress] 1330/6400 (20.8%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=1330
+[progress] 1340/6400 (20.9%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=1340
+[progress] 1350/6400 (21.1%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=1350
+[progress] 1360/6400 (21.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1360
+[progress] 1370/6400 (21.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1370
+[progress] 1380/6400 (21.6%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=1380
+[progress] 1390/6400 (21.7%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1390
+[progress] 1400/6400 (21.9%) | resolved_repo=pola-rs/polars status=resolved_local_jsonl
+processed=1400
+[progress] 1410/6400 (22.0%) | resolved_repo=electron/electron status=resolved_local_jsonl
+processed=1410
+[progress] 1420/6400 (22.2%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=1420
+[progress] 1430/6400 (22.3%) | resolved_repo=callstack/react-native-paper status=resolved_local_jsonl
+processed=1430
+[progress] 1440/6400 (22.5%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=1440
+[progress] 1450/6400 (22.7%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1450
+[progress] 1460/6400 (22.8%) | resolved_repo=RisingStack/react-easy-state status=resolved_local_jsonl
+processed=1460
+[progress] 1470/6400 (23.0%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=1470
+[progress] 1480/6400 (23.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1480
+[progress] 1490/6400 (23.3%) | resolved_repo=react-navigation/react-navigation status=resolved_local_jsonl
+processed=1490
+[progress] 1500/6400 (23.4%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=1500
+[progress] 1510/6400 (23.6%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1510
+[progress] 1520/6400 (23.8%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=1520
+[progress] 1530/6400 (23.9%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=1530
+[progress] 1540/6400 (24.1%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=1540
+[progress] 1550/6400 (24.2%) | resolved_repo=ratatui-org/ratatui status=resolved_local_jsonl
+processed=1550
+[progress] 1560/6400 (24.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1560
+[progress] 1570/6400 (24.5%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=1570
+[progress] 1580/6400 (24.7%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1580
+[progress] 1590/6400 (24.8%) | resolved_repo=goreleaser/goreleaser status=resolved_local_jsonl
+processed=1590
+[progress] 1600/6400 (25.0%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1600
+[progress] 1610/6400 (25.2%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=1610
+[progress] 1620/6400 (25.3%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=1620
+[progress] 1630/6400 (25.5%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=1630
+[progress] 1640/6400 (25.6%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=1640
+[progress] 1650/6400 (25.8%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=1650
+[progress] 1660/6400 (25.9%) | resolved_repo=angular-ui/ui-grid status=resolved_local_jsonl
+processed=1660
+[progress] 1670/6400 (26.1%) | resolved_repo=electron/electron status=resolved_local_jsonl
+processed=1670
+[progress] 1680/6400 (26.2%) | resolved_repo=danoventa/CrackingTheCodingInterview status=resolved_local_jsonl
+processed=1680
+[progress] 1690/6400 (26.4%) | resolved_repo=infracost/infracost status=resolved_local_jsonl
+processed=1690
+[progress] 1700/6400 (26.6%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=1700
+[progress] 1710/6400 (26.7%) | resolved_repo=rolling-scopes/rsschool-app status=resolved_local_jsonl
+processed=1710
+[progress] 1720/6400 (26.9%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1720
+[progress] 1730/6400 (27.0%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=1730
+[progress] 1740/6400 (27.2%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=1740
+[progress] 1750/6400 (27.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1750
+[progress] 1760/6400 (27.5%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1760
+[progress] 1770/6400 (27.7%) | resolved_repo=callstack/react-native-paper status=resolved_local_jsonl
+processed=1770
+[progress] 1780/6400 (27.8%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=1780
+[progress] 1790/6400 (28.0%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=1790
+[progress] 1800/6400 (28.1%) | resolved_repo=benawad/dogehouse status=resolved_local_jsonl
+processed=1800
+[progress] 1810/6400 (28.3%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=1810
+[progress] 1820/6400 (28.4%) | resolved_repo=millsp/ts-toolbelt status=resolved_local_jsonl
+processed=1820
+[progress] 1830/6400 (28.6%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=1830
+[progress] 1840/6400 (28.7%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=1840
+[progress] 1850/6400 (28.9%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=1850
+[progress] 1860/6400 (29.1%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=1860
+[progress] 1870/6400 (29.2%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=1870
+[progress] 1880/6400 (29.4%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=1880
+[progress] 1890/6400 (29.5%) | resolved_repo=orhun/git-cliff status=resolved_local_jsonl
+processed=1890
+[progress] 1900/6400 (29.7%) | resolved_repo=aidenybai/million status=resolved_local_jsonl
+processed=1900
+[progress] 1910/6400 (29.8%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=1910
+[progress] 1920/6400 (30.0%) | resolved_repo=rolling-scopes/rsschool-app status=resolved_local_jsonl
+processed=1920
+[progress] 1930/6400 (30.2%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=1930
+[progress] 1940/6400 (30.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1940
+[progress] 1950/6400 (30.5%) | resolved_repo=cube-js/cube status=resolved_local_jsonl
+processed=1950
+[progress] 1960/6400 (30.6%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=1960
+[progress] 1970/6400 (30.8%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1970
+[progress] 1980/6400 (30.9%) | resolved_repo=rolling-scopes/rsschool-app status=resolved_local_jsonl
+processed=1980
+[progress] 1990/6400 (31.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=1990
+[progress] 2000/6400 (31.2%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=2000
+[progress] 2010/6400 (31.4%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=2010
+[progress] 2020/6400 (31.6%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=2020
+[progress] 2030/6400 (31.7%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2030
+[progress] 2040/6400 (31.9%) | resolved_repo=RisingStack/react-easy-state status=resolved_local_jsonl
+processed=2040
+[progress] 2050/6400 (32.0%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2050
+[progress] 2060/6400 (32.2%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=2060
+[progress] 2070/6400 (32.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2070
+[progress] 2080/6400 (32.5%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2080
+[progress] 2090/6400 (32.7%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=2090
+[progress] 2100/6400 (32.8%) | resolved_repo=cube-js/cube status=resolved_local_jsonl
+processed=2100
+[progress] 2110/6400 (33.0%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=2110
+[progress] 2120/6400 (33.1%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=2120
+[progress] 2130/6400 (33.3%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=2130
+[progress] 2140/6400 (33.4%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=2140
+[progress] 2150/6400 (33.6%) | resolved_repo=callstack/react-native-paper status=resolved_local_jsonl
+processed=2150
+[progress] 2160/6400 (33.8%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=2160
+[progress] 2170/6400 (33.9%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=2170
+[progress] 2180/6400 (34.1%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=2180
+[progress] 2190/6400 (34.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2190
+[progress] 2200/6400 (34.4%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=2200
+[progress] 2210/6400 (34.5%) | resolved_repo=infracost/infracost status=resolved_local_jsonl
+processed=2210
+[progress] 2220/6400 (34.7%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=2220
+[progress] 2230/6400 (34.8%) | resolved_repo=ueberdosis/tiptap status=resolved_local_jsonl
+processed=2230
+[progress] 2240/6400 (35.0%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=2240
+[progress] 2250/6400 (35.2%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=2250
+[progress] 2260/6400 (35.3%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=2260
+[progress] 2270/6400 (35.5%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=2270
+[progress] 2280/6400 (35.6%) | resolved_repo=didi/LogicFlow status=resolved_local_jsonl
+processed=2280
+[progress] 2290/6400 (35.8%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=2290
+[progress] 2300/6400 (35.9%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2300
+[progress] 2310/6400 (36.1%) | resolved_repo=benawad/dogehouse status=resolved_local_jsonl
+processed=2310
+[progress] 2320/6400 (36.2%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=2320
+[progress] 2330/6400 (36.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2330
+[progress] 2340/6400 (36.6%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=2340
+[progress] 2350/6400 (36.7%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=2350
+[progress] 2360/6400 (36.9%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=2360
+[progress] 2370/6400 (37.0%) | resolved_repo=cube-js/cube status=resolved_local_jsonl
+processed=2370
+[progress] 2380/6400 (37.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2380
+[progress] 2390/6400 (37.3%) | resolved_repo=react-navigation/react-navigation status=resolved_local_jsonl
+processed=2390
+[progress] 2400/6400 (37.5%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=2400
+[progress] 2410/6400 (37.7%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=2410
+[progress] 2420/6400 (37.8%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=2420
+[progress] 2430/6400 (38.0%) | resolved_repo=oclif/oclif status=resolved_local_jsonl
+processed=2430
+[progress] 2440/6400 (38.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2440
+[progress] 2450/6400 (38.3%) | resolved_repo=react-navigation/react-navigation status=resolved_local_jsonl
+processed=2450
+[progress] 2460/6400 (38.4%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=2460
+[progress] 2470/6400 (38.6%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=2470
+[progress] 2480/6400 (38.8%) | resolved_repo=ueberdosis/tiptap status=resolved_local_jsonl
+processed=2480
+[progress] 2490/6400 (38.9%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=2490
+[progress] 2500/6400 (39.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2500
+[progress] 2510/6400 (39.2%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=2510
+[progress] 2520/6400 (39.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2520
+[progress] 2530/6400 (39.5%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2530
+[progress] 2540/6400 (39.7%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2540
+[progress] 2550/6400 (39.8%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=2550
+[progress] 2560/6400 (40.0%) | resolved_repo=rust-lang/rustlings status=resolved_local_jsonl
+processed=2560
+[progress] 2570/6400 (40.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2570
+[progress] 2580/6400 (40.3%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=2580
+[progress] 2590/6400 (40.5%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=2590
+[progress] 2600/6400 (40.6%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=2600
+[progress] 2610/6400 (40.8%) | resolved_repo=orhun/git-cliff status=resolved_local_jsonl
+processed=2610
+[progress] 2620/6400 (40.9%) | resolved_repo=electron/electron status=resolved_local_jsonl
+processed=2620
+[progress] 2630/6400 (41.1%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=2630
+[progress] 2640/6400 (41.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2640
+[progress] 2650/6400 (41.4%) | resolved_repo=doczjs/docz status=resolved_local_jsonl
+processed=2650
+[progress] 2660/6400 (41.6%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=2660
+[progress] 2670/6400 (41.7%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=2670
+[progress] 2680/6400 (41.9%) | resolved_repo=cube-js/cube status=resolved_local_jsonl
+processed=2680
+[progress] 2690/6400 (42.0%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=2690
+[progress] 2700/6400 (42.2%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=2700
+[progress] 2710/6400 (42.3%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=2710
+[progress] 2720/6400 (42.5%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=2720
+[progress] 2730/6400 (42.7%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=2730
+[progress] 2740/6400 (42.8%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=2740
+[progress] 2750/6400 (43.0%) | resolved_repo=react-navigation/react-navigation status=resolved_local_jsonl
+processed=2750
+[progress] 2760/6400 (43.1%) | resolved_repo=cube-js/cube status=resolved_local_jsonl
+processed=2760
+[progress] 2770/6400 (43.3%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=2770
+[progress] 2780/6400 (43.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2780
+[progress] 2790/6400 (43.6%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=2790
+[progress] 2800/6400 (43.8%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=2800
+[progress] 2810/6400 (43.9%) | resolved_repo=doczjs/docz status=resolved_local_jsonl
+processed=2810
+[progress] 2820/6400 (44.1%) | resolved_repo=linkedin/css-blocks status=resolved_local_jsonl
+processed=2820
+[progress] 2830/6400 (44.2%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=2830
+[progress] 2840/6400 (44.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2840
+[progress] 2850/6400 (44.5%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=2850
+[progress] 2860/6400 (44.7%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=2860
+[progress] 2870/6400 (44.8%) | resolved_repo=Byron/gitoxide status=resolved_local_jsonl
+processed=2870
+[progress] 2880/6400 (45.0%) | resolved_repo=ory/hydra status=resolved_local_jsonl
+processed=2880
+[progress] 2890/6400 (45.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2890
+[progress] 2900/6400 (45.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2900
+[progress] 2910/6400 (45.5%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=2910
+[progress] 2920/6400 (45.6%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=2920
+[progress] 2930/6400 (45.8%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=2930
+[progress] 2940/6400 (45.9%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=2940
+[progress] 2950/6400 (46.1%) | resolved_repo=cube-js/cube status=resolved_local_jsonl
+processed=2950
+[progress] 2960/6400 (46.2%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=2960
+[progress] 2970/6400 (46.4%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=2970
+[progress] 2980/6400 (46.6%) | resolved_repo=ory/hydra status=resolved_local_jsonl
+processed=2980
+[progress] 2990/6400 (46.7%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=2990
+[progress] 3000/6400 (46.9%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3000
+[progress] 3010/6400 (47.0%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=3010
+[progress] 3020/6400 (47.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3020
+[progress] 3030/6400 (47.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3030
+[progress] 3040/6400 (47.5%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=3040
+[progress] 3050/6400 (47.7%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3050
+[progress] 3060/6400 (47.8%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3060
+[progress] 3070/6400 (48.0%) | resolved_repo=doczjs/docz status=resolved_local_jsonl
+processed=3070
+[progress] 3080/6400 (48.1%) | resolved_repo=doczjs/docz status=resolved_local_jsonl
+processed=3080
+[progress] 3090/6400 (48.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3090
+[progress] 3100/6400 (48.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3100
+[progress] 3110/6400 (48.6%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3110
+[progress] 3120/6400 (48.8%) | resolved_repo=mikro-orm/mikro-orm status=resolved_local_jsonl
+processed=3120
+[progress] 3130/6400 (48.9%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=3130
+[progress] 3140/6400 (49.1%) | resolved_repo=react-navigation/react-navigation status=resolved_local_jsonl
+processed=3140
+[progress] 3150/6400 (49.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3150
+[progress] 3160/6400 (49.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3160
+[progress] 3170/6400 (49.5%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3170
+[progress] 3180/6400 (49.7%) | resolved_repo=zellij-org/zellij status=resolved_local_jsonl
+processed=3180
+[progress] 3190/6400 (49.8%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=3190
+[progress] 3200/6400 (50.0%) | resolved_repo=mikro-orm/mikro-orm status=resolved_local_jsonl
+processed=3200
+[progress] 3210/6400 (50.2%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=3210
+[progress] 3220/6400 (50.3%) | resolved_repo=element-plus/element-plus status=resolved_local_jsonl
+processed=3220
+[progress] 3230/6400 (50.5%) | resolved_repo=tsparticles/tsparticles status=resolved_local_jsonl
+processed=3230
+[progress] 3240/6400 (50.6%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=3240
+[progress] 3250/6400 (50.8%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=3250
+[progress] 3260/6400 (50.9%) | resolved_repo=react-navigation/react-navigation status=resolved_local_jsonl
+processed=3260
+[progress] 3270/6400 (51.1%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=3270
+[progress] 3280/6400 (51.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3280
+[progress] 3290/6400 (51.4%) | resolved_repo=clap-rs/clap status=resolved_local_jsonl
+processed=3290
+[progress] 3300/6400 (51.6%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3300
+[progress] 3310/6400 (51.7%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=3310
+[progress] 3320/6400 (51.9%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=3320
+[progress] 3330/6400 (52.0%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=3330
+[progress] 3340/6400 (52.2%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=3340
+[progress] 3350/6400 (52.3%) | resolved_repo=didi/LogicFlow status=resolved_local_jsonl
+processed=3350
+[progress] 3360/6400 (52.5%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=3360
+[progress] 3370/6400 (52.7%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=3370
+[progress] 3380/6400 (52.8%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=3380
+[progress] 3390/6400 (53.0%) | resolved_repo=electron/electron status=resolved_local_jsonl
+processed=3390
+[progress] 3400/6400 (53.1%) | resolved_repo=cube-js/cube status=resolved_local_jsonl
+processed=3400
+[progress] 3410/6400 (53.3%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=3410
+[progress] 3420/6400 (53.4%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=3420
+[progress] 3430/6400 (53.6%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=3430
+[progress] 3440/6400 (53.8%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=3440
+[progress] 3450/6400 (53.9%) | resolved_repo=vendure-ecommerce/vendure status=resolved_local_jsonl
+processed=3450
+[progress] 3460/6400 (54.1%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=3460
+[progress] 3470/6400 (54.2%) | resolved_repo=erg-lang/erg status=resolved_local_jsonl
+processed=3470
+[progress] 3480/6400 (54.4%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=3480
+[progress] 3490/6400 (54.5%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=3490
+[progress] 3500/6400 (54.7%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=3500
+[progress] 3510/6400 (54.8%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=3510
+[progress] 3520/6400 (55.0%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=3520
+[progress] 3530/6400 (55.2%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=3530
+[progress] 3540/6400 (55.3%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=3540
+[progress] 3550/6400 (55.5%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=3550
+[progress] 3560/6400 (55.6%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=3560
+[progress] 3570/6400 (55.8%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=3570
+[progress] 3580/6400 (55.9%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=3580
+[progress] 3590/6400 (56.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3590
+[progress] 3600/6400 (56.2%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=3600
+[progress] 3610/6400 (56.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3610
+[progress] 3620/6400 (56.6%) | resolved_repo=Byron/gitoxide status=resolved_local_jsonl
+processed=3620
+[progress] 3630/6400 (56.7%) | resolved_repo=codenotary/immudb status=resolved_local_jsonl
+processed=3630
+[progress] 3640/6400 (56.9%) | resolved_repo=dendronhq/dendron status=resolved_local_jsonl
+processed=3640
+[progress] 3650/6400 (57.0%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3650
+[progress] 3660/6400 (57.2%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=3660
+[progress] 3670/6400 (57.3%) | resolved_repo=logto-io/logto status=resolved_local_jsonl
+processed=3670
+[progress] 3680/6400 (57.5%) | resolved_repo=goreleaser/goreleaser status=resolved_local_jsonl
+processed=3680
+[progress] 3690/6400 (57.7%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=3690
+[progress] 3700/6400 (57.8%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=3700
+[progress] 3710/6400 (58.0%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=3710
+[progress] 3720/6400 (58.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3720
+[progress] 3730/6400 (58.3%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=3730
+[progress] 3740/6400 (58.4%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=3740
+[progress] 3750/6400 (58.6%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=3750
+[progress] 3760/6400 (58.8%) | resolved_repo=aidenybai/million status=resolved_local_jsonl
+processed=3760
+[progress] 3770/6400 (58.9%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3770
+[progress] 3780/6400 (59.1%) | resolved_repo=mikro-orm/mikro-orm status=resolved_local_jsonl
+processed=3780
+[progress] 3790/6400 (59.2%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=3790
+[progress] 3800/6400 (59.4%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=3800
+[progress] 3810/6400 (59.5%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=3810
+[progress] 3820/6400 (59.7%) | resolved_repo=linkedin/css-blocks status=resolved_local_jsonl
+processed=3820
+[progress] 3830/6400 (59.8%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=3830
+[progress] 3840/6400 (60.0%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=3840
+[progress] 3850/6400 (60.2%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=3850
+[progress] 3860/6400 (60.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3860
+[progress] 3870/6400 (60.5%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=3870
+[progress] 3880/6400 (60.6%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=3880
+[progress] 3890/6400 (60.8%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=3890
+[progress] 3900/6400 (60.9%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3900
+[progress] 3910/6400 (61.1%) | resolved_repo=mikro-orm/mikro-orm status=resolved_local_jsonl
+processed=3910
+[progress] 3920/6400 (61.3%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=3920
+[progress] 3930/6400 (61.4%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=3930
+[progress] 3940/6400 (61.6%) | resolved_repo=codenotary/immudb status=resolved_local_jsonl
+processed=3940
+[progress] 3950/6400 (61.7%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=3950
+[progress] 3960/6400 (61.9%) | resolved_repo=mikro-orm/mikro-orm status=resolved_local_jsonl
+processed=3960
+[progress] 3970/6400 (62.0%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=3970
+[progress] 3980/6400 (62.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=3980
+[progress] 3990/6400 (62.3%) | resolved_repo=orhun/git-cliff status=resolved_local_jsonl
+processed=3990
+[progress] 4000/6400 (62.5%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4000
+[progress] 4010/6400 (62.7%) | resolved_repo=ory/hydra status=resolved_local_jsonl
+processed=4010
+[progress] 4020/6400 (62.8%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=4020
+[progress] 4030/6400 (63.0%) | resolved_repo=dendronhq/dendron status=resolved_local_jsonl
+processed=4030
+[progress] 4040/6400 (63.1%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4040
+[progress] 4050/6400 (63.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4050
+[progress] 4060/6400 (63.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4060
+[progress] 4070/6400 (63.6%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=4070
+[progress] 4080/6400 (63.7%) | resolved_repo=apify/crawlee status=resolved_local_jsonl
+processed=4080
+[progress] 4090/6400 (63.9%) | resolved_repo=alibaba/lowcode-engine status=resolved_local_jsonl
+processed=4090
+[progress] 4100/6400 (64.1%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=4100
+[progress] 4110/6400 (64.2%) | resolved_repo=aidenybai/million status=resolved_local_jsonl
+processed=4110
+[progress] 4120/6400 (64.4%) | resolved_repo=angular-ui/ui-grid status=resolved_local_jsonl
+processed=4120
+[progress] 4130/6400 (64.5%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4130
+[progress] 4140/6400 (64.7%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=4140
+[progress] 4150/6400 (64.8%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4150
+[progress] 4160/6400 (65.0%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=4160
+[progress] 4170/6400 (65.2%) | resolved_repo=medusajs/medusa status=resolved_local_jsonl
+processed=4170
+[progress] 4180/6400 (65.3%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=4180
+[progress] 4190/6400 (65.5%) | resolved_repo=ory/hydra status=resolved_local_jsonl
+processed=4190
+[progress] 4200/6400 (65.6%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4200
+[progress] 4210/6400 (65.8%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4210
+[progress] 4220/6400 (65.9%) | resolved_repo=ueberdosis/tiptap status=resolved_local_jsonl
+processed=4220
+[progress] 4230/6400 (66.1%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=4230
+[progress] 4240/6400 (66.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4240
+[progress] 4250/6400 (66.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4250
+[progress] 4260/6400 (66.6%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=4260
+[progress] 4270/6400 (66.7%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4270
+[progress] 4280/6400 (66.9%) | resolved_repo=linkedin/css-blocks status=resolved_local_jsonl
+processed=4280
+[progress] 4290/6400 (67.0%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4290
+[progress] 4300/6400 (67.2%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=4300
+[progress] 4310/6400 (67.3%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=4310
+[progress] 4320/6400 (67.5%) | resolved_repo=metersphere/metersphere status=resolved_local_jsonl
+processed=4320
+[progress] 4330/6400 (67.7%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4330
+[progress] 4340/6400 (67.8%) | resolved_repo=orhun/git-cliff status=resolved_local_jsonl
+processed=4340
+[progress] 4350/6400 (68.0%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4350
+[progress] 4360/6400 (68.1%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=4360
+[progress] 4370/6400 (68.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4370
+[progress] 4380/6400 (68.4%) | resolved_repo=benawad/dogehouse status=resolved_local_jsonl
+processed=4380
+[progress] 4390/6400 (68.6%) | resolved_repo=nuxt/nuxt status=resolved_local_jsonl
+processed=4390
+[progress] 4400/6400 (68.8%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=4400
+[progress] 4410/6400 (68.9%) | resolved_repo=DioxusLabs/dioxus status=resolved_local_jsonl
+processed=4410
+[progress] 4420/6400 (69.1%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4420
+[progress] 4430/6400 (69.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4430
+[progress] 4440/6400 (69.4%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=4440
+[progress] 4450/6400 (69.5%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4450
+[progress] 4460/6400 (69.7%) | resolved_repo=react-navigation/react-navigation status=resolved_local_jsonl
+processed=4460
+[progress] 4470/6400 (69.8%) | resolved_repo=react-navigation/react-navigation status=resolved_local_jsonl
+processed=4470
+[progress] 4480/6400 (70.0%) | resolved_repo=clap-rs/clap status=resolved_local_jsonl
+processed=4480
+[progress] 4490/6400 (70.2%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4490
+[progress] 4500/6400 (70.3%) | resolved_repo=callstack/react-native-paper status=resolved_local_jsonl
+processed=4500
+[progress] 4510/6400 (70.5%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=4510
+[progress] 4520/6400 (70.6%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4520
+[progress] 4530/6400 (70.8%) | resolved_repo=ory/hydra status=resolved_local_jsonl
+processed=4530
+[progress] 4540/6400 (70.9%) | resolved_repo=Byron/gitoxide status=resolved_local_jsonl
+processed=4540
+[progress] 4550/6400 (71.1%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=4550
+[progress] 4560/6400 (71.2%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4560
+[progress] 4570/6400 (71.4%) | resolved_repo=biomejs/biome status=resolved_local_jsonl
+processed=4570
+[progress] 4580/6400 (71.6%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=4580
+[progress] 4590/6400 (71.7%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=4590
+[progress] 4600/6400 (71.9%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=4600
+[progress] 4610/6400 (72.0%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=4610
+[progress] 4620/6400 (72.2%) | resolved_repo=infracost/infracost status=resolved_local_jsonl
+processed=4620
+[progress] 4630/6400 (72.3%) | resolved_repo=tsparticles/tsparticles status=resolved_local_jsonl
+processed=4630
+[progress] 4640/6400 (72.5%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=4640
+[progress] 4650/6400 (72.7%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=4650
+[progress] 4660/6400 (72.8%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4660
+[progress] 4670/6400 (73.0%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4670
+[progress] 4680/6400 (73.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4680
+[progress] 4690/6400 (73.3%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=4690
+[progress] 4700/6400 (73.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4700
+[progress] 4710/6400 (73.6%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=4710
+[progress] 4720/6400 (73.8%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=4720
+[progress] 4730/6400 (73.9%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4730
+[progress] 4740/6400 (74.1%) | resolved_repo=shikijs/shiki status=resolved_local_jsonl
+processed=4740
+[progress] 4750/6400 (74.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4750
+[progress] 4760/6400 (74.4%) | resolved_repo=go-task/task status=resolved_local_jsonl
+processed=4760
+[progress] 4770/6400 (74.5%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4770
+[progress] 4780/6400 (74.7%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=4780
+[progress] 4790/6400 (74.8%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=4790
+[progress] 4800/6400 (75.0%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4800
+[progress] 4810/6400 (75.2%) | resolved_repo=react-navigation/react-navigation status=resolved_local_jsonl
+processed=4810
+[progress] 4820/6400 (75.3%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=4820
+[progress] 4830/6400 (75.5%) | resolved_repo=nuxt/nuxt status=resolved_local_jsonl
+processed=4830
+[progress] 4840/6400 (75.6%) | resolved_repo=benawad/dogehouse status=resolved_local_jsonl
+processed=4840
+[progress] 4850/6400 (75.8%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=4850
+[progress] 4860/6400 (75.9%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4860
+[progress] 4870/6400 (76.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4870
+[progress] 4880/6400 (76.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4880
+[progress] 4890/6400 (76.4%) | resolved_repo=ratatui-org/ratatui status=resolved_local_jsonl
+processed=4890
+[progress] 4900/6400 (76.6%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4900
+[progress] 4910/6400 (76.7%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=4910
+[progress] 4920/6400 (76.9%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=4920
+[progress] 4930/6400 (77.0%) | resolved_repo=react-navigation/react-navigation status=resolved_local_jsonl
+processed=4930
+[progress] 4940/6400 (77.2%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=4940
+[progress] 4950/6400 (77.3%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=4950
+[progress] 4960/6400 (77.5%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=4960
+[progress] 4970/6400 (77.7%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4970
+[progress] 4980/6400 (77.8%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4980
+[progress] 4990/6400 (78.0%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=4990
+[progress] 5000/6400 (78.1%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=5000
+[progress] 5010/6400 (78.3%) | resolved_repo=mikro-orm/mikro-orm status=resolved_local_jsonl
+processed=5010
+[progress] 5020/6400 (78.4%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5020
+[progress] 5030/6400 (78.6%) | resolved_repo=dinerojs/dinero.js status=resolved_local_jsonl
+processed=5030
+[progress] 5040/6400 (78.8%) | resolved_repo=tsparticles/tsparticles status=resolved_local_jsonl
+processed=5040
+[progress] 5050/6400 (78.9%) | resolved_repo=mikro-orm/mikro-orm status=resolved_local_jsonl
+processed=5050
+[progress] 5060/6400 (79.1%) | resolved_repo=tsparticles/tsparticles status=resolved_local_jsonl
+processed=5060
+[progress] 5070/6400 (79.2%) | resolved_repo=DioxusLabs/dioxus status=resolved_local_jsonl
+processed=5070
+[progress] 5080/6400 (79.4%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=5080
+[progress] 5090/6400 (79.5%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=5090
+[progress] 5100/6400 (79.7%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=5100
+[progress] 5110/6400 (79.8%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5110
+[progress] 5120/6400 (80.0%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=5120
+[progress] 5130/6400 (80.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5130
+[progress] 5140/6400 (80.3%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5140
+[progress] 5150/6400 (80.5%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5150
+[progress] 5160/6400 (80.6%) | resolved_repo=rolling-scopes/rsschool-app status=resolved_local_jsonl
+processed=5160
+[progress] 5170/6400 (80.8%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=5170
+[progress] 5180/6400 (80.9%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=5180
+[progress] 5190/6400 (81.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5190
+[progress] 5200/6400 (81.2%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=5200
+[progress] 5210/6400 (81.4%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5210
+[progress] 5220/6400 (81.6%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5220
+[progress] 5230/6400 (81.7%) | resolved_repo=go-task/task status=resolved_local_jsonl
+processed=5230
+[progress] 5240/6400 (81.9%) | resolved_repo=electron/electron status=resolved_local_jsonl
+processed=5240
+[progress] 5250/6400 (82.0%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=5250
+[progress] 5260/6400 (82.2%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5260
+[progress] 5270/6400 (82.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5270
+[progress] 5280/6400 (82.5%) | resolved_repo=tsparticles/tsparticles status=resolved_local_jsonl
+processed=5280
+[progress] 5290/6400 (82.7%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=5290
+[progress] 5300/6400 (82.8%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5300
+[progress] 5310/6400 (83.0%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5310
+[progress] 5320/6400 (83.1%) | resolved_repo=ueberdosis/tiptap status=resolved_local_jsonl
+processed=5320
+[progress] 5330/6400 (83.3%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=5330
+[progress] 5340/6400 (83.4%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=5340
+[progress] 5350/6400 (83.6%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=5350
+[progress] 5360/6400 (83.8%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=5360
+[progress] 5370/6400 (83.9%) | resolved_repo=goreleaser/goreleaser status=resolved_local_jsonl
+processed=5370
+[progress] 5380/6400 (84.1%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=5380
+[progress] 5390/6400 (84.2%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=5390
+[progress] 5400/6400 (84.4%) | resolved_repo=benawad/dogehouse status=resolved_local_jsonl
+processed=5400
+[progress] 5410/6400 (84.5%) | resolved_repo=tsparticles/tsparticles status=resolved_local_jsonl
+processed=5410
+[progress] 5420/6400 (84.7%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5420
+[progress] 5430/6400 (84.8%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=5430
+[progress] 5440/6400 (85.0%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=5440
+[progress] 5450/6400 (85.2%) | resolved_repo=mikro-orm/mikro-orm status=resolved_local_jsonl
+processed=5450
+[progress] 5460/6400 (85.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5460
+[progress] 5470/6400 (85.5%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5470
+[progress] 5480/6400 (85.6%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=5480
+[progress] 5490/6400 (85.8%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=5490
+[progress] 5500/6400 (85.9%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5500
+[progress] 5510/6400 (86.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5510
+[progress] 5520/6400 (86.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5520
+[progress] 5530/6400 (86.4%) | resolved_repo=nuxt/nuxt status=resolved_local_jsonl
+processed=5530
+[progress] 5540/6400 (86.6%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5540
+[progress] 5550/6400 (86.7%) | resolved_repo=goreleaser/goreleaser status=resolved_local_jsonl
+processed=5550
+[progress] 5560/6400 (86.9%) | resolved_repo=PRQL/prql status=resolved_local_jsonl
+processed=5560
+[progress] 5570/6400 (87.0%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5570
+[progress] 5580/6400 (87.2%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=5580
+[progress] 5590/6400 (87.3%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5590
+[progress] 5600/6400 (87.5%) | resolved_repo=logto-io/logto status=resolved_local_jsonl
+processed=5600
+[progress] 5610/6400 (87.7%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=5610
+[progress] 5620/6400 (87.8%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5620
+[progress] 5630/6400 (88.0%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5630
+[progress] 5640/6400 (88.1%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=5640
+[progress] 5650/6400 (88.3%) | resolved_repo=cube-js/cube status=resolved_local_jsonl
+processed=5650
+[progress] 5660/6400 (88.4%) | resolved_repo=mikro-orm/mikro-orm status=resolved_local_jsonl
+processed=5660
+[progress] 5670/6400 (88.6%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=5670
+[progress] 5680/6400 (88.8%) | resolved_repo=infracost/infracost status=resolved_local_jsonl
+processed=5680
+[progress] 5690/6400 (88.9%) | resolved_repo=ueberdosis/tiptap status=resolved_local_jsonl
+processed=5690
+[progress] 5700/6400 (89.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5700
+[progress] 5710/6400 (89.2%) | resolved_repo=linkedin/css-blocks status=resolved_local_jsonl
+processed=5710
+[progress] 5720/6400 (89.4%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=5720
+[progress] 5730/6400 (89.5%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5730
+[progress] 5740/6400 (89.7%) | resolved_repo=electron/electron status=resolved_local_jsonl
+processed=5740
+[progress] 5750/6400 (89.8%) | resolved_repo=goreleaser/goreleaser status=resolved_local_jsonl
+processed=5750
+[progress] 5760/6400 (90.0%) | resolved_repo=tsparticles/tsparticles status=resolved_local_jsonl
+processed=5760
+[progress] 5770/6400 (90.2%) | resolved_repo=nuxt/nuxt status=resolved_local_jsonl
+processed=5770
+[progress] 5780/6400 (90.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5780
+[progress] 5790/6400 (90.5%) | resolved_repo=electron/electron status=resolved_local_jsonl
+processed=5790
+[progress] 5800/6400 (90.6%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=5800
+[progress] 5810/6400 (90.8%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=5810
+[progress] 5820/6400 (90.9%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=5820
+[progress] 5830/6400 (91.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5830
+[progress] 5840/6400 (91.2%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5840
+[progress] 5850/6400 (91.4%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5850
+[progress] 5860/6400 (91.6%) | resolved_repo=rolling-scopes/rsschool-app status=resolved_local_jsonl
+processed=5860
+[progress] 5870/6400 (91.7%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5870
+[progress] 5880/6400 (91.9%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=5880
+[progress] 5890/6400 (92.0%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5890
+[progress] 5900/6400 (92.2%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5900
+[progress] 5910/6400 (92.3%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5910
+[progress] 5920/6400 (92.5%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5920
+[progress] 5930/6400 (92.7%) | resolved_repo=eza-community/eza status=resolved_local_jsonl
+processed=5930
+[progress] 5940/6400 (92.8%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5940
+[progress] 5950/6400 (93.0%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=5950
+[progress] 5960/6400 (93.1%) | resolved_repo=aidenybai/million status=resolved_local_jsonl
+processed=5960
+[progress] 5970/6400 (93.3%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=5970
+[progress] 5980/6400 (93.4%) | resolved_repo=react-navigation/react-navigation status=resolved_local_jsonl
+processed=5980
+[progress] 5990/6400 (93.6%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=5990
+[progress] 6000/6400 (93.8%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=6000
+[progress] 6010/6400 (93.9%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=6010
+[progress] 6020/6400 (94.1%) | resolved_repo=shikijs/shiki status=resolved_local_jsonl
+processed=6020
+[progress] 6030/6400 (94.2%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=6030
+[progress] 6040/6400 (94.4%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=6040
+[progress] 6050/6400 (94.5%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=6050
+[progress] 6060/6400 (94.7%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=6060
+[progress] 6070/6400 (94.8%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=6070
+[progress] 6080/6400 (95.0%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=6080
+[progress] 6090/6400 (95.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=6090
+[progress] 6100/6400 (95.3%) | resolved_repo=DioxusLabs/dioxus status=resolved_local_jsonl
+processed=6100
+[progress] 6110/6400 (95.5%) | resolved_repo=ibis-project/ibis status=resolved_local_jsonl
+processed=6110
+[progress] 6120/6400 (95.6%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=6120
+[progress] 6130/6400 (95.8%) | resolved_repo=dendronhq/dendron status=resolved_local_jsonl
+processed=6130
+[progress] 6140/6400 (95.9%) | resolved_repo=JanDeDobbeleer/oh-my-posh status=resolved_local_jsonl
+processed=6140
+[progress] 6150/6400 (96.1%) | resolved_repo=dinerojs/dinero.js status=resolved_local_jsonl
+processed=6150
+[progress] 6160/6400 (96.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=6160
+[progress] 6170/6400 (96.4%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=6170
+[progress] 6180/6400 (96.6%) | resolved_repo=Byron/gitoxide status=resolved_local_jsonl
+processed=6180
+[progress] 6190/6400 (96.7%) | resolved_repo=tsparticles/tsparticles status=resolved_local_jsonl
+processed=6190
+[progress] 6200/6400 (96.9%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=6200
+[progress] 6210/6400 (97.0%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=6210
+[progress] 6220/6400 (97.2%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=6220
+[progress] 6230/6400 (97.3%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=6230
+[progress] 6240/6400 (97.5%) | resolved_repo=pmndrs/react-spring status=resolved_local_jsonl
+processed=6240
+[progress] 6250/6400 (97.7%) | resolved_repo=stacks-network/stacks-core status=resolved_local_jsonl
+processed=6250
+[progress] 6260/6400 (97.8%) | resolved_repo=dagger/dagger status=resolved_local_jsonl
+processed=6260
+[progress] 6270/6400 (98.0%) | resolved_repo=crimx/ext-saladict status=resolved_local_jsonl
+processed=6270
+[progress] 6280/6400 (98.1%) | resolved_repo=aidenybai/million status=resolved_local_jsonl
+processed=6280
+[progress] 6290/6400 (98.3%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=6290
+[progress] 6300/6400 (98.4%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=6300
+[progress] 6310/6400 (98.6%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=6310
+[progress] 6320/6400 (98.8%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=6320
+[progress] 6330/6400 (98.9%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=6330
+[progress] 6340/6400 (99.1%) | resolved_repo=camunda/zeebe status=resolved_local_jsonl
+processed=6340
+[progress] 6350/6400 (99.2%) | resolved_repo=influxdata/influxdb status=resolved_local_jsonl
+processed=6350
+[progress] 6360/6400 (99.4%) | resolved_repo=ionic-team/ionic-framework status=resolved_local_jsonl
+processed=6360
+[progress] 6370/6400 (99.5%) | resolved_repo=DioxusLabs/dioxus status=resolved_local_jsonl
+processed=6370
+[progress] 6380/6400 (99.7%) | resolved_repo=openreplay/openreplay status=resolved_local_jsonl
+processed=6380
+[progress] 6390/6400 (99.8%) | resolved_repo=nocodb/nocodb status=resolved_local_jsonl
+processed=6390
+[progress] 6400/6400 (100.0%) | resolved_repo=nrwl/nx status=resolved_local_jsonl
+processed=6400
+processed=6400
+completed=True
+outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/enriched/resolved_candidates.csv
+outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/enriched/enrich_status.json
+
+## EXIT_CODE=0

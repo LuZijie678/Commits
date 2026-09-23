@@ -1,0 +1,13 @@
+{
+  "stage": "real_alignment_annotation",
+  "schema_version": "v1",
+  "single_annotation_allowed": true,
+  "double_annotation_recommended": true,
+  "adjudication_required_on_count_disagreement": true,
+  "adjudication_required_on_unit_group_disagreement": true,
+  "min_recommended_full_alignment_overall": 300,
+  "min_recommended_final_test_aligned": 100,
+  "min_recommended_double_annotated": 100,
+  "claim_level_if_insufficient": "preliminary_attribution_only",
+  "m_final_test_forbidden_for_calibration": true
+}

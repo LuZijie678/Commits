@@ -1,0 +1,109 @@
+{
+  "checked_at_utc": "2026-05-27T06:58:26Z",
+  "repo_root": ".",
+  "notes": [
+    "required assets must be materialized locally for full Step1/Step2 runs.",
+    "hard_b canonical is warning-only for the current Step1/Step2 main path; LFS pointer does not block readiness.",
+    "this file is the current machine-readable dataset readiness summary."
+  ],
+  "summary": {
+    "ready": true,
+    "required_asset_count": 12,
+    "warn_only_asset_count": 1,
+    "error_count": 0,
+    "warning_count": 1
+  },
+  "assets": {
+    "datasets/step1/canonical/annotated_dataset.csv": {
+      "path": "datasets/step1/canonical/annotated_dataset.csv",
+      "required": true,
+      "warn_only": false,
+      "status": "materialized_local_file",
+      "ready": true
+    },
+    "datasets/step1/canonical/prefilter_allcommits_step2_sha_and_expanded_annotated_disjoint.csv": {
+      "path": "datasets/step1/canonical/prefilter_allcommits_step2_sha_and_expanded_annotated_disjoint.csv",
+      "required": true,
+      "warn_only": false,
+      "status": "materialized_local_file",
+      "ready": true
+    },
+    "datasets/step1/runtime_support/resolved_metadata.csv": {
+      "path": "datasets/step1/runtime_support/resolved_metadata.csv",
+      "required": true,
+      "warn_only": false,
+      "status": "materialized_local_file",
+      "ready": true
+    },
+    "datasets/step1/runtime_support/resolved_commit_texts.jsonl": {
+      "path": "datasets/step1/runtime_support/resolved_commit_texts.jsonl",
+      "required": true,
+      "warn_only": false,
+      "status": "materialized_local_file",
+      "ready": true
+    },
+    "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv": {
+      "path": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+      "required": true,
+      "warn_only": false,
+      "status": "materialized_local_file",
+      "ready": true
+    },
+    "datasets/derived/step1_source_pool/current/source_pool_metadata.json": {
+      "path": "datasets/derived/step1_source_pool/current/source_pool_metadata.json",
+      "required": true,
+      "warn_only": false,
+      "status": "materialized_local_file",
+      "ready": true
+    },
+    "datasets/derived/step2_bridge/current/step2_source_candidates_from_step1.csv": {
+      "path": "datasets/derived/step2_bridge/current/step2_source_candidates_from_step1.csv",
+      "required": true,
+      "warn_only": false,
+      "status": "materialized_local_file",
+      "ready": true
+    },
+    "datasets/derived/step2_bridge/current/step2_source_candidates_from_step1_manifest.json": {
+      "path": "datasets/derived/step2_bridge/current/step2_source_candidates_from_step1_manifest.json",
+      "required": true,
+      "warn_only": false,
+      "status": "materialized_local_file",
+      "ready": true
+    },
+    "datasets/m_verified/canonical/usable_m_with_real_diff.csv": {
+      "path": "datasets/m_verified/canonical/usable_m_with_real_diff.csv",
+      "required": true,
+      "warn_only": false,
+      "status": "materialized_local_file",
+      "ready": true
+    },
+    "datasets/step2/delivery/current/fewshot_pool.db": {
+      "path": "datasets/step2/delivery/current/fewshot_pool.db",
+      "required": true,
+      "warn_only": false,
+      "status": "materialized_local_file",
+      "ready": true
+    },
+    "datasets/step2/delivery/current/build_manifest.json": {
+      "path": "datasets/step2/delivery/current/build_manifest.json",
+      "required": true,
+      "warn_only": false,
+      "status": "materialized_local_file",
+      "ready": true
+    },
+    "datasets/step2/delivery/current/preflight_report.json": {
+      "path": "datasets/step2/delivery/current/preflight_report.json",
+      "required": true,
+      "warn_only": false,
+      "status": "materialized_local_file",
+      "ready": true
+    },
+    "datasets/hard_b/canonical/usable_hard_b_with_real_diff.csv": {
+      "path": "datasets/hard_b/canonical/usable_hard_b_with_real_diff.csv",
+      "required": false,
+      "warn_only": true,
+      "status": "lfs_pointer_only_warn",
+      "ready": true
+    }
+  }
+}

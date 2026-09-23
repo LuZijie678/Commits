@@ -1,0 +1,22 @@
+{
+  "baselines": [
+    "llm_prompting",
+    "pretrained_generation"
+  ],
+  "backend": {
+    "enabled": false,
+    "provider": "openai_compatible",
+    "base_url": "https://api.example.com/v1",
+    "api_key_env": "MICA_MESSAGE_BASELINE_API_KEY",
+    "model": "example-chat-model",
+    "temperature": 0.2,
+    "top_p": 1.0,
+    "max_output_tokens": 64,
+    "timeout_seconds": 60,
+    "max_retries": 2,
+    "thinking": {
+      "type": "disabled"
+    },
+    "cache_path": "outputs/message_baseline_generation_cache.json"
+  }
+}

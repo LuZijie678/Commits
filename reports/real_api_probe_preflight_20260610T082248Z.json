@@ -1,0 +1,34 @@
+{
+  "schema_version": "real_api_probe_preflight_v1",
+  "report_timestamp": "20260610T082248Z",
+  "provider": "openai_compatible",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-v4-flash",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "key_present": true,
+  "http_status": 200,
+  "available_model_match": true,
+  "parse_success": true,
+  "content_non_empty": true,
+  "single_line": true,
+  "latency_ms": 731,
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 3,
+    "total_tokens": 29,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 26
+  },
+  "usage_available": true,
+  "thinking_mode": "disabled",
+  "key_leakage_detected": false,
+  "report_json_path": "reports/real_api_probe_preflight_20260610T082248Z.json",
+  "report_md_path": "reports/real_api_probe_preflight_20260610T082248Z.md",
+  "passed": true,
+  "blocker": "",
+  "models_http_status": 200,
+  "models_latency_ms": 106
+}

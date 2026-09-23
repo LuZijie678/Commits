@@ -1,0 +1,92 @@
+{
+  "artifact_version": "step1_strategy_compare_v1",
+  "selection_strategies": [
+    "rule_only",
+    "model_only",
+    "model_rule_refilter"
+  ],
+  "target_count": 0,
+  "calibration_artifact": "../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/calibration/atomic_calibration_full_diff.json",
+  "thresholds": {
+    "tau_a": 0.94732,
+    "tau_b": 0.834592
+  },
+  "strategy_metrics": {
+    "rule_only": {
+      "selected_count": 5166,
+      "evaluation_labeled_count": 239,
+      "evaluation_selected_labeled_count": 0,
+      "gold_positive_count": 179,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "estimated_noise_rate": null,
+      "tp": 0,
+      "fp": 0,
+      "fn": 179,
+      "evaluation_metric_status": "not_directly_computable_strict_disjoint",
+      "evaluation_metric_note": "the formal protocol keeps evaluation labels SHA-disjoint from the candidate pool, so direct precision/recall/F1 are not directly computable from evaluation.csv",
+      "tier_a_audit_precision": 0.9806763285024155,
+      "tier_a_audit_sample_count": 207,
+      "candidate_overlap_with_rule_only": 5166,
+      "candidate_overlap_with_model_only": 5099,
+      "candidate_overlap_with_model_rule_refilter": 5099
+    },
+    "model_only": {
+      "selected_count": 7647,
+      "evaluation_labeled_count": 239,
+      "evaluation_selected_labeled_count": 0,
+      "gold_positive_count": 179,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "estimated_noise_rate": null,
+      "tp": 0,
+      "fp": 0,
+      "fn": 179,
+      "evaluation_metric_status": "not_directly_computable_strict_disjoint",
+      "evaluation_metric_note": "the formal protocol keeps evaluation labels SHA-disjoint from the candidate pool, so direct precision/recall/F1 are not directly computable from evaluation.csv",
+      "tier_a_audit_precision": 0.96,
+      "tier_a_audit_sample_count": 300,
+      "candidate_overlap_with_rule_only": 5099,
+      "candidate_overlap_with_model_only": 7647,
+      "candidate_overlap_with_model_rule_refilter": 5099
+    },
+    "model_rule_refilter": {
+      "selected_count": 5099,
+      "evaluation_labeled_count": 239,
+      "evaluation_selected_labeled_count": 0,
+      "gold_positive_count": 179,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "estimated_noise_rate": null,
+      "tp": 0,
+      "fp": 0,
+      "fn": 179,
+      "evaluation_metric_status": "not_directly_computable_strict_disjoint",
+      "evaluation_metric_note": "the formal protocol keeps evaluation labels SHA-disjoint from the candidate pool, so direct precision/recall/F1 are not directly computable from evaluation.csv",
+      "tier_a_audit_precision": 0.9806763285024155,
+      "tier_a_audit_sample_count": 207,
+      "candidate_overlap_with_rule_only": 5099,
+      "candidate_overlap_with_model_only": 5099,
+      "candidate_overlap_with_model_rule_refilter": 5099
+    }
+  },
+  "global_counts": {
+    "model_tier_a_count": 7647,
+    "model_tier_a_rule_positive_count": 5099,
+    "model_tier_a_rule_rejected_count": 2548,
+    "rule_positive_model_tier_a_count": 5099,
+    "rule_positive_model_not_a_count": 67
+  },
+  "proxy_role": {
+    "proxy_role": "recall_prefilter_only",
+    "proxy_to_full_diff_agreement": 0.28963210702341136,
+    "proxy_a_to_full_diff_c_rate": null,
+    "proxy_high_confidence_warning": true,
+    "proxy_metrics_missing": false
+  },
+  "audit_precision_available": true,
+  "audit_precision_note": "audit precision available"
+}

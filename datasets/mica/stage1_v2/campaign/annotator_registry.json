@@ -1,0 +1,106 @@
+{
+  "schema_version": "mica-stage1-v2-annotator-registry-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "creation_git_sha": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+  "created_at": "2026-07-26T05:43:22+00:00",
+  "registry_status": "llm_staffing_complete_under_amendment",
+  "allowed_roles": [
+    "adjudicator",
+    "annotator_a",
+    "annotator_b",
+    "independent_blind_reviewer",
+    "source_reviewer"
+  ],
+  "forbidden_actor_types": [
+    "ai",
+    "ai_agent",
+    "codex",
+    "llm",
+    "model"
+  ],
+  "actors": [
+    {
+      "actor_id": "claude_stage1_v2_annotator_a",
+      "actor_type": "llm",
+      "model_identity": "claude-fable-5",
+      "roles": [
+        "annotator_a"
+      ],
+      "qualification_status": "qualified",
+      "independence_contract": "separate_model_context_no_shared_reasoning_state",
+      "registered_under_amendment": "stage1-v2-llm-annotation-amendment-v1",
+      "registered_at": "2026-07-26T07:45:00+00:00",
+      "human_verified_capability": false,
+      "qualification_result_path": "datasets/mica/stage1_v2/qualification/qualification_scoring_result.json",
+      "qualified_at": "2026-07-26T08:20:00+00:00"
+    },
+    {
+      "actor_id": "claude_stage1_v2_annotator_b",
+      "actor_type": "llm",
+      "model_identity": "claude-fable-5",
+      "roles": [
+        "annotator_b"
+      ],
+      "qualification_status": "qualified",
+      "independence_contract": "separate_model_context_no_shared_reasoning_state",
+      "registered_under_amendment": "stage1-v2-llm-annotation-amendment-v1",
+      "registered_at": "2026-07-26T07:45:00+00:00",
+      "human_verified_capability": false,
+      "qualification_result_path": "datasets/mica/stage1_v2/qualification/qualification_scoring_result.json",
+      "qualified_at": "2026-07-26T08:20:00+00:00"
+    },
+    {
+      "actor_id": "claude_stage1_v2_adjudicator",
+      "actor_type": "llm",
+      "model_identity": "claude-fable-5",
+      "roles": [
+        "adjudicator"
+      ],
+      "qualification_status": "pending",
+      "independence_contract": "separate_model_context_no_shared_reasoning_state",
+      "registered_under_amendment": "stage1-v2-llm-annotation-amendment-v1",
+      "registered_at": "2026-07-26T07:45:00+00:00",
+      "human_verified_capability": false
+    },
+    {
+      "actor_id": "claude_stage1_v2_blind_reviewer",
+      "actor_type": "llm",
+      "model_identity": "claude-fable-5",
+      "roles": [
+        "independent_blind_reviewer"
+      ],
+      "qualification_status": "pending",
+      "independence_contract": "separate_model_context_no_shared_reasoning_state",
+      "registered_under_amendment": "stage1-v2-llm-annotation-amendment-v1",
+      "registered_at": "2026-07-26T07:45:00+00:00",
+      "human_verified_capability": false
+    },
+    {
+      "actor_id": "claude_stage1_v2_source_reviewer",
+      "actor_type": "llm",
+      "model_identity": "claude-fable-5",
+      "roles": [
+        "source_reviewer"
+      ],
+      "qualification_status": "pending",
+      "independence_contract": "separate_model_context_no_shared_reasoning_state",
+      "registered_under_amendment": "stage1-v2-llm-annotation-amendment-v1",
+      "registered_at": "2026-07-26T07:45:00+00:00",
+      "human_verified_capability": false
+    },
+    {
+      "actor_id": "codex_stage1_v2_reviewer",
+      "actor_type": "llm",
+      "model_identity": "codex",
+      "roles": [
+        "source_reviewer"
+      ],
+      "qualification_status": "pending",
+      "independence_contract": "separate_model_context_no_shared_reasoning_state",
+      "registered_under_amendment": "stage1-v2-llm-annotation-amendment-v1",
+      "registered_at": "2026-07-26T07:45:00+00:00",
+      "human_verified_capability": false
+    }
+  ],
+  "llm_annotation_amendment_id": "stage1-v2-llm-annotation-amendment-v1"
+}

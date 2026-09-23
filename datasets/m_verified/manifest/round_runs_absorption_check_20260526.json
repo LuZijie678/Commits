@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-05-26T13:57:32.365703+00:00",
+  "canonical_manifest": "datasets/m_verified/manifest/usable_m_with_real_diff_manifest.json",
+  "canonical_manifest_created_at_utc": "2026-05-24T15:29:59.790517+00:00",
+  "round_runs_root": "datasets/m_verified/workspace/round_runs",
+  "total_files_checked": 402,
+  "group_counts": {
+    "batchcrawl/20260526T024705Z": 31,
+    "batchcrawl/20260526T025527Z": 31,
+    "batchcrawl/20260526T030407Z": 31,
+    "batchcrawl/20260526T031105Z": 31,
+    "batchcrawl/20260526T031715Z": 24,
+    "batchcrawl/20260526T040333Z": 3,
+    "batchcrawl/20260526T071501Z": 31,
+    "batchcrawl/20260526T124753Z": 31,
+    "batchcrawl/20260526T125513Z": 31,
+    "batchcrawl/20260526T130226Z": 31,
+    "batchcrawl/20260526T131044Z": 31,
+    "batchcrawl/20260526T131803Z": 3,
+    "batchcrawl/20260526T132427Z": 10,
+    "batchcrawl/20260526T132558Z": 3,
+    "batchcrawl/20260526T133228Z": 3,
+    "newcrawl/20260525": 34,
+    "newcrawl/20260526": 43
+  },
+  "evidence_file_basename_matches": [],
+  "evidence_file_basename_match_count": 0,
+  "absorption_decision": {
+    "eligible_for_archive_count": 0,
+    "archived_count": 0,
+    "decision": "retain_in_workspace",
+    "reason": [
+      "current canonical manifest was created at 2026-05-24T15:29:59.790517+00:00, earlier than the 2026-05-25 / 2026-05-26 crawl rounds under round_runs",
+      "no round_runs filename basename appears in current canonical evidence_files_scanned, so there is no strict evidence that these files have already been absorbed into the current canonical dataset"
+    ]
+  }
+}

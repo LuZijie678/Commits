@@ -1,0 +1,16 @@
+{
+  "schema_version": "mica-stage1-official-result-status-revision-v1",
+  "parent_official_run_id": "stage1_official_validation_20260723T091921Z",
+  "status_revision_version": "status_revision_v1",
+  "official_validation_executed": true,
+  "formal_ready": true,
+  "paper_ready": true,
+  "paper_ready_revision_reason": "missing_metric_computation_completed",
+  "supplemental_metric_record_path": "configs/mica/official_results/stage1_official_validation_20260723T091921Z_supplement_v1.json",
+  "supplemental_metric_record_hash": "0b49e9cfb37bfe98a32b0d5982fdeda5c8509f6d943c435ec696508d9ce5d05f",
+  "checkpoint_sha256": "4c292e0b4f6d7e2b0a291fd9ab1117552922076f3ffb6b28eff06484c33f8c11",
+  "threshold_version": "frozen_dev_thresholds_v1",
+  "kmax_decision_version": "stage1-kmax-v1",
+  "computation_git_sha": "85ed7bb0cb2643ea98e0c1fee55c25d7e08e2533",
+  "status": "paper_ready"
+}

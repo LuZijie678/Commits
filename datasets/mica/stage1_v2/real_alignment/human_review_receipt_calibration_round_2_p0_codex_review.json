@@ -1,0 +1,24 @@
+{
+  "schema_version": "mica-stage1-v2-human-review-receipt-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "round_label": "calibration_round_2",
+  "artifact_id": "human_review_receipt_calibration_round_2_p0_codex_review",
+  "source_artifact_id": "calibration_round_2_p0_codex_review_filled",
+  "reviewed_artifact_id": "human_reviewed_calibration_round_2_p0_codex_review",
+  "reviewer_id": "stage1_v2_user_reviewer",
+  "reviewer_actor_type": "human",
+  "review_evidence_type": "chat_confirmation",
+  "review_evidence_text": "我审核过了，没问题",
+  "review_decision": "accepted_current_codex_p0_diagnostic_decisions",
+  "reviewed_at": "2026-07-27T03:35:07Z",
+  "record_count": 4,
+  "decision_distribution": {
+    "overflow_stress": 3,
+    "usable_k_le_4": 1
+  },
+  "human_verified": true,
+  "formal_human_evidence": false,
+  "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+  "stage1_v2_training_allowed": false,
+  "stage2_entry_allowed": false
+}

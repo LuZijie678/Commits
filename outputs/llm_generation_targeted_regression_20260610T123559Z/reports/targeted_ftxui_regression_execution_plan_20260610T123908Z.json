@@ -1,0 +1,12 @@
+{
+  "schema_version": "targeted_ftxui_regression_execution_plan_v1",
+  "report_timestamp": "20260610T123908Z",
+  "planned_request_count": 1,
+  "sample_id": "M_real_multi:7da239a00c1c6f17",
+  "strategy": "G4",
+  "query_repo_original": "ArthurSonzogni/FTXUI",
+  "query_repo_canonical": "arthursonzogni/ftxui",
+  "estimated_input_tokens_total": 6957,
+  "estimated_output_tokens_total": 64,
+  "estimated_cost_usd": 0.0009919
+}

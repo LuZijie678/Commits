@@ -1,0 +1,19 @@
+{
+  "annotated_dataset_csv": "datasets/step1/canonical/annotated_dataset.csv",
+  "prefilter_input_csv": "archive/datasets/step1/workspace/upstream_candidate_pool/prefilter_allcommits.csv",
+  "source_metadata_csv": "datasets/step1/runtime_support/resolved_metadata.csv",
+  "source_jsonl": "datasets/step1/runtime_support/resolved_commit_texts.jsonl",
+  "meta_rows_total_after_diff_filter": 87516,
+  "meta_rows_removed_no_diff": 254,
+  "annotated_rows_written": 505,
+  "annotated_labeled_pos": 255,
+  "annotated_labeled_neg": 250,
+  "annotated_unlabeled": 0,
+  "prefilter_rows_written": 87009,
+  "calibration_unique_sha": 505,
+  "prefilter_unique_sha": 87009,
+  "overlap_sha_count": 0,
+  "overlap_sha_examples": [],
+  "split_policy": "diff_line_count>0 and diff_char_count>0; supplemented rows moved from prefilter into annotated for weak-pool sufficiency; prefilter excludes annotated shas",
+  "labeling_policy": "diff_audit_v1 (message+diff audit with strict weak-pool sufficiency)"
+}

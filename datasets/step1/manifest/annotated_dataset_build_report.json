@@ -1,0 +1,16 @@
+{
+  "output_csv": "datasets/step1/canonical/annotated_dataset.csv",
+  "source_metadata_csv": "datasets/step1/runtime_support/resolved_metadata.csv",
+  "source_jsonl": "datasets/step1/runtime_support/resolved_commit_texts.jsonl",
+  "rows_written": 505,
+  "rows_with_empty_diff": 0,
+  "rows_with_invalid_diff_features": 0,
+  "label_ratio": "255:250",
+  "labels": {
+    "1": 255,
+    "0": 250
+  },
+  "note_field": "audit_notes",
+  "label_source": "diff_audit_v1",
+  "supplemented_from_prefilter": 7
+}

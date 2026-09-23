@@ -1,0 +1,18 @@
+{
+  "schema_version": "llm_generation_canary_prompt_summary_v1",
+  "prompt_count": 5,
+  "strategy_distribution": {
+    "G1": 2,
+    "G4": 2,
+    "G5": 1
+  },
+  "input_char_count": 185900,
+  "estimated_input_token_count": 46473,
+  "max_prompt_length": 84414,
+  "p50_prompt_length": 11798,
+  "p90_prompt_length": 84414,
+  "truncation_count": 0,
+  "retrieval_fallback_count": 3,
+  "g5_oracle_only": true,
+  "g5_deployable": false
+}

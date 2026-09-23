@@ -1,0 +1,838 @@
+{
+ "schema_version": "mica-stage1-v2-contaminated-synthetic-report-v1",
+ "protocol_version": "stage1-v2-protocol",
+ "created_at": "2026-07-26T12:40:00+00:00",
+ "creation_git_sha": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+ "amendment_id": "stage1-v2-llm-annotation-amendment-v1",
+ "basis": "LLM source review pre-screen (claude batches 0001-0021 + codex batch 0001); human_verified=false",
+ "rejected_source_count": 61,
+ "affected_sample_count": 45,
+ "affected_by_split": {
+  "synthetic_train": 12,
+  "synthetic_dev": 9,
+  "synthetic_control_test": 24
+ },
+ "affected_samples": [
+  {
+   "split": "synthetic_train",
+   "sample_id": "train::simple2_0002",
+   "rejected_sources": [
+    "pmndrs/react-spring@c1279efca15cc2ec46cfe168f4b9b787634acffa"
+   ],
+   "decisions": {
+    "pmndrs/react-spring@c1279efca15cc2ec46cfe168f4b9b787634acffa": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_train",
+   "sample_id": "train::simple2_0007",
+   "rejected_sources": [
+    "nocodb/nocodb@5548d3f238fca2e00e10c67405f2ae1a2f9ecd09"
+   ],
+   "decisions": {
+    "nocodb/nocodb@5548d3f238fca2e00e10c67405f2ae1a2f9ecd09": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_train",
+   "sample_id": "train::simple2_0038",
+   "rejected_sources": [
+    "pmndrs/react-spring@c1279efca15cc2ec46cfe168f4b9b787634acffa"
+   ],
+   "decisions": {
+    "pmndrs/react-spring@c1279efca15cc2ec46cfe168f4b9b787634acffa": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_train",
+   "sample_id": "train::simple2_0047",
+   "rejected_sources": [
+    "camunda/zeebe@657f77a65489c2b48ce45cbd3f26f7fde6ef2567"
+   ],
+   "decisions": {
+    "camunda/zeebe@657f77a65489c2b48ce45cbd3f26f7fde6ef2567": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_train",
+   "sample_id": "train::simple2_0074",
+   "rejected_sources": [
+    "pmndrs/react-spring@c1279efca15cc2ec46cfe168f4b9b787634acffa"
+   ],
+   "decisions": {
+    "pmndrs/react-spring@c1279efca15cc2ec46cfe168f4b9b787634acffa": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_train",
+   "sample_id": "train::simple2_0089",
+   "rejected_sources": [
+    "aidenybai/million@b5e062278ff86427bad300e93fefd34d7d849015"
+   ],
+   "decisions": {
+    "aidenybai/million@b5e062278ff86427bad300e93fefd34d7d849015": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_train",
+   "sample_id": "train::simple2_0096",
+   "rejected_sources": [
+    "influxdata/influxdb@c54109113e6fef1507affa1f5594ba845484cab1",
+    "influxdata/influxdb@e72f7e958c9d269b31825955c46362689ae7cda6"
+   ],
+   "decisions": {
+    "influxdata/influxdb@c54109113e6fef1507affa1f5594ba845484cab1": "reject_multi_intent",
+    "influxdata/influxdb@e72f7e958c9d269b31825955c46362689ae7cda6": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_train",
+   "sample_id": "train::simple2_0101",
+   "rejected_sources": [
+    "camunda/zeebe@fa7fdf595a4e83f79060dc1bec2756e7fdaafa48"
+   ],
+   "decisions": {
+    "camunda/zeebe@fa7fdf595a4e83f79060dc1bec2756e7fdaafa48": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_train",
+   "sample_id": "train::simple2_0114",
+   "rejected_sources": [
+    "influxdata/influxdb@c54109113e6fef1507affa1f5594ba845484cab1"
+   ],
+   "decisions": {
+    "influxdata/influxdb@c54109113e6fef1507affa1f5594ba845484cab1": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_train",
+   "sample_id": "train::simple2_0124",
+   "rejected_sources": [
+    "nuxt/nuxt@ee2f568fc127834a48d8528fd035ce4d88e16db8"
+   ],
+   "decisions": {
+    "nuxt/nuxt@ee2f568fc127834a48d8528fd035ce4d88e16db8": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_train",
+   "sample_id": "train::simple2_0142",
+   "rejected_sources": [
+    "nuxt/nuxt@ee2f568fc127834a48d8528fd035ce4d88e16db8"
+   ],
+   "decisions": {
+    "nuxt/nuxt@ee2f568fc127834a48d8528fd035ce4d88e16db8": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_train",
+   "sample_id": "train::simple2_0150",
+   "rejected_sources": [
+    "influxdata/influxdb@c54109113e6fef1507affa1f5594ba845484cab1"
+   ],
+   "decisions": {
+    "influxdata/influxdb@c54109113e6fef1507affa1f5594ba845484cab1": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_dev",
+   "sample_id": "dev::simple2_0010",
+   "rejected_sources": [
+    "ory/hydra@37a8839fb1f0b1226504b49bff179328c7010226"
+   ],
+   "decisions": {
+    "ory/hydra@37a8839fb1f0b1226504b49bff179328c7010226": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_dev",
+   "sample_id": "dev::simple2_0031",
+   "rejected_sources": [
+    "infracost/infracost@bbdfdfe70bdd59fb3f47a6e98ebe5e815076fa0a"
+   ],
+   "decisions": {
+    "infracost/infracost@bbdfdfe70bdd59fb3f47a6e98ebe5e815076fa0a": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_dev",
+   "sample_id": "dev::simple2_0041",
+   "rejected_sources": [
+    "infracost/infracost@bbdfdfe70bdd59fb3f47a6e98ebe5e815076fa0a"
+   ],
+   "decisions": {
+    "infracost/infracost@bbdfdfe70bdd59fb3f47a6e98ebe5e815076fa0a": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_dev",
+   "sample_id": "dev::simple2_0051",
+   "rejected_sources": [
+    "infracost/infracost@bbdfdfe70bdd59fb3f47a6e98ebe5e815076fa0a"
+   ],
+   "decisions": {
+    "infracost/infracost@bbdfdfe70bdd59fb3f47a6e98ebe5e815076fa0a": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_dev",
+   "sample_id": "dev::simple2_0060",
+   "rejected_sources": [
+    "infracost/infracost@d8fea5a61540af64bdc6a685ecd2835a87d04e6d"
+   ],
+   "decisions": {
+    "infracost/infracost@d8fea5a61540af64bdc6a685ecd2835a87d04e6d": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_dev",
+   "sample_id": "dev::simple2_0078",
+   "rejected_sources": [
+    "infracost/infracost@99c575e0940c8211227792bc43d0688bbfa9b05d"
+   ],
+   "decisions": {
+    "infracost/infracost@99c575e0940c8211227792bc43d0688bbfa9b05d": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_dev",
+   "sample_id": "dev::simple2_0087",
+   "rejected_sources": [
+    "infracost/infracost@bbdfdfe70bdd59fb3f47a6e98ebe5e815076fa0a"
+   ],
+   "decisions": {
+    "infracost/infracost@bbdfdfe70bdd59fb3f47a6e98ebe5e815076fa0a": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_dev",
+   "sample_id": "dev::simple2_0096",
+   "rejected_sources": [
+    "infracost/infracost@d8fea5a61540af64bdc6a685ecd2835a87d04e6d"
+   ],
+   "decisions": {
+    "infracost/infracost@d8fea5a61540af64bdc6a685ecd2835a87d04e6d": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_dev",
+   "sample_id": "dev::simple2_0110",
+   "rejected_sources": [
+    "tsparticles/tsparticles@480c25b3da96ecc4df46f7a05e57eea9fdcf64c6"
+   ],
+   "decisions": {
+    "tsparticles/tsparticles@480c25b3da96ecc4df46f7a05e57eea9fdcf64c6": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0009",
+   "rejected_sources": [
+    "erg-lang/erg@f6763fcfdff8fbb830418c5c13ab8e5d97a345e6"
+   ],
+   "decisions": {
+    "erg-lang/erg@f6763fcfdff8fbb830418c5c13ab8e5d97a345e6": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0013",
+   "rejected_sources": [
+    "dagger/dagger@9ea18700e78a7ee09f43e6976b0339dfc2747458"
+   ],
+   "decisions": {
+    "dagger/dagger@9ea18700e78a7ee09f43e6976b0339dfc2747458": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0020",
+   "rejected_sources": [
+    "orhun/git-cliff@2b484f078cb0c5236aa10fbb8c375e5b368ec0a1"
+   ],
+   "decisions": {
+    "orhun/git-cliff@2b484f078cb0c5236aa10fbb8c375e5b368ec0a1": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0039",
+   "rejected_sources": [
+    "erg-lang/erg@f6763fcfdff8fbb830418c5c13ab8e5d97a345e6"
+   ],
+   "decisions": {
+    "erg-lang/erg@f6763fcfdff8fbb830418c5c13ab8e5d97a345e6": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0051",
+   "rejected_sources": [
+    "zellij-org/zellij@36938c504a655c5ae4cde10cf9870ce910fd9c79"
+   ],
+   "decisions": {
+    "zellij-org/zellij@36938c504a655c5ae4cde10cf9870ce910fd9c79": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0052",
+   "rejected_sources": [
+    "benawad/dogehouse@b7aac9062fc87cbeea7ebf87b459019ec402abfd"
+   ],
+   "decisions": {
+    "benawad/dogehouse@b7aac9062fc87cbeea7ebf87b459019ec402abfd": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0070",
+   "rejected_sources": [
+    "ratatui-org/ratatui@8da5f740af08c769dd9567dd2283553563883da4"
+   ],
+   "decisions": {
+    "ratatui-org/ratatui@8da5f740af08c769dd9567dd2283553563883da4": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0075",
+   "rejected_sources": [
+    "benawad/dogehouse@b7aac9062fc87cbeea7ebf87b459019ec402abfd"
+   ],
+   "decisions": {
+    "benawad/dogehouse@b7aac9062fc87cbeea7ebf87b459019ec402abfd": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0079",
+   "rejected_sources": [
+    "ueberdosis/tiptap@cfa506e89effc5c95f2c789687cad0c1a614e9fb"
+   ],
+   "decisions": {
+    "ueberdosis/tiptap@cfa506e89effc5c95f2c789687cad0c1a614e9fb": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0091",
+   "rejected_sources": [
+    "ratatui-org/ratatui@8da5f740af08c769dd9567dd2283553563883da4"
+   ],
+   "decisions": {
+    "ratatui-org/ratatui@8da5f740af08c769dd9567dd2283553563883da4": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0098",
+   "rejected_sources": [
+    "ueberdosis/tiptap@76b1e5865739022a1c722fe7c2086f2db95e947f"
+   ],
+   "decisions": {
+    "ueberdosis/tiptap@76b1e5865739022a1c722fe7c2086f2db95e947f": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0100",
+   "rejected_sources": [
+    "oclif/oclif@48ea0fe35a579f3b4498cdd44d4689e90b5f19d6"
+   ],
+   "decisions": {
+    "oclif/oclif@48ea0fe35a579f3b4498cdd44d4689e90b5f19d6": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0105",
+   "rejected_sources": [
+    "erg-lang/erg@f6763fcfdff8fbb830418c5c13ab8e5d97a345e6"
+   ],
+   "decisions": {
+    "erg-lang/erg@f6763fcfdff8fbb830418c5c13ab8e5d97a345e6": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0109",
+   "rejected_sources": [
+    "dagger/dagger@9ea18700e78a7ee09f43e6976b0339dfc2747458"
+   ],
+   "decisions": {
+    "dagger/dagger@9ea18700e78a7ee09f43e6976b0339dfc2747458": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0110",
+   "rejected_sources": [
+    "ratatui-org/ratatui@8da5f740af08c769dd9567dd2283553563883da4"
+   ],
+   "decisions": {
+    "ratatui-org/ratatui@8da5f740af08c769dd9567dd2283553563883da4": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0114",
+   "rejected_sources": [
+    "ueberdosis/tiptap@cfa506e89effc5c95f2c789687cad0c1a614e9fb"
+   ],
+   "decisions": {
+    "ueberdosis/tiptap@cfa506e89effc5c95f2c789687cad0c1a614e9fb": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0116",
+   "rejected_sources": [
+    "oclif/oclif@48ea0fe35a579f3b4498cdd44d4689e90b5f19d6"
+   ],
+   "decisions": {
+    "oclif/oclif@48ea0fe35a579f3b4498cdd44d4689e90b5f19d6": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0117",
+   "rejected_sources": [
+    "logto-io/logto@2c849db83138e6247a7dce33a6f3e6604b9dce9b"
+   ],
+   "decisions": {
+    "logto-io/logto@2c849db83138e6247a7dce33a6f3e6604b9dce9b": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0118",
+   "rejected_sources": [
+    "millsp/ts-toolbelt@b898dcce529536051330630b581f319ba5e12e8e"
+   ],
+   "decisions": {
+    "millsp/ts-toolbelt@b898dcce529536051330630b581f319ba5e12e8e": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0121",
+   "rejected_sources": [
+    "erg-lang/erg@f6763fcfdff8fbb830418c5c13ab8e5d97a345e6"
+   ],
+   "decisions": {
+    "erg-lang/erg@f6763fcfdff8fbb830418c5c13ab8e5d97a345e6": "reject_multi_intent"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0125",
+   "rejected_sources": [
+    "dagger/dagger@9ea18700e78a7ee09f43e6976b0339dfc2747458"
+   ],
+   "decisions": {
+    "dagger/dagger@9ea18700e78a7ee09f43e6976b0339dfc2747458": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0128",
+   "rejected_sources": [
+    "ueberdosis/tiptap@76b1e5865739022a1c722fe7c2086f2db95e947f"
+   ],
+   "decisions": {
+    "ueberdosis/tiptap@76b1e5865739022a1c722fe7c2086f2db95e947f": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0138",
+   "rejected_sources": [
+    "ueberdosis/tiptap@cfa506e89effc5c95f2c789687cad0c1a614e9fb"
+   ],
+   "decisions": {
+    "ueberdosis/tiptap@cfa506e89effc5c95f2c789687cad0c1a614e9fb": "reject_mechanical_or_generated"
+   }
+  },
+  {
+   "split": "synthetic_control_test",
+   "sample_id": "synthetic_control_test::simple2_0141",
+   "rejected_sources": [
+    "millsp/ts-toolbelt@2315ff0eede4d84b685996c579a3dc27033aa512"
+   ],
+   "decisions": {
+    "millsp/ts-toolbelt@2315ff0eede4d84b685996c579a3dc27033aa512": "reject_multi_intent"
+   }
+  }
+ ],
+ "rejected_sources": {
+  "Byron/gitoxide@2650843c19ba2f41fe188c7db93c3536e19b2507": {
+   "decision": "reject_low_evidence",
+   "reason": "Reject low evidence because no matching git_diff/edit-unit evidence was found in the non-blind evidence assets checked; the queue row is metadata-only. Under th",
+   "priority": "critical_formal_scale_required",
+   "reviewer": "codex_stage1_v2_reviewer"
+  },
+  "aidenybai/million@b5e062278ff86427bad300e93fefd34d7d849015": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Diff only converts two 'let' declarations to 'const' in createElement.spec.ts, a purely mechanical lint/style substitution with no behavioral action-object; per",
+   "priority": "critical_current_materialized_use",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "alibaba/lowcode-engine@deeeed29ab68f4cc738350037bd11ff5ddccd74e": {
+   "decision": "reject_multi_intent",
+   "reason": "Diff bundles independently deliverable behaviors: the projectRemark/isSingleComponent feature that skips directory creation, plus moving schema validation after",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "benawad/dogehouse@b7aac9062fc87cbeea7ebf87b459019ec402abfd": {
+   "decision": "reject_multi_intent",
+   "reason": "dolma/package.json combines a release version bump (1.1.3 -> 1.1.4) with adding a new 'test' script; the release bump and the test-script addition are independe",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "callstack/react-native-paper@5947be9d94f5c0863213fc70fd3e69b9043a7945": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "All 14 files are jest __snapshots__ .snap regenerations mechanically swapping fontFamily 'Helvetica Neue' for 'System' and adding fontWeight entries; generated ",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "camunda/zeebe@353de465e06655bd9dc3ca67f1497bf79281e7de": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "All 14 hunks uniformly strip the public modifier from the ProcessingScheduleServiceTest class and its methods, a mechanical batch visibility replacement with no",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "camunda/zeebe@5522664ca998954dcd1e709b0882c2c81f66ba78": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "monitor/grafana/zeebe.json is a Grafana-exported dashboard; the diff mixes new rate panels with tool-generated churn (gridPos y recalculation, iteration timesta",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "camunda/zeebe@60a2c93e441666a25f97865f14f9374fc107f68b": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "clients/go/.gocompat.json is a single-line machine-generated Go API compatibility snapshot; the diff replaces the whole generated blob (truncated at 60000 chars",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "camunda/zeebe@657f77a65489c2b48ce45cbd3f26f7fde6ef2567": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "The whole diff is a mechanical parameter rename wfInstanceKey -> processInstanceKey (plus resulting reformatting) across four PartitionTestClient methods with n",
+   "priority": "critical_current_materialized_use",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "camunda/zeebe@6a73e6da78ad19f4c1333b910b14e1f8cffae41f": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "monitor/grafana/zeebe.json Grafana-export diff rewrites the Current Partition Leader table into a Topology panel; the content is UI-exported JSON (pluginVersion",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "camunda/zeebe@b1524a29b172971a4e653f0dababf355272650a1": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Grafana-export diff bundles legend toggles (show:true), GC panel relocation via delete/re-add, heap memory query rework, and accidental pod-specific hideSeriesF",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "camunda/zeebe@fa7fdf595a4e83f79060dc1bec2756e7fdaafa48": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Pure file relocation of ContinuouslyReplayTest (98% similarity rename where only the package declaration changes); mechanical move/rename with no semantic edit ",
+   "priority": "critical_current_materialized_use",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "crimx/ext-saladict@1ac4237a3f81172e2e7ad5bacc1bab02a3790f95": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Only __snapshots__/MenuBar.spec.tsx.snap changes (disabled={true} -> disabled={false} in two snapshots) with no source or spec edit; regenerated snapshot artifa",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "crimx/ext-saladict@787d420087feb7649e1ea4f10b87dba1c8cd5525": {
+   "decision": "reject_multi_intent",
+   "reason": "Two independently deliverable changes: the Profiles page refactor to reuse the shared SortableList component, plus an unrelated oldIndex===newIndex no-op guard ",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "crimx/ext-saladict@cff09e4e70bbf06dc086a64960847fd1f53b3643": {
+   "decision": "reject_multi_intent",
+   "reason": "The two mock files mix an rxjs v6 import migration, a Message-typing rework (local interface removed, MsgType.Default -> '__DEFAULT_MSGTYPE__', 'PAGE_INFO' subs",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "crimx/ext-saladict@ecb5f40ef9e091b9c6c022b72f8cf692ea54d3da": {
+   "decision": "reject_multi_intent",
+   "reason": "Options page bundles several independent changes: pushState/popstate navigation with document.title updates, an i18n namespace/key renaming (opt:nav_general -> ",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "cube-js/cube@cecaa6e9797ef23c52964b3c3e76ace6fb567e8a": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "package.json adds a moment dependency while everything else visible is large mechanical yarn.lock churn; a lockfile-dominated dependency bump is background per ",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "dagger/dagger@9ea18700e78a7ee09f43e6976b0339dfc2747458": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "The set_secret addition lives in crates/dagger-sdk/src/gen.rs, whose name and uniform doc/arg/return pattern indicate codegen output regenerated from the API sc",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "electron/electron@c63014c25652bcf00f846c6b255f6e7a8a16f49f": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "All 98 hunks across 13 spec files apply the same repetitive substitution of loadURL('file://...') with loadFile(...), a bulk mechanical API-call replacement rat",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "erg-lang/erg@30d2dc52a3f3d547e1efd9746272bedfb725df22": {
+   "decision": "reject_multi_intent",
+   "reason": "Bundles several independently deliverable changes: a new array `union` const function, new SetIterator/TupleIterator builtin classes with `iter` methods, and sw",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "erg-lang/erg@f3fd5e3eeb8fc664f1905d720df9ad97347140fd": {
+   "decision": "reject_multi_intent",
+   "reason": "Contains at least three separable changes: a workspace/willRenameFiles LSP feature (file_cache.rs, rename.rs, server.rs, cache.rs), an impl_stream macro refacto",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "erg-lang/erg@f6763fcfdff8fbb830418c5c13ab8e5d97a345e6": {
+   "decision": "reject_multi_intent",
+   "reason": "platform.d.er is broadly rewritten (corrects existing signatures like architecture! and platform!, adds many platform APIs) while sys.d.er separately adds getre",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "ibis-project/ibis@78d0bb483c7eca7bc05d3d4a9f9113109706717f": {
+   "decision": "reject_multi_intent",
+   "reason": "Mixes a postgres test consolidation into a snapshot-based test_analytic_functions with impala snapshot output changes (ntile/percent_rank gaining OVER clauses) ",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "influxdata/influxdb@8d6d9e679f07787e0776b55ed7da308efa9605b3": {
+   "decision": "reject_multi_intent",
+   "reason": "Rewrites the initial catalog migration and postgres.rs with several separable schema changes: moving tables into a new iox_catalog schema with search_path, plur",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "influxdata/influxdb@c54109113e6fef1507affa1f5594ba845484cab1": {
+   "decision": "reject_multi_intent",
+   "reason": "Diff both adds a new public table_path() API and independently refactors three existing methods onto an extracted find_table() helper; the dedup refactor and th",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "influxdata/influxdb@d54c30147e46fcb019da178e14992e102eac0adb": {
+   "decision": "reject_multi_intent",
+   "reason": "Groups unrelated micro-changes: lowering TEMP_CARDINALITY_DICTIONARY_ENCODING_LIMIT 1_000_000 -> 100_000 (behavioral tuning), widening Encoding method visibilit",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "influxdata/influxdb@e72f7e958c9d269b31825955c46362689ae7cda6": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Only change bumps inline dump-snapshot expected values 'metadata omitted (930 bytes)' -> '933 bytes' in two places; a snapshot-style expectation sync with no st",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "influxdata/influxdb@f0748cc37971199b2338afe1c04437faeace6e92": {
+   "decision": "reject_multi_intent",
+   "reason": "A grab-bag of small polish edits: doc-comment rewordings about empty predicates in three files, a boolean simplification of Bool::has_non_null_value, and Vec::w",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "infracost/infracost@99c575e0940c8211227792bc43d0688bbfa9b05d": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Diff touches only a testdata .golden snapshot, updating the summary line to mention usage-based costs; snapshot/generated content is background per guideline an",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "infracost/infracost@bbdfdfe70bdd59fb3f47a6e98ebe5e815076fa0a": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "The only change adds a trailing newline at EOF in sns_topic_test.go (removing the no-newline marker); pure formatting with no semantic action-object intent.",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "infracost/infracost@d8fea5a61540af64bdc6a685ecd2835a87d04e6d": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Diff only edits a testdata .golden snapshot changing 'Fixed Fee' to 'Fixed fee'; snapshot regeneration is background/mechanical per guideline and the underlying",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "ionic-team/ionic-framework@544cca099d030d100535d960d93c6337c7c33027": {
+   "decision": "reject_multi_intent",
+   "reason": "Contains several independently deliverable test changes: new present-and-verify e2e tests for overlay components (action-sheet/alert/datetime/modal/popover/toas",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "ionic-team/ionic-framework@77e9b23bd25d0dd5bf918976760284073d62c80b": {
+   "decision": "reject_multi_intent",
+   "reason": "Bulk mechanical rename nav->navCtrl and private->public constructor params across the nav basic test file, combined with an independent semantic change to alert",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "logto-io/logto@2c849db83138e6247a7dce33a6f3e6604b9dce9b": {
+   "decision": "reject_multi_intent",
+   "reason": "The hunk both adds a beforeEach 1s waitForTimeout (test stabilization) and retargets the test from 'sign-in page' to 'welcome page' (behavioral expectation chan",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "metersphere/metersphere@7445f06d58041e3558014c6d7655a85c4a79baa4": {
+   "decision": "reject_multi_intent",
+   "reason": "Two independent changes: (1) internationalize TAPD/JIRA form labels in MsProject.vue with new project.tapd_id/jira_key keys across en-US/zh-CN/zh-TW, and (2) ad",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "mikro-orm/mikro-orm@60181dd7ee97911f337f013c578cde4c256c71e5": {
+   "decision": "reject_multi_intent",
+   "reason": "Mixes making test database names unique/correct (mysql2 'nofk' suffix, GH4313 mongo url, GH4692 dbName 4153->4692) with an unrelated API migration in GH1331.tes",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "millsp/ts-toolbelt@2315ff0eede4d84b685996c579a3dc27033aa512": {
+   "decision": "reject_multi_intent",
+   "reason": "tst/List.ts contains two opposite, independently deliverable test toggles: the T.Readonly<never> check is uncommented while the T.Tail<never> check is commented",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "millsp/ts-toolbelt@b898dcce529536051330630b581f319ba5e12e8e": {
+   "decision": "reject_multi_intent",
+   "reason": "Diff adds a new public Tuple type in src/Tuple/Tuple.ts and separately deletes the semantically unrelated Limit type from src/Tuple/_Internal.ts; two independen",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "nocodb/nocodb@0d5a4419cff57fd7b1da87ac6b3ebc2019c65ec1": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Lockfile-only changes: transitive tar 6.1.15->6.1.14 pin in tests/playwright package-lock.json and a trailing-newline removal in root package-lock.json; lockfil",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "nocodb/nocodb@231b0132fdc76bd56423352b6c8470eec13c6280": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "194 hunks across 10 unit-test files apply the same mechanical URL substitution '/api/v1/...' -> '/api/v1/db/...' (plus two trivial reformat collapses); bulk fin",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "nocodb/nocodb@5548d3f238fca2e00e10c67405f2ae1a2f9ecd09": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Diff only deletes a trailing blank line at the end of the playwright README; a whitespace-only formatting change with no action-object intent (pure formatting i",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "nocodb/nocodb@8cf68ffcfe3e65d27f79adf218cb127df70b7c45": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Overwhelmingly prettier-style reformatting (semicolons, quotes, indentation, chained expect wrapping) of 8 unit-test files plus non-functional 'Test case list' ",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "nrwl/nx@825202b5f4ccc9d9a73538a2cc31fe9f4e4468ee": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "18 generated api-doc files change identically, appending a trailing space inside 'Type: `...`' code spans (e.g. 'string | string[] `'); generated-docs churn wit",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "nuxt/nuxt@ee2f568fc127834a48d8528fd035ce4d88e16db8": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Diff only merges the standalone callWithNuxt import into the existing import statement from '../nuxt' with zero behavioral change; pure import reorganization is",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "oclif/oclif@48ea0fe35a579f3b4498cdd44d4689e90b5f19d6": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Only change converts a template literal without interpolation into a single-quoted string in release_example.js; pure lint/quote-style formatting with no semant",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "openreplay/openreplay@11d94a179999ab05104e401ddaff0aec21b34a0a": {
+   "decision": "reject_multi_intent",
+   "reason": "Two independently deliverable behaviors: disabling filter_stages() across funnel functions (calls commented out in create/get_by_user/get_sessions_on_the_fly/ge",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "openreplay/openreplay@556cc297bf6c2b50abb931f272d1cdf59027694f": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "43 hunks in metrics_exp.py uniformly batch-replace the ClickHouse column reference EventType -> event_type (plus adding the 'performance.' qualifier in three hu",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "openreplay/openreplay@8892b2f79cf69c7e40df99389224caf301199ea1": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "The only change is the version_number bump '1.2.0' -> '1.3.5' duplicated in config.bundle.json and config.json - release-metadata churn with no substantive acti",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "openreplay/openreplay@f9e837c0c879796d29efc20c6e5fd9b5d975a144": {
+   "decision": "reject_multi_intent",
+   "reason": "Multiple independent behaviors: Autoplay toggle rebinding to player.toggleAutoplay(), commenting out inspectorMode/stackList/fetchList usage in Controls, moving",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "orhun/git-cliff@2b484f078cb0c5236aa10fbb8c375e5b368ec0a1": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "The only change is a date bump (2022-04-05 to 2022-04-06) inside .github/fixtures/.../expected.md, an expected-output snapshot of the generated changelog; per g",
+   "priority": "critical_current_materialized_use",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "ory/hydra@37a8839fb1f0b1226504b49bff179328c7010226": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "One-line swagger:model rename (loginRequest -> oAuth2LoginRequest) inside internal/httpclient/models, a path that holds the swagger-generated client, so this re",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "pmndrs/react-spring@c1279efca15cc2ec46cfe168f4b9b787634acffa": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "The diff only removes the unused AnimationResult import from transition.ts; import-hygiene-only edits fall in the background/mechanical class of guideline secti",
+   "priority": "critical_current_materialized_use",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "ratatui-org/ratatui@8da5f740af08c769dd9567dd2283553563883da4": {
+   "decision": "reject_multi_intent",
+   "reason": "The gauge example diff mixes two separable deliverables: retiming the demo (Events::with_config 100ms tick plus reduced progress increments affecting gauges 1/2",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "react-navigation/react-navigation@1386b1f3c63a3d61b808149a372ba56fb7f734e7": {
+   "decision": "reject_multi_intent",
+   "reason": "Beyond removing tabBarAdaptive in favor of tabBarLabelPosition (compat fallback in createBottomTabNavigator plus the BottomTabBar switch), the commit also adds ",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "react-navigation/react-navigation@d7a18f883dda3c02e0c5ed85ade1128eba3416ae": {
+   "decision": "reject_multi_intent",
+   "reason": "Two separable behaviors: replacing headerBackgroundStyle with a sanitized headerStyle applied to HeaderBackground plus new warnIfHeaderStyleDefined dev warnings",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "rolling-scopes/rsschool-app@39054268c90c68be19e29cb89090e7c1371502ea": {
+   "decision": "reject_multi_intent",
+   "reason": "Multiple deliverables in one WIP commit: a new ProfilePermissions entity plus User relation and createUser default, wiring getProfilePermissions with debug cons",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "tokio-rs/console@87c18ebd030d9bacbdf3caf8582f564679636b61": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Diff touches only Cargo.lock, mechanically bumping proc-macro2 from 1.0.56 to 1.0.63 with its checksum; lockfile-only changes are background/mechanical, not a f",
+   "priority": "critical_high_ambiguity",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "tsparticles/tsparticles@480c25b3da96ecc4df46f7a05e57eea9fdcf64c6": {
+   "decision": "reject_multi_intent",
+   "reason": "AbsorberInstance.ts bundles independently deliverable behaviors: retina pixelRatio scaling of sizeFactor, a destroyed-particle guard plus destroy-option orbit-r",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "ueberdosis/tiptap@76b1e5865739022a1c722fe7c2086f2db95e947f": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Only change collapses the BubbleMenuView constructor destructuring from multi-line to single-line with identical tokens; formatting-only edit with no semantic a",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "ueberdosis/tiptap@cfa506e89effc5c95f2c789687cad0c1a614e9fb": {
+   "decision": "reject_mechanical_or_generated",
+   "reason": "Only change wraps a long if-condition in MenuBubble.hide onto two lines with identical logic; formatting-only, no semantic intent.",
+   "priority": "critical_current_and_formal",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "zellij-org/zellij@36938c504a655c5ae4cde10cf9870ce910fd9c79": {
+   "decision": "reject_multi_intent",
+   "reason": "Two independently deliverable behaviors in shim.rs: (1) adding the set_invisible_borders API together with its host_set_invisible_borders extern declaration, an",
+   "priority": "critical_current_materialized_use",
+   "reviewer": "claude_stage1_v2_source_reviewer"
+  }
+ },
+ "action_required": "exclude affected samples (or replace their rejected sources) at next synthetic re-materialization; formal freeze remains blocked pending human verification"
+}

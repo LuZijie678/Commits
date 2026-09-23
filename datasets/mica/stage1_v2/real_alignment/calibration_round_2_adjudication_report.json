@@ -1,0 +1,20 @@
+{
+  "adjudicated_count": 0,
+  "adjudication_queue_count": 0,
+  "completion_rate": 0.0,
+  "conflict_count": null,
+  "created_at": "2026-07-26T15:22:29+00:00",
+  "creation_git_sha": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+  "decision_type_counts": {
+    "independent": 0,
+    "partial": 0,
+    "sided_a": 0,
+    "sided_b": 0
+  },
+  "human_verified": false,
+  "protocol_version": "stage1-v2-protocol",
+  "remaining_count": 30,
+  "round_label": "calibration_round_2",
+  "schema_version": "mica-stage1-v2-r2-adjudication-report-v1",
+  "status": "adjudication_not_started_due_to_integrity_failure"
+}

@@ -1,0 +1,129 @@
+{
+  "registry_status": "template_only",
+  "assets": {
+    "strict_replay": {
+      "path": null,
+      "required_for": ["stage2_train", "stage3_train"],
+      "allowed_stages": ["stage2_replay", "stage3_replay"],
+      "forbidden_stages": [],
+      "label_semantics": "synthetic_stage1_gold",
+      "supervision_reliability": "high",
+      "eval_only": false,
+      "advisor_pending": false
+    },
+    "hard_b_train": {
+      "path": null,
+      "required_for": [],
+      "allowed_stages": ["stage2_train"],
+      "forbidden_stages": [],
+      "label_semantics": "complex_single_intent_k1",
+      "supervision_reliability": "high",
+      "eval_only": false,
+      "advisor_pending": false
+    },
+    "hard_b_dev": {
+      "path": null,
+      "required_for": [],
+      "allowed_stages": ["stage2_dev", "stage2_tuning"],
+      "forbidden_stages": [],
+      "label_semantics": "complex_single_intent_k1",
+      "supervision_reliability": "high",
+      "eval_only": false,
+      "advisor_pending": false
+    },
+    "hard_b_test": {
+      "path": null,
+      "required_for": [],
+      "allowed_stages": ["final_eval"],
+      "forbidden_stages": ["stage2_train", "stage2_calibration", "tuning"],
+      "label_semantics": "complex_single_intent_k1",
+      "supervision_reliability": "eval-only",
+      "eval_only": true,
+      "advisor_pending": false
+    },
+    "m_weak_train": {
+      "path": null,
+      "required_for": [],
+      "allowed_stages": ["stage2_train"],
+      "forbidden_stages": [],
+      "label_semantics": "censored_k_ge_2",
+      "supervision_reliability": "medium",
+      "eval_only": false,
+      "advisor_pending": false
+    },
+    "m_weak_dev": {
+      "path": null,
+      "required_for": [],
+      "allowed_stages": ["stage2_dev", "stage2_tuning"],
+      "forbidden_stages": [],
+      "label_semantics": "censored_k_ge_2",
+      "supervision_reliability": "medium",
+      "eval_only": false,
+      "advisor_pending": false
+    },
+    "m_final_test": {
+      "path": null,
+      "required_for": [],
+      "allowed_stages": ["final_eval"],
+      "forbidden_stages": ["stage2_train", "stage3_train", "calibration", "tuning", "pseudo_label", "filtering"],
+      "label_semantics": "real_multi_intent_eval",
+      "supervision_reliability": "eval-only",
+      "eval_only": true,
+      "advisor_pending": false
+    },
+    "m_align_calib": {
+      "path": null,
+      "required_for": [],
+      "allowed_stages": ["stage2_calibration_optional", "stage3_calibration"],
+      "forbidden_stages": [],
+      "label_semantics": "small_real_alignment_gold",
+      "supervision_reliability": "medium-high",
+      "eval_only": false,
+      "advisor_pending": true
+    },
+    "real_domain_split_test": {
+      "path": null,
+      "required_for": [],
+      "allowed_stages": ["final_eval"],
+      "forbidden_stages": ["stage2_train", "stage3_train", "calibration", "tuning"],
+      "label_semantics": "k1_vs_k_ge_2_split_boundary_eval",
+      "task": "RealDomainSplit",
+      "primary_metrics": ["AUROC", "AUPRC", "Balanced Accuracy", "ECE", "FPR_hard_b"],
+      "supervision_reliability": "eval-only",
+      "eval_only": true,
+      "advisor_pending": false
+    },
+    "real_domain_selective_test": {
+      "path": null,
+      "required_for": [],
+      "allowed_stages": ["final_eval"],
+      "forbidden_stages": ["stage2_train", "stage3_train", "calibration", "tuning"],
+      "label_semantics": "in_scope_decomposable_vs_overflow_abstain_eval",
+      "task": "RealDomainSelective",
+      "primary_metrics": ["coverage", "risk_at_coverage", "AURC", "abstention_precision", "false_abstention", "missed_overflow_rate"],
+      "supervision_reliability": "eval-only",
+      "eval_only": true,
+      "advisor_pending": false
+    },
+    "real_alignment_final_test": {
+      "path": null,
+      "required_for": [],
+      "allowed_stages": ["final_eval"],
+      "forbidden_stages": ["stage3_train", "calibration", "tuning"],
+      "label_semantics": "real_alignment_gold",
+      "supervision_reliability": "eval-only",
+      "eval_only": true,
+      "advisor_pending": true
+    },
+    "renderer_dataset": {
+      "path": null,
+      "required_for": [],
+      "allowed_stages": ["stage4_renderer"],
+      "forbidden_stages": [],
+      "label_semantics": "plan_to_message",
+      "supervision_reliability": "medium-low",
+      "eval_only": false,
+      "advisor_pending": true
+    }
+  }
+}

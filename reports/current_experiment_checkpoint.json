@@ -1,0 +1,23 @@
+{
+  "checkpoint_status": "paused_waiting_for_advisor_decision",
+  "branch": "experiment/llm-generation-pilot-clean",
+  "head_commit": "7558df1",
+  "generation_pilot_status": "framework_ready_probe_completed_manual_review_pending",
+  "old_probe_invalidated": true,
+  "canonical_guard_fixed": true,
+  "canonical_guard_commit": "5c26063",
+  "canonical_probe_completed": true,
+  "canonical_probe_output_root": "outputs/llm_generation_real_api_probe_20260610T120628Z",
+  "targeted_ftxui_regression_completed": true,
+  "targeted_ftxui_output_root": "outputs/llm_generation_targeted_regression_20260610T123559Z",
+  "manual_review_pending": true,
+  "combined_manual_review_form": "reports/combined_real_api_probe_manual_review_form_20260610T124031Z.csv",
+  "recommend_65_request_canary": false,
+  "blocked_reason": "waiting_for_combined_manual_review_and_advisor_decision",
+  "real_api_request_summary": {
+    "canonical_probe_generation_requests": 5,
+    "targeted_regression_generation_requests": 1,
+    "resume_additional_requests": 0
+  },
+  "next_action": "wait_for_advisor_decision"
+}

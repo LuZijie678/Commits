@@ -1,0 +1,9 @@
+{
+  "audit_status": "dryrun_readiness_only",
+  "path_masking_enabled_for_future": true,
+  "diff_marker_masking_enabled_for_future": true,
+  "identifier_masking_enabled_for_future": true,
+  "template_masking_status": "pending_advisor_confirmation",
+  "run_after_stage1_or_stage2": "pending_advisor_confirmation",
+  "does_not_modify_training": true
+}

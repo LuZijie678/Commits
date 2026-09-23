@@ -1,0 +1,95 @@
+{
+  "protocol_status": "candidate_frozen",
+  "stage": "stage1",
+  "candidate_schedule": "naive_balanced_mixed_large_scale",
+  "advisor_stage1_validation_approved": false,
+  "stage2_allowed": false,
+  "generation_allowed": false,
+  "retrieval_allowed": false,
+  "verifier_allowed": false,
+  "schedule": {
+    "epochs": 15,
+    "mixed_from_epoch": 1,
+    "lambda_align": 1.0,
+    "lambda_count": 0.5,
+    "lambda_exist": 0.5,
+    "replay": false,
+    "staged_warmup": false,
+    "stage2_loss": false
+  },
+  "null_slot": {
+    "enabled": false,
+    "null_slot_id": "slot_null",
+    "background_eligible_file_roles": [
+      "generated",
+      "lockfile",
+      "auxiliary",
+      "unknown_auxiliary"
+    ],
+    "null_loss_weight": 0.0,
+    "foreground_to_null_penalty_weight": 0.0
+  },
+  "dual_cardinality": {
+    "alpha_pb": 0.5,
+    "lambda_cal_max": 0.05,
+    "lambda_cal_warmup_fraction": 0.2,
+    "stopgrad_count_for_kl": true
+  },
+  "cardinality_schedule": {
+    "alpha_pb_start": 0.5,
+    "alpha_pb_end": 0.5,
+    "kl_warmup_fraction": 0.2,
+    "lambda_cal_max": 0.05
+  },
+  "assignment_schedule": {
+    "tau_start": 2.0,
+    "tau_end": 1.0,
+    "warmup_fraction": 0.2,
+    "entropy_coeff_start": 0.02,
+    "entropy_coeff_end": 0.0
+  },
+  "auxiliary_losses": {
+    "lambda_type": 0.1,
+    "lambda_stabilizer_max": 0.05,
+    "type_loss_enabled": false,
+    "stabilizer_enabled": false
+  },
+  "evidence_graph": {
+    "relation_spec_path": "configs/mica/evidence_relation_spec.json",
+    "use_attention_bias": true,
+    "inference_safe_only": true
+  },
+  "formal_split": {
+    "train": {
+      "k1": 1000,
+      "k2": 1000
+    },
+    "dev": {
+      "k1": 250,
+      "k2": 250
+    },
+    "test": {
+      "k1": 250,
+      "k2": 250
+    }
+  },
+  "data_boundary": {
+    "allowed": [
+      "Step1 atomic k=1",
+      "Step2 strict/sanity synthetic k=2"
+    ],
+    "forbidden": [
+      "hard_b",
+      "M weak",
+      "M alignment",
+      "RealDomainSplit final-test",
+      "RealDomainSelective final-test",
+      "generation",
+      "retrieval",
+      "verifier",
+      "real API"
+    ]
+  },
+  "repo_overlap_allowed_for_stage1_synthetic": true,
+  "repo_overlap_requires_advisor_confirmation": true
+}

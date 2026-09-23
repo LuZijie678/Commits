@@ -1,0 +1,40 @@
+{
+  "schema_version": "mica-stage1-v2-codex-llm-marking-summary-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "round_label": "calibration_round_2",
+  "artifact_id": "codex_calibration_round_2_llm_markings",
+  "path": "datasets/mica/stage1_v2/real_alignment/codex_calibration_round_2_llm_markings.jsonl",
+  "actor_id": "codex_stage1_v2_llm_marker",
+  "actor_type": "llm",
+  "human_verified": false,
+  "formal_human_evidence": false,
+  "review_status": "human_review_pending",
+  "record_count": 30,
+  "exact_k_distribution": {
+    "1": 13,
+    "2": 7,
+    "3": 3,
+    "4": 3,
+    "5": 1,
+    "null_overflow_or_ambiguous": 3
+  },
+  "high_priority_human_review_sample_ids": [
+    "calibration_round_2_0004",
+    "calibration_round_2_0008",
+    "calibration_round_2_0009",
+    "calibration_round_2_0016"
+  ],
+  "blocked_formal_uses": [
+    "pre_adjudication_agreement",
+    "adjudicated_gold",
+    "Kmax_asset",
+    "training",
+    "stage2_entry"
+  ],
+  "reviewer_instructions": [
+    "Treat this file as LLM draft markings only.",
+    "Human reviewer must inspect each sample before any row can become human evidence.",
+    "Rows with exact_k_status overflow_gt_kmax_or_ambiguous must not be forced into k<=4 without explicit human rationale.",
+    "Do not overwrite raw A/B annotations or existing validated files."
+  ]
+}

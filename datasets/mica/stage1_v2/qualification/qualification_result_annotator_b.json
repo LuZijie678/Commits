@@ -1,0 +1,243 @@
+{
+  "schema_version": "mica-stage1-v2-qualification-execution-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "submission_status": "submitted",
+  "annotator_id": "claude_stage1_v2_annotator_b",
+  "actor_type": "llm",
+  "amendment_id": "stage1-v2-llm-annotation-amendment-v1",
+  "guideline_version": "stage1-v2-alignment-guideline-pilot-v1",
+  "submitted_at": "2026-07-26T07:22:34Z",
+  "results": [
+    {
+      "qualification_id": "qual_0001",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0001::u0000": "intent_0",
+        "synthetic_control_test::simple2_0001::u0001": "intent_0",
+        "synthetic_control_test::simple2_0001::u0002": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 imports PEER_VERSION_EPOCH_2_0 solely to support u0001, which adds the network_epoch field to the block_limit_runtime_test config (one intent); u0002 sets microblock_attempt_time_ms in a different test with a different action-object, an independent intent."
+    },
+    {
+      "qualification_id": "qual_0002",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0002::u0000": "intent_0",
+        "synthetic_control_test::simple2_0002::u0001": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 exports the isList helper from the core index (expose helper API); u0001 adds a null guard on parent in markPasteRule (bug fix); unrelated action-objects, two intents."
+    },
+    {
+      "qualification_id": "qual_0003",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0003::u0000": "intent_0",
+        "synthetic_control_test::simple2_0003::u0001": "intent_0",
+        "synthetic_control_test::simple2_0003::u0002": "intent_0",
+        "synthetic_control_test::simple2_0003::u0003": "intent_0",
+        "synthetic_control_test::simple2_0003::u0004": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000-u0003 all implement and test the new --check flag for deno fmt (arg definition, prettier_flags wiring, and the supporting flags_from_vec test assertions merge with the source change); u0004 fixes the expected wildcard path in wasm_unreachable.out, unrelated to --check and not a mechanical follow-on of anything in this commit, so it is a separate intent."
+    },
+    {
+      "qualification_id": "qual_0004",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0004::u0000": "intent_0",
+        "synthetic_control_test::simple2_0004::u0001": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 restructures the CircleCI template to move the cache job into its own named workflow; u0001 parameterizes the mocha test glob extension via <%= _ext %> in the package-scripts template; different action-objects, two intents."
+    },
+    {
+      "qualification_id": "qual_0005",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0005::u0000": "intent_0",
+        "synthetic_control_test::simple2_0005::u0001": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 adds display:flex to CodeEditor textarea/pre styles (UI layout fix); u0001 removes a leftover debug console.log from koa-auth.test.ts (debug cleanup); independent intents."
+    },
+    {
+      "qualification_id": "qual_0006",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0006::u0000": "intent_0",
+        "synthetic_control_test::simple2_0006::u0001": "intent_0",
+        "synthetic_control_test::simple2_0006::u0002": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 and u0001 are one coherent rewrite of the Merge type: _Merge is reimplemented via Compute<O & Omit<...>> and the Omit call is moved out of the public Merge alias accordingly; u0002 tightens the Strict type parameter constraint from any to object in a different module, a separate intent."
+    },
+    {
+      "qualification_id": "qual_0007",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0007::u0000": "intent_0",
+        "synthetic_control_test::simple2_0007::u0001": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 registers a new 'lib' extension icon in EXTENSION_ICONS (add icon mapping); u0001 is a deliberate token-level cleanup replacing the redundant field init Lister { c_flags: c_flags } with shorthand, a small independent refactor rather than pure whitespace formatting; two intents."
+    },
+    {
+      "qualification_id": "qual_0008",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0008::u0000": "intent_0",
+        "synthetic_control_test::simple2_0008::u0001": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 adds overflow:auto to the builtin-simulator host style (scrolling fix); u0001 adds an availableActions getter to the shell ComponentMeta API; unrelated modules and goals, two intents."
+    },
+    {
+      "qualification_id": "qual_0009",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0009::u0000": "intent_0",
+        "synthetic_control_test::simple2_0009::u0001": "intent_1",
+        "synthetic_control_test::simple2_0009::u0002": "intent_0"
+      },
+      "background_units": [],
+      "rationale": "u0000 and u0002 both extend the pystd type stub declarations (platform.d.er signatures/functions and sys.d.er getters), the same action-object of enriching Python std stubs; u0001 makes the ELS server invalidate mod_cache/py_mod_cache entries before inheriting a checker, an unrelated language-server cache fix."
+    },
+    {
+      "qualification_id": "qual_0010",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0010::u0000": "intent_0",
+        "synthetic_control_test::simple2_0010::u0001": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 passes the missing TDinero type argument to toRoundedUnit in toFormat (type fix); u0001 only rewords a test title from 'creates a pure Dinero object' to 'creates a Dinero object' in a different package and does not verify u0000; separate intents."
+    },
+    {
+      "qualification_id": "qual_0011",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0011::u0000": "intent_0",
+        "synthetic_control_test::simple2_0011::u0001": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 adds @mousedown.stop to the time-picker slot to stop event propagation (UI behavior fix); u0001 switches the popper lodash mock from genMockFromModule to requireActual (test mock fix); unrelated packages and goals."
+    },
+    {
+      "qualification_id": "qual_0012",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0012::u0000": "intent_0",
+        "synthetic_control_test::simple2_0012::u0001": "intent_0",
+        "synthetic_control_test::simple2_0012::u0002": "intent_1",
+        "synthetic_control_test::simple2_0012::u0003": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 removes the state-init hack that only existed so the scheduler could call setState(this.state), and u0001 switches that scheduler to setState({}) - together one intent in the view HOC; u0002's import swap is required support for u0003, which replaces useMemo with useRef for local store persistence in store.js (second intent)."
+    },
+    {
+      "qualification_id": "qual_0013",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0013::u0000": "intent_0",
+        "synthetic_control_test::simple2_0013::u0001": "intent_1",
+        "synthetic_control_test::simple2_0013::u0002": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 adds the set_secret method to the SDK Query API; this addition is itself the semantic change and does not mechanically follow anything else in this commit, so it is foreground; u0001 and u0002 add the same .with_exec echo step to the two issue-30 tests, one coherent test-adjustment intent unrelated to set_secret."
+    },
+    {
+      "qualification_id": "qual_0014",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0014::u0000": "intent_0",
+        "synthetic_control_test::simple2_0014::u0001": "intent_1",
+        "synthetic_control_test::simple2_0014::u0002": "intent_0"
+      },
+      "background_units": [],
+      "rationale": "u0000 adds the new cobol.sample file and u0002 registers it via samplePath in the cobol language entry - one intent of adding a COBOL sample; u0001 marks the renderer-path package as private in its package.json, an independent packaging decision, not a mechanical change."
+    },
+    {
+      "qualification_id": "qual_0015",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0015::u0000": "intent_0",
+        "synthetic_control_test::simple2_0015::u0001": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 adds a complete Tamil (ta) i18n translation file; u0001 makes Grid.js raise the rowsVisibleChanged event alongside rowsRendered; entirely different action-objects, two intents."
+    },
+    {
+      "qualification_id": "qual_0016",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0016::u0000": "intent_0",
+        "synthetic_control_test::simple2_0016::u0001": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 fixes the crossterm cursor position by dropping the +1 offsets in cursor.goto; u0001 improves the drop-time error log to include the underlying error value; both touch cursor-related code but serve different actions on different objects (position math vs. error reporting), two intents."
+    },
+    {
+      "qualification_id": "qual_0017",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0017::u0000": "intent_0",
+        "synthetic_control_test::simple2_0017::u0001": "intent_0",
+        "synthetic_control_test::simple2_0017::u0002": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 and u0001 both migrate the space-key tests from KeySpace to the KeyRunes/Runes representation, one coherent intent; u0002 fixes copy-paste mistakes in options_test.go error messages (p.output -> p.input), an unrelated test-message fix."
+    },
+    {
+      "qualification_id": "qual_0018",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0018::u0000": "intent_0",
+        "synthetic_control_test::simple2_0018::u0001": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 adds display_id to the admin list-orders query filter fields; u0001 introduces a Writable<T> mapped type in common.ts; no dependency between them, two intents."
+    },
+    {
+      "qualification_id": "qual_0019",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0019::u0000": "intent_0",
+        "synthetic_control_test::simple2_0019::u0001": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 fixes a wrong method call in the frontend Group.vue (this.tree -> this.groupTree); u0001 adds logger.error of the generated SQL in the backend dataset service (add logging); different stacks and goals, two intents."
+    },
+    {
+      "qualification_id": "qual_0020",
+      "annotator_id": "claude_stage1_v2_annotator_b",
+      "exact_k": 2,
+      "unit_to_intent": {
+        "synthetic_control_test::simple2_0020::u0000": "intent_0",
+        "synthetic_control_test::simple2_0020::u0001": "intent_1"
+      },
+      "background_units": [],
+      "rationale": "u0000 adds sbom/provenance attestation and an anchore scan step to the docker workflow (supply-chain hardening); u0001 bumps the date in the test-commit-preprocessors expected fixture, which does not follow mechanically from u0000 and carries its own fixture-fix goal; two intents."
+    }
+  ]
+}

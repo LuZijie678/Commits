@@ -1,0 +1,60 @@
+{
+  "asset_name": "fewshot_pool_formal_v1_example",
+  "asset_version": "v1-example",
+  "build_date_utc": "2026-05-27T00:00:00Z",
+  "builder": "example-owner-or-team",
+  "source_datasets": [
+    "datasets/m_verified/canonical/usable_m_with_real_diff.csv"
+  ],
+  "schema_table": "fewshot_examples",
+  "db_filename": "fewshot_pool.db",
+  "total_rows_train": 108,
+  "eligible_rows_train": 101,
+  "verified_rows_train": 108,
+  "common_signature_coverage": {
+    "fix+test": 14,
+    "feat+test": 12,
+    "fix+docs": 10,
+    "feat+docs": 9,
+    "fix+refactor": 13,
+    "feat+refactor": 11,
+    "docs+test": 8,
+    "perf+refactor": 12,
+    "fix+perf": 10
+  },
+  "style_cleaning_policy": {
+    "strict_style": true,
+    "max_subject_chars": 120,
+    "max_subject_tokens": 20,
+    "blocked_patterns": [
+      "double_prefix",
+      "label_template",
+      "bullet_list",
+      "numbered_list",
+      "mechanical_semicolon",
+      "overlong_subject",
+      "generic_subject"
+    ]
+  },
+  "thresholds": {
+    "min_total": 80,
+    "min_per_common_signature": 3,
+    "probe_type_signature": "fix+test",
+    "probe_k": 1
+  },
+  "validation": {
+    "audit_pass": true,
+    "retrieval_probe_ok": true,
+    "preflight_passed": true,
+    "last_preflight_report": "preflight_report.json"
+  },
+  "build_inputs": {
+    "generator_script": "code/build_formal_fewshot_pool.py",
+    "audit_script": "code/audit_fewshot_pool.py",
+    "protocol_doc": "docs/plan-1-step2-experiment-protocol.md",
+    "build_spec": "../../datasets/step2/README.md",
+    "delivery_template": "N/A",
+    "manifest_quick_reference": "N/A"
+  },
+  "notes": "Example manifest only. Replace all values with real build metadata before formal delivery."
+}

@@ -1,0 +1,335 @@
+{
+  "candidate_policy": {
+    "step1_source_file": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+    "annotation_file": "archive/step2_preview_source/annotation_round3_atomicity_spectrum_3000/annotation_round3_atomicity_spectrum_3000_minimal.csv",
+    "strict_rule": "exclude any row whose sha overlaps Step1 source OR repo overlaps Step1 source",
+    "formal_integrity_note": "Only M rows are direct verified multi-intent candidates. U/B rows require new manual review before any formal few-shot use."
+  },
+  "step1_source_stats": {
+    "row_count": 2712,
+    "repo_count": 74,
+    "type_set": [
+      "feat",
+      "fix",
+      "refactor",
+      "test"
+    ]
+  },
+  "annotation_stats": {
+    "total_rows": 3000,
+    "label_counts": {
+      "B": 927,
+      "A": 2003,
+      "M": 51,
+      "U": 19
+    }
+  },
+  "strict_disjoint_counts": {
+    "M_direct_verified_candidates": 7,
+    "U_rereview_candidates": 2,
+    "B_rereview_candidates": 60,
+    "A_not_for_fewshot_multi_intent": 233,
+    "max_possible_if_only_use_existing_verified_M": 7,
+    "max_possible_if_M_plus_all_U_after_successful_rereview": 9,
+    "max_possible_if_M_plus_all_U_plus_all_B_after_successful_rereview": 69
+  },
+  "direct_M_type_counts": {
+    "style": 1,
+    "feat": 2,
+    "docs": 1,
+    "fix": 1,
+    "refactor": 1,
+    "chore": 1
+  },
+  "U_type_counts": {
+    "refactor": 1,
+    "feat": 1
+  },
+  "B_type_counts": {
+    "chore": 17,
+    "docs": 4,
+    "feat": 21,
+    "refactor": 5,
+    "fix": 12,
+    "build": 1
+  },
+  "examples": {
+    "M_direct_verified_candidates": [
+      {
+        "repo": "alibaba/beidou",
+        "sha": "b1a0c09d5d96a1bc2d61aa4bd9f9c3ea498afbe2",
+        "commit_url": "https://github.com/alibaba/beidou/commit/b1a0c09d5d96a1bc2d61aa4bd9f9c3ea498afbe2",
+        "type": "style",
+        "subject": "style: improve config files styles",
+        "message": "style: improve config files styles",
+        "manual_label": "M",
+        "manual_reason": "Multiple separable purposes: the commit combines a config-file style refactor with unrelated example and README polish plus dependency and template cleanup.",
+        "manual_notes": "The config export rewrites could stand alone from the advanced example view change, branding edits, and package or dependency adjustments, so the diff does not read as one cohesive style pass.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "apache/superset",
+        "sha": "5cf454b4647c6f52b0e7ae49ec5251a46703dd31",
+        "commit_url": "https://github.com/apache/superset/commit/5cf454b4647c6f52b0e7ae49ec5251a46703dd31",
+        "type": "feat",
+        "subject": "feat: Scheduling queries from SQL Lab (#7416) (#7446)",
+        "message": "feat: Scheduling queries from SQL Lab (#7416) (#7446)\n\n* Merge lastest from master into lyft-release-sp8 (#7405)\n\n* filter out all nan series (#7313)\n\n* improve not rich tooltip (#7345)\n\n* Create issue_label_bot.yaml (#7341)\n\n* fix: do not save colors without a color scheme (#7347)\n\n* [wtforms] Strip leading/trailing whitespace (#7084)\n\n* [schema] Updating the datasources schema (#5451)\n\n* limit tables/views returned if schema is not provided (#7358)\n\n* limit tables/views returned if schema is not provided\n\n* fix typo\n\n* improve code performance\n\n* handle the case when table name or view name does not present a schema\n\n* Add type anno (#7342)\n\n* Updated local dev instructions to include missing step\n\n* First pass at type annotations\n\n* [schema] Updating the base column schema (#5452)\n\n* Update 937d04c16b64_update_datasources.py (#7361)\n\n* Feature flag for client cache (#7348)\n\n* Feature flag for client cache\n\n* Fix integration test\n\n* Revert \"Fix integration test\"\n\nThis reverts commit 58434ab98a015d6e96db4a97f26255aa282d989d.\n\n* Feature flag for client cache\n\n* Fix integration tests\n\n* Add feature flag to config.py\n\n* Add another feature check\n\n* Fix more integration tests\n\n* Fix raw HTML in SliceAdder (#7338)\n\n* remove backendSync.json (#7331)\n\n* [bubbles] issue when using duplicated metrics (#7087)\n\n* SUPERSET-7: Docker compose config version breaks on Ubuntu 16.04 (#7359)\n\n* SUPERSET-8: Update text in docs copyright footer (#7360)\n\n* SUPERSET-7: Docker compose config version breaks on Ubuntu 16.04\n\n* SUPERSET-8: Extra text in docs copyright footer\n\n* [schema] Adding commits and removing unnecessary foreign-key definitions (#7371)\n\n*  Store last selected dashboard in sessionStorage (#7181)\n\n* Store last selected dashboard in sessionStorage\n\n* Fix tests\n\n* [schema] Updating the base metric schema (#5453)\n\n* Fix NoneType bug & fill the test recipients with original recipients if empty (#7365)\n\n* feat: see Presto row and array data types (#7391)\n\n* feat: see Presto row and array data types\n\n* fix: address PR comments\n\n* fix: lint and build issues\n\n* fix: add types\n\n* Incorporate feedback from initial PR (prematurely merged to lyft-release-sp8) (#7415)\n\n* add stronger type hints where possible\n\n* fix: lint issues and add select_star func in Hive\n\n* add missing pkg init\n\n* fix: build issues\n\n* fix: pylint issues\n\n* fix: use logging instead of print\n\n* feat: view presto row objects in data grid\n\n* fix: address feedback\n\n* fix: spacing\n\n* Workaround for no results returned (#7442)\n\n* feat: view presto row objects in data grid (#7436)\n\n* feat: view presto row objects in data grid\n\n* fix: address feedback\n\n* fix: spacing\n\n* feat: Scheduling queries from SQL Lab (#7416)\n\n* Lightweight pipelines POC\n\n* Add docs\n\n* Minor fixes\n\n* Remove Lyft URL\n\n* Use enum\n\n* Minor fix\n\n* Fix unit tests\n\n* Mark props as required",
+        "manual_label": "M",
+        "manual_reason": "Multiple separable purposes: the commit adds scheduled-query support in SQL Lab while also bundling an independent auto-refresh workaround for queries marked successful before results are available.",
+        "manual_notes": "Scheduling UI, feature flags, saved-query metadata, and docs form one feature, while the QueryAutoRefresh polling workaround is a separate SQL Lab bug fix that could stand alone.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "vectordotdev/vector",
+        "sha": "8698eb922c5e1a1a0906fe25e2e9f2a39acb9c06",
+        "commit_url": "https://github.com/vectordotdev/vector/commit/8698eb922c5e1a1a0906fe25e2e9f2a39acb9c06",
+        "type": "docs",
+        "subject": "docs: Various installation docs corrections, closes #1234",
+        "message": "docs: Various installation docs corrections, closes #1234\n\nSigned-off-by: Ben Johnson <bjohnson@binarylogic.com>",
+        "manual_label": "M",
+        "manual_reason": "Multiple separable purposes: one part corrects manual installation docs and templates for source or archive paths and tarball URLs, while another independently tweaks website configuration and homepage anchor metadata.",
+        "manual_notes": "The installation-template fixes could stand alone from the Docusaurus config and homepage anchor changes, so the commit bundles docs corrections with separate site tweaks.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "alibaba/beidou",
+        "sha": "4520066066f8fd32abbd0230b281887d0b4172a9",
+        "commit_url": "https://github.com/alibaba/beidou/commit/4520066066f8fd32abbd0230b281887d0b4172a9",
+        "type": "fix",
+        "subject": "fix: isomorphic test broken as lack of '.isomorphic' directory, [BREAKING CHANGE] view react plugin test broken as remove helper.resolveResource",
+        "message": "fix: isomorphic test broken as lack of '.isomorphic' directory, [BREAKING CHANGE] view react plugin test broken as remove helper.resolveResource",
+        "manual_label": "M",
+        "manual_reason": "Multiple separable purposes: fixes the missing .isomorphic test setup in beidou-isomorphic and separately updates view helper test fixtures after resolveResource was removed.",
+        "manual_notes": "Isomorphic setup plus helper API test fixes.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "alibaba/beidou",
+        "sha": "2bca7ac60624210a5dd9af7e1f767bcebb2ebdb8",
+        "commit_url": "https://github.com/alibaba/beidou/commit/2bca7ac60624210a5dd9af7e1f767bcebb2ebdb8",
+        "type": "feat",
+        "subject": "feat(beidou-cli): print version before run command",
+        "message": "feat(beidou-cli): print version before run command",
+        "manual_label": "M",
+        "manual_reason": "Multiple separable purposes: adds CLI version logging while also changing example configuration and large example dependency lockfiles that are not required for that feature.",
+        "manual_notes": "CLI logging plus example updates.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "danilowoz/react-content-loader",
+        "sha": "7b9d65d1f73c290d7378ccdcc3079449b3e2337f",
+        "commit_url": "https://github.com/danilowoz/react-content-loader/commit/7b9d65d1f73c290d7378ccdcc3079449b3e2337f",
+        "type": "refactor",
+        "subject": "refactor(Readme and types): Cosmetic things",
+        "message": "refactor(Readme and types): Cosmetic things",
+        "manual_label": "M",
+        "manual_reason": "Multiple separable purposes: mixes README and type-order cleanup with an independent precommit hook behavior change.",
+        "manual_notes": "Docs and types plus hook change.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "Byron/dua-cli",
+        "sha": "946806e7390799807361562b038fb12eeb2ddf11",
+        "commit_url": "https://github.com/Byron/dua-cli/commit/946806e7390799807361562b038fb12eeb2ddf11",
+        "type": "chore",
+        "subject": "chore: replace `colored` dependency with `owo-colors`.",
+        "message": "chore: replace `colored` dependency with `owo-colors`.\n\nThe latter provide zero-allocation coloring in the terminal and\nmay improve compile times a little.",
+        "manual_label": "M",
+        "manual_reason": "Multiple separable purposes: mixes replacing the colored dependency with owo-colors and independent TUI dependency version upgrades.",
+        "manual_notes": "Color dependency plus TUI upgrades.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      }
+    ],
+    "U_rereview_candidates": [
+      {
+        "repo": "naver/billboard.js",
+        "sha": "e23998f994595c308d440e011124d590cd79b4d1",
+        "commit_url": "https://github.com/naver/billboard.js/commit/e23998f994595c308d440e011124d590cd79b4d1",
+        "type": "refactor",
+        "subject": "refactor(all): v2 updates",
+        "message": "refactor(all): v2 updates\n\nBREAKING CHANGE: v2 updates\n\nRef #758, #757, #756, #36",
+        "manual_label": "U",
+        "manual_reason": "Boundary case: the subject suggests a broad v2 refactor, but the available diff is a large combined CHANGELOG-v2 migration document describing many breaking updates, so the actual atomic unit of change is unclear from the provided evidence.",
+        "manual_notes": "V2 merge or changelog diff only.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "vectordotdev/vector",
+        "sha": "2cc0bd4563407d43ace8538ddef215cf2cb6051f",
+        "commit_url": "https://github.com/vectordotdev/vector/commit/2cc0bd4563407d43ace8538ddef215cf2cb6051f",
+        "type": "feat",
+        "subject": "feat(new sink): Initial `datadog_events` sink (#7678)",
+        "message": "feat(new sink): Initial `datadog_events` sink (#7678)\n\n* Initial\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Fixes\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Fixes\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Tests\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Add docs\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Add semantic\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Move url\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Fix url\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Add request docs\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Add batch docs\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Bump\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Clippy\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Apply feedback\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Apply feedback\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Add use\n\nSigned-off-by: ktf <krunotf@gmail.com>\n\n* Bump\n\nSigned-off-by: ktf <krunotf@gmail.com>",
+        "manual_label": "U",
+        "manual_reason": "Boundary case: the message describes an initial datadog_events sink, but the diff only adds a semantic scope entry, so the available evidence does not cleanly support one interpretable intent.",
+        "manual_notes": "Message-diff mismatch around sink addition.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      }
+    ],
+    "B_rereview_candidates": [
+      {
+        "repo": "naver/billboard.js",
+        "sha": "0465a14cc5139e54c9e15050b8b9b135fccd87f9",
+        "commit_url": "https://github.com/naver/billboard.js/commit/0465a14cc5139e54c9e15050b8b9b135fccd87f9",
+        "type": "chore",
+        "subject": "chore(release): Integrate semantic-release",
+        "message": "chore(release): Integrate semantic-release\n\nAlso, integrate conventional changelog, update .gitignore, remove various config scripts.\n\nFix #893\nClose #900",
+        "manual_label": "B",
+        "manual_reason": "Broad but cohesive purpose: integrates semantic-release and the associated release automation, changelog, CI, and deployment workflow updates.",
+        "manual_notes": "Release config, scripts, CI wiring, and documentation all belong to one release-process migration rather than separate maintenance tasks.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "vectordotdev/vector",
+        "sha": "662c5d1346ea2b01c0bc3c11c648cbdf92035fe2",
+        "commit_url": "https://github.com/vectordotdev/vector/commit/662c5d1346ea2b01c0bc3c11c648cbdf92035fe2",
+        "type": "docs",
+        "subject": "docs: Fix readme",
+        "message": "docs: Fix readme\n\nSigned-off-by: Ben Johnson <bjohnson@binarylogic.com>",
+        "manual_label": "B",
+        "manual_reason": "Broad but cohesive purpose: restructures the README and its generation logic to present reference links more clearly, with related metadata and website query fixes.",
+        "manual_notes": "README output, template generation, component metadata, and the small website filter fix all support one documentation presentation cleanup.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "biomejs/biome",
+        "sha": "61914d37cf539f1375dfc1b789daef6964de38f8",
+        "commit_url": "https://github.com/biomejs/biome/commit/61914d37cf539f1375dfc1b789daef6964de38f8",
+        "type": "feat",
+        "subject": "feat(editors/vscode): Add `requiresConfiguration` option",
+        "message": "feat(editors/vscode): Add `requiresConfiguration` option\n\n## Summary\n\nThis PR introduces a new `rome.requiresConfiguration` option that disables the linter and formatter if a workspace doesn't contain a `rome.json` configuration.\n\nThe addition of the option is motivated by #3506 where users want to have an easy way to disable Rome for all projects not using Rome.\n\nThe new option doesn't fully disable Rome but only disables the linter and formatter (operations that are performed automatically on save). This has the benefit that other actions like sorting imports, or refactors remain available.\n\nThe implementation for the linter and formatter differ:\n\n* Formatter: I changed the extension to not register the formatting capabilities if the `rome.json` file is missing and the `requiresConfiguration` option is set. This so that VS Code can pick up another default formatter (if installed).\n* Linter: Returns an empty list of diagnostics from `pull_diagnostic`\n\n## Test Plan\n\nI tested that:\n* Formatting and linting is working if the option is false\n* Formatting and linting is working if the option is `true` and a `rome.json` file is present\n* Formatting and linting is disabled if the option is `true` and the project has no `rome.json` file",
+        "manual_label": "B",
+        "manual_reason": "Broad but cohesive purpose: adds the requiresConfiguration option and propagates its effect through the VS Code extension and language server behavior.",
+        "manual_notes": "Editor setting wiring, capability gating, diagnostics handling, and configuration checks all implement one configuration-dependent feature.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "aptos-labs/aptos-core",
+        "sha": "1261007e33ce1cbb533b4eb5341a72aaab755fbd",
+        "commit_url": "https://github.com/aptos-labs/aptos-core/commit/1261007e33ce1cbb533b4eb5341a72aaab755fbd",
+        "type": "refactor",
+        "subject": "refactor: squash SessionOutput::into_change_set() into SessionExt::finish()",
+        "message": "refactor: squash SessionOutput::into_change_set() into SessionExt::finish()\n\nSessionOutput is removed entirely, SessionExt::finish() directly returns\nChangeSetExt",
+        "manual_label": "B",
+        "manual_reason": "Broad but cohesive purpose: collapses SessionOutput conversion into SessionExt::finish and updates the surrounding VM call sites to match the new API.",
+        "manual_notes": "Type removal, finish-path refactor, and widespread caller updates are one cohesive API simplification.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "lensapp/lens",
+        "sha": "f602ce8f465aa4425a9050146b1252da7867499e",
+        "commit_url": "https://github.com/lensapp/lens/commit/f602ce8f465aa4425a9050146b1252da7867499e",
+        "type": "chore",
+        "subject": "chore: extract prometheus from core",
+        "message": "chore: extract prometheus from core\n\nSigned-off-by: Jari Kolehmainen <jari.kolehmainen@gmail.com>",
+        "manual_label": "B",
+        "manual_reason": "Broad but cohesive purpose: extracts Prometheus support from core into a dedicated technical-feature package and rewires the main app and remaining core consumers to use that feature.",
+        "manual_notes": "New feature-package scaffolding, provider relocation, dependency wiring, and updated imports all support one Prometheus extraction.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "lensapp/lens",
+        "sha": "1ab5323f6846a71e84904da6f3a5e7963d3f3af5",
+        "commit_url": "https://github.com/lensapp/lens/commit/1ab5323f6846a71e84904da6f3a5e7963d3f3af5",
+        "type": "chore",
+        "subject": "chore: extract kube-api from core",
+        "message": "chore: extract kube-api from core\n\nSigned-off-by: Jari Kolehmainen <jari.kolehmainen@gmail.com>",
+        "manual_label": "B",
+        "manual_reason": "Broad but cohesive purpose: extracts kube-api utilities from core into a dedicated package and rewires core consumers, tests, and package metadata to import the new module.",
+        "manual_notes": "New package scaffolding, moved kube-api sources, import rewrites, workspace metadata, and test adjustments all support one kube-api extraction from core.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "rematch/rematch",
+        "sha": "23bf01421197c0e0b3f8623f58fed21bf6b2f856",
+        "commit_url": "https://github.com/rematch/rematch/commit/23bf01421197c0e0b3f8623f58fed21bf6b2f856",
+        "type": "chore",
+        "subject": "chore(release): released new version [skip ci]",
+        "message": "chore(release): released new version [skip ci]\n\n - @rematch/core@2.0.0-next.9\n - @rematch/immer@2.0.0-next.9\n - @rematch/loading@2.0.0-next.10\n - @rematch/persist@2.0.0-next.9\n - @rematch/select@3.0.0-next.9\n - @rematch/updated@2.0.0-next.9",
+        "manual_label": "B",
+        "manual_reason": "Broad but cohesive purpose: publishes a coordinated Rematch release by updating package versions and changelogs across the affected packages.",
+        "manual_notes": "The changelog entries and package version bumps are all part of one multi-package release publication.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "rematch/rematch",
+        "sha": "b9e18de2a82713ef88714ea325b1b24fdf7ab343",
+        "commit_url": "https://github.com/rematch/rematch/commit/b9e18de2a82713ef88714ea325b1b24fdf7ab343",
+        "type": "chore",
+        "subject": "chore(release): publish %s",
+        "message": "chore(release): publish %s\n\n - @rematch/core@2.0.0-next.5\n - @rematch/immer@2.0.0-next.5\n - @rematch/loading@2.0.0-next.5\n - @rematch/persist@2.0.0-next.5\n - @rematch/select@3.0.0-next.5\n - @rematch/updated@2.0.0-next.5",
+        "manual_label": "B",
+        "manual_reason": "Broad but cohesive purpose: publishes a coordinated Rematch release by updating package versions and changelogs across the affected packages.",
+        "manual_notes": "The changelog entries and package version bumps are all part of one multi-package release publication.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "naver/billboard.js",
+        "sha": "d760a6355cd6c40e09f0833093293de7cdb8e95f",
+        "commit_url": "https://github.com/naver/billboard.js/commit/d760a6355cd6c40e09f0833093293de7cdb8e95f",
+        "type": "feat",
+        "subject": "feat(padding): Intent to ship padding='fit'",
+        "message": "feat(padding): Intent to ship padding='fit'\n\nImplement 'fit' option, which reduce padding as much as possible\nmaking chart to fit to the container element.\n\nRef #3118",
+        "manual_label": "B",
+        "manual_reason": "Broad but cohesive purpose: adds the padding='fit' mode across chart sizing logic, configuration surface, demos, typings, and tests.",
+        "manual_notes": "The runtime layout changes, config and type updates, demos, and test coverage all support one new fit-padding capability.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      },
+      {
+        "repo": "vectordotdev/vector",
+        "sha": "6ddb1346e4e17940707da89834e1850a110e56b7",
+        "commit_url": "https://github.com/vectordotdev/vector/commit/6ddb1346e4e17940707da89834e1850a110e56b7",
+        "type": "chore",
+        "subject": "chore(releasing): Prepare 0.18.0 release (#10092)",
+        "message": "chore(releasing): Prepare 0.18.0 release (#10092)\n\n* chore(releasing): Prepare 0.18.0 release\n\nSigned-off-by: Jesse Szwedko <jesse@szwedko.me>",
+        "manual_label": "B",
+        "manual_reason": "Broad but cohesive purpose: prepares the 0.18.0 release by updating the install script default version and the website release metadata and notes together.",
+        "manual_notes": "The install-script version bump, new release-notes page, cue release metadata, and version registry updates are all part of one coordinated release preparation.",
+        "sha_overlaps_step1_source": 0,
+        "repo_overlaps_step1_source": 0,
+        "strict_repo_sha_disjoint": 1
+      }
+    ]
+  },
+  "output_files": {
+    "candidate_csv": "datasets/step2/candidate_sources/strict_repo_sha_disjoint_candidates.csv",
+    "report_json": "datasets/step2/candidate_sources/strict_repo_sha_disjoint_candidates_report.json",
+    "report_md": "datasets/step2/candidate_sources/strict_repo_sha_disjoint_candidates_report.md"
+  }
+}

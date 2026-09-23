@@ -1,0 +1,14 @@
+{
+  "already_ok": 0,
+  "attempted": 3,
+  "created_at_utc": "2026-05-25T13:03:54.552020+00:00",
+  "diff_ok_final": 2,
+  "failed": 1,
+  "fetch_max_bytes": 0,
+  "input_csv": "data/gitlog_manual_missing_m_diff_recovery_batch_round2_failed_only.csv",
+  "output_csv": "data/gitlog_manual_missing_m_diff_recovery_batch_round3_failed_only.csv",
+  "output_jsonl": "data/gitlog_manual_missing_m_diff_recovery_batch_round3_failed_only.jsonl",
+  "recovered": 2,
+  "rows": 3,
+  "workers": 1
+}

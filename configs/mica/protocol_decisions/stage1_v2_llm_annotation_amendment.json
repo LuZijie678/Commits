@@ -1,0 +1,51 @@
+{
+  "schema_version": "mica-protocol-amendment-v1",
+  "amendment_id": "stage1-v2-llm-annotation-amendment-v1",
+  "amends_protocol_version": "stage1-v2-protocol",
+  "amendment_type": "pre_annotation_protocol_amendment",
+  "created_at": "2026-07-26T07:30:00+00:00",
+  "directed_by": "fulin",
+  "direction_channel": "interactive_session_instruction_2026-07-26",
+  "executed_by": "claude_fable_5",
+  "decision": "LLM actors are permitted to perform annotator_a, annotator_b, adjudicator, independent_blind_reviewer, and source_reviewer roles for Stage1-v2 annotation assets, under the constraints below. This creates an explicit llm_annotation_track; it does not redefine or relax any human-track semantics.",
+  "constraints": {
+    "actor_type_recorded_as": "llm",
+    "actor_id_must_be_honest": true,
+    "human_verified_must_remain_false": true,
+    "independence_requirement": "annotator_a and annotator_b outputs MUST be produced by separate model contexts that share no reasoning state and never see each other's outputs; the adjudicator runs in a third independent context and sees raw A/B only for disagreement items; the blind reviewer runs in a fourth independent context and sees no A/B/adjudicated labels.",
+    "per_item_strict_review_required": true,
+    "answer_key_isolation": "qualification_answer_key_private.jsonl and any blinding maps must never be read by annotator/adjudicator/blind-reviewer contexts.",
+    "gate_thresholds_unchanged": true,
+    "agreement_semantics_caveat": "A/B agreement under this track measures cross-context self-consistency of one model family, not human inter-annotator agreement; correlated model errors are not detectable by these gates.",
+    "evidence_tier": "llm_annotated_under_amendment",
+    "paper_disclosure_required": "any downstream report or paper must label assets produced under this amendment as LLM-annotated (stage1-v2-llm-annotation-amendment-v1); they must not be presented as human annotation evidence.",
+    "human_upgrade_path": "human annotators may later re-verify samples; only human-verified rows may set human_verified=true, at which point the asset may be promoted out of the llm track."
+  },
+  "gate_effects": {
+    "annotation_staffing_complete": "satisfiable_by_llm_staffing_under_this_amendment",
+    "annotators_qualified": "satisfiable_only_by_passing_the_unchanged_qualification_thresholds",
+    "calibration_round_complete": "satisfiable_by_llm_ab_execution_with_unchanged_agreement_gates",
+    "required_atomic_sources_human_verified": "NOT_satisfiable_by_llm_review; remains false until real human verification",
+    "formal_ready": "remains false while any human-named gate is unsatisfied; this amendment does not create a bypass"
+  },
+  "permitted_actor_ids": [
+    "claude_stage1_v2_annotator_a",
+    "claude_stage1_v2_annotator_b",
+    "claude_stage1_v2_adjudicator",
+    "claude_stage1_v2_blind_reviewer",
+    "claude_stage1_v2_source_reviewer",
+    "codex_stage1_v2_reviewer"
+  ],
+  "role_bindings": {
+    "annotator_a": "claude_stage1_v2_annotator_a",
+    "annotator_b": "claude_stage1_v2_annotator_b",
+    "adjudicator": "claude_stage1_v2_adjudicator",
+    "independent_blind_reviewer": "claude_stage1_v2_blind_reviewer",
+    "source_reviewer": "claude_stage1_v2_source_reviewer"
+  },
+  "notes": [
+    "Motivation: human staffing is unavailable; the project owner directed data completion via LLM annotation with per-item strict review.",
+    "The prior Stage1-v1 downgrade was caused by absent annotation-quality evidence; this amendment records actor provenance explicitly so the evidence tier of every produced asset is unambiguous.",
+    "codex_stage1_v2_reviewer is grandfathered for the existing source-review sidecar batch 0001."
+  ]
+}

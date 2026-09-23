@@ -1,0 +1,19 @@
+{
+  "schema_version": "mica-stage1-v2-qualification-execution-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "creation_git_sha": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+  "created_at": "2026-07-26T05:43:22+00:00",
+  "thresholds": {
+    "exact_k_accuracy": 0.85,
+    "pairwise_partition_f1": 0.8,
+    "background_classification_f1": 0.85
+  },
+  "required_guideline_version": "stage1-v2-alignment-guideline-pilot-v1",
+  "result_fields": [
+    "qualification_id",
+    "annotator_id",
+    "exact_k",
+    "unit_to_intent",
+    "background_units"
+  ]
+}

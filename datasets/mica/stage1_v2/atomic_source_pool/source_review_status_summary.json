@@ -1,0 +1,39 @@
+{
+  "actor_type_counts": {
+    "llm": 613
+  },
+  "amendment_id": "stage1-v2-llm-annotation-amendment-v1",
+  "claude_llm_review_row_count": 603,
+  "codex_llm_review_row_count": 10,
+  "created_at": "2026-07-26T15:22:29+00:00",
+  "creation_git_sha": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+  "current_materialized_rejected_source_count": 25,
+  "decision_counts": {
+    "accept_atomic": 552,
+    "reject_low_evidence": 1,
+    "reject_mechanical_or_generated": 32,
+    "reject_multi_intent": 28
+  },
+  "formal_synthetic_freeze_allowed": false,
+  "human_verified_counts": {
+    "False": 613
+  },
+  "llm_accept": 552,
+  "llm_reject": 61,
+  "llm_second_review": 92,
+  "protocol_version": "stage1-v2-protocol",
+  "required_atomic_sources_human_verified": false,
+  "review_file_count": 22,
+  "review_row_count": 613,
+  "schema_version": "mica-stage1-v2-source-review-status-v1",
+  "unique_source_count": 613,
+  "validation": {
+    "amendment_id": "stage1-v2-llm-annotation-amendment-v1",
+    "errors": [],
+    "llm_reviewed_rows": 613,
+    "schema_version": "mica-stage1-v2-source-review-validation-v1",
+    "superseded_rows": 0,
+    "total_rows": 613,
+    "valid": true
+  }
+}

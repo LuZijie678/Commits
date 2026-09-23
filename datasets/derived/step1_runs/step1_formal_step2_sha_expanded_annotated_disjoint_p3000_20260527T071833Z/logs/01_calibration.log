@@ -1,0 +1,20 @@
+$ /opt/homebrew/opt/python@3.14/bin/python3.14 -m src.pipeline.full_diff_calibration --mode gbdt_isotonic --input ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/gbdt_train.csv --protocol-input ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/protocol.csv --gbdt-train-input ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/gbdt_train.csv --calibration-input ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/calibration.csv --evaluation-input ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/evaluation.csv --annotated-split-plan-json ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/annotated_splits/annotated_split_plan.json --label-col is_single_intent --labeled-calibration-scheme holdout --labeled-holdout-ratio 0.2 --threshold-fallback-policy error --output ../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/calibration/atomic_calibration_full_diff.json
+
+<frozen runpy>:128: RuntimeWarning: 'src.pipeline.full_diff_calibration' found in sys.modules after import of package 'src.pipeline', but prior to execution of 'src.pipeline.full_diff_calibration'; this may result in unpredictable behaviour
+/opt/homebrew/lib/python3.14/site-packages/joblib/externals/loky/backend/context.py:131: UserWarning: Could not find the number of physical cores for the following reason:
+invalid literal for int() with base 10: ''
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "/opt/homebrew/lib/python3.14/site-packages/joblib/externals/loky/backend/context.py", line 249, in _count_physical_cores
+    cpu_count_physical = _count_physical_cores_darwin()
+  File "/opt/homebrew/lib/python3.14/site-packages/joblib/externals/loky/backend/context.py", line 318, in _count_physical_cores_darwin
+    return int(cpu_info)
+mode=gbdt_isotonic
+samples=815
+weak_label_source=independent_rule_protocol_v1
+weak_label_protocol_version=independent_rule_protocol_v1
+tau_a=0.947320
+tau_b=0.834592
+../../datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p3000_20260527T071833Z/calibration/atomic_calibration_full_diff.json
+
+## EXIT_CODE=0

@@ -1,0 +1,15 @@
+{
+  "unresolved_questions": [
+    "Should formal validation thresholds follow current sanity thresholds or be stricter?",
+    "Is repo overlap acceptable for Stage 1 synthetic pretraining?",
+    "Should repo-disjoint diagnostic be added before official Stage 1 validation?",
+    "Should flat classifier / no-slot decoder baseline be added before official Stage 1 validation?",
+    "Should anti-shortcut be run immediately after Stage 1 or after Stage 2/RealDomainSplit and RealDomainSelective?",
+    "What is the annotation plan for real alignment benchmark?",
+    "What are the unlock criteria for Stage 2 hard_b/M calibration?",
+    "downstream_skeleton_scope_pending_advisor_confirmation",
+    "official_validation_metrics_pending",
+    "stage2_unlock_pending",
+    "real_alignment_annotation_plan_pending"
+  ]
+}

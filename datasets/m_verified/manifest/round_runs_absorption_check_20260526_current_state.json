@@ -1,0 +1,1187 @@
+{
+  "checked_at_utc": "2026-05-26T14:19:22.934892+00:00",
+  "check_kind": "current_state_after_empty_and_absorbed_archives",
+  "workspace_round_runs_root": "datasets/m_verified/workspace/round_runs",
+  "archive_batchcrawl_root": "archive/crawl_rounds/m_verified/batchcrawl",
+  "workspace": {
+    "remaining_group_count": 12,
+    "remaining_groups": [
+      "batchcrawl/20260526T024705Z",
+      "batchcrawl/20260526T025527Z",
+      "batchcrawl/20260526T030407Z",
+      "batchcrawl/20260526T031105Z",
+      "batchcrawl/20260526T031715Z",
+      "batchcrawl/20260526T071501Z",
+      "batchcrawl/20260526T124753Z",
+      "batchcrawl/20260526T125513Z",
+      "batchcrawl/20260526T130226Z",
+      "batchcrawl/20260526T131044Z",
+      "newcrawl/20260525",
+      "newcrawl/20260526"
+    ],
+    "remaining_remote_diff_csv_count": 47,
+    "remaining_unique_pair_count": 801
+  },
+  "archive": {
+    "actual_archive_dirs": [
+      "batchcrawl/20260526T040333Z",
+      "batchcrawl/20260526T131803Z",
+      "batchcrawl/20260526T132427Z",
+      "batchcrawl/20260526T132558Z",
+      "batchcrawl/20260526T133228Z"
+    ],
+    "archived_empty_groups_from_second_pass": [
+      "batchcrawl/20260526T040333Z",
+      "batchcrawl/20260526T131803Z",
+      "batchcrawl/20260526T132558Z",
+      "batchcrawl/20260526T133228Z"
+    ],
+    "archived_absorbed_groups_from_candidate_layer_audit": [
+      "batchcrawl/20260526T132427Z"
+    ]
+  },
+  "layers": {
+    "canonical_m": {
+      "path": "datasets/m_verified/canonical/usable_m_with_real_diff.csv",
+      "row_count": 765,
+      "unique_pair_count": 765,
+      "global_match": {
+        "round_runs_unique_pair_count": 801,
+        "matched_pair_count": 0,
+        "unmatched_pair_count": 801,
+        "match_rate": 0.0
+      },
+      "reverse_source_file_match_count": 0,
+      "reverse_source_file_matches": [],
+      "eligible_group_count": 0,
+      "eligible_groups": [],
+      "group_reports": [
+        {
+          "group": "batchcrawl/20260526T024705Z",
+          "unique_pair_count": 115,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 115,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Anuken/Mindustry",
+              "sha": "3f649aea1fd65ce034366e4750da6d1da301ba22"
+            },
+            {
+              "repo": "Anuken/Mindustry",
+              "sha": "865536ebf4a4611280fd301c7fbe9ef702256970"
+            },
+            {
+              "repo": "BVLC/caffe",
+              "sha": "dabbc91ecda54d8d4bb69e2457289d2e7216b136"
+            },
+            {
+              "repo": "ChartsOrg/Charts",
+              "sha": "afc7c983d2f98c4d81cac28b1169951cc7323bb5"
+            },
+            {
+              "repo": "FreeCAD/FreeCAD",
+              "sha": "e3ba765cea9605d21518598d6d1a7f70d484bcaa"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T025527Z",
+          "unique_pair_count": 108,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 108,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "BookStackApp/BookStack",
+              "sha": "5d429ea9bb5d48b4a4b3bab4b09fe21dea00b752"
+            },
+            {
+              "repo": "BookStackApp/BookStack",
+              "sha": "b5d3ba2726dc2f3792f580a8d00cf8d6bbe01126"
+            },
+            {
+              "repo": "Caldis/Mos",
+              "sha": "5831767e8c22f3abbaa3a922edf749486eefbee9"
+            },
+            {
+              "repo": "CodeEditApp/CodeEdit",
+              "sha": "334357fb0d95303b3e6eb5fd15680738b8efd798"
+            },
+            {
+              "repo": "CodeEditApp/CodeEdit",
+              "sha": "cfbca15210c0ab72b4f7bc2293b2bdf50d80572b"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T030407Z",
+          "unique_pair_count": 100,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 100,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Billionmail/BillionMail",
+              "sha": "4074e02a728323b488507815add0dfdb7b7510cd"
+            },
+            {
+              "repo": "Billionmail/BillionMail",
+              "sha": "fdb7b7ee138d87a78f5dec1c2e6d7a08af306b56"
+            },
+            {
+              "repo": "Carthage/Carthage",
+              "sha": "89251a6f3e581d15508814b1f104187e35f94052"
+            },
+            {
+              "repo": "FreshRSS/FreshRSS",
+              "sha": "1ff27fea215479c6949852bba5b50b96b8277a38"
+            },
+            {
+              "repo": "FreshRSS/FreshRSS",
+              "sha": "93f989b977842d97975e162f7830d473d4306950"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T031105Z",
+          "unique_pair_count": 118,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 118,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "AGWA/git-crypt",
+              "sha": "4dd5c202434afac2525fb556179eac6d5c58bd9e"
+            },
+            {
+              "repo": "AppImage/AppImageKit",
+              "sha": "b119bbe7ebdb3e48774cca87d83c915d4ce63825"
+            },
+            {
+              "repo": "BYVoid/OpenCC",
+              "sha": "527b2f2cb0a1fe52d2d892e7fa2f20670b33b240"
+            },
+            {
+              "repo": "BYVoid/OpenCC",
+              "sha": "a8e67cd5a362b239a3ae585f36207f8479df79be"
+            },
+            {
+              "repo": "BasedHardware/omi",
+              "sha": "c1a4d8ffca4ffb55e5b4d4413c71822568d40059"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T031715Z",
+          "unique_pair_count": 75,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 75,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "BoundaryML/baml",
+              "sha": "338e5f2a19878cd5bc6159e0cd3205d2749b1370"
+            },
+            {
+              "repo": "BoundaryML/baml",
+              "sha": "5739534d5239e57b569a1b341814c0a7bc54f5d3"
+            },
+            {
+              "repo": "Next-Flip/Momentum-Firmware",
+              "sha": "56620ab62f3204756332fb445fe7a6afa0cff624"
+            },
+            {
+              "repo": "Next-Flip/Momentum-Firmware",
+              "sha": "a663836b7065ac181fcd733bd0d9dd9f9b60a032"
+            },
+            {
+              "repo": "Xfennec/progress",
+              "sha": "c608c6dded1734e2eb38ad38b551ce5506c3e42b"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T071501Z",
+          "unique_pair_count": 125,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 125,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Alamofire/Alamofire",
+              "sha": "17c7f9b03121cea798fe281c37a7133f2675aa72"
+            },
+            {
+              "repo": "Alamofire/Alamofire",
+              "sha": "c279eda711944b5fe0c1ce410f2d934353e7bf65"
+            },
+            {
+              "repo": "Anuken/Mindustry",
+              "sha": "3f649aea1fd65ce034366e4750da6d1da301ba22"
+            },
+            {
+              "repo": "Anuken/Mindustry",
+              "sha": "865536ebf4a4611280fd301c7fbe9ef702256970"
+            },
+            {
+              "repo": "BVLC/caffe",
+              "sha": "dabbc91ecda54d8d4bb69e2457289d2e7216b136"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T124753Z",
+          "unique_pair_count": 101,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 101,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Caldis/Mos",
+              "sha": "5831767e8c22f3abbaa3a922edf749486eefbee9"
+            },
+            {
+              "repo": "CodeEditApp/CodeEdit",
+              "sha": "334357fb0d95303b3e6eb5fd15680738b8efd798"
+            },
+            {
+              "repo": "CodeEditApp/CodeEdit",
+              "sha": "cfbca15210c0ab72b4f7bc2293b2bdf50d80572b"
+            },
+            {
+              "repo": "DarkFlippers/unleashed-firmware",
+              "sha": "c4ef54c71afa5fb892b0f84d1022333b70eafce2"
+            },
+            {
+              "repo": "DarkFlippers/unleashed-firmware",
+              "sha": "d5fad4f38b1ef0f5774e6ef0b95dcf71392a91dc"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T125513Z",
+          "unique_pair_count": 91,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 91,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Billionmail/BillionMail",
+              "sha": "4074e02a728323b488507815add0dfdb7b7510cd"
+            },
+            {
+              "repo": "Billionmail/BillionMail",
+              "sha": "fdb7b7ee138d87a78f5dec1c2e6d7a08af306b56"
+            },
+            {
+              "repo": "BookStackApp/BookStack",
+              "sha": "5d429ea9bb5d48b4a4b3bab4b09fe21dea00b752"
+            },
+            {
+              "repo": "BookStackApp/BookStack",
+              "sha": "b5d3ba2726dc2f3792f580a8d00cf8d6bbe01126"
+            },
+            {
+              "repo": "Carthage/Carthage",
+              "sha": "89251a6f3e581d15508814b1f104187e35f94052"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T130226Z",
+          "unique_pair_count": 126,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 126,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "AGWA/git-crypt",
+              "sha": "4dd5c202434afac2525fb556179eac6d5c58bd9e"
+            },
+            {
+              "repo": "BYVoid/OpenCC",
+              "sha": "527b2f2cb0a1fe52d2d892e7fa2f20670b33b240"
+            },
+            {
+              "repo": "BYVoid/OpenCC",
+              "sha": "a8e67cd5a362b239a3ae585f36207f8479df79be"
+            },
+            {
+              "repo": "BasedHardware/omi",
+              "sha": "c1a4d8ffca4ffb55e5b4d4413c71822568d40059"
+            },
+            {
+              "repo": "BasedHardware/omi",
+              "sha": "c9a833fe36478466b11c191eea50dbaa99628b72"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T131044Z",
+          "unique_pair_count": 101,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 101,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "AppImage/AppImageKit",
+              "sha": "b119bbe7ebdb3e48774cca87d83c915d4ce63825"
+            },
+            {
+              "repo": "BoundaryML/baml",
+              "sha": "338e5f2a19878cd5bc6159e0cd3205d2749b1370"
+            },
+            {
+              "repo": "BoundaryML/baml",
+              "sha": "5739534d5239e57b569a1b341814c0a7bc54f5d3"
+            },
+            {
+              "repo": "FyroxEngine/Fyrox",
+              "sha": "768df4600d59a038a11713b624930628e5a4b2b2"
+            },
+            {
+              "repo": "H-M-H/Weylus",
+              "sha": "296d5de0a4fba71a5c4db29338a60b82c9e53a88"
+            }
+          ]
+        },
+        {
+          "group": "newcrawl/20260525",
+          "unique_pair_count": 87,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 87,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "9001/copyparty",
+              "sha": "348b4bb5c762f851d866e200ee0c4c44ea477f3a"
+            },
+            {
+              "repo": "9001/copyparty",
+              "sha": "f4f97b6cc3044700bb0b5cb3dc32baaf634c3095"
+            },
+            {
+              "repo": "DIYgod/RSSHub",
+              "sha": "0788983eac2b0028df25ea640c33f96453ae3c24"
+            },
+            {
+              "repo": "Homebrew/brew",
+              "sha": "ba52eced93d32ac5110a0aec694f09b015343a3e"
+            },
+            {
+              "repo": "KeygraphHQ/shannon",
+              "sha": "ccb530310633c84286e1ab106cf5cacc3d7a215c"
+            }
+          ]
+        },
+        {
+          "group": "newcrawl/20260526",
+          "unique_pair_count": 171,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 171,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "11ty/eleventy",
+              "sha": "d3c5c2618091cf71bf7e4ec2413685a5f599a58a"
+            },
+            {
+              "repo": "1Panel-dev/1Panel",
+              "sha": "00afa748e0a06ce513bafc914a1f22b327884862"
+            },
+            {
+              "repo": "1Panel-dev/1Panel",
+              "sha": "d0faee4eeb7f6bad504d30e069a3cd6a14b2acad"
+            },
+            {
+              "repo": "AdguardTeam/AdGuardHome",
+              "sha": "9e3d913e72aa167ca8494b61ef841042bb709171"
+            },
+            {
+              "repo": "Alamofire/Alamofire",
+              "sha": "17c7f9b03121cea798fe281c37a7133f2675aa72"
+            }
+          ]
+        }
+      ]
+    },
+    "current_m_candidates": {
+      "path": "datasets/m_verified/workspace/candidates/gitlog_current_m_candidates.csv",
+      "row_count": 853,
+      "unique_pair_count": 853,
+      "global_match": {
+        "round_runs_unique_pair_count": 801,
+        "matched_pair_count": 0,
+        "unmatched_pair_count": 801,
+        "match_rate": 0.0
+      },
+      "reverse_source_file_match_count": 0,
+      "reverse_source_file_matches": [],
+      "eligible_group_count": 0,
+      "eligible_groups": [],
+      "group_reports": [
+        {
+          "group": "batchcrawl/20260526T024705Z",
+          "unique_pair_count": 115,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 115,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Anuken/Mindustry",
+              "sha": "3f649aea1fd65ce034366e4750da6d1da301ba22"
+            },
+            {
+              "repo": "Anuken/Mindustry",
+              "sha": "865536ebf4a4611280fd301c7fbe9ef702256970"
+            },
+            {
+              "repo": "BVLC/caffe",
+              "sha": "dabbc91ecda54d8d4bb69e2457289d2e7216b136"
+            },
+            {
+              "repo": "ChartsOrg/Charts",
+              "sha": "afc7c983d2f98c4d81cac28b1169951cc7323bb5"
+            },
+            {
+              "repo": "FreeCAD/FreeCAD",
+              "sha": "e3ba765cea9605d21518598d6d1a7f70d484bcaa"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T025527Z",
+          "unique_pair_count": 108,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 108,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "BookStackApp/BookStack",
+              "sha": "5d429ea9bb5d48b4a4b3bab4b09fe21dea00b752"
+            },
+            {
+              "repo": "BookStackApp/BookStack",
+              "sha": "b5d3ba2726dc2f3792f580a8d00cf8d6bbe01126"
+            },
+            {
+              "repo": "Caldis/Mos",
+              "sha": "5831767e8c22f3abbaa3a922edf749486eefbee9"
+            },
+            {
+              "repo": "CodeEditApp/CodeEdit",
+              "sha": "334357fb0d95303b3e6eb5fd15680738b8efd798"
+            },
+            {
+              "repo": "CodeEditApp/CodeEdit",
+              "sha": "cfbca15210c0ab72b4f7bc2293b2bdf50d80572b"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T030407Z",
+          "unique_pair_count": 100,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 100,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Billionmail/BillionMail",
+              "sha": "4074e02a728323b488507815add0dfdb7b7510cd"
+            },
+            {
+              "repo": "Billionmail/BillionMail",
+              "sha": "fdb7b7ee138d87a78f5dec1c2e6d7a08af306b56"
+            },
+            {
+              "repo": "Carthage/Carthage",
+              "sha": "89251a6f3e581d15508814b1f104187e35f94052"
+            },
+            {
+              "repo": "FreshRSS/FreshRSS",
+              "sha": "1ff27fea215479c6949852bba5b50b96b8277a38"
+            },
+            {
+              "repo": "FreshRSS/FreshRSS",
+              "sha": "93f989b977842d97975e162f7830d473d4306950"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T031105Z",
+          "unique_pair_count": 118,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 118,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "AGWA/git-crypt",
+              "sha": "4dd5c202434afac2525fb556179eac6d5c58bd9e"
+            },
+            {
+              "repo": "AppImage/AppImageKit",
+              "sha": "b119bbe7ebdb3e48774cca87d83c915d4ce63825"
+            },
+            {
+              "repo": "BYVoid/OpenCC",
+              "sha": "527b2f2cb0a1fe52d2d892e7fa2f20670b33b240"
+            },
+            {
+              "repo": "BYVoid/OpenCC",
+              "sha": "a8e67cd5a362b239a3ae585f36207f8479df79be"
+            },
+            {
+              "repo": "BasedHardware/omi",
+              "sha": "c1a4d8ffca4ffb55e5b4d4413c71822568d40059"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T031715Z",
+          "unique_pair_count": 75,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 75,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "BoundaryML/baml",
+              "sha": "338e5f2a19878cd5bc6159e0cd3205d2749b1370"
+            },
+            {
+              "repo": "BoundaryML/baml",
+              "sha": "5739534d5239e57b569a1b341814c0a7bc54f5d3"
+            },
+            {
+              "repo": "Next-Flip/Momentum-Firmware",
+              "sha": "56620ab62f3204756332fb445fe7a6afa0cff624"
+            },
+            {
+              "repo": "Next-Flip/Momentum-Firmware",
+              "sha": "a663836b7065ac181fcd733bd0d9dd9f9b60a032"
+            },
+            {
+              "repo": "Xfennec/progress",
+              "sha": "c608c6dded1734e2eb38ad38b551ce5506c3e42b"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T071501Z",
+          "unique_pair_count": 125,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 125,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Alamofire/Alamofire",
+              "sha": "17c7f9b03121cea798fe281c37a7133f2675aa72"
+            },
+            {
+              "repo": "Alamofire/Alamofire",
+              "sha": "c279eda711944b5fe0c1ce410f2d934353e7bf65"
+            },
+            {
+              "repo": "Anuken/Mindustry",
+              "sha": "3f649aea1fd65ce034366e4750da6d1da301ba22"
+            },
+            {
+              "repo": "Anuken/Mindustry",
+              "sha": "865536ebf4a4611280fd301c7fbe9ef702256970"
+            },
+            {
+              "repo": "BVLC/caffe",
+              "sha": "dabbc91ecda54d8d4bb69e2457289d2e7216b136"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T124753Z",
+          "unique_pair_count": 101,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 101,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Caldis/Mos",
+              "sha": "5831767e8c22f3abbaa3a922edf749486eefbee9"
+            },
+            {
+              "repo": "CodeEditApp/CodeEdit",
+              "sha": "334357fb0d95303b3e6eb5fd15680738b8efd798"
+            },
+            {
+              "repo": "CodeEditApp/CodeEdit",
+              "sha": "cfbca15210c0ab72b4f7bc2293b2bdf50d80572b"
+            },
+            {
+              "repo": "DarkFlippers/unleashed-firmware",
+              "sha": "c4ef54c71afa5fb892b0f84d1022333b70eafce2"
+            },
+            {
+              "repo": "DarkFlippers/unleashed-firmware",
+              "sha": "d5fad4f38b1ef0f5774e6ef0b95dcf71392a91dc"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T125513Z",
+          "unique_pair_count": 91,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 91,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Billionmail/BillionMail",
+              "sha": "4074e02a728323b488507815add0dfdb7b7510cd"
+            },
+            {
+              "repo": "Billionmail/BillionMail",
+              "sha": "fdb7b7ee138d87a78f5dec1c2e6d7a08af306b56"
+            },
+            {
+              "repo": "BookStackApp/BookStack",
+              "sha": "5d429ea9bb5d48b4a4b3bab4b09fe21dea00b752"
+            },
+            {
+              "repo": "BookStackApp/BookStack",
+              "sha": "b5d3ba2726dc2f3792f580a8d00cf8d6bbe01126"
+            },
+            {
+              "repo": "Carthage/Carthage",
+              "sha": "89251a6f3e581d15508814b1f104187e35f94052"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T130226Z",
+          "unique_pair_count": 126,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 126,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "AGWA/git-crypt",
+              "sha": "4dd5c202434afac2525fb556179eac6d5c58bd9e"
+            },
+            {
+              "repo": "BYVoid/OpenCC",
+              "sha": "527b2f2cb0a1fe52d2d892e7fa2f20670b33b240"
+            },
+            {
+              "repo": "BYVoid/OpenCC",
+              "sha": "a8e67cd5a362b239a3ae585f36207f8479df79be"
+            },
+            {
+              "repo": "BasedHardware/omi",
+              "sha": "c1a4d8ffca4ffb55e5b4d4413c71822568d40059"
+            },
+            {
+              "repo": "BasedHardware/omi",
+              "sha": "c9a833fe36478466b11c191eea50dbaa99628b72"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T131044Z",
+          "unique_pair_count": 101,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 101,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "AppImage/AppImageKit",
+              "sha": "b119bbe7ebdb3e48774cca87d83c915d4ce63825"
+            },
+            {
+              "repo": "BoundaryML/baml",
+              "sha": "338e5f2a19878cd5bc6159e0cd3205d2749b1370"
+            },
+            {
+              "repo": "BoundaryML/baml",
+              "sha": "5739534d5239e57b569a1b341814c0a7bc54f5d3"
+            },
+            {
+              "repo": "FyroxEngine/Fyrox",
+              "sha": "768df4600d59a038a11713b624930628e5a4b2b2"
+            },
+            {
+              "repo": "H-M-H/Weylus",
+              "sha": "296d5de0a4fba71a5c4db29338a60b82c9e53a88"
+            }
+          ]
+        },
+        {
+          "group": "newcrawl/20260525",
+          "unique_pair_count": 87,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 87,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "9001/copyparty",
+              "sha": "348b4bb5c762f851d866e200ee0c4c44ea477f3a"
+            },
+            {
+              "repo": "9001/copyparty",
+              "sha": "f4f97b6cc3044700bb0b5cb3dc32baaf634c3095"
+            },
+            {
+              "repo": "DIYgod/RSSHub",
+              "sha": "0788983eac2b0028df25ea640c33f96453ae3c24"
+            },
+            {
+              "repo": "Homebrew/brew",
+              "sha": "ba52eced93d32ac5110a0aec694f09b015343a3e"
+            },
+            {
+              "repo": "KeygraphHQ/shannon",
+              "sha": "ccb530310633c84286e1ab106cf5cacc3d7a215c"
+            }
+          ]
+        },
+        {
+          "group": "newcrawl/20260526",
+          "unique_pair_count": 171,
+          "matched_pair_count": 0,
+          "unmatched_pair_count": 171,
+          "match_rate": 0.0,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "11ty/eleventy",
+              "sha": "d3c5c2618091cf71bf7e4ec2413685a5f599a58a"
+            },
+            {
+              "repo": "1Panel-dev/1Panel",
+              "sha": "00afa748e0a06ce513bafc914a1f22b327884862"
+            },
+            {
+              "repo": "1Panel-dev/1Panel",
+              "sha": "d0faee4eeb7f6bad504d30e069a3cd6a14b2acad"
+            },
+            {
+              "repo": "AdguardTeam/AdGuardHome",
+              "sha": "9e3d913e72aa167ca8494b61ef841042bb709171"
+            },
+            {
+              "repo": "Alamofire/Alamofire",
+              "sha": "17c7f9b03121cea798fe281c37a7133f2675aa72"
+            }
+          ]
+        }
+      ]
+    },
+    "combined_labels": {
+      "path": "datasets/m_verified/workspace/label_snapshots/gitlog_all_pilot_labels_combined.csv",
+      "row_count": 6422,
+      "unique_pair_count": 6422,
+      "global_match": {
+        "round_runs_unique_pair_count": 801,
+        "matched_pair_count": 160,
+        "unmatched_pair_count": 641,
+        "match_rate": 0.19975
+      },
+      "reverse_source_file_match_count": 0,
+      "reverse_source_file_matches": [],
+      "eligible_group_count": 0,
+      "eligible_groups": [],
+      "group_reports": [
+        {
+          "group": "batchcrawl/20260526T024705Z",
+          "unique_pair_count": 115,
+          "matched_pair_count": 18,
+          "unmatched_pair_count": 97,
+          "match_rate": 0.156522,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "ChartsOrg/Charts",
+              "sha": "afc7c983d2f98c4d81cac28b1169951cc7323bb5"
+            },
+            {
+              "repo": "FreeCAD/FreeCAD",
+              "sha": "e3ba765cea9605d21518598d6d1a7f70d484bcaa"
+            },
+            {
+              "repo": "FreeCAD/FreeCAD",
+              "sha": "ebd237ea9c63b3d41f4dd7de08c0d683e3f8d459"
+            },
+            {
+              "repo": "FujiwaraChoki/MoneyPrinterV2",
+              "sha": "31bba003a936b30f4f0616c77f816497c844a921"
+            },
+            {
+              "repo": "FujiwaraChoki/MoneyPrinterV2",
+              "sha": "754aec467dc4363b5966856346c793bf8218ed88"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T025527Z",
+          "unique_pair_count": 108,
+          "matched_pair_count": 21,
+          "unmatched_pair_count": 87,
+          "match_rate": 0.194444,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "BookStackApp/BookStack",
+              "sha": "5d429ea9bb5d48b4a4b3bab4b09fe21dea00b752"
+            },
+            {
+              "repo": "BookStackApp/BookStack",
+              "sha": "b5d3ba2726dc2f3792f580a8d00cf8d6bbe01126"
+            },
+            {
+              "repo": "Caldis/Mos",
+              "sha": "5831767e8c22f3abbaa3a922edf749486eefbee9"
+            },
+            {
+              "repo": "CodeEditApp/CodeEdit",
+              "sha": "334357fb0d95303b3e6eb5fd15680738b8efd798"
+            },
+            {
+              "repo": "CodeEditApp/CodeEdit",
+              "sha": "cfbca15210c0ab72b4f7bc2293b2bdf50d80572b"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T030407Z",
+          "unique_pair_count": 100,
+          "matched_pair_count": 9,
+          "unmatched_pair_count": 91,
+          "match_rate": 0.09,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Billionmail/BillionMail",
+              "sha": "4074e02a728323b488507815add0dfdb7b7510cd"
+            },
+            {
+              "repo": "Billionmail/BillionMail",
+              "sha": "fdb7b7ee138d87a78f5dec1c2e6d7a08af306b56"
+            },
+            {
+              "repo": "Carthage/Carthage",
+              "sha": "89251a6f3e581d15508814b1f104187e35f94052"
+            },
+            {
+              "repo": "FreshRSS/FreshRSS",
+              "sha": "1ff27fea215479c6949852bba5b50b96b8277a38"
+            },
+            {
+              "repo": "FreshRSS/FreshRSS",
+              "sha": "93f989b977842d97975e162f7830d473d4306950"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T031105Z",
+          "unique_pair_count": 118,
+          "matched_pair_count": 4,
+          "unmatched_pair_count": 114,
+          "match_rate": 0.033898,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "AGWA/git-crypt",
+              "sha": "4dd5c202434afac2525fb556179eac6d5c58bd9e"
+            },
+            {
+              "repo": "AppImage/AppImageKit",
+              "sha": "b119bbe7ebdb3e48774cca87d83c915d4ce63825"
+            },
+            {
+              "repo": "BYVoid/OpenCC",
+              "sha": "527b2f2cb0a1fe52d2d892e7fa2f20670b33b240"
+            },
+            {
+              "repo": "BYVoid/OpenCC",
+              "sha": "a8e67cd5a362b239a3ae585f36207f8479df79be"
+            },
+            {
+              "repo": "BasedHardware/omi",
+              "sha": "c1a4d8ffca4ffb55e5b4d4413c71822568d40059"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T031715Z",
+          "unique_pair_count": 75,
+          "matched_pair_count": 11,
+          "unmatched_pair_count": 64,
+          "match_rate": 0.146667,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "BoundaryML/baml",
+              "sha": "338e5f2a19878cd5bc6159e0cd3205d2749b1370"
+            },
+            {
+              "repo": "BoundaryML/baml",
+              "sha": "5739534d5239e57b569a1b341814c0a7bc54f5d3"
+            },
+            {
+              "repo": "Next-Flip/Momentum-Firmware",
+              "sha": "56620ab62f3204756332fb445fe7a6afa0cff624"
+            },
+            {
+              "repo": "Next-Flip/Momentum-Firmware",
+              "sha": "a663836b7065ac181fcd733bd0d9dd9f9b60a032"
+            },
+            {
+              "repo": "Xfennec/progress",
+              "sha": "c608c6dded1734e2eb38ad38b551ce5506c3e42b"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T071501Z",
+          "unique_pair_count": 125,
+          "matched_pair_count": 23,
+          "unmatched_pair_count": 102,
+          "match_rate": 0.184,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Alamofire/Alamofire",
+              "sha": "17c7f9b03121cea798fe281c37a7133f2675aa72"
+            },
+            {
+              "repo": "Alamofire/Alamofire",
+              "sha": "c279eda711944b5fe0c1ce410f2d934353e7bf65"
+            },
+            {
+              "repo": "ChartsOrg/Charts",
+              "sha": "afc7c983d2f98c4d81cac28b1169951cc7323bb5"
+            },
+            {
+              "repo": "FreeCAD/FreeCAD",
+              "sha": "e3ba765cea9605d21518598d6d1a7f70d484bcaa"
+            },
+            {
+              "repo": "FreeCAD/FreeCAD",
+              "sha": "ebd237ea9c63b3d41f4dd7de08c0d683e3f8d459"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T124753Z",
+          "unique_pair_count": 101,
+          "matched_pair_count": 19,
+          "unmatched_pair_count": 82,
+          "match_rate": 0.188119,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Caldis/Mos",
+              "sha": "5831767e8c22f3abbaa3a922edf749486eefbee9"
+            },
+            {
+              "repo": "CodeEditApp/CodeEdit",
+              "sha": "334357fb0d95303b3e6eb5fd15680738b8efd798"
+            },
+            {
+              "repo": "CodeEditApp/CodeEdit",
+              "sha": "cfbca15210c0ab72b4f7bc2293b2bdf50d80572b"
+            },
+            {
+              "repo": "DarkFlippers/unleashed-firmware",
+              "sha": "c4ef54c71afa5fb892b0f84d1022333b70eafce2"
+            },
+            {
+              "repo": "DarkFlippers/unleashed-firmware",
+              "sha": "d5fad4f38b1ef0f5774e6ef0b95dcf71392a91dc"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T125513Z",
+          "unique_pair_count": 91,
+          "matched_pair_count": 10,
+          "unmatched_pair_count": 81,
+          "match_rate": 0.10989,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "Billionmail/BillionMail",
+              "sha": "4074e02a728323b488507815add0dfdb7b7510cd"
+            },
+            {
+              "repo": "Billionmail/BillionMail",
+              "sha": "fdb7b7ee138d87a78f5dec1c2e6d7a08af306b56"
+            },
+            {
+              "repo": "BookStackApp/BookStack",
+              "sha": "5d429ea9bb5d48b4a4b3bab4b09fe21dea00b752"
+            },
+            {
+              "repo": "BookStackApp/BookStack",
+              "sha": "b5d3ba2726dc2f3792f580a8d00cf8d6bbe01126"
+            },
+            {
+              "repo": "Carthage/Carthage",
+              "sha": "89251a6f3e581d15508814b1f104187e35f94052"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T130226Z",
+          "unique_pair_count": 126,
+          "matched_pair_count": 6,
+          "unmatched_pair_count": 120,
+          "match_rate": 0.047619,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "AGWA/git-crypt",
+              "sha": "4dd5c202434afac2525fb556179eac6d5c58bd9e"
+            },
+            {
+              "repo": "BYVoid/OpenCC",
+              "sha": "527b2f2cb0a1fe52d2d892e7fa2f20670b33b240"
+            },
+            {
+              "repo": "BYVoid/OpenCC",
+              "sha": "a8e67cd5a362b239a3ae585f36207f8479df79be"
+            },
+            {
+              "repo": "BasedHardware/omi",
+              "sha": "c1a4d8ffca4ffb55e5b4d4413c71822568d40059"
+            },
+            {
+              "repo": "BasedHardware/omi",
+              "sha": "c9a833fe36478466b11c191eea50dbaa99628b72"
+            }
+          ]
+        },
+        {
+          "group": "batchcrawl/20260526T131044Z",
+          "unique_pair_count": 101,
+          "matched_pair_count": 11,
+          "unmatched_pair_count": 90,
+          "match_rate": 0.108911,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "AppImage/AppImageKit",
+              "sha": "b119bbe7ebdb3e48774cca87d83c915d4ce63825"
+            },
+            {
+              "repo": "BoundaryML/baml",
+              "sha": "338e5f2a19878cd5bc6159e0cd3205d2749b1370"
+            },
+            {
+              "repo": "BoundaryML/baml",
+              "sha": "5739534d5239e57b569a1b341814c0a7bc54f5d3"
+            },
+            {
+              "repo": "FyroxEngine/Fyrox",
+              "sha": "768df4600d59a038a11713b624930628e5a4b2b2"
+            },
+            {
+              "repo": "H-M-H/Weylus",
+              "sha": "296d5de0a4fba71a5c4db29338a60b82c9e53a88"
+            }
+          ]
+        },
+        {
+          "group": "newcrawl/20260525",
+          "unique_pair_count": 87,
+          "matched_pair_count": 40,
+          "unmatched_pair_count": 47,
+          "match_rate": 0.45977,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "9001/copyparty",
+              "sha": "f4f97b6cc3044700bb0b5cb3dc32baaf634c3095"
+            },
+            {
+              "repo": "DIYgod/RSSHub",
+              "sha": "0788983eac2b0028df25ea640c33f96453ae3c24"
+            },
+            {
+              "repo": "Homebrew/brew",
+              "sha": "ba52eced93d32ac5110a0aec694f09b015343a3e"
+            },
+            {
+              "repo": "KeygraphHQ/shannon",
+              "sha": "ccb530310633c84286e1ab106cf5cacc3d7a215c"
+            },
+            {
+              "repo": "NousResearch/hermes-agent",
+              "sha": "ac5359a3f30a180bc3d5722fe26dac564f0fc5d5"
+            }
+          ]
+        },
+        {
+          "group": "newcrawl/20260526",
+          "unique_pair_count": 171,
+          "matched_pair_count": 57,
+          "unmatched_pair_count": 114,
+          "match_rate": 0.333333,
+          "eligible_for_archive_by_this_layer": false,
+          "sample_unmatched_pairs": [
+            {
+              "repo": "11ty/eleventy",
+              "sha": "d3c5c2618091cf71bf7e4ec2413685a5f599a58a"
+            },
+            {
+              "repo": "1Panel-dev/1Panel",
+              "sha": "00afa748e0a06ce513bafc914a1f22b327884862"
+            },
+            {
+              "repo": "1Panel-dev/1Panel",
+              "sha": "d0faee4eeb7f6bad504d30e069a3cd6a14b2acad"
+            },
+            {
+              "repo": "AdguardTeam/AdGuardHome",
+              "sha": "9e3d913e72aa167ca8494b61ef841042bb709171"
+            },
+            {
+              "repo": "Alamofire/Alamofire",
+              "sha": "17c7f9b03121cea798fe281c37a7133f2675aa72"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "decision": {
+    "current_workspace_archive_eligible_groups_by_canonical_m": [],
+    "current_workspace_archive_eligible_groups_by_current_m_candidates": [],
+    "current_workspace_archive_eligible_groups_by_combined_labels": [],
+    "decision": "retain_all_current_data_bearing_groups",
+    "reason": [
+      "all currently remaining groups still contain at least one repo/sha that is absent from canonical M",
+      "all currently remaining groups still contain at least one repo/sha that is absent from current M candidate pool",
+      "after archiving batchcrawl/20260526T132427Z, no remaining group is fully absorbed even by the broader combined_labels layer"
+    ]
+  }
+}

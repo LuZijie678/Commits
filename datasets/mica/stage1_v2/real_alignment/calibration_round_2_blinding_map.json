@@ -1,0 +1,303 @@
+{
+  "schema_version": "mica-stage1-v2-calibration-round-v1",
+  "rows": [
+    {
+      "sample_id": "calibration_round_2_0001",
+      "original_sample_id": "m_weak::21st-dev/magic-mcp@c4ab9c6dfb4324614e89be4dca5eb9c0865aa60d",
+      "commit_id": "c4ab9c6dfb4324614e89be4dca5eb9c0865aa60d",
+      "repository": "21st-dev/magic-mcp",
+      "provisional_tags": [
+        "probable_k2",
+        "background_heavy",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0002",
+      "original_sample_id": "hard_b::AlistGo/alist@338569fdc253979cb87fb31be27c68ff399fd755",
+      "commit_id": "338569fdc253979cb87fb31be27c68ff399fd755",
+      "repository": "AlistGo/alist",
+      "provisional_tags": [
+        "probable_k1_hard_single",
+        "large_commit",
+        "cross_module",
+        "ambiguous_boundary"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0003",
+      "original_sample_id": "m_weak::AudioKit/AudioKit@de0fbb4dd389ae7674e2911a1a4d1873028de59f",
+      "commit_id": "de0fbb4dd389ae7674e2911a1a4d1873028de59f",
+      "repository": "AudioKit/AudioKit",
+      "provisional_tags": [
+        "probable_k3",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0004",
+      "original_sample_id": "m_weak::AAswordman/Operit@0cd25f1cd35a76a1ab682a224f6e9317ae120cca",
+      "commit_id": "0cd25f1cd35a76a1ab682a224f6e9317ae120cca",
+      "repository": "AAswordman/Operit",
+      "provisional_tags": [
+        "probable_k4_or_complex",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0005",
+      "original_sample_id": "atomic::Byron/gitoxide@30b22a870f22a8ad124f15a7d5395a707c1c8fa4",
+      "commit_id": "30b22a870f22a8ad124f15a7d5395a707c1c8fa4",
+      "repository": "Byron/gitoxide",
+      "provisional_tags": [
+        "probable_k1_regular"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0006",
+      "original_sample_id": "hard_b::ConardLi/easy-dataset@d5ea23baf9ddf6a57750f2dd6650c2be7f388a9d",
+      "commit_id": "d5ea23baf9ddf6a57750f2dd6650c2be7f388a9d",
+      "repository": "ConardLi/easy-dataset",
+      "provisional_tags": [
+        "probable_k1_hard_single",
+        "large_commit",
+        "cross_module"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0007",
+      "original_sample_id": "m_weak::Breakthrough/PySceneDetect@c6a414539d781ea7214afbb3bb14c956a3046f7f",
+      "commit_id": "c6a414539d781ea7214afbb3bb14c956a3046f7f",
+      "repository": "Breakthrough/PySceneDetect",
+      "provisional_tags": [
+        "probable_k2",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0008",
+      "original_sample_id": "m_weak::AlexsJones/llmfit@2768c0f6dfc20bb90e9289188b7aa468f6c6e369",
+      "commit_id": "2768c0f6dfc20bb90e9289188b7aa468f6c6e369",
+      "repository": "AlexsJones/llmfit",
+      "provisional_tags": [
+        "probable_k4_or_complex",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0009",
+      "original_sample_id": "m_weak::AAswordman/Operit@ae779cf8697e198629d1c0fed615602494b8018e",
+      "commit_id": "ae779cf8697e198629d1c0fed615602494b8018e",
+      "repository": "AAswordman/Operit",
+      "provisional_tags": [
+        "probable_k4_or_complex",
+        "background_heavy",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0010",
+      "original_sample_id": "hard_b::CarGuo/GSYVideoPlayer@ae0c37ba604c496670f85f95ce1fafcbfd4bca1c",
+      "commit_id": "ae0c37ba604c496670f85f95ce1fafcbfd4bca1c",
+      "repository": "CarGuo/GSYVideoPlayer",
+      "provisional_tags": [
+        "probable_k1_hard_single",
+        "large_commit",
+        "cross_module"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0011",
+      "original_sample_id": "atomic::Byron/gitoxide@278ff7a6ee084ea864193a5ca25b6cd0f18e19a0",
+      "commit_id": "278ff7a6ee084ea864193a5ca25b6cd0f18e19a0",
+      "repository": "Byron/gitoxide",
+      "provisional_tags": [
+        "probable_k1_regular"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0012",
+      "original_sample_id": "hard_b::CMU-Perceptual-Computing-Lab/openpose@7b960082e25872a2cfabc2988c29ea42714c59f4",
+      "commit_id": "7b960082e25872a2cfabc2988c29ea42714c59f4",
+      "repository": "CMU-Perceptual-Computing-Lab/openpose",
+      "provisional_tags": [
+        "probable_k1_hard_single",
+        "large_commit",
+        "cross_module"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0013",
+      "original_sample_id": "m_weak::ApolloAuto/apollo@1020912d9bf8ad9997b05b7675b2f1670b8bb763",
+      "commit_id": "1020912d9bf8ad9997b05b7675b2f1670b8bb763",
+      "repository": "ApolloAuto/apollo",
+      "provisional_tags": [
+        "probable_k3",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0014",
+      "original_sample_id": "m_weak::0xPlaygrounds/rig@b598c7b6899672dd1f84739fceef85b896d33b97",
+      "commit_id": "b598c7b6899672dd1f84739fceef85b896d33b97",
+      "repository": "0xPlaygrounds/rig",
+      "provisional_tags": [
+        "probable_k2",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0015",
+      "original_sample_id": "m_weak::2d-inc/HistoryOfEverything@b3b12396f3e04ec269cecb56809ebc0594f3d4a5",
+      "commit_id": "b3b12396f3e04ec269cecb56809ebc0594f3d4a5",
+      "repository": "2d-inc/HistoryOfEverything",
+      "provisional_tags": [
+        "probable_k3",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0016",
+      "original_sample_id": "m_weak::AAswordman/Operit@e48d9140ff021fae1415f247ff29547d3b1f2eed",
+      "commit_id": "e48d9140ff021fae1415f247ff29547d3b1f2eed",
+      "repository": "AAswordman/Operit",
+      "provisional_tags": [
+        "probable_k4_or_complex",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0017",
+      "original_sample_id": "m_weak::CarGuo/gsy_github_app_flutter@5f24279f49af00f1b9e7234bfafa688412b86d4d",
+      "commit_id": "5f24279f49af00f1b9e7234bfafa688412b86d4d",
+      "repository": "CarGuo/gsy_github_app_flutter",
+      "provisional_tags": [
+        "probable_k3",
+        "background_heavy"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0018",
+      "original_sample_id": "m_weak::AlistGo/alist@a673503fe2afd5af6a8bef512d86a8c30bcfa490",
+      "commit_id": "a673503fe2afd5af6a8bef512d86a8c30bcfa490",
+      "repository": "AlistGo/alist",
+      "provisional_tags": [
+        "probable_k2"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0019",
+      "original_sample_id": "m_weak::AlexsJones/llmfit@806923d0951b7112d7009bdadbaeb35be3086b64",
+      "commit_id": "806923d0951b7112d7009bdadbaeb35be3086b64",
+      "repository": "AlexsJones/llmfit",
+      "provisional_tags": [
+        "probable_k4_or_complex",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0020",
+      "original_sample_id": "m_weak::BYVoid/OpenCC@76c43330a16b65f318c6f26fa868aa44517a13cf",
+      "commit_id": "76c43330a16b65f318c6f26fa868aa44517a13cf",
+      "repository": "BYVoid/OpenCC",
+      "provisional_tags": [
+        "probable_k3",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0021",
+      "original_sample_id": "m_weak::Arduino-IRremote/Arduino-IRremote@c2a94307889d5eacfb24e9ce7a79e30dfb97733e",
+      "commit_id": "c2a94307889d5eacfb24e9ce7a79e30dfb97733e",
+      "repository": "Arduino-IRremote/Arduino-IRremote",
+      "provisional_tags": [
+        "probable_k2",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0022",
+      "original_sample_id": "m_weak::AlistGo/alist@aea3ba1499d56cb3de39da7f57c973197801af8e",
+      "commit_id": "aea3ba1499d56cb3de39da7f57c973197801af8e",
+      "repository": "AlistGo/alist",
+      "provisional_tags": [
+        "probable_k2",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0023",
+      "original_sample_id": "atomic::Byron/gitoxide@67777a81f8d9d0335475e4fe4cbf770c328bd24f",
+      "commit_id": "67777a81f8d9d0335475e4fe4cbf770c328bd24f",
+      "repository": "Byron/gitoxide",
+      "provisional_tags": [
+        "probable_k1_regular"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0024",
+      "original_sample_id": "m_weak::Caldis/Mos@bb5e72b510186a9d3b35c1c02f5a7e1b2e092e3d",
+      "commit_id": "bb5e72b510186a9d3b35c1c02f5a7e1b2e092e3d",
+      "repository": "Caldis/Mos",
+      "provisional_tags": [
+        "probable_k3",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0025",
+      "original_sample_id": "m_weak::Breakthrough/PySceneDetect@c0d7c3afbdc8dda108c7e4c93187f447025f82a8",
+      "commit_id": "c0d7c3afbdc8dda108c7e4c93187f447025f82a8",
+      "repository": "Breakthrough/PySceneDetect",
+      "provisional_tags": [
+        "probable_k3"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0026",
+      "original_sample_id": "m_weak::CTCaer/hekate@a17ddeecbec9466d979543db0031937c71e731b5",
+      "commit_id": "a17ddeecbec9466d979543db0031937c71e731b5",
+      "repository": "CTCaer/hekate",
+      "provisional_tags": [
+        "probable_k2"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0027",
+      "original_sample_id": "m_weak::AsyncFuncAI/deepwiki-open@317d5b0fef339235347060cfa7545bda0c99222e",
+      "commit_id": "317d5b0fef339235347060cfa7545bda0c99222e",
+      "repository": "AsyncFuncAI/deepwiki-open",
+      "provisional_tags": [
+        "probable_k2"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0028",
+      "original_sample_id": "m_weak::ConsenSysDiligence/mythril@389b056b0a4a5135d33d82a77a3d62b3141d60e5",
+      "commit_id": "389b056b0a4a5135d33d82a77a3d62b3141d60e5",
+      "repository": "ConsenSysDiligence/mythril",
+      "provisional_tags": [
+        "probable_k3"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0029",
+      "original_sample_id": "m_weak::Breakthrough/PySceneDetect@95df793aa713f827c7dce22ebc34532ae11be279",
+      "commit_id": "95df793aa713f827c7dce22ebc34532ae11be279",
+      "repository": "Breakthrough/PySceneDetect",
+      "provisional_tags": [
+        "probable_k2",
+        "large_commit"
+      ]
+    },
+    {
+      "sample_id": "calibration_round_2_0030",
+      "original_sample_id": "m_weak::Aider-AI/aider@3ec8ec5a7d695b08a6c24fe6c0c235c8f87df9af",
+      "commit_id": "3ec8ec5a7d695b08a6c24fe6c0c235c8f87df9af",
+      "repository": "Aider-AI/aider",
+      "provisional_tags": [
+        "probable_k2"
+      ]
+    }
+  ]
+}

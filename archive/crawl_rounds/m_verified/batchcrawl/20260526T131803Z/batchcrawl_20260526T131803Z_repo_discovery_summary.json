@@ -1,0 +1,227 @@
+{
+  "blocklist_count": 0,
+  "created_at_utc": "2026-05-26T13:19:27.724260+00:00",
+  "excluded_local_count": 0,
+  "output_csv": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/batchcrawl_20260526T131803Z_repo_discovery.csv",
+  "output_txt": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/batchcrawl_20260526T131803Z_repo_targets.txt",
+  "query_summaries": [
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:>50000 fork:false archived:false",
+      "rate_remaining": "29"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:20000..50000 fork:false archived:false language:Python",
+      "rate_remaining": "28"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..20000 fork:false archived:false language:Python",
+      "rate_remaining": "27"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:20000..50000 fork:false archived:false language:JavaScript",
+      "rate_remaining": "26"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..20000 fork:false archived:false language:JavaScript",
+      "rate_remaining": "25"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:20000..50000 fork:false archived:false language:TypeScript",
+      "rate_remaining": "24"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..20000 fork:false archived:false language:TypeScript",
+      "rate_remaining": "23"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:15000..50000 fork:false archived:false language:Go",
+      "rate_remaining": "22"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..15000 fork:false archived:false language:Go",
+      "rate_remaining": "21"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false language:Rust",
+      "rate_remaining": "20"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..10000 fork:false archived:false language:Rust",
+      "rate_remaining": "19"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:15000..50000 fork:false archived:false language:Java",
+      "rate_remaining": "18"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..15000 fork:false archived:false language:Java",
+      "rate_remaining": "17"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false language:C++",
+      "rate_remaining": "16"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..10000 fork:false archived:false language:C++",
+      "rate_remaining": "15"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false language:C",
+      "rate_remaining": "14"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..10000 fork:false archived:false language:C",
+      "rate_remaining": "13"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:C#",
+      "rate_remaining": "12"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:PHP",
+      "rate_remaining": "11"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:Ruby",
+      "rate_remaining": "29"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false language:Swift",
+      "rate_remaining": "28"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..50000 fork:false archived:false language:Kotlin",
+      "rate_remaining": "27"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:3000..50000 fork:false archived:false language:Dart",
+      "rate_remaining": "26"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:10000..50000 fork:false archived:false topic:database",
+      "rate_remaining": "25"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false topic:cli",
+      "rate_remaining": "24"
+    },
+    {
+      "error": "",
+      "items": 25,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false topic:web-framework",
+      "rate_remaining": "23"
+    },
+    {
+      "error": "",
+      "items": 40,
+      "kept_new": 0,
+      "page": 1,
+      "query": "stars:5000..50000 fork:false archived:false topic:machine-learning",
+      "rate_remaining": "22"
+    }
+  ],
+  "repo_count": 0,
+  "token_used": true
+}

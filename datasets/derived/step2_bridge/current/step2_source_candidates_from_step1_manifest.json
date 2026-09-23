@@ -1,0 +1,115 @@
+{
+  "total_selected": 5099,
+  "sampling_plan": [
+    {
+      "source": "step1_conservative_atomic_sources",
+      "pool": 5099,
+      "selected": 5099,
+      "required_tier": "A",
+      "allowed_types": [
+        "feat",
+        "fix",
+        "perf",
+        "refactor",
+        "test"
+      ]
+    }
+  ],
+  "label_schema": {
+    "A": "Step1 high-confidence single-intent source commit for Step2 construction"
+  },
+  "paths": {
+    "csv": "../../datasets/derived/step2_bridge/current/step2_source_candidates_from_step1.csv",
+    "step1_conservative_atomic_sources_csv": "../../datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv"
+  },
+  "export": {
+    "created_at_utc": "2026-05-27T08:11:32.266613+00:00",
+    "tool": "tools/export_step1_to_step2_source.py",
+    "input_format": "conservative_atomic_sources",
+    "input_sha256": "df37c8177f9a45e07ffc59a35f38355e05114a94e3a15d66dda1f2d3660ad5d2",
+    "input_fields": [
+      "commit_url",
+      "conservative_tier",
+      "git_diff",
+      "message",
+      "model_prob",
+      "model_tier",
+      "passed_rule_refilter",
+      "repo",
+      "rule_label",
+      "rule_weight",
+      "selection_reason",
+      "selection_strategy",
+      "sha",
+      "source_confidence",
+      "subject",
+      "tau_a",
+      "tau_b",
+      "type"
+    ],
+    "input_rows": 5099,
+    "output_sha256": "95d35502cbc659519efaa85159d4fc4ff1efa96998fd1125b512a37f232ef151",
+    "output_fields": [
+      "repo",
+      "sha",
+      "type",
+      "subject",
+      "message",
+      "git_diff",
+      "manual_label",
+      "source_confidence",
+      "selection_strategy",
+      "selection_reason",
+      "conservative_tier",
+      "model_tier",
+      "model_prob",
+      "tau_a",
+      "tau_b",
+      "rule_label",
+      "rule_weight",
+      "passed_rule_refilter",
+      "commit_url"
+    ],
+    "output_rows": 5099,
+    "manual_label": "A",
+    "tier_field": "tier",
+    "required_tier": "A",
+    "conservative_tier_field": "conservative_tier",
+    "required_conservative_tier": "A",
+    "allowed_types": [
+      "feat",
+      "fix",
+      "perf",
+      "refactor",
+      "test"
+    ],
+    "filters": {
+      "min_diff_chars": 20,
+      "require_resolution_status_prefix_resolved": true,
+      "max_rows": 0
+    },
+    "reject_reasons": {},
+    "type_distribution": {
+      "feat": 832,
+      "fix": 1565,
+      "refactor": 874,
+      "test": 1828
+    },
+    "repo_count": 82,
+    "sha_unique_count": 5099,
+    "optional_output_fields_present": [
+      "source_confidence",
+      "selection_strategy",
+      "selection_reason",
+      "conservative_tier",
+      "model_tier",
+      "model_prob",
+      "tau_a",
+      "tau_b",
+      "rule_label",
+      "rule_weight",
+      "passed_rule_refilter",
+      "commit_url"
+    ]
+  }
+}

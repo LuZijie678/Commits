@@ -1,0 +1,89 @@
+{
+  "checked_at_utc": "2026-05-26T14:42:49.734177+00:00",
+  "check_kind": "post_formal_absorb_before_archive",
+  "remaining_round_runs_group_count_before_archive": 12,
+  "remaining_round_runs_unique_pair_count_before_archive": 801,
+  "formal_layers": {
+    "combined_labels": {
+      "row_count": 7063,
+      "covered_pairs": 801,
+      "eligible_group_count": 12
+    },
+    "current_m_candidates": {
+      "row_count": 861,
+      "covered_pairs": 8,
+      "eligible_group_count": 0
+    },
+    "canonical_m": {
+      "row_count": 773,
+      "covered_pairs": 8,
+      "eligible_group_count": 0
+    }
+  },
+  "assistant_absorption": {
+    "label_csv": "datasets/m_verified/workspace/label_snapshots/round_runs_absorb_20260526_codex_labeled.csv",
+    "summary_json": "datasets/m_verified/workspace/label_snapshots/round_runs_absorb_20260526_codex_summary.json",
+    "new_label_count": 641,
+    "new_label_counts": {
+      "B": 449,
+      "A": 184,
+      "M": 8
+    },
+    "new_m_rows": [
+      {
+        "repo": "soxoj/maigret",
+        "sha": "c1674529ad445ec68715f13567be0e90a8ee68b5",
+        "subject": "Fix site checks: 2 fixed, 3 disabled; add Faceit; fix utils import (#2660)"
+      },
+      {
+        "repo": "garrytan/gbrain",
+        "sha": "dfa15ba22b3f099a16d055a3a14ef0de2228b99c",
+        "subject": "v0.41.10.0 feat: orphan reduction via --by-mention + UTF-16 surrogate-pair fix (#1442)"
+      },
+      {
+        "repo": "OpenEmu/OpenEmu",
+        "sha": "bb51781f3f508dc74bfed065ee878d288f386180",
+        "subject": "chore: fix single frame step; improve shader parameter paste"
+      },
+      {
+        "repo": "open-ani/animeko",
+        "sha": "4e56af987e0cc9a5448ff698813996d505731329",
+        "subject": "feat(pikpak): 引入 PikPak 云端离线下载作为 BT 备选方案 (#2978)"
+      },
+      {
+        "repo": "Billionmail/BillionMail",
+        "sha": "fdb7b7ee138d87a78f5dec1c2e6d7a08af306b56",
+        "subject": "Fix #306: return group_id from group create; fix #225: AI nil pointer + error display"
+      },
+      {
+        "repo": "unicorn-engine/unicorn",
+        "sha": "79f910ea73220f4f603b6050593af86483573908",
+        "subject": "Fix `read_sprr_perm` for Apple real CPUs and GitHub Actions; enable Apple ARM64 wheel builds on PyPI. Fixes #2033. (#2227)"
+      },
+      {
+        "repo": "ultraworkers/claw-code",
+        "sha": "b64df99134aeafbb1b8bcc3bb3fccef54433b4b0",
+        "subject": "fix(#698): dedup config deprecation warnings per process; add tempfile dev-dep to runtime crate (fixes pre-existing test compile error)"
+      },
+      {
+        "repo": "docker/compose",
+        "sha": "5c7071219926ff31ebce2f0850df6ab51930b4fd",
+        "subject": "fix: restore deprecated Set.Clear/Union; use resource var in pull.go"
+      }
+    ]
+  },
+  "archive_eligible_groups_by_combined_labels": [
+    "batchcrawl/20260526T024705Z",
+    "batchcrawl/20260526T025527Z",
+    "batchcrawl/20260526T030407Z",
+    "batchcrawl/20260526T031105Z",
+    "batchcrawl/20260526T031715Z",
+    "batchcrawl/20260526T071501Z",
+    "batchcrawl/20260526T124753Z",
+    "batchcrawl/20260526T125513Z",
+    "batchcrawl/20260526T130226Z",
+    "batchcrawl/20260526T131044Z",
+    "newcrawl/20260525",
+    "newcrawl/20260526"
+  ]
+}

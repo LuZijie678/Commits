@@ -1,0 +1,86 @@
+{
+  "c76a9c9ca4de2bc8f465ad8f5cbbf4ba98f8e655942ccb66cd5cb4cb0a82c54f": {
+    "generated_subject": "Update implementation based on diff",
+    "status": "generated",
+    "failure_reason": "",
+    "latency_ms": 0,
+    "usage": {
+      "prompt_chars": 11800,
+      "completion_chars": 35
+    },
+    "cache_hit": false,
+    "retry_count": 0,
+    "http_status": 0,
+    "thinking_mode": "disabled"
+  },
+  "cd7773635ba1356a69fcb93508245e27b86089f0b0bf5d47830cd0ba0ba2d8ec": {
+    "generated_subject": "Update implementation based on diff",
+    "status": "generated",
+    "failure_reason": "",
+    "latency_ms": 0,
+    "usage": {
+      "prompt_chars": 72638,
+      "completion_chars": 35
+    },
+    "cache_hit": false,
+    "retry_count": 0,
+    "http_status": 0,
+    "thinking_mode": "disabled"
+  },
+  "0610188c16f0f6b0df3ddff64524a4c6b24448b1eff455e47860c1065f9cc69c": {
+    "generated_subject": "fix: [~] row comparer & add list aprox comparer (#415)",
+    "status": "generated",
+    "failure_reason": "",
+    "latency_ms": 0,
+    "usage": {
+      "prompt_chars": 8329,
+      "completion_chars": 54
+    },
+    "cache_hit": false,
+    "retry_count": 0,
+    "http_status": 0,
+    "thinking_mode": "disabled"
+  },
+  "39f13a72b66e8122cf8c8431df50ab4acd6f9f287851777d691de3a70e3a4285": {
+    "generated_subject": "fix: [~] row comparer & add list aprox comparer (#415)",
+    "status": "generated",
+    "failure_reason": "",
+    "latency_ms": 0,
+    "usage": {
+      "prompt_chars": 8727,
+      "completion_chars": 54
+    },
+    "cache_hit": false,
+    "retry_count": 0,
+    "http_status": 0,
+    "thinking_mode": "disabled"
+  },
+  "7477c3077af565e03175d6eab7558357d04f9b9c4364447115693a9b0b84aff9": {
+    "generated_subject": "docs: relocate API reference and align with Agent Skills spec (#22)",
+    "status": "generated",
+    "failure_reason": "",
+    "latency_ms": 0,
+    "usage": {
+      "prompt_chars": 84416,
+      "completion_chars": 67
+    },
+    "cache_hit": false,
+    "retry_count": 0,
+    "http_status": 0,
+    "thinking_mode": "disabled"
+  },
+  "dd1022e213e7478b155ca5139fcd53b1a637604e15abfc5770b0e5541e187af3": {
+    "generated_subject": "Add C17 and C23 output",
+    "status": "generated",
+    "failure_reason": "",
+    "latency_ms": 0,
+    "usage": {
+      "prompt_chars": 27833,
+      "completion_chars": 22
+    },
+    "cache_hit": false,
+    "retry_count": 0,
+    "http_status": 0,
+    "thinking_mode": "disabled"
+  }
+}

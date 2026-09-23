@@ -1,0 +1,11 @@
+$ /opt/homebrew/opt/python@3.14/bin/python3.14 -m src.analysis.proxy_gap --selection-batch-csv outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/selection/selection_batch.csv --resolved-candidates-csv outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/enriched/resolved_candidates.csv --validation-dir outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/validation --annotated-csv outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/annotated_splits/proxy_gap.csv --proxy-calibration-json outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/calibration/message_only_calibration.json --primary-calibration-json outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/calibration/atomic_calibration_full_diff.json --output-dir outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/analysis --audit-target 300 --annotated-split-plan-json outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/annotated_splits/annotated_split_plan.json
+
+<frozen runpy>:128: RuntimeWarning: 'src.analysis.proxy_gap' found in sys.modules after import of package 'src.analysis', but prior to execution of 'src.analysis.proxy_gap'; this may result in unpredictable behaviour
+proxy_gap_json=outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/analysis/proxy_gap_analysis.json
+proxy_gap_markdown=outputs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z/analysis/proxy_gap_analysis.md
+message_only_auc=0.9539007092198581
+full_diff_auc=0.8191489361702128
+tier_consistency=0.2933521480087802
+downgrade_rate_message_only_a_to_full_diff_c=None
+
+## EXIT_CODE=0

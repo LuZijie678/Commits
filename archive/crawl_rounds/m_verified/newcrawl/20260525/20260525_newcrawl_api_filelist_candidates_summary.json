@@ -1,0 +1,135 @@
+{
+  "candidate_rows": 1,
+  "created_at_utc": "2026-05-25T13:35:20.747633+00:00",
+  "enriched_rows": 1,
+  "file_errors": 0,
+  "incremental": true,
+  "new_enriched_rows": 1,
+  "output_csv": "data/20260525_newcrawl_api_filelist_candidates.csv",
+  "output_jsonl": "data/20260525_newcrawl_api_filelist_candidates.jsonl",
+  "repo_status_jsonl": "data/20260525_newcrawl_api_filelist_candidates_repo_status.jsonl",
+  "repo_summaries": [
+    {
+      "candidate_count": 1,
+      "commits_seen": 50,
+      "enriched": 1,
+      "errors": [],
+      "file_errors": 0,
+      "kept": 1,
+      "pages_per_repo": 1,
+      "rate_remaining": "0",
+      "repo": "codecrafters-io/build-your-own-x",
+      "start_page": 1,
+      "status": "done"
+    },
+    {
+      "candidate_count": 0,
+      "commits_seen": 0,
+      "enriched": 0,
+      "errors": [
+        "HTTPError: HTTP Error 403: rate limit exceeded"
+      ],
+      "file_errors": 0,
+      "kept": 0,
+      "pages_per_repo": 1,
+      "rate_remaining": "",
+      "repo": "freeCodeCamp/freeCodeCamp",
+      "start_page": 1,
+      "status": "done"
+    },
+    {
+      "candidate_count": 0,
+      "commits_seen": 0,
+      "enriched": 0,
+      "errors": [
+        "HTTPError: HTTP Error 403: rate limit exceeded"
+      ],
+      "file_errors": 0,
+      "kept": 0,
+      "pages_per_repo": 1,
+      "rate_remaining": "",
+      "repo": "donnemartin/system-design-primer",
+      "start_page": 1,
+      "status": "done"
+    },
+    {
+      "candidate_count": 0,
+      "commits_seen": 0,
+      "enriched": 0,
+      "errors": [
+        "HTTPError: HTTP Error 403: rate limit exceeded"
+      ],
+      "file_errors": 0,
+      "kept": 0,
+      "pages_per_repo": 1,
+      "rate_remaining": "",
+      "repo": "TheAlgorithms/Python",
+      "start_page": 1,
+      "status": "done"
+    },
+    {
+      "candidate_count": 0,
+      "commits_seen": 0,
+      "enriched": 0,
+      "errors": [
+        "HTTPError: HTTP Error 403: rate limit exceeded"
+      ],
+      "file_errors": 0,
+      "kept": 0,
+      "pages_per_repo": 1,
+      "rate_remaining": "",
+      "repo": "vuejs/vue",
+      "start_page": 1,
+      "status": "done"
+    },
+    {
+      "candidate_count": 0,
+      "commits_seen": 0,
+      "enriched": 0,
+      "errors": [
+        "HTTPError: HTTP Error 403: rate limit exceeded"
+      ],
+      "file_errors": 0,
+      "kept": 0,
+      "pages_per_repo": 1,
+      "rate_remaining": "",
+      "repo": "obra/superpowers",
+      "start_page": 1,
+      "status": "done"
+    },
+    {
+      "candidate_count": 0,
+      "commits_seen": 0,
+      "enriched": 0,
+      "errors": [
+        "HTTPError: HTTP Error 403: rate limit exceeded"
+      ],
+      "file_errors": 0,
+      "kept": 0,
+      "pages_per_repo": 1,
+      "rate_remaining": "",
+      "repo": "ossu/computer-science",
+      "start_page": 1,
+      "status": "done"
+    },
+    {
+      "candidate_count": 0,
+      "commits_seen": 0,
+      "enriched": 0,
+      "errors": [
+        "HTTPError: HTTP Error 403: rate limit exceeded"
+      ],
+      "file_errors": 0,
+      "kept": 0,
+      "pages_per_repo": 1,
+      "rate_remaining": "",
+      "repo": "trekhleb/javascript-algorithms",
+      "start_page": 1,
+      "status": "done"
+    }
+  ],
+  "resume": false,
+  "stopped_for_max_total": false,
+  "targets": 8,
+  "token_used": false
+}

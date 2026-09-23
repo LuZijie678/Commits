@@ -1,0 +1,17 @@
+{
+  "blocklist": "D:\\Multi-intent\\m_mining_feasibility\\used_repo_blocklist.txt",
+  "blocklist_overlap": 0,
+  "dataset": "D:\\Multi-intent\\m_existing_diff_package\\data\\usable_m_with_real_diff.csv",
+  "diff_source_counts": {
+    "batch_csv_real_diff": 765
+  },
+  "duplicate_repo_sha": 0,
+  "fallback_or_truncated_diff": 0,
+  "hard_b_csv": "D:\\Multi-intent\\hard_b_existing_diff_package\\data\\usable_hard_b_with_real_diff.csv",
+  "hard_b_overlap": 0,
+  "missing_diff_marker": 0,
+  "non_m": 0,
+  "repo_count": 333,
+  "rows": 765,
+  "unique_repo_sha": 765
+}

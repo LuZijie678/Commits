@@ -1,0 +1,14 @@
+{
+  "already_ok": 0,
+  "attempted": 32,
+  "created_at_utc": "2026-05-30T07:18:16.499296+00:00",
+  "diff_ok_final": 32,
+  "failed": 0,
+  "fetch_max_bytes": 25000000,
+  "input_csv": "archive/datasets/hard_b/workspace/recovery_batches/hard_b_need_full_diff.csv",
+  "output_csv": "archive/datasets/hard_b/workspace/recovery_batches/hard_b_full_diff_recovery_batch.csv",
+  "output_jsonl": "archive/datasets/hard_b/workspace/recovery_batches/hard_b_full_diff_recovery_batch.jsonl",
+  "recovered": 32,
+  "rows": 32,
+  "workers": 8
+}

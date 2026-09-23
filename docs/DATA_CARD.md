@@ -1,0 +1,306 @@
+# DATA_CARD
+
+状态：当前工作区参考文档
+
+本文档总结当前工作区希望遵守的 Stage 0 数据边界约束。它是文档层的协议，不代表所有数据资产已经在本地落盘。
+
+## 核心资产
+
+- Step1 high-confidence k=1
+- Step2 strict synthetic k1/k2
+- Step2 Step3-ready synthetic
+- hard_b train/dev/test
+- M weak train/dev/final-test
+- M-align-calib
+- RealDomainSplit split:
+  - status: defined
+  - label_semantics: k=1 vs k>=2
+- RealDomainSelective split:
+  - status: defined
+  - label_semantics: in-scope decomposable vs overflow/out-of-scope/abstain
+- RealDomainSelective labels:
+  - status: protocol_defined_but_labels_not_populated
+  - paper_readiness: not ready for selective evaluation until labels or out-of-scope annotations are populated
+- Legacy name:
+  - RealDomainBinary is deprecated and must not be used in final tables
+- renderer data, optional
+
+## 监督可靠性
+
+- high
+- medium-high
+- medium
+- medium-low
+- eval-only
+
+## 边界规则
+
+- M-final-test = eval-only
+- hard_b-test = eval-only
+- RealDomainSplit-test = eval-only
+- RealDomainSelective-test = eval-only
+- M weak = censored k>=2 only
+- M-align-calib = small real alignment calibration/eval only
+- intent_subjects/messages = renderer only, not attribution matching
+- Kmax is a task-scope constant, not a tuned model hyperparameter
+- Kmax coverage statistics must be recorded before training
+- k > Kmax commits are treated as complex/overflow cases
+- overflow/abstention is required for out-of-scope decomposition
+- Kmax selection protocol uses train/dev annotation assets only
+- coverage@Kmax must be reported on every evaluation split
+- never tune Kmax according to final-test attribution or message utility scores
+- synthetic cardinality distribution alone cannot justify Kmax
+- Kmax=4 is acceptable only if DATA_CARD shows target-domain coverage
+- atomic-source leakage is prohibited
+- synthetic variants from the same atomic source cannot cross train/dev/test
+- no commits from the same PR/tangled construction group may cross splits
+- commit messages / PR titles / issue texts / gold intent ids / synthetic construction metadata are forbidden as attribution inputs
+
+## Kmax freeze protocol
+
+- tau:
+  - value: `0.95`
+  - status: protocol_defined_but_value_not_populated
+  - status: approved_pre_test_protocol_amendment
+- annotation_assets_used_for_k_distribution:
+  - train annotation assets only
+  - dev annotation assets only
+  - no final-test labels
+- synthetic_distribution_usage:
+  - reported separately
+  - cannot alone justify Kmax
+- selected_Kmax:
+  - value: 4
+  - status: frozen_before_final_evaluation_only_if_train_dev_coverage_is_populated
+  - status: approved_pre_test_protocol_amendment
+  - current_workspace_state: implementation_default_not_final_paper_task_boundary
+  - current_workspace_state: frozen_for_stage1_official_validation
+  - justification:
+    - selected via reviewed train/dev exact-count coverage stats
+    - approved after distribution review as `pre_test_protocol_amendment`, not as a predeclared constant
+- coverage_at_Kmax:
+  - train/dev exact-count selection basis: `1.0`
+  - test: report only after final evaluation; not used for selecting Kmax
+- overflow_policy:
+  - k > Kmax is not truncated
+  - k > Kmax is evaluated as overflow / out-of-scope
+  - report overflow rate on every evaluation split
+- forbidden:
+  - do not tune Kmax using final-test attribution scores
+  - do not tune Kmax using message utility scores
+  - do not use synthetic cardinality distribution alone to justify Kmax
+- protocol_state:
+  - status: protocol_defined_but_stats_not_populated
+  - paper_readiness: not ready until train/dev coverage stats are populated and frozen
+  - status: approved_pre_test_protocol_amendment
+  - paper_readiness: Stage 1 protocol freeze complete; final paper readiness still depends on downstream acceptance gates
+
+## real_alignment_benchmark
+
+- heldout_policy: to_be_frozen_before_final_evaluation
+- repo_overlap_allowed: false for primary cross-repository setting
+- time_overlap_allowed: false for time-based setting
+- pseudo_alignment_allowed_as_gold: false
+- synthetic_labels_allowed_as_real_gold: false
+
+## 当前分支现实检查
+
+- 当前代码通过 `code/mica/stage0/data_card.py` 校验上述约束。
+- `configs/mica/data_asset_registry.json` 现已切到 `mica-data-asset-registry-v2`，并填入当前工作区可验证的正式相对路径：
+  - `datasets/mica/formal_assets/stage1/step1_high_conf_single_{train,dev,test}.json`
+  - `datasets/mica/formal_assets/stage1/strict_synthetic_{train,dev,test}.json`
+  - `datasets/mica/formal_assets/stage1/stage1_official_validation_dev.json`
+  - `datasets/mica/formal_assets/stage1/stage1_official_final_test.json`
+  - `datasets/mica/formal_assets/stage2/strict_replay.json`
+  - `datasets/mica/formal_assets/stage2/hard_b_{train,dev,test}.json`
+  - `datasets/mica/formal_assets/stage2/m_weak_{train,dev,test}.json`
+- checked-in registry 与本地物化现在分层管理：
+  - checked-in logical registry：
+    - `configs/mica/data_asset_registry.json`
+  - ignored local materialization registry：
+    - `configs/mica/data_asset_materializations.local.json`
+    - 或 runtime bundle 下同名 `.local.json`
+- 当前 registry 已 materialize 的是 Stage 1/Stage 2 formal split manifests；仍明确缺失的资产包括：
+  - `m_align_calib`
+  - `real_alignment_dev`
+  - `real_alignment_test`
+  - `real_alignment_final_test`
+  - `real_domain_split_test`
+  - `real_domain_selective_test`
+  - `renderer_dataset`
+  - `predicted_plans`
+  - `oracle_plans`
+  - `message_utility_manifest`
+  - `human_pilot_annotations`
+- 因此，registry schema 已实现、路径已填实、已存在资产可校验，但这不等于 Stage 0 formal-ready 或 paper-ready：
+  - checked-in `stage1_checkpoint_input` 当前已是 clean frozen logical asset：
+    - `artifact_id=stage1_candidate_22bcd358766e_f280eebdf24a_9320b20f609e_seed42`
+    - `sha256=4c292e0b4f6d7e2b0a291fd9ab1117552922076f3ffb6b28eff06484c33f8c11`
+    - `provenance_status=clean_commit_candidate`
+    - `produced_from_clean_commit=true`
+    - `dirty_worktree=false`
+    - 本机 local materialization hash 已校验通过
+  - 2026-07-23 已从 clean git SHA 重建 clean reproducible Stage 1 candidate：
+    - clean SHA: `22bcd358766e1a678ee721c994830bdcf544213c`
+    - checkpoint:
+      - `outputs/mica_stage1_clean_candidate_20260723T081816Z/training/stage1_full_model_checkpoint.pt`
+    - checkpoint hash:
+      - `4c292e0b4f6d7e2b0a291fd9ab1117552922076f3ffb6b28eff06484c33f8c11`
+    - 当前同时登记在 checked-in logical registry 与 local materialization registry 中
+  - `configs/mica/stage1_metric_thresholds.json` 已冻结为：
+    - `threshold_status=frozen_dev_thresholds_v1`
+    - `approved_threshold_version=frozen_dev_thresholds_v1`
+    - `approved_by=fulin`
+    - `approved_at=2026-07-23T16:45:14+08:00`
+    - `selected_checkpoint_hash=4c292e0b4f6d7e2b0a291fd9ab1117552922076f3ffb6b28eff06484c33f8c11`
+  - clean candidate 的 threshold selection 只使用 dev split：
+    - `stage1_official_validation_dev`
+    - `official_final_test_not_used=true`
+  - split exposure 审计结论：
+    - `dev_only_unexposed_final_test`
+  - 当前 `run_stage0_protocol_freeze.py` 已会自动从 registry 冻结 manifests 派生 Kmax coverage rows，但该统计只接受 exact real count rows，显式排除 synthetic 与 `censored_k_ge_2`
+  - 当前已计算的 exact real count coverage：
+    - eligible exact real rows: `4483`
+    - eligible train/dev rows: `3910`
+    - eligible train/dev multi-intent rows: `2250`
+    - `coverage@Kmax=1.0` on train/dev for `Kmax=4`
+  - 但 `tau` 尚未作为预声明协议常量冻结，因此：
+    - `coverage_computed=true`
+    - `tau_predeclared=false`
+    - `freeze_supported=false`
+    - `selected_Kmax.status=implementation_default_not_final_boundary`
+  - 上述 exact-count 报告保留了“未预声明 tau”这一事实，但当前已通过 pre-test amendment 完成 Kmax 人工冻结：
+    - decision record:
+      - `configs/mica/protocol_decisions/stage1_kmax_decision.json`
+    - `decision_version=stage1-kmax-v1`
+    - `proposed_tau=0.95`
+    - `selected_Kmax=4`
+    - `amendment_type=pre_test_protocol_amendment`
+    - `final_test_used=false`
+    - `approved_by=fulin`
+    - `approved_at=2026-07-23T16:45:14+08:00`
+    - `no_further_Kmax_tuning_after_approval=true`
+  - 但该 `stage1-kmax-v1` 对 Stage1-v2 的当前地位是：
+    - `invalidated_by_data_audit`
+    - 不能继续作为 Stage1-v2 的真实 Kmax freeze 证据
+  - threshold 审批记录也已 checked in：
+    - `configs/mica/protocol_decisions/stage1_threshold_approval.json`
+    - `approved_by=fulin`
+    - `approved_at=2026-07-23T16:45:14+08:00`
+  - 2026-07-23 当前分支已重新生成 Stage 0 readiness：
+    - `outputs/mica_stage1_official_validation_20260723T091744Z/stage0/stage0_readiness.json`
+    - `formal_ready=true`
+  - 2026-07-23 当前分支已执行 official Stage 1 validation：
+    - output root:
+      - `outputs/mica_stage1_official_validation_20260723T091744Z/official_run`
+    - `official_validation_executed=true`
+    - `formal_ready=true`
+    - 原始 official result：
+      - `paper_ready=false`
+      - 原因：
+        - frozen acceptance criterion `unit_accuracy_gain_over_all_one_min` 在原始 aggregate metrics 中 `observed=null`
+    - 2026-07-23 当前分支已从 frozen official artifacts 完成补算：
+      - runtime audit：
+        - `outputs/mica_stage1_official_validation_20260723T091744Z/official_run/stage1_unit_accuracy_observability_audit.json`
+      - runtime supplement：
+        - `outputs/mica_stage1_official_validation_20260723T091744Z/official_run/stage1_unit_accuracy_supplemental_metrics.json`
+      - checked-in supplement：
+        - `configs/mica/official_results/stage1_official_validation_20260723T091921Z_supplement_v1.json`
+      - checked-in status revision：
+        - `configs/mica/official_results/stage1_official_validation_20260723T091921Z_status_revision_v1.json`
+      - root cause：
+        - `metric_computation_bug`
+      - recovered value：
+        - `unit_accuracy_gain_over_all_one = 0.13218653539692227`
+      - threshold：
+        - `unit_accuracy_gain_over_all_one_min = 0.03`
+      - latest internal status revision：
+        - `paper_ready=true`
+      - 但当前 external paper evidence 已被独立审计降级：
+        - `configs/mica/official_results/stage1_v1_audit_status.json`
+        - `pilot_only`
+  - checked-in 小型结果记录：
+    - `configs/mica/official_results/stage1_official_validation_20260723T091921Z.json`
+  - runtime outputs 仍是 local-only materialization，不进入 Git
+  - Stage1-v2 当前入口：
+    - `docs/MICA_STAGE1_V2_REAL_ADJUDICATED_PROTOCOL.md`
+    - `configs/mica/protocol_decisions/stage1_v2_protocol_reset.json`
+    - `configs/mica/stage1_v2_protocol_spec.json`
+    - `configs/mica/stage1_v2_asset_registry.json`
+    - `docs/MICA_STAGE1_V2_DATA_AND_ANNOTATION_EXECUTION.md`
+  - 当前状态：
+    - `protocol_frozen`
+    - `asset_pending`
+    - `annotation_pending`
+  - 当前 Stage1-v2 已实现的是：
+    - family-safe synthetic split builder
+    - RealCount exact-count annotation queue
+    - Real-Adjudicated-Test 双标 / 裁决 / 盲审 schema
+    - null/background preflight
+    - baseline matrix / anti-shortcut / multi-seed statistical protocol
+    - unified readiness runner
+    - annotation campaign preparation runner
+    - local annotation CLI and append-only audit log
+    - qualification package and calibration round package
+    - synthetic scale audit and formal scale-up candidate plan
+    - 以及 2026-07-26 已真实物化的 candidate / pilot 资产：
+      - atomic source audit accepted：`3754`
+      - atomic source manual review：`1345`
+      - synthetic train/dev/control：`140 / 109 / 143`
+      - real count candidate / pilot：`5856 / 200`
+      - real adjudicated candidate / pilot：`1800 / 100`
+      - background annotation pilot：`120`
+      - critical atomic-source review queue：`4679`
+      - deferred atomic-source review queue：`420`
+      - deduplicated real annotation workload：`199` unique real commits
+      - campaign batch count：`10`
+      - calibration round 1：`30`
+  - 当前小规模 synthetic manifests 的地位：
+    - `candidate_materialized`
+    - `pipeline_validation_complete`
+    - `scale_insufficient_for_formal_training`
+    - `not_frozen_training_asset`
+  - formal synthetic scale-up 当前只是 candidate plan：
+    - train minimum：`3000`
+    - dev minimum：`400`
+    - control minimum：`400`
+    - blocking reasons：
+      - `k3_k4_construction_not_implemented`
+      - `required_atomic_sources_need_human_verification`
+  - 当前 Stage1-v2 尚未完成的是：
+    - 真实 exact-count 资产
+    - 真实 Real-Adjudicated-Test
+    - 人员注册、资格测试、校准轮、pilot 双标和裁决
+    - required atomic sources 的人工 verified 状态
+    - Stage1-v2 训练结果
+    - Stage1-v2 正式测试结果
+    - Stage 2 启动 gate
+  - 当前 readiness：
+    - `synthetic_scale_sufficient=false`
+    - `required_atomic_sources_human_verified=false`
+    - `annotation_staffing_complete=false`
+    - `annotators_qualified=false`
+    - `calibration_round_complete=false`
+    - `annotation_assets_formal_ready=false`
+    - `stage1_v2_training_allowed=false`
+    - `stage2_entry_allowed=false`
+
+## 2026-07-26 R2 Diagnostic / Quarantine Addendum
+
+- Calibration Round 2 is `llm_annotation_track` diagnostic evidence, not human calibration.
+- R2 integrity status：`r2_annotation_incomplete`
+- R2 pre-adjudication agreement：`not_computed_due_to_integrity_failure`
+- R2 adjudication：not started; remaining adjudication queue contains `30` samples.
+- Guideline decision：`blocked_by_incomplete_annotation`
+- Codex diagnostic markings：`30` rows in `codex_calibration_round_2_llm_markings.jsonl`
+- User-reviewed diagnostic markings：`30` rows in `human_reviewed_codex_calibration_round_2_markings.jsonl`
+- Review receipt：`human_review_receipt_codex_calibration_round_2.json`
+- Review scope：human-reviewed diagnostic only; `formal_human_evidence=false`, blocker `not_independent_double_annotation_or_adjudication`
+- Annotation audit log：`60` chained `reviewed` events, hash-chain valid across the reviewed diagnostic marking and P0/P1/P2/P3 sidecars
+- Reviewed diagnostic analysis：`30` rows; follow-up queue `23` rows.
+- Follow-up priorities P0/P1/P2/P3：`4 / 5 / 14 / 7`; guideline v3 is `revision_draft_only`.
+- Source-review sidecars：`613` LLM rows, all `human_verified=false`
+- Synthetic quarantine：`45` samples quarantined from the small candidate manifests.
+- Synthetic candidate v2 train/dev/control：`128 / 100 / 119`
+- Synthetic candidate v2 status：`llm_screened_candidate`, `human_verified_sources=false`, `formal_frozen=false`
+- Stage1-v2 training and Stage 2 remain blocked.

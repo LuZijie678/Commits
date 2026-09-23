@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-07-26T15:22:29+00:00",
+  "creation_git_sha": "9c3a0a53d698dfc9d1e14103a223f351119b52a1",
+  "formal_frozen": false,
+  "human_verified_sources": false,
+  "llm_screened_candidate": true,
+  "protocol_version": "stage1-v2-protocol",
+  "quarantine_manifest": "quarantined_synthetic_samples.jsonl",
+  "quarantined_sample_count": 45,
+  "schema_version": "mica-stage1-v2-synthetic-supersession-v1",
+  "successor_manifests": [
+    "synthetic_candidate_v2_train.jsonl",
+    "synthetic_candidate_v2_dev.jsonl",
+    "synthetic_candidate_v2_control_test.jsonl"
+  ],
+  "successor_status": "llm_screened_candidate",
+  "superseded_status": "candidate_quarantined_by_llm_source_review",
+  "supersedes": [
+    "synthetic_train.jsonl",
+    "synthetic_dev.jsonl",
+    "synthetic_control_test.jsonl"
+  ]
+}

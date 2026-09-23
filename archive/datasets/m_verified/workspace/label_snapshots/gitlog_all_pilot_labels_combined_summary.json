@@ -1,0 +1,285 @@
+{
+  "combined_csv": "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/gitlog_all_pilot_labels_combined.csv",
+  "created_at_utc": "2026-05-31T11:28:32.444452+00:00",
+  "evidence_counts": {
+    "diff": 4089,
+    "diff_or_diff_preferred": 1364,
+    "filelist_fallback": 3611,
+    "missing_diff": 1,
+    "unknown": 1447
+  },
+  "label_counts": {
+    "A": 2757,
+    "B": 5588,
+    "M": 2143,
+    "U": 24
+  },
+  "label_files": [
+    "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/round_runs_absorb_20260526_codex_labeled.csv",
+    "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/20260529_deepseek_experiment_full_ingest_labeled.csv",
+    "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/20260529_deepseek_experiment_resume_ingest_labeled.csv",
+    "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/20260529_deepseek_experiment_catchup_ingest_labeled.csv",
+    "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/20260529_deepseek_experiment_catchup_after_round0068_labeled.csv",
+    "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/20260530_deepseek_experiment_catchup_after_round0084_labeled.csv",
+    "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/ingest_round0114_20260531_labeled.csv",
+    "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/ingest_round0115_0116_20260531_labeled.csv",
+    "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/ingest_round0117_20260531_labeled.csv"
+  ],
+  "m_candidates_csv": "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/candidates/gitlog_current_m_candidates.csv",
+  "m_count": 2143,
+  "m_evidence_counts": {
+    "diff": 1290,
+    "diff_or_diff_preferred": 766,
+    "filelist_fallback": 85,
+    "unknown": 2
+  },
+  "m_rate": 0.20386225266362254,
+  "m_repo_count": 1194,
+  "repo_count_labeled": 2266,
+  "repo_stats": [
+    {
+      "labeled": 151,
+      "m": 29,
+      "m_rate": 0.19205298013245034,
+      "repo": "significant-gravitas/autogpt"
+    },
+    {
+      "labeled": 105,
+      "m": 21,
+      "m_rate": 0.2,
+      "repo": "ggml-org/llama.cpp"
+    },
+    {
+      "labeled": 62,
+      "m": 17,
+      "m_rate": 0.27419354838709675,
+      "repo": "huggingface/transformers"
+    },
+    {
+      "labeled": 60,
+      "m": 14,
+      "m_rate": 0.23333333333333334,
+      "repo": "affaan-m/everything-claude-code"
+    },
+    {
+      "labeled": 72,
+      "m": 12,
+      "m_rate": 0.16666666666666666,
+      "repo": "comfy-org/comfyui"
+    },
+    {
+      "labeled": 42,
+      "m": 12,
+      "m_rate": 0.2857142857142857,
+      "repo": "ollama/ollama"
+    },
+    {
+      "labeled": 58,
+      "m": 11,
+      "m_rate": 0.1896551724137931,
+      "repo": "go-gitea/gitea"
+    },
+    {
+      "labeled": 45,
+      "m": 11,
+      "m_rate": 0.24444444444444444,
+      "repo": "milvus-io/milvus"
+    },
+    {
+      "labeled": 58,
+      "m": 10,
+      "m_rate": 0.1724137931034483,
+      "repo": "hashicorp/terraform"
+    },
+    {
+      "labeled": 12,
+      "m": 10,
+      "m_rate": 0.8333333333333334,
+      "repo": "kitao/pyxel"
+    },
+    {
+      "labeled": 13,
+      "m": 9,
+      "m_rate": 0.6923076923076923,
+      "repo": "alibaba/nacos"
+    },
+    {
+      "labeled": 100,
+      "m": 9,
+      "m_rate": 0.09,
+      "repo": "prometheus/prometheus"
+    },
+    {
+      "labeled": 11,
+      "m": 7,
+      "m_rate": 0.6363636363636364,
+      "repo": "alibaba/druid"
+    },
+    {
+      "labeled": 52,
+      "m": 7,
+      "m_rate": 0.1346153846153846,
+      "repo": "grafana/grafana"
+    },
+    {
+      "labeled": 12,
+      "m": 6,
+      "m_rate": 0.5,
+      "repo": "BloopAI/vibe-kanban"
+    },
+    {
+      "labeled": 10,
+      "m": 6,
+      "m_rate": 0.6,
+      "repo": "antlr/antlr4"
+    },
+    {
+      "labeled": 39,
+      "m": 6,
+      "m_rate": 0.15384615384615385,
+      "repo": "axios/axios"
+    },
+    {
+      "labeled": 13,
+      "m": 6,
+      "m_rate": 0.46153846153846156,
+      "repo": "conductor-oss/conductor"
+    },
+    {
+      "labeled": 40,
+      "m": 6,
+      "m_rate": 0.15,
+      "repo": "langgenius/dify"
+    },
+    {
+      "labeled": 9,
+      "m": 6,
+      "m_rate": 0.6666666666666666,
+      "repo": "microsoft/garnet"
+    },
+    {
+      "labeled": 80,
+      "m": 6,
+      "m_rate": 0.075,
+      "repo": "moby/moby"
+    },
+    {
+      "labeled": 12,
+      "m": 6,
+      "m_rate": 0.5,
+      "repo": "nikivdev/flow"
+    },
+    {
+      "labeled": 7,
+      "m": 6,
+      "m_rate": 0.8571428571428571,
+      "repo": "yuliskov/SmartTube"
+    },
+    {
+      "labeled": 14,
+      "m": 6,
+      "m_rate": 0.42857142857142855,
+      "repo": "zeroclaw-labs/zeroclaw"
+    },
+    {
+      "labeled": 12,
+      "m": 5,
+      "m_rate": 0.4166666666666667,
+      "repo": "AlexsJones/llmfit"
+    },
+    {
+      "labeled": 6,
+      "m": 5,
+      "m_rate": 0.8333333333333334,
+      "repo": "BerriAI/litellm"
+    },
+    {
+      "labeled": 11,
+      "m": 5,
+      "m_rate": 0.45454545454545453,
+      "repo": "GraphiteEditor/Graphite"
+    },
+    {
+      "labeled": 11,
+      "m": 5,
+      "m_rate": 0.45454545454545453,
+      "repo": "KRTirtho/spotube"
+    },
+    {
+      "labeled": 5,
+      "m": 5,
+      "m_rate": 1.0,
+      "repo": "akfamily/akshare"
+    },
+    {
+      "labeled": 12,
+      "m": 5,
+      "m_rate": 0.4166666666666667,
+      "repo": "exaloop/codon"
+    },
+    {
+      "labeled": 13,
+      "m": 5,
+      "m_rate": 0.38461538461538464,
+      "repo": "getlantern/lantern"
+    },
+    {
+      "labeled": 10,
+      "m": 5,
+      "m_rate": 0.5,
+      "repo": "kvcache-ai/ktransformers"
+    },
+    {
+      "labeled": 33,
+      "m": 5,
+      "m_rate": 0.15151515151515152,
+      "repo": "louislam/uptime-kuma"
+    },
+    {
+      "labeled": 67,
+      "m": 5,
+      "m_rate": 0.07462686567164178,
+      "repo": "meilisearch/meilisearch"
+    },
+    {
+      "labeled": 8,
+      "m": 5,
+      "m_rate": 0.625,
+      "repo": "nearai/ironclaw"
+    },
+    {
+      "labeled": 22,
+      "m": 5,
+      "m_rate": 0.22727272727272727,
+      "repo": "openclaw/openclaw"
+    },
+    {
+      "labeled": 12,
+      "m": 5,
+      "m_rate": 0.4166666666666667,
+      "repo": "srbhr/Resume-Matcher"
+    },
+    {
+      "labeled": 6,
+      "m": 5,
+      "m_rate": 0.8333333333333334,
+      "repo": "state-spaces/mamba"
+    },
+    {
+      "labeled": 5,
+      "m": 5,
+      "m_rate": 1.0,
+      "repo": "styled-components/styled-components"
+    },
+    {
+      "labeled": 8,
+      "m": 5,
+      "m_rate": 0.625,
+      "repo": "vosen/ZLUDA"
+    }
+  ],
+  "seed_label_files": [
+    "/Users/lifulin/Downloads/Commits/archive/datasets/m_verified/workspace/label_snapshots/gitlog_all_pilot_labels_combined.csv"
+  ],
+  "total_labeled_unique": 10512
+}

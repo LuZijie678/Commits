@@ -1,0 +1,605 @@
+{
+  "schema_version": "mica-stage1-v2-real-alignment-pilot-package-v1",
+  "rows": [
+    {
+      "sample_id": "pilot_0001",
+      "original_sample_id": "atomic::Byron/gitoxide@05794383cb7c903ab30b5d6ef0178dffdf66feee",
+      "commit_id": "05794383cb7c903ab30b5d6ef0178dffdf66feee",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0002",
+      "original_sample_id": "atomic::Byron/gitoxide@23f8402964b57c8928c8a53212afc58e937023ca",
+      "commit_id": "23f8402964b57c8928c8a53212afc58e937023ca",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0003",
+      "original_sample_id": "atomic::Byron/gitoxide@25e795f4fe858d646ae7a3c4706e14a3837c3e66",
+      "commit_id": "25e795f4fe858d646ae7a3c4706e14a3837c3e66",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0004",
+      "original_sample_id": "atomic::Byron/gitoxide@278ff7a6ee084ea864193a5ca25b6cd0f18e19a0",
+      "commit_id": "278ff7a6ee084ea864193a5ca25b6cd0f18e19a0",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0005",
+      "original_sample_id": "atomic::Byron/gitoxide@2a76929ece48c3b0fbdba7e08ae5d7e647db4d36",
+      "commit_id": "2a76929ece48c3b0fbdba7e08ae5d7e647db4d36",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0006",
+      "original_sample_id": "atomic::Byron/gitoxide@30b22a870f22a8ad124f15a7d5395a707c1c8fa4",
+      "commit_id": "30b22a870f22a8ad124f15a7d5395a707c1c8fa4",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0007",
+      "original_sample_id": "atomic::Byron/gitoxide@373a85003e0b293666283ef742762b13e1211fc5",
+      "commit_id": "373a85003e0b293666283ef742762b13e1211fc5",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0008",
+      "original_sample_id": "atomic::Byron/gitoxide@3d16c36d7288d9a5fae5b9d23715e043d4d8ce76",
+      "commit_id": "3d16c36d7288d9a5fae5b9d23715e043d4d8ce76",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0009",
+      "original_sample_id": "atomic::Byron/gitoxide@3f28e2037fcb07fa022220e52bcf967d6d6ef647",
+      "commit_id": "3f28e2037fcb07fa022220e52bcf967d6d6ef647",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0010",
+      "original_sample_id": "atomic::Byron/gitoxide@458e1bcbd7043f0759f7445bfa46189910baff54",
+      "commit_id": "458e1bcbd7043f0759f7445bfa46189910baff54",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0011",
+      "original_sample_id": "atomic::Byron/gitoxide@469406dc0d9fece4a06230ef0d8018846202f0ad",
+      "commit_id": "469406dc0d9fece4a06230ef0d8018846202f0ad",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0012",
+      "original_sample_id": "atomic::Byron/gitoxide@47ca6ab2ff0cbf8801d0a82cebbbeb8c4f62cdae",
+      "commit_id": "47ca6ab2ff0cbf8801d0a82cebbbeb8c4f62cdae",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0013",
+      "original_sample_id": "atomic::Byron/gitoxide@5732303180d26374016b70bdd7fa0278dd84cff3",
+      "commit_id": "5732303180d26374016b70bdd7fa0278dd84cff3",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0014",
+      "original_sample_id": "atomic::Byron/gitoxide@64bc2ec666dacba486bd1de2fbd95f97f2efc7a5",
+      "commit_id": "64bc2ec666dacba486bd1de2fbd95f97f2efc7a5",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0015",
+      "original_sample_id": "atomic::Byron/gitoxide@67777a81f8d9d0335475e4fe4cbf770c328bd24f",
+      "commit_id": "67777a81f8d9d0335475e4fe4cbf770c328bd24f",
+      "repository": "Byron/gitoxide"
+    },
+    {
+      "sample_id": "pilot_0016",
+      "original_sample_id": "hard_b::9001/copyparty@348b4bb5c762f851d866e200ee0c4c44ea477f3a",
+      "commit_id": "348b4bb5c762f851d866e200ee0c4c44ea477f3a",
+      "repository": "9001/copyparty"
+    },
+    {
+      "sample_id": "pilot_0017",
+      "original_sample_id": "hard_b::ActivityWatch/activitywatch@a41abfbd99e2741deca8012ec80a190b8a3df613",
+      "commit_id": "a41abfbd99e2741deca8012ec80a190b8a3df613",
+      "repository": "ActivityWatch/activitywatch"
+    },
+    {
+      "sample_id": "pilot_0018",
+      "original_sample_id": "hard_b::AlistGo/alist@338569fdc253979cb87fb31be27c68ff399fd755",
+      "commit_id": "338569fdc253979cb87fb31be27c68ff399fd755",
+      "repository": "AlistGo/alist"
+    },
+    {
+      "sample_id": "pilot_0019",
+      "original_sample_id": "hard_b::AndyMik90/Aperant@3cb05781faa5b43f38801449d2a04699817a1800",
+      "commit_id": "3cb05781faa5b43f38801449d2a04699817a1800",
+      "repository": "AndyMik90/Aperant"
+    },
+    {
+      "sample_id": "pilot_0020",
+      "original_sample_id": "hard_b::AvaloniaUI/Avalonia@837e1aa91dd34bbd9e4d4c932a18878be2a4d753",
+      "commit_id": "837e1aa91dd34bbd9e4d4c932a18878be2a4d753",
+      "repository": "AvaloniaUI/Avalonia"
+    },
+    {
+      "sample_id": "pilot_0021",
+      "original_sample_id": "hard_b::BVLC/caffe@dabbc91ecda54d8d4bb69e2457289d2e7216b136",
+      "commit_id": "dabbc91ecda54d8d4bb69e2457289d2e7216b136",
+      "repository": "BVLC/caffe"
+    },
+    {
+      "sample_id": "pilot_0022",
+      "original_sample_id": "hard_b::Bigkoo/Android-PickerView@5702146f84d2a37d63d8086822bb22286d99b106",
+      "commit_id": "5702146f84d2a37d63d8086822bb22286d99b106",
+      "repository": "Bigkoo/Android-PickerView"
+    },
+    {
+      "sample_id": "pilot_0023",
+      "original_sample_id": "hard_b::CMU-Perceptual-Computing-Lab/openpose@7b960082e25872a2cfabc2988c29ea42714c59f4",
+      "commit_id": "7b960082e25872a2cfabc2988c29ea42714c59f4",
+      "repository": "CMU-Perceptual-Computing-Lab/openpose"
+    },
+    {
+      "sample_id": "pilot_0024",
+      "original_sample_id": "hard_b::CarGuo/GSYVideoPlayer@ae0c37ba604c496670f85f95ce1fafcbfd4bca1c",
+      "commit_id": "ae0c37ba604c496670f85f95ce1fafcbfd4bca1c",
+      "repository": "CarGuo/GSYVideoPlayer"
+    },
+    {
+      "sample_id": "pilot_0025",
+      "original_sample_id": "hard_b::CarGuo/gsy_github_app_flutter@45f337bc589080f933391c374419950f50611e01",
+      "commit_id": "45f337bc589080f933391c374419950f50611e01",
+      "repository": "CarGuo/gsy_github_app_flutter"
+    },
+    {
+      "sample_id": "pilot_0026",
+      "original_sample_id": "hard_b::CherryHQ/cherry-studio@63be624f7c0500e2cf8ab8af01f050df6d32c9f8",
+      "commit_id": "63be624f7c0500e2cf8ab8af01f050df6d32c9f8",
+      "repository": "CherryHQ/cherry-studio"
+    },
+    {
+      "sample_id": "pilot_0027",
+      "original_sample_id": "hard_b::ClementTsang/bottom@beaeb03e90c18526c6fbe7a2ceebcc66ea076c6a",
+      "commit_id": "beaeb03e90c18526c6fbe7a2ceebcc66ea076c6a",
+      "repository": "ClementTsang/bottom"
+    },
+    {
+      "sample_id": "pilot_0028",
+      "original_sample_id": "hard_b::ConardLi/easy-dataset@d286c27db9282c6af50b4bdf47105bfc3a524299",
+      "commit_id": "d286c27db9282c6af50b4bdf47105bfc3a524299",
+      "repository": "ConardLi/easy-dataset"
+    },
+    {
+      "sample_id": "pilot_0029",
+      "original_sample_id": "hard_b::ConardLi/easy-dataset@d5ea23baf9ddf6a57750f2dd6650c2be7f388a9d",
+      "commit_id": "d5ea23baf9ddf6a57750f2dd6650c2be7f388a9d",
+      "repository": "ConardLi/easy-dataset"
+    },
+    {
+      "sample_id": "pilot_0030",
+      "original_sample_id": "hard_b::DapperLib/Dapper@20d81380cac6452ad56d7635f578e3912d577080",
+      "commit_id": "20d81380cac6452ad56d7635f578e3912d577080",
+      "repository": "DapperLib/Dapper"
+    },
+    {
+      "sample_id": "pilot_0031",
+      "original_sample_id": "m_weak::0x192/universal-android-debloater@a73e0e5577d1c803c165dc35069c0e3d01f8162d",
+      "commit_id": "a73e0e5577d1c803c165dc35069c0e3d01f8162d",
+      "repository": "0x192/universal-android-debloater"
+    },
+    {
+      "sample_id": "pilot_0032",
+      "original_sample_id": "m_weak::0xPlaygrounds/rig@b598c7b6899672dd1f84739fceef85b896d33b97",
+      "commit_id": "b598c7b6899672dd1f84739fceef85b896d33b97",
+      "repository": "0xPlaygrounds/rig"
+    },
+    {
+      "sample_id": "pilot_0033",
+      "original_sample_id": "m_weak::21st-dev/magic-mcp@5565d6aa8c3ae6562f7eeef31adc06f9b4da7274",
+      "commit_id": "5565d6aa8c3ae6562f7eeef31adc06f9b4da7274",
+      "repository": "21st-dev/magic-mcp"
+    },
+    {
+      "sample_id": "pilot_0034",
+      "original_sample_id": "m_weak::21st-dev/magic-mcp@c4ab9c6dfb4324614e89be4dca5eb9c0865aa60d",
+      "commit_id": "c4ab9c6dfb4324614e89be4dca5eb9c0865aa60d",
+      "repository": "21st-dev/magic-mcp"
+    },
+    {
+      "sample_id": "pilot_0035",
+      "original_sample_id": "m_weak::2d-inc/HistoryOfEverything@b3b12396f3e04ec269cecb56809ebc0594f3d4a5",
+      "commit_id": "b3b12396f3e04ec269cecb56809ebc0594f3d4a5",
+      "repository": "2d-inc/HistoryOfEverything"
+    },
+    {
+      "sample_id": "pilot_0036",
+      "original_sample_id": "m_weak::2d-inc/HistoryOfEverything@e84919d66b1070be0d393de4ba68f7120c91703f",
+      "commit_id": "e84919d66b1070be0d393de4ba68f7120c91703f",
+      "repository": "2d-inc/HistoryOfEverything"
+    },
+    {
+      "sample_id": "pilot_0037",
+      "original_sample_id": "m_weak::78/xiaozhi-esp32@589485e31c70bdc6d5841cb561d2d8123250233c",
+      "commit_id": "589485e31c70bdc6d5841cb561d2d8123250233c",
+      "repository": "78/xiaozhi-esp32"
+    },
+    {
+      "sample_id": "pilot_0038",
+      "original_sample_id": "m_weak::78/xiaozhi-esp32@a596121acf3ce6a564054ee7bd51c25c9d29bf56",
+      "commit_id": "a596121acf3ce6a564054ee7bd51c25c9d29bf56",
+      "repository": "78/xiaozhi-esp32"
+    },
+    {
+      "sample_id": "pilot_0039",
+      "original_sample_id": "m_weak::AAswordman/Operit@0cd25f1cd35a76a1ab682a224f6e9317ae120cca",
+      "commit_id": "0cd25f1cd35a76a1ab682a224f6e9317ae120cca",
+      "repository": "AAswordman/Operit"
+    },
+    {
+      "sample_id": "pilot_0040",
+      "original_sample_id": "m_weak::AAswordman/Operit@ae779cf8697e198629d1c0fed615602494b8018e",
+      "commit_id": "ae779cf8697e198629d1c0fed615602494b8018e",
+      "repository": "AAswordman/Operit"
+    },
+    {
+      "sample_id": "pilot_0041",
+      "original_sample_id": "m_weak::AAswordman/Operit@e48d9140ff021fae1415f247ff29547d3b1f2eed",
+      "commit_id": "e48d9140ff021fae1415f247ff29547d3b1f2eed",
+      "repository": "AAswordman/Operit"
+    },
+    {
+      "sample_id": "pilot_0042",
+      "original_sample_id": "m_weak::AI4Finance-Foundation/FinGPT@e4b77a268c53396f5eb7fb269e6b66526338984b",
+      "commit_id": "e4b77a268c53396f5eb7fb269e6b66526338984b",
+      "repository": "AI4Finance-Foundation/FinGPT"
+    },
+    {
+      "sample_id": "pilot_0043",
+      "original_sample_id": "m_weak::ActivityWatch/activitywatch@dc1371ca3db08bfa21d195b6569f9180760b675c",
+      "commit_id": "dc1371ca3db08bfa21d195b6569f9180760b675c",
+      "repository": "ActivityWatch/activitywatch"
+    },
+    {
+      "sample_id": "pilot_0044",
+      "original_sample_id": "m_weak::Aider-AI/aider@3ec8ec5a7d695b08a6c24fe6c0c235c8f87df9af",
+      "commit_id": "3ec8ec5a7d695b08a6c24fe6c0c235c8f87df9af",
+      "repository": "Aider-AI/aider"
+    },
+    {
+      "sample_id": "pilot_0045",
+      "original_sample_id": "m_weak::Aider-AI/aider@7bc2e4e911b347599d37bf52454f6da3169d6146",
+      "commit_id": "7bc2e4e911b347599d37bf52454f6da3169d6146",
+      "repository": "Aider-AI/aider"
+    },
+    {
+      "sample_id": "pilot_0046",
+      "original_sample_id": "m_weak::Aidoku/Aidoku@bb1d11fc8107c123e88059b90a28834277b1c151",
+      "commit_id": "bb1d11fc8107c123e88059b90a28834277b1c151",
+      "repository": "Aidoku/Aidoku"
+    },
+    {
+      "sample_id": "pilot_0047",
+      "original_sample_id": "m_weak::Aidoku/Aidoku@fa99b0a1caddd2886afa164eb227aa08f07d1025",
+      "commit_id": "fa99b0a1caddd2886afa164eb227aa08f07d1025",
+      "repository": "Aidoku/Aidoku"
+    },
+    {
+      "sample_id": "pilot_0048",
+      "original_sample_id": "m_weak::Alamofire/Alamofire@a41c07a558b508bcf3a66552c726cab5dda65501",
+      "commit_id": "a41c07a558b508bcf3a66552c726cab5dda65501",
+      "repository": "Alamofire/Alamofire"
+    },
+    {
+      "sample_id": "pilot_0049",
+      "original_sample_id": "m_weak::Alamofire/Alamofire@ac892dd077c9f8489e793282b827ae5ca4298cae",
+      "commit_id": "ac892dd077c9f8489e793282b827ae5ca4298cae",
+      "repository": "Alamofire/Alamofire"
+    },
+    {
+      "sample_id": "pilot_0050",
+      "original_sample_id": "m_weak::AlexsJones/llmfit@149c114112005db53aa26559a1e461c0f5a127b7",
+      "commit_id": "149c114112005db53aa26559a1e461c0f5a127b7",
+      "repository": "AlexsJones/llmfit"
+    },
+    {
+      "sample_id": "pilot_0051",
+      "original_sample_id": "m_weak::AlexsJones/llmfit@2768c0f6dfc20bb90e9289188b7aa468f6c6e369",
+      "commit_id": "2768c0f6dfc20bb90e9289188b7aa468f6c6e369",
+      "repository": "AlexsJones/llmfit"
+    },
+    {
+      "sample_id": "pilot_0052",
+      "original_sample_id": "m_weak::AlexsJones/llmfit@7e0918b9baeb677f679f13ea754e43d244fe81c3",
+      "commit_id": "7e0918b9baeb677f679f13ea754e43d244fe81c3",
+      "repository": "AlexsJones/llmfit"
+    },
+    {
+      "sample_id": "pilot_0053",
+      "original_sample_id": "m_weak::AlexsJones/llmfit@806923d0951b7112d7009bdadbaeb35be3086b64",
+      "commit_id": "806923d0951b7112d7009bdadbaeb35be3086b64",
+      "repository": "AlexsJones/llmfit"
+    },
+    {
+      "sample_id": "pilot_0054",
+      "original_sample_id": "m_weak::AlexsJones/llmfit@f584d7edf7c42836441e3dcd0d5e911ca2bc4a2e",
+      "commit_id": "f584d7edf7c42836441e3dcd0d5e911ca2bc4a2e",
+      "repository": "AlexsJones/llmfit"
+    },
+    {
+      "sample_id": "pilot_0055",
+      "original_sample_id": "m_weak::AlistGo/alist@a673503fe2afd5af6a8bef512d86a8c30bcfa490",
+      "commit_id": "a673503fe2afd5af6a8bef512d86a8c30bcfa490",
+      "repository": "AlistGo/alist"
+    },
+    {
+      "sample_id": "pilot_0056",
+      "original_sample_id": "m_weak::AlistGo/alist@aea3ba1499d56cb3de39da7f57c973197801af8e",
+      "commit_id": "aea3ba1499d56cb3de39da7f57c973197801af8e",
+      "repository": "AlistGo/alist"
+    },
+    {
+      "sample_id": "pilot_0057",
+      "original_sample_id": "m_weak::Anankke/SSPanel-UIM@43104e22f09f5f34da08d5c27f9018c59027faf0",
+      "commit_id": "43104e22f09f5f34da08d5c27f9018c59027faf0",
+      "repository": "Anankke/SSPanel-UIM"
+    },
+    {
+      "sample_id": "pilot_0058",
+      "original_sample_id": "m_weak::Anil-matcha/Open-Generative-AI@aa4a4202b5f8703808fc8a7eaa7f73ebf38812ac",
+      "commit_id": "aa4a4202b5f8703808fc8a7eaa7f73ebf38812ac",
+      "repository": "Anil-matcha/Open-Generative-AI"
+    },
+    {
+      "sample_id": "pilot_0059",
+      "original_sample_id": "m_weak::ApolloAuto/apollo@044003bb4aada818845907ca6297b18fdb9cf12e",
+      "commit_id": "044003bb4aada818845907ca6297b18fdb9cf12e",
+      "repository": "ApolloAuto/apollo"
+    },
+    {
+      "sample_id": "pilot_0060",
+      "original_sample_id": "m_weak::ApolloAuto/apollo@1020912d9bf8ad9997b05b7675b2f1670b8bb763",
+      "commit_id": "1020912d9bf8ad9997b05b7675b2f1670b8bb763",
+      "repository": "ApolloAuto/apollo"
+    },
+    {
+      "sample_id": "pilot_0061",
+      "original_sample_id": "m_weak::Arduino-IRremote/Arduino-IRremote@b40476b8443decb6ad97c1b96da0d4d1cbae1466",
+      "commit_id": "b40476b8443decb6ad97c1b96da0d4d1cbae1466",
+      "repository": "Arduino-IRremote/Arduino-IRremote"
+    },
+    {
+      "sample_id": "pilot_0062",
+      "original_sample_id": "m_weak::Arduino-IRremote/Arduino-IRremote@c2a94307889d5eacfb24e9ce7a79e30dfb97733e",
+      "commit_id": "c2a94307889d5eacfb24e9ce7a79e30dfb97733e",
+      "repository": "Arduino-IRremote/Arduino-IRremote"
+    },
+    {
+      "sample_id": "pilot_0063",
+      "original_sample_id": "m_weak::ArroyoSystems/arroyo@9c7f1bd3d5cd7f774ac0b5ab23524ffd72a94546",
+      "commit_id": "9c7f1bd3d5cd7f774ac0b5ab23524ffd72a94546",
+      "repository": "ArroyoSystems/arroyo"
+    },
+    {
+      "sample_id": "pilot_0064",
+      "original_sample_id": "m_weak::ArthurBrussee/brush@40d3137d969048e22e959b2eac197d22b333357b",
+      "commit_id": "40d3137d969048e22e959b2eac197d22b333357b",
+      "repository": "ArthurBrussee/brush"
+    },
+    {
+      "sample_id": "pilot_0065",
+      "original_sample_id": "m_weak::ArthurBrussee/brush@48ca31c28b74d85bbd938f03e53cb66c7b94789a",
+      "commit_id": "48ca31c28b74d85bbd938f03e53cb66c7b94789a",
+      "repository": "ArthurBrussee/brush"
+    },
+    {
+      "sample_id": "pilot_0066",
+      "original_sample_id": "m_weak::ArthurBrussee/brush@814e523fd80cc8f83cf33393c8da3e5326192803",
+      "commit_id": "814e523fd80cc8f83cf33393c8da3e5326192803",
+      "repository": "ArthurBrussee/brush"
+    },
+    {
+      "sample_id": "pilot_0067",
+      "original_sample_id": "m_weak::AsamK/signal-cli@135d3a16777b4fe13d836c47daea13870776df60",
+      "commit_id": "135d3a16777b4fe13d836c47daea13870776df60",
+      "repository": "AsamK/signal-cli"
+    },
+    {
+      "sample_id": "pilot_0068",
+      "original_sample_id": "m_weak::AsyncFuncAI/deepwiki-open@317d5b0fef339235347060cfa7545bda0c99222e",
+      "commit_id": "317d5b0fef339235347060cfa7545bda0c99222e",
+      "repository": "AsyncFuncAI/deepwiki-open"
+    },
+    {
+      "sample_id": "pilot_0069",
+      "original_sample_id": "m_weak::Atmosphere-NX/Atmosphere@14e63cb04ca0a1585926fcb6008819a6b0ce6672",
+      "commit_id": "14e63cb04ca0a1585926fcb6008819a6b0ce6672",
+      "repository": "Atmosphere-NX/Atmosphere"
+    },
+    {
+      "sample_id": "pilot_0070",
+      "original_sample_id": "m_weak::Attendize/Attendize@e8cf696c0757112da16505985a2218b39068f7cd",
+      "commit_id": "e8cf696c0757112da16505985a2218b39068f7cd",
+      "repository": "Attendize/Attendize"
+    },
+    {
+      "sample_id": "pilot_0071",
+      "original_sample_id": "m_weak::AudioKit/AudioKit@de0fbb4dd389ae7674e2911a1a4d1873028de59f",
+      "commit_id": "de0fbb4dd389ae7674e2911a1a4d1873028de59f",
+      "repository": "AudioKit/AudioKit"
+    },
+    {
+      "sample_id": "pilot_0072",
+      "original_sample_id": "m_weak::AudioKit/AudioKit@e05284f3481a1dad208fbcfdc073e8a403c19006",
+      "commit_id": "e05284f3481a1dad208fbcfdc073e8a403c19006",
+      "repository": "AudioKit/AudioKit"
+    },
+    {
+      "sample_id": "pilot_0073",
+      "original_sample_id": "m_weak::AykutSarac/jsoncrack.com@ffa54dea01e111b4a2c41f74a24b1be9fb36b181",
+      "commit_id": "ffa54dea01e111b4a2c41f74a24b1be9fb36b181",
+      "repository": "AykutSarac/jsoncrack.com"
+    },
+    {
+      "sample_id": "pilot_0074",
+      "original_sample_id": "m_weak::BYVoid/OpenCC@76c43330a16b65f318c6f26fa868aa44517a13cf",
+      "commit_id": "76c43330a16b65f318c6f26fa868aa44517a13cf",
+      "repository": "BYVoid/OpenCC"
+    },
+    {
+      "sample_id": "pilot_0075",
+      "original_sample_id": "m_weak::BerriAI/litellm@f35e7eb2f6ac0ac84b3b470cadeb3fc5b0b379a3",
+      "commit_id": "f35e7eb2f6ac0ac84b3b470cadeb3fc5b0b379a3",
+      "repository": "BerriAI/litellm"
+    },
+    {
+      "sample_id": "pilot_0076",
+      "original_sample_id": "m_weak::BespokeSynth/BespokeSynth@3dcd6213a1c51d1f41a9c7f94c64fb25a73c375f",
+      "commit_id": "3dcd6213a1c51d1f41a9c7f94c64fb25a73c375f",
+      "repository": "BespokeSynth/BespokeSynth"
+    },
+    {
+      "sample_id": "pilot_0077",
+      "original_sample_id": "m_weak::BespokeSynth/BespokeSynth@b3624ebf3ee4a6088f65bb2587952815bc726ef3",
+      "commit_id": "b3624ebf3ee4a6088f65bb2587952815bc726ef3",
+      "repository": "BespokeSynth/BespokeSynth"
+    },
+    {
+      "sample_id": "pilot_0078",
+      "original_sample_id": "m_weak::Bigkoo/Android-PickerView@f0056955f451d086521b98b97bad3b672e0bc399",
+      "commit_id": "f0056955f451d086521b98b97bad3b672e0bc399",
+      "repository": "Bigkoo/Android-PickerView"
+    },
+    {
+      "sample_id": "pilot_0079",
+      "original_sample_id": "m_weak::Billionmail/BillionMail@f8c9fcad18dd03756c2f7ae3f99721fb7f275b15",
+      "commit_id": "f8c9fcad18dd03756c2f7ae3f99721fb7f275b15",
+      "repository": "Billionmail/BillionMail"
+    },
+    {
+      "sample_id": "pilot_0080",
+      "original_sample_id": "m_weak::Billionmail/BillionMail@fdb7b7ee138d87a78f5dec1c2e6d7a08af306b56",
+      "commit_id": "fdb7b7ee138d87a78f5dec1c2e6d7a08af306b56",
+      "repository": "Billionmail/BillionMail"
+    },
+    {
+      "sample_id": "pilot_0081",
+      "original_sample_id": "m_weak::BloopAI/vibe-kanban@114b1147edbc68149a40b94ee2315dfa9d6c9999",
+      "commit_id": "114b1147edbc68149a40b94ee2315dfa9d6c9999",
+      "repository": "BloopAI/vibe-kanban"
+    },
+    {
+      "sample_id": "pilot_0082",
+      "original_sample_id": "m_weak::BloopAI/vibe-kanban@70864474038dd09ea4af9cb09254561872dde2e6",
+      "commit_id": "70864474038dd09ea4af9cb09254561872dde2e6",
+      "repository": "BloopAI/vibe-kanban"
+    },
+    {
+      "sample_id": "pilot_0083",
+      "original_sample_id": "m_weak::BloopAI/vibe-kanban@8710c24b85d62e143469113c0307c3ba54575b1d",
+      "commit_id": "8710c24b85d62e143469113c0307c3ba54575b1d",
+      "repository": "BloopAI/vibe-kanban"
+    },
+    {
+      "sample_id": "pilot_0084",
+      "original_sample_id": "m_weak::BloopAI/vibe-kanban@aa501815b283cd64f24e900983bd8228858be8c2",
+      "commit_id": "aa501815b283cd64f24e900983bd8228858be8c2",
+      "repository": "BloopAI/vibe-kanban"
+    },
+    {
+      "sample_id": "pilot_0085",
+      "original_sample_id": "m_weak::Breakthrough/PySceneDetect@95df793aa713f827c7dce22ebc34532ae11be279",
+      "commit_id": "95df793aa713f827c7dce22ebc34532ae11be279",
+      "repository": "Breakthrough/PySceneDetect"
+    },
+    {
+      "sample_id": "pilot_0086",
+      "original_sample_id": "m_weak::Breakthrough/PySceneDetect@c0d7c3afbdc8dda108c7e4c93187f447025f82a8",
+      "commit_id": "c0d7c3afbdc8dda108c7e4c93187f447025f82a8",
+      "repository": "Breakthrough/PySceneDetect"
+    },
+    {
+      "sample_id": "pilot_0087",
+      "original_sample_id": "m_weak::Breakthrough/PySceneDetect@c6a414539d781ea7214afbb3bb14c956a3046f7f",
+      "commit_id": "c6a414539d781ea7214afbb3bb14c956a3046f7f",
+      "repository": "Breakthrough/PySceneDetect"
+    },
+    {
+      "sample_id": "pilot_0088",
+      "original_sample_id": "m_weak::BurntSushi/toml@99c5690ca9e0b7a0b747f5fee0d8ef736c67b14e",
+      "commit_id": "99c5690ca9e0b7a0b747f5fee0d8ef736c67b14e",
+      "repository": "BurntSushi/toml"
+    },
+    {
+      "sample_id": "pilot_0089",
+      "original_sample_id": "m_weak::CSSLint/csslint@0f920bbd700a544acb11c5f5916c3ba10c17bd79",
+      "commit_id": "0f920bbd700a544acb11c5f5916c3ba10c17bd79",
+      "repository": "CSSLint/csslint"
+    },
+    {
+      "sample_id": "pilot_0090",
+      "original_sample_id": "m_weak::CTCaer/hekate@a17ddeecbec9466d979543db0031937c71e731b5",
+      "commit_id": "a17ddeecbec9466d979543db0031937c71e731b5",
+      "repository": "CTCaer/hekate"
+    },
+    {
+      "sample_id": "pilot_0091",
+      "original_sample_id": "m_weak::Caldis/Mos@665379df84f40aaf99ba567caf51024aab1cc4c8",
+      "commit_id": "665379df84f40aaf99ba567caf51024aab1cc4c8",
+      "repository": "Caldis/Mos"
+    },
+    {
+      "sample_id": "pilot_0092",
+      "original_sample_id": "m_weak::Caldis/Mos@bb5e72b510186a9d3b35c1c02f5a7e1b2e092e3d",
+      "commit_id": "bb5e72b510186a9d3b35c1c02f5a7e1b2e092e3d",
+      "repository": "Caldis/Mos"
+    },
+    {
+      "sample_id": "pilot_0093",
+      "original_sample_id": "m_weak::CarGuo/gsy_github_app_flutter@5f24279f49af00f1b9e7234bfafa688412b86d4d",
+      "commit_id": "5f24279f49af00f1b9e7234bfafa688412b86d4d",
+      "repository": "CarGuo/gsy_github_app_flutter"
+    },
+    {
+      "sample_id": "pilot_0094",
+      "original_sample_id": "m_weak::CherryHQ/cherry-studio@94d38a729d7d247bbf1d65b8519457fc9f0d9ee2",
+      "commit_id": "94d38a729d7d247bbf1d65b8519457fc9f0d9ee2",
+      "repository": "CherryHQ/cherry-studio"
+    },
+    {
+      "sample_id": "pilot_0095",
+      "original_sample_id": "m_weak::CodeEditApp/CodeEdit@f919bbb1eeaa0e8dcad24fd415758ae545fa3bd7",
+      "commit_id": "f919bbb1eeaa0e8dcad24fd415758ae545fa3bd7",
+      "repository": "CodeEditApp/CodeEdit"
+    },
+    {
+      "sample_id": "pilot_0096",
+      "original_sample_id": "m_weak::Comfy-Org/ComfyUI@7984a6a38eba7418dcbe6d2c977d461a84ac80f6",
+      "commit_id": "7984a6a38eba7418dcbe6d2c977d461a84ac80f6",
+      "repository": "Comfy-Org/ComfyUI"
+    },
+    {
+      "sample_id": "pilot_0097",
+      "original_sample_id": "m_weak::ConsenSysDiligence/mythril@389b056b0a4a5135d33d82a77a3d62b3141d60e5",
+      "commit_id": "389b056b0a4a5135d33d82a77a3d62b3141d60e5",
+      "repository": "ConsenSysDiligence/mythril"
+    },
+    {
+      "sample_id": "pilot_0098",
+      "original_sample_id": "m_weak::DNSCrypt/dnscrypt-proxy@4f151a5b823017667dde18feef54faf4fe0beb94",
+      "commit_id": "4f151a5b823017667dde18feef54faf4fe0beb94",
+      "repository": "DNSCrypt/dnscrypt-proxy"
+    },
+    {
+      "sample_id": "pilot_0099",
+      "original_sample_id": "m_weak::DioxusLabs/dioxus@fb855b7088e79531f0c08d6131ea217f6a16d571",
+      "commit_id": "fb855b7088e79531f0c08d6131ea217f6a16d571",
+      "repository": "DioxusLabs/dioxus"
+    },
+    {
+      "sample_id": "pilot_0100",
+      "original_sample_id": "m_weak::EasyCorp/EasyAdminBundle@a6d211e95087540f81fc4cf0e94b985a8d2d499b",
+      "commit_id": "a6d211e95087540f81fc4cf0e94b985a8d2d499b",
+      "repository": "EasyCorp/EasyAdminBundle"
+    }
+  ]
+}

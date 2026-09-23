@@ -1,0 +1,9 @@
+{
+  "schema_version": "mica-stage1-v2-annotation-audit-log-template-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "creation_git_sha": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+  "created_at": "2026-07-26T05:43:22+00:00",
+  "event_schema_version": "mica-stage1-v2-annotation-audit-log-v1",
+  "append_only": true,
+  "event_count": 0
+}

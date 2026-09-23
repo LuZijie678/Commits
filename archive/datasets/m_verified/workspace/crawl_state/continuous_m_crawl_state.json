@@ -1,0 +1,49 @@
+{
+  "created_at_utc": "2026-05-25T16:44:27.834150+00:00",
+  "empty_rounds": 2,
+  "round_index": 2,
+  "rounds": [
+    {
+      "batch": "continuous_20260525T164427Z_r0001",
+      "candidate_row_count": 0,
+      "candidates_csv": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260525T164427Z_r0001_api_filelist_candidates.csv",
+      "candidates_jsonl": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260525T164427Z_r0001_api_filelist_candidates.jsonl",
+      "candidates_repo_status": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260525T164427Z_r0001_api_filelist_candidates_repo_status.jsonl",
+      "candidates_summary": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260525T164427Z_r0001_api_filelist_candidates_summary.json",
+      "discover_csv": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260525T164427Z_r0001_repo_discovery.csv",
+      "discover_summary": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260525T164427Z_r0001_repo_discovery_summary.json",
+      "discover_txt": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260525T164427Z_r0001_repo_targets.txt",
+      "ended_at_utc": "2026-05-25T16:46:05.600309+00:00",
+      "novel_target_count": 33,
+      "novel_txt": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260525T164427Z_r0001_repo_targets_novel.txt",
+      "remote_csv": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260525T164427Z_r0001_api_filelist_candidates_remote_diff.csv",
+      "remote_jsonl": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260525T164427Z_r0001_api_filelist_candidates_remote_diff.jsonl",
+      "remote_summary": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260525T164427Z_r0001_api_filelist_candidates_remote_diff_summary.json",
+      "round_index": 1,
+      "stage": "completed",
+      "started_at_utc": "2026-05-25T16:44:27.836440+00:00",
+      "status": "no_candidates"
+    },
+    {
+      "batch": "continuous_20260526T003226Z_r0002",
+      "candidate_row_count": 0,
+      "candidates_csv": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260526T003226Z_r0002_api_filelist_candidates.csv",
+      "candidates_jsonl": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260526T003226Z_r0002_api_filelist_candidates.jsonl",
+      "candidates_repo_status": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260526T003226Z_r0002_api_filelist_candidates_repo_status.jsonl",
+      "candidates_summary": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260526T003226Z_r0002_api_filelist_candidates_summary.json",
+      "discover_csv": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260526T003226Z_r0002_repo_discovery.csv",
+      "discover_summary": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260526T003226Z_r0002_repo_discovery_summary.json",
+      "discover_txt": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260526T003226Z_r0002_repo_targets.txt",
+      "ended_at_utc": "2026-05-26T00:37:09.428330+00:00",
+      "novel_target_count": 33,
+      "novel_txt": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260526T003226Z_r0002_repo_targets_novel.txt",
+      "remote_csv": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260526T003226Z_r0002_api_filelist_candidates_remote_diff.csv",
+      "remote_jsonl": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260526T003226Z_r0002_api_filelist_candidates_remote_diff.jsonl",
+      "remote_summary": "/Users/lifulin/Downloads/Commits/m_existing_diff_package/data/continuous_20260526T003226Z_r0002_api_filelist_candidates_remote_diff_summary.json",
+      "round_index": 2,
+      "stage": "completed",
+      "started_at_utc": "2026-05-26T00:32:26.893419+00:00",
+      "status": "no_candidates"
+    }
+  ]
+}

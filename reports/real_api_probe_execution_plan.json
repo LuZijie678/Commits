@@ -1,0 +1,58 @@
+{
+  "schema_version": "real_api_probe_execution_plan_v1",
+  "provider": "openai_compatible",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-v4-flash",
+  "sample_count": 4,
+  "strategy_distribution": {
+    "G1": 2,
+    "G4": 2,
+    "G5": 1
+  },
+  "planned_request_count": 5,
+  "estimated_input_tokens": 46473,
+  "estimated_output_tokens": 320,
+  "estimated_input_tokens_total": 46473,
+  "estimated_output_tokens_total": 320,
+  "estimated_tokens_by_strategy": {
+    "G1": {
+      "estimated_input_tokens": "see canary_prompt_summary",
+      "estimated_output_tokens": 128
+    },
+    "G4": {
+      "estimated_input_tokens": "see canary_prompt_summary",
+      "estimated_output_tokens": 128
+    },
+    "G5": {
+      "estimated_input_tokens": "see canary_prompt_summary",
+      "estimated_output_tokens": 64
+    }
+  },
+  "few_shot_k": 3,
+  "cache_enabled": true,
+  "cache_path": "outputs/llm_generation_real_api_probe_cache.json",
+  "resume_enabled": true,
+  "output_root": "outputs/llm_generation_real_api_probe_20260610T120628Z",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "context_window": 1000000,
+  "rate_limit": "5 requests/minute",
+  "probe_budget_cap": 0.1,
+  "probe_budget_cap_usd": 0.1,
+  "thinking_mode": "disabled",
+  "estimated_cost": 0.0065958200000000005,
+  "cost_formula": "46473 * 0.14 / 1e6 + 320 * 0.28 / 1e6",
+  "cost_status": "estimated_from_deepseek_v4_flash_prices",
+  "go_no_go_criteria": [
+    "dataset leakage gate passed",
+    "exemplar leakage gate passed",
+    "planned_request_count = 5",
+    "G5 only runs on synthetic_multi",
+    "prompt rendering completed",
+    "no unexpected truncation",
+    "cache works",
+    "resume works",
+    "evaluation schema works",
+    "API key absent from logs and metadata"
+  ],
+  "estimated_cost_usd": 0.0065958200000000005
+}

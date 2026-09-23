@@ -1,0 +1,590 @@
+{
+  "schema_version": "mica-stage1-v2-synthetic-scale-audit-v1",
+  "protocol_version": "stage1-v2-protocol",
+  "creation_git_sha": "e8c050a941f8b11ea289196e7dcc42d4dab4434b",
+  "created_at": "2026-07-26T05:43:22+00:00",
+  "current_status": {
+    "candidate_materialized": true,
+    "pipeline_validation_complete": true,
+    "scale_insufficient_for_formal_training": true,
+    "not_frozen_training_asset": true
+  },
+  "overall": {
+    "record_count": 392,
+    "unique_atomic_source_count": 433,
+    "unique_atomic_family_count": 91,
+    "repository_count": 58,
+    "gold_k_distribution": {
+      "2": 392
+    },
+    "language_distribution": {
+      "cpp": 1,
+      "go": 46,
+      "java": 11,
+      "javascript": 67,
+      "python": 17,
+      "rust": 85,
+      "shell": 11,
+      "typescript": 191,
+      "vue": 10,
+      "xml": 1,
+      "yaml": 3
+    },
+    "file_role_composition": {
+      "build": 30,
+      "config": 1,
+      "doc": 7,
+      "source": 338,
+      "test": 104
+    },
+    "same_file_count": 0,
+    "cross_file_count": 392,
+    "source_test_count": 53,
+    "source_docs_config_count": 1,
+    "source_reuse_degree": {
+      "unique_count": 433,
+      "max": 9,
+      "mean": 1.810624,
+      "top10": [
+        {
+          "key": "tsparticles/tsparticles@49986417f83efb93df1419888c4ec5486175bf4c",
+          "count": 9
+        },
+        {
+          "key": "cube-js/cube@53d47a48f1661cdc79b7d3e9e82828184bc97e42",
+          "count": 8
+        },
+        {
+          "key": "didi/LogicFlow@16974e36fcd136f04acb4119e4cea0fb3f7443e1",
+          "count": 7
+        },
+        {
+          "key": "callstack/react-native-paper@9ac64078bf820c1a0b0256e34fbc62190cb85478",
+          "count": 7
+        },
+        {
+          "key": "Byron/gitoxide@79e47a512507c7fd7acbdff624a5249e24505e0d",
+          "count": 7
+        },
+        {
+          "key": "DioxusLabs/dioxus@af8cd51258d7a97478f1f569e6da2374c8b941c5",
+          "count": 7
+        },
+        {
+          "key": "millsp/ts-toolbelt@06e26712c34254c40b256122013983ab394f4d04",
+          "count": 7
+        },
+        {
+          "key": "doczjs/docz@ab100281e3a564b8c7835ac0563e7cd229a9c2fb",
+          "count": 6
+        },
+        {
+          "key": "aidenybai/million@623b85c9c6934d81887dfa9e748916a3c828da21",
+          "count": 6
+        },
+        {
+          "key": "ory/hydra@2b024b4f8e98f3efe73018bd57e1d16738d50eeb",
+          "count": 6
+        }
+      ]
+    },
+    "atomic_family_reuse_degree": {
+      "unique_count": 91,
+      "max": 12,
+      "mean": 4.307692,
+      "top10": [
+        {
+          "key": "af_8cf3694b53cc3dcd",
+          "count": 12
+        },
+        {
+          "key": "af_208afc9ae17dbfb9",
+          "count": 12
+        },
+        {
+          "key": "af_33b661c531adf038",
+          "count": 12
+        },
+        {
+          "key": "af_2d7e735ebb226678",
+          "count": 11
+        },
+        {
+          "key": "af_75d66d5a1c9d2460",
+          "count": 10
+        },
+        {
+          "key": "af_ca8af74a83782ff8",
+          "count": 9
+        },
+        {
+          "key": "af_44596eb24f0dec05",
+          "count": 9
+        },
+        {
+          "key": "af_68a275adc7806a3c",
+          "count": 9
+        },
+        {
+          "key": "af_926632a9e1fa55a1",
+          "count": 9
+        },
+        {
+          "key": "af_10cf3701d73b601e",
+          "count": 9
+        }
+      ]
+    },
+    "max_samples_per_atomic_source": 9,
+    "max_samples_per_atomic_family": 12,
+    "construction_template_distribution": {
+      "same_repo_multi_round_robin_v1": 392
+    },
+    "edit_unit_count_distribution": {
+      "count": 392,
+      "min": 2,
+      "median": 3.0,
+      "max": 10,
+      "mean": 3.053571
+    },
+    "top5_repository_share": 0.15306122448979592,
+    "max_repository_share": 0.030612244897959183
+  },
+  "per_split": {
+    "dev": {
+      "record_count": 109,
+      "unique_atomic_source_count": 115,
+      "unique_atomic_family_count": 21,
+      "repository_count": 10,
+      "gold_k_distribution": {
+        "2": 109
+      },
+      "language_distribution": {
+        "cpp": 1,
+        "go": 19,
+        "javascript": 28,
+        "python": 2,
+        "rust": 35,
+        "shell": 6,
+        "typescript": 37,
+        "yaml": 1
+      },
+      "file_role_composition": {
+        "build": 4,
+        "source": 99,
+        "test": 25
+      },
+      "same_file_count": 0,
+      "cross_file_count": 109,
+      "source_test_count": 15,
+      "source_docs_config_count": 0,
+      "source_reuse_degree": {
+        "unique_count": 115,
+        "max": 9,
+        "mean": 1.895652,
+        "top10": [
+          {
+            "key": "tsparticles/tsparticles@49986417f83efb93df1419888c4ec5486175bf4c",
+            "count": 9
+          },
+          {
+            "key": "cube-js/cube@53d47a48f1661cdc79b7d3e9e82828184bc97e42",
+            "count": 8
+          },
+          {
+            "key": "callstack/react-native-paper@9ac64078bf820c1a0b0256e34fbc62190cb85478",
+            "count": 7
+          },
+          {
+            "key": "Byron/gitoxide@79e47a512507c7fd7acbdff624a5249e24505e0d",
+            "count": 7
+          },
+          {
+            "key": "DioxusLabs/dioxus@af8cd51258d7a97478f1f569e6da2374c8b941c5",
+            "count": 7
+          },
+          {
+            "key": "ory/hydra@2b024b4f8e98f3efe73018bd57e1d16738d50eeb",
+            "count": 6
+          },
+          {
+            "key": "dendronhq/dendron@7278b6fbbf4e175815a0a069c449ad7ef479a77e",
+            "count": 5
+          },
+          {
+            "key": "infracost/infracost@1454c1edec58fa7fec45657666533295a414e50d",
+            "count": 5
+          },
+          {
+            "key": "callstack/react-native-paper@e77119759b152509e367a2e430a5c346997c6063",
+            "count": 5
+          },
+          {
+            "key": "infracost/infracost@6e29a3f4af8dd28b0188fb70e803d8756f7624ca",
+            "count": 4
+          }
+        ]
+      },
+      "atomic_family_reuse_degree": {
+        "unique_count": 21,
+        "max": 12,
+        "mean": 5.190476,
+        "top10": [
+          {
+            "key": "af_8cf3694b53cc3dcd",
+            "count": 12
+          },
+          {
+            "key": "af_208afc9ae17dbfb9",
+            "count": 12
+          },
+          {
+            "key": "af_33b661c531adf038",
+            "count": 12
+          },
+          {
+            "key": "af_2d7e735ebb226678",
+            "count": 11
+          },
+          {
+            "key": "af_75d66d5a1c9d2460",
+            "count": 10
+          },
+          {
+            "key": "af_44596eb24f0dec05",
+            "count": 9
+          },
+          {
+            "key": "af_a082da07123cfaf4",
+            "count": 6
+          },
+          {
+            "key": "af_122de23355ea11fb",
+            "count": 6
+          },
+          {
+            "key": "af_cbf035c3b27614c8",
+            "count": 5
+          },
+          {
+            "key": "af_3197a78f176c1605",
+            "count": 4
+          }
+        ]
+      },
+      "max_samples_per_atomic_source": 9,
+      "max_samples_per_atomic_family": 12,
+      "construction_template_distribution": {
+        "same_repo_multi_round_robin_v1": 109
+      },
+      "edit_unit_count_distribution": {
+        "count": 109,
+        "min": 2,
+        "median": 2,
+        "max": 7,
+        "mean": 3.018349
+      },
+      "top5_repository_share": 0.5504587155963303,
+      "max_repository_share": 0.11009174311926606
+    },
+    "synthetic_control_test": {
+      "record_count": 143,
+      "unique_atomic_source_count": 153,
+      "unique_atomic_family_count": 34,
+      "repository_count": 30,
+      "gold_k_distribution": {
+        "2": 143
+      },
+      "language_distribution": {
+        "go": 8,
+        "java": 3,
+        "javascript": 30,
+        "rust": 45,
+        "typescript": 65,
+        "vue": 10,
+        "yaml": 2
+      },
+      "file_role_composition": {
+        "build": 10,
+        "doc": 6,
+        "source": 122,
+        "test": 44
+      },
+      "same_file_count": 0,
+      "cross_file_count": 143,
+      "source_test_count": 26,
+      "source_docs_config_count": 0,
+      "source_reuse_degree": {
+        "unique_count": 153,
+        "max": 7,
+        "mean": 1.869281,
+        "top10": [
+          {
+            "key": "millsp/ts-toolbelt@06e26712c34254c40b256122013983ab394f4d04",
+            "count": 7
+          },
+          {
+            "key": "ueberdosis/tiptap@2bd17c7dc66d2d2c3131bce9e5a82326a990080c",
+            "count": 5
+          },
+          {
+            "key": "eza-community/eza@d63917af47c08259b4c4a5f55730a88784ba6746",
+            "count": 5
+          },
+          {
+            "key": "alibaba/lowcode-engine@d2c3f0ba6f85b659b76636a91ea9ab2b5a95a720",
+            "count": 5
+          },
+          {
+            "key": "stacks-network/stacks-core@e4c34dd964270b32ee19ac0da3da562aacf90d5b",
+            "count": 4
+          },
+          {
+            "key": "denoland/deno@542ec461c4f970727d5a7dabeaae27689efb88f3",
+            "count": 4
+          },
+          {
+            "key": "logto-io/logto@fc35c5d8dc9b6f58ffb8f9248c6f6e92a51e3cbd",
+            "count": 4
+          },
+          {
+            "key": "eza-community/eza@7370b332da99bef91ad2ec4e1e2bfccea6eca02f",
+            "count": 4
+          },
+          {
+            "key": "alibaba/lowcode-engine@de1f60bbee157267e2c2212df1077cc49ce506f4",
+            "count": 4
+          },
+          {
+            "key": "erg-lang/erg@f6763fcfdff8fbb830418c5c13ab8e5d97a345e6",
+            "count": 4
+          }
+        ]
+      },
+      "atomic_family_reuse_degree": {
+        "unique_count": 34,
+        "max": 9,
+        "mean": 4.205882,
+        "top10": [
+          {
+            "key": "af_68a275adc7806a3c",
+            "count": 9
+          },
+          {
+            "key": "af_926632a9e1fa55a1",
+            "count": 9
+          },
+          {
+            "key": "af_10cf3701d73b601e",
+            "count": 9
+          },
+          {
+            "key": "af_ab8af8e5c7df6a09",
+            "count": 8
+          },
+          {
+            "key": "af_4122ae3bbeead7bd",
+            "count": 8
+          },
+          {
+            "key": "af_a04d28b6a2d448ed",
+            "count": 8
+          },
+          {
+            "key": "af_4161b9bcb22c3b0f",
+            "count": 7
+          },
+          {
+            "key": "af_7acd2705f19b0988",
+            "count": 6
+          },
+          {
+            "key": "af_ef8ca14d2dc659c9",
+            "count": 6
+          },
+          {
+            "key": "af_0644a0cac3d82f70",
+            "count": 6
+          }
+        ]
+      },
+      "max_samples_per_atomic_source": 7,
+      "max_samples_per_atomic_family": 9,
+      "construction_template_distribution": {
+        "same_repo_multi_round_robin_v1": 143
+      },
+      "edit_unit_count_distribution": {
+        "count": 143,
+        "min": 2,
+        "median": 3,
+        "max": 9,
+        "mean": 3.111888
+      },
+      "top5_repository_share": 0.3076923076923077,
+      "max_repository_share": 0.06293706293706294
+    },
+    "train": {
+      "record_count": 140,
+      "unique_atomic_source_count": 165,
+      "unique_atomic_family_count": 36,
+      "repository_count": 18,
+      "gold_k_distribution": {
+        "2": 140
+      },
+      "language_distribution": {
+        "go": 19,
+        "java": 8,
+        "javascript": 9,
+        "python": 15,
+        "rust": 5,
+        "shell": 5,
+        "typescript": 89,
+        "xml": 1
+      },
+      "file_role_composition": {
+        "build": 16,
+        "config": 1,
+        "doc": 1,
+        "source": 117,
+        "test": 35
+      },
+      "same_file_count": 0,
+      "cross_file_count": 140,
+      "source_test_count": 12,
+      "source_docs_config_count": 1,
+      "source_reuse_degree": {
+        "unique_count": 165,
+        "max": 7,
+        "mean": 1.69697,
+        "top10": [
+          {
+            "key": "didi/LogicFlow@16974e36fcd136f04acb4119e4cea0fb3f7443e1",
+            "count": 7
+          },
+          {
+            "key": "doczjs/docz@ab100281e3a564b8c7835ac0563e7cd229a9c2fb",
+            "count": 6
+          },
+          {
+            "key": "aidenybai/million@623b85c9c6934d81887dfa9e748916a3c828da21",
+            "count": 6
+          },
+          {
+            "key": "crimx/ext-saladict@ca94a87e7025b7175334d22ab84c4ad179f89846",
+            "count": 5
+          },
+          {
+            "key": "react-navigation/react-navigation@b1b18c34db08479eb988bc117ecf2c17dfab1a37",
+            "count": 4
+          },
+          {
+            "key": "camunda/zeebe@bf01793e7040f7657e4c7bea4d4a733e737dc9dc",
+            "count": 4
+          },
+          {
+            "key": "ibis-project/ibis@69899cabd3aa2f52c58a2a469aa7e6cec4e1a585",
+            "count": 4
+          },
+          {
+            "key": "nocodb/nocodb@17ce16f390e174493eb348e1deab1ea7f6e6c4f1",
+            "count": 4
+          },
+          {
+            "key": "nrwl/nx@560311079a5d32e4b24016e7bde1f096d4f22224",
+            "count": 4
+          },
+          {
+            "key": "goreleaser/goreleaser@eb48a028bdea903c2cec9d138d9b8df9ea5d1627",
+            "count": 4
+          }
+        ]
+      },
+      "atomic_family_reuse_degree": {
+        "unique_count": 36,
+        "max": 9,
+        "mean": 3.888889,
+        "top10": [
+          {
+            "key": "af_ca8af74a83782ff8",
+            "count": 9
+          },
+          {
+            "key": "af_e6b31af5dc4618e4",
+            "count": 8
+          },
+          {
+            "key": "af_f640ed8d07104c5e",
+            "count": 8
+          },
+          {
+            "key": "af_fb7e71905d0f9916",
+            "count": 8
+          },
+          {
+            "key": "af_62544f0483972063",
+            "count": 8
+          },
+          {
+            "key": "af_5b94af719eb76e6d",
+            "count": 8
+          },
+          {
+            "key": "af_0b96e21e3618a91f",
+            "count": 8
+          },
+          {
+            "key": "af_b1a77ddb8380f8b1",
+            "count": 7
+          },
+          {
+            "key": "af_3304a2ef88bcdd15",
+            "count": 7
+          },
+          {
+            "key": "af_53bab90150cf9c45",
+            "count": 6
+          }
+        ]
+      },
+      "max_samples_per_atomic_source": 7,
+      "max_samples_per_atomic_family": 9,
+      "construction_template_distribution": {
+        "same_repo_multi_round_robin_v1": 140
+      },
+      "edit_unit_count_distribution": {
+        "count": 140,
+        "min": 2,
+        "median": 2.0,
+        "max": 10,
+        "mean": 3.021429
+      },
+      "top5_repository_share": 0.30714285714285716,
+      "max_repository_share": 0.06428571428571428
+    }
+  },
+  "representativeness": {
+    "pairwise_split_representativeness": {
+      "dev__vs__synthetic_control_test": {
+        "k_distribution_tvd": 0.0,
+        "language_distribution_tvd": 0.20098,
+        "file_role_tvd": 0.103108,
+        "same_file_fraction_delta": 0.0,
+        "source_test_fraction_delta": -0.044204
+      },
+      "dev__vs__train": {
+        "k_distribution_tvd": 0.0,
+        "language_distribution_tvd": 0.446019,
+        "file_role_tvd": 0.085202,
+        "same_file_fraction_delta": 0.0,
+        "source_test_fraction_delta": 0.0519
+      },
+      "synthetic_control_test__vs__train": {
+        "k_distribution_tvd": 0.0,
+        "language_distribution_tvd": 0.441027,
+        "file_role_tvd": 0.062961,
+        "same_file_fraction_delta": 0.0,
+        "source_test_fraction_delta": 0.096104
+      }
+    }
+  }
+}

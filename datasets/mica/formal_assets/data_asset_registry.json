@@ -1,0 +1,549 @@
+{
+  "schema_version": "mica-data-asset-registry-v2",
+  "registry_status": "formal_assets_populated",
+  "generated_at_utc": "2026-07-19T11:45:45.944224+00:00",
+  "assets": {
+    "strict_synthetic_train": {
+      "path": "datasets/mica/formal_assets/stage1/strict_synthetic_train.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples_step3_ready.jsonl",
+      "split": "train",
+      "record_count": 1000,
+      "checksum": "ab8b8100114d8a266010bc0db049cc53cd0d1c483f0a6023f343996a14fb7a06",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "source_atomic_commit_ids",
+      "allowed_stages": [
+        "stage1_train"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage1_train"
+      ],
+      "eval_only": false
+    },
+    "strict_synthetic_dev": {
+      "path": "datasets/mica/formal_assets/stage1/strict_synthetic_dev.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples_step3_ready.jsonl",
+      "split": "dev",
+      "record_count": 250,
+      "checksum": "fd9a83959d0a169d21ec2606b1e99271cf43fb61f8be2b163b1b06e96c3ec31f",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "source_atomic_commit_ids",
+      "allowed_stages": [
+        "stage1_validation"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage1_validation"
+      ],
+      "eval_only": false
+    },
+    "strict_synthetic_test": {
+      "path": "datasets/mica/formal_assets/stage1/strict_synthetic_test.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples_step3_ready.jsonl",
+      "split": "test",
+      "record_count": 250,
+      "checksum": "4cc6c7d03b838f68f21ba53ed3410f539cc23438aaee8885b2a300b7eba1e406",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "source_atomic_commit_ids",
+      "allowed_stages": [
+        "stage1_eval_holdout"
+      ],
+      "forbidden_stages": [],
+      "required_for": [],
+      "eval_only": false
+    },
+    "step1_high_conf_single_train": {
+      "path": "datasets/mica/formal_assets/stage1/step1_high_conf_single_train.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+      "split": "train",
+      "record_count": 1000,
+      "checksum": "61d6d214b5ecac3d4dd930e96ec0d0875808a8f12fd45a019538374bdc2da618",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "stage1_train"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage1_train"
+      ],
+      "eval_only": false
+    },
+    "step1_high_conf_single_dev": {
+      "path": "datasets/mica/formal_assets/stage1/step1_high_conf_single_dev.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+      "split": "dev",
+      "record_count": 250,
+      "checksum": "ba38e8f0a3102a5e15542fd751fc57d82f8258a964ee566fbc94551509b7ea63",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "stage1_validation"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage1_validation"
+      ],
+      "eval_only": false
+    },
+    "step1_high_conf_single_test": {
+      "path": "datasets/mica/formal_assets/stage1/step1_high_conf_single_test.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv",
+      "split": "test",
+      "record_count": 250,
+      "checksum": "cee9430cabd4d398b42041e7f4e3de866a3ba6dbfeb06ab04087adc29db60552",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "stage1_eval_holdout"
+      ],
+      "forbidden_stages": [],
+      "required_for": [],
+      "eval_only": false
+    },
+    "stage1_official_validation_dev": {
+      "path": "datasets/mica/formal_assets/stage1/stage1_official_validation_dev.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "combined_stage1_dev_assets",
+      "split": "dev",
+      "record_count": 500,
+      "checksum": "3758ba97ae0902cba98d9f4a17d04a5d871b342741976c545ed6cb3a2e7aecdf",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "stage1_validation"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage1_validation"
+      ],
+      "eval_only": false
+    },
+    "stage1_checkpoint_input": {
+      "path": null,
+      "status": "pending_generation",
+      "schema_version": "mica-checkpoint-v2",
+      "source_pool": null,
+      "split": "n/a",
+      "record_count": null,
+      "checksum": null,
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "n/a",
+      "allowed_stages": [
+        "stage1_validation_execute"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage1_validation_execute"
+      ],
+      "eval_only": false
+    },
+    "strict_replay": {
+      "path": "datasets/mica/formal_assets/stage2/strict_replay.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples_step3_ready.jsonl",
+      "split": "train",
+      "record_count": 1000,
+      "checksum": "f8f767e7a2bfe0c51dabd547bfd6ca2f5711047a1210d8ce72e25f6b121c6916",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "source_atomic_commit_ids",
+      "allowed_stages": [
+        "stage2_replay",
+        "stage3_replay"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage2_train"
+      ],
+      "eval_only": false
+    },
+    "hard_b_train": {
+      "path": "datasets/mica/formal_assets/stage2/hard_b_train.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "datasets/hard_b/canonical/usable_hard_b_with_real_diff.csv",
+      "split": "train",
+      "record_count": 338,
+      "checksum": "a63ebc1dbe6fdae65280602050c0de1ac4ab0358769dccb8b735bb7f6afd335c",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "stage2_train"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage2_train"
+      ],
+      "eval_only": false
+    },
+    "hard_b_dev": {
+      "path": "datasets/mica/formal_assets/stage2/hard_b_dev.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "datasets/hard_b/canonical/usable_hard_b_with_real_diff.csv",
+      "split": "dev",
+      "record_count": 72,
+      "checksum": "446bf1825a41058e9faecb1880ddb352d1f03a998b1057564c5135052db23888",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "stage2_dev",
+        "stage2_tuning"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage2_dev"
+      ],
+      "eval_only": false
+    },
+    "hard_b_test": {
+      "path": "datasets/mica/formal_assets/stage2/hard_b_test.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "datasets/hard_b/canonical/usable_hard_b_with_real_diff.csv",
+      "split": "test",
+      "record_count": 73,
+      "checksum": "f2d30d3549b2fb16dc746ae53e4849380c1a91f007cfd0267db810e87647f310",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "final_eval"
+      ],
+      "forbidden_stages": [
+        "stage2_train",
+        "stage2_calibration",
+        "tuning"
+      ],
+      "required_for": [],
+      "eval_only": true
+    },
+    "m_weak_train": {
+      "path": "datasets/mica/formal_assets/stage2/m_weak_train.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "datasets/m_verified/canonical/usable_m_with_real_diff.csv",
+      "split": "train",
+      "record_count": 1499,
+      "checksum": "936c99378cee236d582018730267df742433332cb83ed560cd8eace7eab09c8d",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "stage2_train"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage2_train"
+      ],
+      "eval_only": false
+    },
+    "m_weak_dev": {
+      "path": "datasets/mica/formal_assets/stage2/m_weak_dev.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "datasets/m_verified/canonical/usable_m_with_real_diff.csv",
+      "split": "dev",
+      "record_count": 321,
+      "checksum": "44884c526afb7236d0b6d4da39dc2642dfe2c950db86bc359e2dfed989e18863",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "stage2_dev",
+        "stage2_tuning"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage2_dev"
+      ],
+      "eval_only": false
+    },
+    "m_weak_test": {
+      "path": "datasets/mica/formal_assets/stage2/m_weak_test.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "datasets/m_verified/canonical/usable_m_with_real_diff.csv",
+      "split": "test",
+      "record_count": 321,
+      "checksum": "468cc48c1411a9f56e3fa0e728168dfe11f284c4139647720b717790873d21b6",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "final_eval"
+      ],
+      "forbidden_stages": [
+        "stage2_train",
+        "stage2_calibration",
+        "tuning"
+      ],
+      "required_for": [],
+      "eval_only": true
+    },
+    "m_final_test": {
+      "path": "datasets/mica/formal_assets/stage2/m_weak_test.json",
+      "status": "frozen",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": "datasets/m_verified/canonical/usable_m_with_real_diff.csv",
+      "split": "test",
+      "record_count": 321,
+      "checksum": "468cc48c1411a9f56e3fa0e728168dfe11f284c4139647720b717790873d21b6",
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "final_eval"
+      ],
+      "forbidden_stages": [
+        "stage2_train",
+        "stage3_train",
+        "calibration",
+        "tuning",
+        "pseudo_label",
+        "filtering"
+      ],
+      "required_for": [],
+      "eval_only": true,
+      "alias_of": "m_weak_test"
+    },
+    "m_align_calib": {
+      "path": null,
+      "status": "pending_annotation",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": null,
+      "split": "calib",
+      "record_count": null,
+      "checksum": null,
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "stage3_calibration"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage3_calibration"
+      ],
+      "eval_only": false
+    },
+    "real_alignment_dev": {
+      "path": null,
+      "status": "pending_annotation",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": null,
+      "split": "dev",
+      "record_count": null,
+      "checksum": null,
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "stage3_calibration",
+        "alignment_eval_dev"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage3_calibration"
+      ],
+      "eval_only": false
+    },
+    "real_alignment_test": {
+      "path": null,
+      "status": "pending_annotation",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": null,
+      "split": "test",
+      "record_count": null,
+      "checksum": null,
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "final_eval"
+      ],
+      "forbidden_stages": [
+        "stage3_train",
+        "calibration",
+        "tuning"
+      ],
+      "required_for": [
+        "final_eval"
+      ],
+      "eval_only": true
+    },
+    "real_alignment_final_test": {
+      "path": null,
+      "status": "pending_annotation",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": null,
+      "split": "test",
+      "record_count": null,
+      "checksum": null,
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "final_eval"
+      ],
+      "forbidden_stages": [
+        "stage3_train",
+        "calibration",
+        "tuning"
+      ],
+      "required_for": [
+        "final_eval"
+      ],
+      "eval_only": true,
+      "alias_of": "real_alignment_test"
+    },
+    "real_domain_split_test": {
+      "path": null,
+      "status": "pending_generation",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": null,
+      "split": "test",
+      "record_count": null,
+      "checksum": null,
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "final_eval"
+      ],
+      "forbidden_stages": [
+        "stage2_train",
+        "stage3_train",
+        "calibration",
+        "tuning"
+      ],
+      "required_for": [
+        "final_eval"
+      ],
+      "eval_only": true
+    },
+    "real_domain_selective_test": {
+      "path": null,
+      "status": "pending_generation",
+      "schema_version": "mica-formal-asset-manifest-v1",
+      "source_pool": null,
+      "split": "test",
+      "record_count": null,
+      "checksum": null,
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "leakage_group",
+      "allowed_stages": [
+        "final_eval"
+      ],
+      "forbidden_stages": [
+        "stage2_train",
+        "stage3_train",
+        "calibration",
+        "tuning"
+      ],
+      "required_for": [
+        "final_eval"
+      ],
+      "eval_only": true
+    },
+    "renderer_dataset": {
+      "path": null,
+      "status": "pending_generation",
+      "schema_version": "mica-renderer-dataset-v1",
+      "source_pool": null,
+      "split": "train",
+      "record_count": null,
+      "checksum": null,
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "commit_id",
+      "allowed_stages": [
+        "stage4_renderer"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage4_renderer_train"
+      ],
+      "eval_only": false
+    },
+    "predicted_plans": {
+      "path": null,
+      "status": "pending_generation",
+      "schema_version": "mica-structured-intent-plan-v1",
+      "source_pool": null,
+      "split": "eval",
+      "record_count": null,
+      "checksum": null,
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "commit_id",
+      "allowed_stages": [
+        "stage4_eval"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage4_eval_predicted"
+      ],
+      "eval_only": false
+    },
+    "oracle_plans": {
+      "path": null,
+      "status": "pending_generation",
+      "schema_version": "mica-structured-intent-plan-v1",
+      "source_pool": null,
+      "split": "eval",
+      "record_count": null,
+      "checksum": null,
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "commit_id",
+      "allowed_stages": [
+        "stage4_eval"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "stage4_eval_oracle"
+      ],
+      "eval_only": false
+    },
+    "message_utility_manifest": {
+      "path": null,
+      "status": "pending_generation",
+      "schema_version": "mica-message-utility-manifest-v1",
+      "source_pool": null,
+      "split": "eval",
+      "record_count": null,
+      "checksum": null,
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "commit_id",
+      "allowed_stages": [
+        "message_utility_eval"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "message_utility_eval"
+      ],
+      "eval_only": false
+    },
+    "human_pilot_annotations": {
+      "path": null,
+      "status": "pending_annotation",
+      "schema_version": "mica-human-pilot-annotations-v1",
+      "source_pool": null,
+      "split": "eval",
+      "record_count": null,
+      "checksum": null,
+      "created_by": "build_formal_asset_manifests",
+      "leakage_group_key": "sample_id",
+      "allowed_stages": [
+        "message_utility_human_pilot"
+      ],
+      "forbidden_stages": [],
+      "required_for": [
+        "message_utility_human_pilot"
+      ],
+      "eval_only": false
+    }
+  }
+}

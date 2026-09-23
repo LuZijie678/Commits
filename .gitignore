@@ -1,0 +1,56 @@
+.github_token
+.llm_api_key
+.claude/
+
+# macOS / Finder
+.DS_Store
+
+# Archives
+*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Runtime experiment outputs
+outputs/llm_generation_pilot_*/
+outputs/llm_generation_canary_*/
+outputs/mica_*/
+outputs/step3_*/
+artifacts/
+**/.generation_cache/
+**/.judge_cache/
+**/cache/
+
+# Legacy nested snapshot and historical runs
+archive/runs/
+archive/legacy_layout/step1_and_2_inner_git/
+step1&2/
+
+# Generated outputs under active code trees
+code/step1/outputs/
+code/step2/outputs/
+
+# Generated Step2 bridge artifacts
+code/step2/data/step2_source_candidates_from_step1.csv
+code/step2/data/step2_source_candidates_from_step1_manifest.json
+code/step2/configs/*.local.json
+configs/mica/*.local.json
+
+# Local Step1 workspace backfill cache
+datasets/step1/workspace/allcommits_local_backfill/
+
+# Local scratch / one-off summaries
+tmp/
+tmp_*.json
+
+# Generated LLM generation pilot outputs and caches
+outputs/llm_generation_pilot*_cache.json
+outputs/llm_generation_canary*_cache.json
+outputs/llm_generation_judge*_cache.json
+
+# Local environment
+.venv/
+.env
+.env.*

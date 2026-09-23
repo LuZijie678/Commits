@@ -1,0 +1,14 @@
+{
+  "already_ok": 0,
+  "attempted": 9,
+  "created_at_utc": "2026-05-24T13:32:14.924800+00:00",
+  "diff_ok_final": 9,
+  "failed": 0,
+  "fetch_max_bytes": 25000000,
+  "input_csv": "D:\\Multi-intent\\m_mining_gitlog_pilot\\labels\\gitlog_round13_ht_off300_m_need_full_diff.csv",
+  "output_csv": "D:\\Multi-intent\\m_mining_gitlog_pilot\\labels\\gitlog_round13_ht_off300_m_full_diff_recovery_batch.csv",
+  "output_jsonl": "D:\\Multi-intent\\m_mining_gitlog_pilot\\labels\\gitlog_round13_ht_off300_m_full_diff_recovery_batch.jsonl",
+  "recovered": 9,
+  "rows": 9,
+  "workers": 1
+}

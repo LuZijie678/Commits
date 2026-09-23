@@ -1,0 +1,32 @@
+{
+  "schema_version": "mica-stage1-v1-audit-status-v1",
+  "stage_version": "stage1-v1",
+  "parent_official_run_id": "stage1_official_validation_20260723T091921Z",
+  "parent_official_result_record": "configs/mica/official_results/stage1_official_validation_20260723T091921Z.json",
+  "parent_status_revision_record": "configs/mica/official_results/stage1_official_validation_20260723T091921Z_status_revision_v1.json",
+  "independent_audit_doc": "docs/MICA_STAGE1_INDEPENDENT_AUDIT.md",
+  "execution_status": "formally_executed",
+  "internal_acceptance": "passed",
+  "scientific_validity_audit": "failed",
+  "external_paper_evidence": "pilot_only",
+  "superseded_by": "stage1-v2-protocol",
+  "status_reason": [
+    "strict_synthetic_atomic_source_overlap_detected_across_train_dev_test_and_candidate_vs_official_final_test",
+    "stage1_kmax_v1_is_not_valid_real_data_evidence_for_stage1_v2",
+    "official_final_test_is_250_atomic_k1_plus_250_strict_synthetic_k2_not_real_adjudicated_multi_intent_final_benchmark",
+    "final_test_annotation_quality_not_independently_verified"
+  ],
+  "allowed_uses": [
+    "engineering_pipeline_validation",
+    "metric_manifest_checkpoint_consumer_debugging",
+    "controlled_synthetic_feasibility_demonstration",
+    "resource_and_difficulty_estimation_for_stage1_v2"
+  ],
+  "disallowed_uses": [
+    "real_tangled_commit_generalization_claim",
+    "real_data_kmax_4_justification",
+    "null_background_capability_claim",
+    "strong_baseline_superiority_claim",
+    "stage2_formal_paper_experiment_entry_gate"
+  ]
+}

@@ -1,0 +1,6 @@
+sample_id,data_category,strategy,generated_subject,reference_subject,manual_format_ok,manual_faithful,manual_complete,manual_concise,manual_oversegmentation,manual_omission,manual_hallucination,manual_oracle_plan_copying,manual_retrieval_example_reasonable,manual_prompt_defect_detected,manual_overall_accept,manual_confidence,manual_failure_category,notes,reviewer,reviewed_at
+atomic_simple:eb8a30b8079b8d73,atomic_simple,G1,Add signal event validation tests,test(engine): added signal events deployment tests,,,,,,,,not_applicable,not_applicable,,,,,,,
+hard_b:3366abdb796ceefc,hard_b,G1,Implement $lookup-based eager loading for associations,MONGOID 5731 Add Criteria#eager_load method to use aggregation pipeline for eager loading (#6081),,,,,,,,not_applicable,not_applicable,,,,,,,
+synthetic_multi:badb1a0475c1b9b1,synthetic_multi,G4,Add unsafe comparison and improve docs page generation,fix: correct doc paths and test greaterThanOrEqual,,,,,,,,not_applicable,,,,,,,,
+synthetic_multi:badb1a0475c1b9b1,synthetic_multi,G5,Add tests for greaterThanOrEqual and fix docs path generation,fix: correct doc paths and test greaterThanOrEqual,,,,,,,,,,,,,,,,
+M_real_multi:f27dfc62b60e1074,M_real_multi,G4,Add engineering agent orchestrators and Mistral Vibe support,docs(vibe): run /update-docs sync pipeline for Mistral Vibe integration,,,,,,,,not_applicable,,,,,,,,

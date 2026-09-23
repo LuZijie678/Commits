@@ -1,0 +1,26 @@
+{
+  "schema_version": "llm_generation_pilot_dataset_v1",
+  "source_root": "outputs/llm_generation_pilot_20260609T045027Z",
+  "output_root": "outputs/llm_generation_real_api_probe_reprepared_20260610T112738Z",
+  "seed": 42,
+  "requested_sizes": {
+    "atomic_simple": 1,
+    "hard_b": 1,
+    "synthetic_multi": 1,
+    "M_real_multi": 1
+  },
+  "selected_counts": {
+    "atomic_simple": 1,
+    "hard_b": 1,
+    "synthetic_multi": 1,
+    "M_real_multi": 1
+  },
+  "shortfalls": {},
+  "leakage_passed": true,
+  "data_categories": {
+    "atomic_simple": "simple single-intent real commits from strict Step3 test",
+    "hard_b": "complex single-intent real commits",
+    "synthetic_multi": "Step2 synthetic multi-intent commits with structure labels",
+    "M_real_multi": "real multi-intent commits with commit-level labels"
+  }
+}

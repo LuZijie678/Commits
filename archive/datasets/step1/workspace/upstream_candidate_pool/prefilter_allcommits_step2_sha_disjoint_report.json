@@ -1,0 +1,11 @@
+{
+  "input_csv": "待实验step1文件包/data/prefilter_allcommits.csv",
+  "step2_source_csv": "待实验step2文件包/data/annotation_round3_atomicity_spectrum_3000_minimal.csv",
+  "output_csv": "待实验step1文件包/data/prefilter_allcommits_step2_sha_disjoint.csv",
+  "input_row_count": 87009,
+  "output_row_count": 84035,
+  "step2_row_count": 3000,
+  "excluded_sha_overlap_count": 2974,
+  "excluded_repo_overlap_count": 0,
+  "exclude_repo_overlap": false
+}

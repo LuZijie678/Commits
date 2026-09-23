@@ -1,0 +1,85 @@
+{
+  "schema_version": "mica-stage1-v2-leakage-report-v1",
+  "split_names": [
+    "dev",
+    "train"
+  ],
+  "required_zero_overlap_keys": [
+    "atomic_family_overlap",
+    "atomic_source_overlap",
+    "backport_overlap",
+    "cherry_pick_overlap",
+    "commit_overlap",
+    "construction_group_overlap",
+    "edit_unit_fingerprint_overlap",
+    "normalized_diff_overlap",
+    "pr_overlap",
+    "repository_mirror_overlap",
+    "revert_overlap",
+    "sample_overlap"
+  ],
+  "scalar_overlap": {
+    "sample_overlap": {
+      "overlap_count": 0,
+      "pairs": []
+    },
+    "commit_overlap": {
+      "overlap_count": 0,
+      "pairs": []
+    },
+    "normalized_diff_overlap": {
+      "overlap_count": 0,
+      "pairs": []
+    },
+    "edit_unit_fingerprint_overlap": {
+      "overlap_count": 0,
+      "pairs": []
+    },
+    "atomic_family_overlap": {
+      "overlap_count": 0,
+      "pairs": []
+    },
+    "construction_group_overlap": {
+      "overlap_count": 0,
+      "pairs": []
+    },
+    "pr_overlap": {
+      "overlap_count": 0,
+      "pairs": []
+    },
+    "repository_mirror_overlap": {
+      "overlap_count": 0,
+      "pairs": []
+    },
+    "cherry_pick_overlap": {
+      "overlap_count": 0,
+      "pairs": []
+    },
+    "backport_overlap": {
+      "overlap_count": 0,
+      "pairs": []
+    },
+    "revert_overlap": {
+      "overlap_count": 0,
+      "pairs": []
+    }
+  },
+  "list_overlap": {
+    "atomic_source_overlap": {
+      "overlap_count": 0,
+      "pairs": []
+    }
+  },
+  "near_duplicate": {
+    "available": true,
+    "algorithm": "sequence_matcher_v1",
+    "threshold": 0.98,
+    "comparison_limit": 5000,
+    "candidate_pair_count": 5001,
+    "skipped_due_to_size": true,
+    "overlap_count": 0,
+    "examples": []
+  },
+  "violations": [],
+  "leakage_clean": false
+}

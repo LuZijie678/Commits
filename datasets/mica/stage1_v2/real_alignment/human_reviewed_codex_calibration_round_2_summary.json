@@ -1,0 +1,33 @@
+{
+  "artifact_id": "human_reviewed_codex_calibration_round_2_markings",
+  "created_at": "2026-07-27T01:06:59Z",
+  "creation_git_sha": "d53e086fcf0f891bbbb3fd631a3928cff7b866a9",
+  "exact_k_distribution": {
+    "1": 13,
+    "2": 7,
+    "3": 3,
+    "4": 3,
+    "5": 1,
+    "None": 3
+  },
+  "exact_k_status_distribution": {
+    "overflow_gt_kmax_or_ambiguous": 3,
+    "proposed": 18,
+    "proposed_needs_close_review": 1,
+    "proposed_needs_review": 7,
+    "proposed_over_kmax": 1
+  },
+  "formal_evidence_blocker": "not_independent_double_annotation_or_adjudication",
+  "formal_human_evidence": false,
+  "human_verified": true,
+  "path": "datasets/mica/stage1_v2/real_alignment/human_reviewed_codex_calibration_round_2_markings.jsonl",
+  "protocol_version": "stage1-v2-protocol",
+  "receipt_path": "datasets/mica/stage1_v2/real_alignment/human_review_receipt_codex_calibration_round_2.json",
+  "record_count": 30,
+  "record_hash": "1328a8065ebbf86a439a7a7cc5bef750fa49a77b4b04ec74e94a8d9f4068a0d0",
+  "reviewer_actor_type": "human",
+  "round_label": "calibration_round_2",
+  "schema_version": "mica-stage1-v2-human-reviewed-codex-marking-summary-v1",
+  "stage1_v2_training_allowed": false,
+  "stage2_entry_allowed": false
+}

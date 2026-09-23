@@ -1,0 +1,101 @@
+{
+  "stage": "stage2_real_domain_count_calibration",
+  "advisor_stage2_approved": false,
+  "default_mode": "dry_run",
+  "strict_replay_required": true,
+  "hard_b_train_allowed": true,
+  "hard_b_dev_allowed_for_threshold_tuning": true,
+  "hard_b_test_forbidden": true,
+  "m_weak_train_allowed": true,
+  "m_weak_dev_allowed": true,
+  "m_weak_label_semantics": "censored_k_ge_2",
+  "m_final_test_forbidden": true,
+  "real_domain_split_test_forbidden": true,
+  "real_domain_selective_test_forbidden": true,
+  "mixture_weights": {
+    "strict_replay": 0.55,
+    "hard_b": 0.3,
+    "m_weak": 0.15
+  },
+  "null_slot": {
+    "enabled": false,
+    "null_slot_id": "slot_null",
+    "background_eligible_file_roles": [
+      "generated",
+      "lockfile",
+      "auxiliary",
+      "unknown_auxiliary"
+    ],
+    "null_loss_weight": 0.0,
+    "foreground_to_null_penalty_weight": 0.0
+  },
+  "dual_cardinality": {
+    "alpha_pb": 0.5,
+    "lambda_cal_max": 0.05,
+    "lambda_cal_warmup_fraction": 0.2,
+    "stopgrad_count_for_kl": true
+  },
+  "loss_weights": {
+    "lambda_replay": 0.5,
+    "lambda_hard": 0.5,
+    "lambda_M": 0.5,
+    "lambda_real": 0.0,
+    "lambda_cons": 0.0
+  },
+  "cardinality_schedule": {
+    "alpha_pb_start": 0.5,
+    "alpha_pb_end": 0.5,
+    "kl_warmup_fraction": 0.2,
+    "lambda_cal_max": 0.05
+  },
+  "assignment_schedule": {
+    "tau_start": 2.0,
+    "tau_end": 1.0,
+    "warmup_fraction": 0.2,
+    "entropy_coeff_start": 0.02,
+    "entropy_coeff_end": 0.0
+  },
+  "auxiliary_losses": {
+    "lambda_type": 0.1,
+    "lambda_stabilizer_max": 0.05,
+    "type_loss_enabled": false,
+    "stabilizer_enabled": false
+  },
+  "evidence_graph": {
+    "relation_spec_path": "configs/mica/evidence_relation_spec.json",
+    "use_attention_bias": true,
+    "inference_safe_only": true
+  },
+  "freeze_strategy": {
+    "first_half": {
+      "freeze_lower_encoder": true,
+      "train_heads": true,
+      "renderer_lr": 0.0
+    },
+    "second_half": {
+      "unfreeze_top_encoder_layers": true,
+      "encoder_lr_multiplier": 0.1,
+      "renderer_lr": 0.0
+    }
+  },
+  "hard_b_loss": {
+    "rho": 0.1,
+    "margin": 0.2,
+    "eta": 0.05
+  },
+  "m_censored_loss": {
+    "gamma_pb": 0.3
+  },
+  "consistency": {
+    "enabled": false,
+    "requires_ema_teacher": true,
+    "ema_decay": 0.999,
+    "enable_after_fraction": 0.3,
+    "min_teacher_confidence": 0.8,
+    "confidence_threshold": 0.8,
+    "max_assignment_entropy": 0.6,
+    "entropy_threshold": 0.6,
+    "stable_under_aug": false,
+    "stability_required": true
+  }
+}

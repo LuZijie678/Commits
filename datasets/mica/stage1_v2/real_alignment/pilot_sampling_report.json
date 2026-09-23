@@ -1,0 +1,19 @@
+{
+  "schema_version": "mica-stage1-v2-real-adjudicated-candidate-v1",
+  "row_count": 100,
+  "repository_count": 54,
+  "top5_repository_share": 0.3,
+  "max_repository_share": 0.15,
+  "provisional_strata_counts": {
+    "ambiguous_boundary": 2,
+    "background_heavy": 8,
+    "cross_module": 11,
+    "large_commit": 55,
+    "probable_k1_hard_single": 15,
+    "probable_k1_regular": 15,
+    "probable_k2": 35,
+    "probable_k3": 20,
+    "probable_k4_or_complex": 15
+  },
+  "formal_ready": false
+}

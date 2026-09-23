@@ -1,0 +1,18 @@
+{
+  "repo_mode": "single_main_repo",
+  "migrated_at": "2026-05-26",
+  "path_mapping": {
+    "step1&2/待实验step1文件包": "code/step1",
+    "step1&2/待实验step2文件包": "code/step2",
+    "step1&2/docs": "docs/records",
+    "step1&2/.git": "archive/legacy_layout/step1_and_2_inner_git",
+    "m_existing_diff_package": "datasets/m_verified",
+    "hard_b_existing_diff_package": "datasets/hard_b",
+    "*.pdf": "refs/papers",
+    "step1_outputs_formal_current": "datasets/derived/step1_runs/step1_formal_step2_sha_expanded_annotated_disjoint_p1600_20260526T024945Z",
+    "step1_source_handoff_current": "datasets/derived/step1_source_pool/current",
+    "step1_runtime_support_current": "datasets/step1/runtime_support",
+    "step2_fewshot_delivery_current": "datasets/step2/delivery/current",
+    "archived_dataset_workspaces": "archive/datasets"
+  }
+}

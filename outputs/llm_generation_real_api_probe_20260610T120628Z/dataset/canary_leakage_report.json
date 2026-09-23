@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "policy": "selected pilot rows must not share source SHA, exact diff fingerprint, or exact normalized subject; canonical repo overlap is tracked as a diagnostic",
+  "overlaps": {
+    "repo_canonical": [],
+    "source_sha": [],
+    "diff_fingerprint": [],
+    "subject_reference": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "already_ok": 0,
+  "attempted": 74,
+  "created_at_utc": "2026-05-24T07:30:57.205631+00:00",
+  "diff_ok_final": 65,
+  "failed": 9,
+  "fetch_max_bytes": 25000000,
+  "input_csv": "m_mining_gitlog_pilot\\labels\\gitlog_round10_highstar_code_2_m_need_full_diff.csv",
+  "output_csv": "m_mining_gitlog_pilot\\labels\\gitlog_round10_highstar_code_2_m_full_diff_recovery_batch.csv",
+  "output_jsonl": "m_mining_gitlog_pilot\\labels\\gitlog_round10_highstar_code_2_m_full_diff_recovery_batch.jsonl",
+  "recovered": 65,
+  "rows": 74,
+  "workers": 8
+}

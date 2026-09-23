@@ -1,0 +1,22 @@
+{
+  "run_name": "step1_strategy_compare_large",
+  "base_output_dir": "outputs",
+  "candidate_pool_path": "../../datasets/step1/canonical/prefilter_allcommits_step2_sha_and_expanded_annotated_disjoint.csv",
+  "annotated_path": "../../datasets/step1/canonical/annotated_dataset.csv",
+  "repo_list_path": "../../datasets/step1/runtime_support/resolved_metadata.csv",
+  "output_root": "outputs",
+  "random_seed": 31,
+  "target_count": 0,
+  "selection_strategies": [
+    "rule_only",
+    "model_only",
+    "model_rule_refilter"
+  ],
+  "run_proxy_gap_analysis": true,
+  "run_audit_sample_export": true,
+  "fetch_diff": true,
+  "strict_gates": true,
+  "require_enrich_complete": true,
+  "require_audit_completion": false,
+  "notes": "target_count=0 表示不裁剪策略输出；可通过 max_candidates/per_type 扩大规模。"
+}
