@@ -21,12 +21,12 @@
 
 其中 6 份 staged-curriculum 指标对象仍完整嵌在已提交的 `reports/mica_stage1_staged_curriculum_result.json` 的 `settings[0..5]` 中。根据当时[运行代码](../code/mica/train/run_stage1_staged_curriculum.py)的写入顺序，逐项指标文件和汇总报告使用同一个 `result_row` 对象及相同 JSON 序列化格式。因此已用[恢复脚本](../scripts/recover_stage1_staged_metrics_from_report.py)生成 6 份 **`*.reconstructed.json`** 和[来源清单](../recovered_artifacts/stage1_staged_curriculum_20260615T023159Z/RECOVERY_MANIFEST.json)。它们可以用于复核报告中的指标内容，但原始文件及其哈希不存在，不能宣称已找回原件或证明字节完全一致。
 
-另 5 份 sanity `metrics.json` 没有发现可一一对应的完整对象；`reports/mica_stage1_sanity_result.json`、`reports/mica_stage1_attribution_debug.json` 和历史文字记录只保留了部分数值。不能把历史表格中的四舍五入数值写成同名“原件”。
+另 5 份 sanity `metrics.json` 没有发现可一一对应的完整对象；`reports/mica_stage1_sanity_result.json`、`reports/mica_stage1_attribution_debug.json` 和历史文字记录只保留了部分数值。不能把历史表格中的四舍五入数值写成同名“原件”。根据[证据使用决定](LEGACY_STAGE1_SANITY_EVIDENCE_DECISION.md)，它们不是当前正式实验的放行必需项，暂不为补旧文件而重跑。
 
 如需继续研究，应：
 
 1. 把 11 份原始文件在证据目录中标为 `original_runtime_artifact_missing`；6 份 reconstructed 文件明确引用来源报告，5 份 sanity 仅引用现存的部分摘要，不把两者混同。
-2. 若这些早期指标关系到新论文主结论，则根据旧 Git 历史、保存的配置/报告和现存输入，在独立目录**重新运行**；使用新 run ID、环境、随机种子和文件哈希记录结果。重跑结果属于新证据，不得覆盖或冒充 2026-06-14/15 原件。
+2. 若将来的新论文设计必须检验这些早期假设，而当前 Stage1-v2 实验无法覆盖，则根据旧 Git 历史、保存的配置/报告和现存输入，在独立目录**重新运行**；使用新 run ID、环境、随机种子和文件哈希记录结果。重跑结果属于新证据，不得覆盖或冒充 2026-06-14/15 原件。
 3. 若无法重跑或仍缺必要输入，则不把依赖这 11 份原始文件的细节作为可复核的正式证据；保留为历史探索记录。
 
 ## 仅有 GitHub + D 盘时的持久保存方案

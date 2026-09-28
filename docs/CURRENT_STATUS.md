@@ -8,6 +8,7 @@
 - Stage1-v2：[数据与标注执行说明](MICA_STAGE1_V2_DATA_AND_ANNOTATION_EXECUTION.md)和[readiness 记录](../datasets/mica/stage1_v2/readiness/stage1_v2_annotation_readiness.json)均显示 `stage1_v2_training_allowed=false`、`stage2_entry_allowed=false`。候选/试运行资产已物化，但人工标注和正式训练仍未完成。
 - Step2：2026 年 5 月 fullscale 运行的汇总与状态文件已随[历史实验文件补充](EXPERIMENT_ARTIFACT_RECOVERY.md)进入 Git；完整样本 JSONL 已[在新工作目录本机补回](LOCAL_EXPERIMENT_ARTIFACT_RECOVERY.md)，但仍未进入 GitHub，不能据此声称新克隆具备完整逐行复核材料。
 - 更早的 [2026-06-14/15 Stage1 观察记录](records/archive/2026-06-14-mica-stage1-attribution-experiment-observations.md)指向 11 个旧 macOS 临时目录中的原始指标文件；在新、旧本地目录均未找到。其中 6 份 staged 指标内容可从保存的汇总报告[重建为带来源标记的副本](LOCAL_EXPERIMENT_ARTIFACT_RECOVERY.md)，另 5 份 sanity 只剩部分摘要；原件均未找回。
+- 对这 5 份 sanity 原件的[证据使用决定](LEGACY_STAGE1_SANITY_EVIDENCE_DECISION.md)是：当前不重跑，不用于正式结果或放行条件；若未来的新研究问题确实依赖它们，再按现行协议开展有新 run ID 的实验。
 - Stage1-v1 官方输出存在一处 manifest 哈希登记与最终文件不一致。[哈希核查说明](STAGE1_OFFICIAL_MANIFEST_HASH_AUDIT.md)已确定这是运行程序的自引用写入顺序造成；原始记录保持不变，不能宣称原始 13 项哈希表全部匹配最终文件。
 
 ## 如何读旧文档

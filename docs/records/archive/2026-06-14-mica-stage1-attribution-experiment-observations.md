@@ -2,6 +2,8 @@
 > 本文档是历史实现说明，可能不反映当前代码状态。
 > 当前事实来源：docs/CURRENT_STATUS.md
 
+> 2026-09-28 证据补注：下文五轮 sanity 的原始 `metrics.json` 在现存两处本地目录均未找到；表格为历史转录，不能逐项复核，也不作为当前正式结果或 Stage 2 放行证据。处置见 [五份 sanity 指标的证据使用决定](../../LEGACY_STAGE1_SANITY_EVIDENCE_DECISION.md)。
+
 # 2026-06-14 MICA Stage 1 Attribution 实验现象与关键数据记录
 
 ## 1. 记录目的
