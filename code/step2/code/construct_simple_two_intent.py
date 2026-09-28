@@ -433,7 +433,7 @@ def safe_print(*args: Any, **kwargs: Any) -> None:
         print(*args, **kwargs)
     except BrokenPipeError:
         try:
-            sys.stdout = open(Path("/dev/null"), "w", encoding="utf-8")
+            sys.stdout = open(os.devnull, "w", encoding="utf-8")
         except OSError:
             pass
 

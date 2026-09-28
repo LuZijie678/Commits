@@ -59,6 +59,8 @@ full-diff calibrated model Tier-A
 
 ## 当前主入口
 
+Windows PowerShell 的可执行命令见 `../../docs/WINDOWS_SETUP_AND_VALIDATION.md`；其中的 Python 包装器对应下方 Bash 策略对比脚本。
+
 ```bash
 python3 -m src.pipeline.run_step1 --help
 ```

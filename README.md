@@ -3,6 +3,7 @@
 这是当前唯一主仓，用来统一管理 Step1 单意图原料挖掘与 Step2 多意图合成。
 
 项目当前状态与历史证据边界请先看 `docs/CURRENT_STATUS.md`；
+Windows 本机运行与验证命令见 `docs/WINDOWS_SETUP_AND_VALIDATION.md`；
 MICA Stage1-v2 的执行细节见 `docs/MICA_STAGE1_V2_DATA_AND_ANNOTATION_EXECUTION.md`；
 本次补充的历史实验文件及其局限见 `docs/EXPERIMENT_ARTIFACT_RECOVERY.md`。
 大文件的本机补回、哈希及公开归档条件见 `docs/LOCAL_EXPERIMENT_ARTIFACT_RECOVERY.md`。
@@ -56,6 +57,8 @@ Step1 conservative_atomic_sources.csv
 - `datasets/hard_b/` 是否可直接读取，以该目录 README 的“本机状态”说明为准
 
 ## 推荐运行顺序
+
+下面的 `make` / `bash` 示例面向 Unix shell；Windows PowerShell 请使用上面的 Windows 指南。
 
 1. Step1
 

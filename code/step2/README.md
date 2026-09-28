@@ -53,10 +53,10 @@ make step2-fewshot-report
 make step2-fewshot-materialize
 ```
 
-补充：
+补充（以下代理说明仅针对历史 macOS/Makefile 运行环境；Windows 命令见 `../../docs/WINDOWS_SETUP_AND_VALIDATION.md`）：
 
 - Step2 真实 API 路径依赖 Python 进程能够访问 DeepSeek。
-- 在当前这台 macOS 机器上，`curl` 可通过系统代理访问外网，但 Python 默认不一定自动继承系统代理。
+- 历史 macOS 机器上，`curl` 可通过系统代理访问外网，但 Python 默认不一定自动继承系统代理。
 - 顶层 `make step2-preflight`、`make step2-mock`、`make step2-fullscale-plan`、`make step2-fullscale-run` 现在会先读取系统代理并注入 `HTTP_PROXY/HTTPS_PROXY`，同时设置 `MPLCONFIGDIR=/private/tmp/step2_mplconfig`。
 - 如果你绕过 Makefile 直接运行 `python3 ...`，需要自己显式带上代理环境变量，否则可能出现 `request_error` / `gaierror(8)`。
 
