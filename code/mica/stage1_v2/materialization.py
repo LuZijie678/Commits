@@ -101,8 +101,18 @@ def utc_now_iso() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 
+def _set_large_csv_field_limit() -> None:
+    limit = sys.maxsize
+    while True:
+        try:
+            csv.field_size_limit(limit)
+            return
+        except OverflowError:
+            limit //= 10
+
+
 def read_large_csv_rows(path: str | Path) -> list[dict[str, str]]:
-    csv.field_size_limit(sys.maxsize)
+    _set_large_csv_field_limit()
     with Path(path).open("r", encoding="utf-8", newline="") as handle:
         reader = csv.DictReader(handle)
         return [dict(row) for row in reader]
@@ -994,7 +1004,7 @@ def _write_atomic_source_csv(rows: list[dict[str, Any]], path: Path) -> None:
         stripped_rows.append(payload)
     fieldnames = sorted({key for row in stripped_rows for key in row.keys()})
     path.parent.mkdir(parents=True, exist_ok=True)
-    csv.field_size_limit(sys.maxsize)
+    _set_large_csv_field_limit()
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()

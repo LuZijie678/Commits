@@ -593,7 +593,7 @@ def test_run_single_reports_subject_length_limit_anchor(monkeypatch, tmp_path: P
         "joint_weight_metadata",
     ]
     assert metadata["fewshot_pool"]["fewshot_pool_path"] == args.fewshot_db
-    assert metadata["fewshot_pool"]["fewshot_pool_resolved_path"] == args.fewshot_db
+    assert Path(metadata["fewshot_pool"]["fewshot_pool_resolved_path"]).resolve() == Path(args.fewshot_db).resolve()
     assert metadata["formal_assets"]["formal_assets_ready"] is True
     assert metadata["formal_assets"]["source_manifest"]["exists"] is True
     assert metadata["formal_assets"]["fewshot_build_manifest"]["exists"] is True

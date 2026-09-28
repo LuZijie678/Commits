@@ -66,4 +66,4 @@ def test_pilot_can_fallback_to_prebuilt_generation_source(tmp_path):
         "synthetic_multi": 1,
         "M_real_multi": 1,
     }
-    assert result["manifest"]["source_root"] == str(prebuilt_root.resolve())
+    assert Path(result["manifest"]["source_root"]).resolve() == prebuilt_root.resolve()

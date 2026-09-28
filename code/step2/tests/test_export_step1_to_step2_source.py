@@ -110,7 +110,7 @@ def test_exporter_accepts_conservative_atomic_sources_and_preserves_metadata(tmp
 
     manifest = json.loads(manifest_json.read_text(encoding="utf-8"))
     assert manifest["export"]["input_format"] == "conservative_atomic_sources"
-    assert manifest["paths"]["step1_conservative_atomic_sources_csv"] == str(input_csv)
+    assert manifest["paths"]["step1_conservative_atomic_sources_csv"] == input_csv.as_posix()
 
 
 def test_exporter_parse_args_defaults_use_datasets_bridge_layout(monkeypatch) -> None:
@@ -181,4 +181,4 @@ def test_exporter_keeps_legacy_resolved_candidates_compatibility(tmp_path: Path)
 
     manifest = json.loads(manifest_json.read_text(encoding="utf-8"))
     assert manifest["export"]["input_format"] == "resolved_candidates"
-    assert manifest["paths"]["step1_resolved_candidates_csv"] == str(input_csv)
+    assert manifest["paths"]["step1_resolved_candidates_csv"] == input_csv.as_posix()

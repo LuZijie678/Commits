@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from concurrent.futures import ThreadPoolExecutor
 
 from code.mica.stage1_v2.audit_log import (
     append_annotation_audit_event,
@@ -34,6 +35,16 @@ def test_audit_log_events_form_a_verifiable_hash_chain(tmp_path) -> None:
     report = verify_annotation_audit_log_chain(log_path)
     assert report["total_events"] == 3
     assert report["chained_events"] == 3
+    assert report["chain_valid"] is True
+
+
+def test_concurrent_audit_log_appends_preserve_hash_chain(tmp_path) -> None:
+    log_path = tmp_path / "audit.jsonl"
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        list(pool.map(lambda index: _append(log_path, f"s{index}"), range(12)))
+    report = verify_annotation_audit_log_chain(log_path)
+    assert report["total_events"] == 12
+    assert report["chained_events"] == 12
     assert report["chain_valid"] is True
 
 

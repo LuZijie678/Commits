@@ -631,7 +631,7 @@ def resolve_default_config_path() -> str:
     """返回默认配置路径，本地覆盖配置存在时优先使用。"""
     local_path = Path(DEFAULT_LOCAL_CONFIG_PATH)
     if local_path.exists() and local_path.is_file():
-        return str(local_path)
+        return local_path.as_posix()
     return DEFAULT_CONFIG_PATH
 
 
@@ -686,7 +686,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Step2 Simple Multi-Intent 合成样本构建脚本")
     parser.add_argument(
         "--config",
-        default=str(config_path),
+        default=config_path.as_posix(),
         help="JSON config file path. Most CLI args override config values; non-empty config.deepseek_api_key has highest priority.",
     )
     parser.add_argument(

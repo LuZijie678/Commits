@@ -1,11 +1,17 @@
 from __future__ import annotations
 
-import fcntl
 import hashlib
 import json
+import os
+from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, TextIO
+
+if os.name == "nt":
+    import msvcrt
+else:
+    import fcntl
 
 from code.mica.io_utils import read_jsonl
 
@@ -33,6 +39,27 @@ def compute_record_hash(payload: Any) -> str:
     return hashlib.sha256(
         json.dumps(payload, ensure_ascii=False, sort_keys=True, allow_nan=False).encode("utf-8")
     ).hexdigest()
+
+
+@contextmanager
+def _exclusive_file_lock(handle: TextIO):
+    """Serialize audit-log appends on both Windows and POSIX systems."""
+    handle.flush()
+    if os.name == "nt":
+        handle.seek(0)
+        msvcrt.locking(handle.fileno(), msvcrt.LK_LOCK, 1)
+    else:
+        fcntl.flock(handle.fileno(), fcntl.LOCK_EX)
+    try:
+        yield
+    finally:
+        # The next writer must see this event before it reads the hash chain.
+        handle.flush()
+        if os.name == "nt":
+            handle.seek(0)
+            msvcrt.locking(handle.fileno(), msvcrt.LK_UNLCK, 1)
+        else:
+            fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
 
 
 def append_annotation_audit_event(
@@ -71,8 +98,7 @@ def append_annotation_audit_event(
     target = Path(log_path)
     target.parent.mkdir(parents=True, exist_ok=True)
     with target.open("a+", encoding="utf-8", newline="\n") as handle:
-        fcntl.flock(handle.fileno(), fcntl.LOCK_EX)
-        try:
+        with _exclusive_file_lock(handle):
             handle.seek(0)
             prev_event_hash = None
             for line in handle:
@@ -88,8 +114,6 @@ def append_annotation_audit_event(
             handle.seek(0, 2)
             handle.write(json.dumps(payload, ensure_ascii=False, sort_keys=True))
             handle.write("\n")
-        finally:
-            fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
     return payload
 
 

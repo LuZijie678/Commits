@@ -41,7 +41,7 @@ def test_exemplar_pool_can_reuse_prebuilt_generation_source(tmp_path):
     build_pilot_dataset(fallback_cfg, tmp_path / "probe")
     result = build_exemplar_pool(fallback_cfg, tmp_path / "probe")
     assert result["pool"]
-    assert result["manifest"]["source_root"] == str(prebuilt_root.resolve())
+    assert Path(result["manifest"]["source_root"]).resolve() == prebuilt_root.resolve()
 
 
 def test_exemplar_pool_writes_canonical_repo_exclusion_log(tmp_path):
