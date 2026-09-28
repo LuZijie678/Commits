@@ -1,0 +1,119 @@
+{
+  "run_id": "stage1_formal_training_20260723T073352Z",
+  "created_at": "2026-07-23T07:33:52.879718+00:00",
+  "stage": "stage1_formal_training",
+  "mode": "execute",
+  "output_root": "outputs/mica_stage1_formal_training_20260723T073100Z",
+  "training_enabled": true,
+  "official_validation_executed": false,
+  "stage2_training_enabled": false,
+  "stage3_training_enabled": false,
+  "stage4_training_enabled": false,
+  "generation_training_enabled": false,
+  "retrieval_enabled": false,
+  "verifier_enabled": false,
+  "api_calls_enabled": false,
+  "thresholds_applied_to_pass_fail": false,
+  "advisor_approval_required": false,
+  "inputs": {
+    "protocol_spec": "configs/mica/stage1_protocol_spec.json",
+    "asset_registry": "configs/mica/data_asset_registry.json",
+    "base_config": "code/mica/configs/mica_stage1_sanity.yaml"
+  },
+  "metadata": {
+    "required_assets_status": {
+      "step1_high_conf_single_train": {
+        "status": "frozen",
+        "path": "datasets/mica/formal_assets/stage1/step1_high_conf_single_train.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "strict_synthetic_train": {
+        "status": "frozen",
+        "path": "datasets/mica/formal_assets/stage1/strict_synthetic_train.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "step1_high_conf_single_dev": {
+        "status": "frozen",
+        "path": "datasets/mica/formal_assets/stage1/step1_high_conf_single_dev.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "strict_synthetic_dev": {
+        "status": "frozen",
+        "path": "datasets/mica/formal_assets/stage1/strict_synthetic_dev.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    "training_plan": {
+      "candidate_schedule": "naive_balanced_mixed_large_scale",
+      "epochs": 15,
+      "lambda_align": 1.0,
+      "lambda_count": 0.5,
+      "lambda_exist": 0.5,
+      "kmax": 4,
+      "null_slot_enabled": false,
+      "use_pairwise_bias": true
+    },
+    "experiment_manifest": {
+      "manifest_version": "mica-experiment-v1",
+      "stage": "stage1",
+      "protocol_version": "mica-runner-v1",
+      "config_hash": "f280eebdf24a6571241dcfd46cfac47e376f2932ad26d0b5e5708d45fb72751d",
+      "asset_registry_hash": "7bd6ee923ee207dc6cd27967ff676d17dabedfd2cfd351420664c7835a9bd75d",
+      "git_commit": "2ed7f711afcc1a4f96058c7d253328f22b8e5348",
+      "dirty": true,
+      "seed": 42,
+      "forbidden_assets_excluded": true,
+      "runtime_output_policy": "no_repo_outputs",
+      "advisor_approval_status": "pending",
+      "runner_name": "run_stage1_formal_training",
+      "mode": "execute",
+      "advisor_approval": false,
+      "final_test_usage": {
+        "used": false,
+        "threshold_tuning": false
+      },
+      "api_policy": false,
+      "attribution_update_policy": true,
+      "attribution_update_scope": "stage1_training_only"
+    },
+    "train_sample_count": 2000,
+    "dev_sample_count": 500,
+    "checkpoint_path": "outputs/mica_stage1_formal_training_20260723T073100Z/stage1_full_model_checkpoint.pt",
+    "checkpoint_hash": "ef7756af1f2676a6df6caafbdb7c73819be739e829ed53ed9e465b13d96ecb7c",
+    "checkpoint_metadata_path": "outputs/mica_stage1_formal_training_20260723T073100Z/stage1_formal_training_checkpoint_metadata.json",
+    "roundtrip_path": "outputs/mica_stage1_formal_training_20260723T073100Z/stage1_formal_training_checkpoint_roundtrip.json",
+    "dev_metrics_path": "outputs/mica_stage1_formal_training_20260723T073100Z/stage1_formal_training_dev_metrics.json",
+    "training_log_path": "outputs/mica_stage1_formal_training_20260723T073100Z/stage1_formal_training_log.jsonl"
+  },
+  "stage2_allowed": false,
+  "stage3_allowed": false,
+  "stage4_allowed": false,
+  "checkpoint_registered": true,
+  "checkpoint_roundtrip_valid": true,
+  "completion_status": "completed",
+  "full_model_checkpoint_written": true
+}

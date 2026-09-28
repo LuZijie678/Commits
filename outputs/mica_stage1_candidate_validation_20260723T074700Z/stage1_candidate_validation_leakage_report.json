@@ -1,0 +1,25 @@
+{
+  "compatibility_checked": true,
+  "official_validation_executed": false,
+  "training_executed": false,
+  "stage2_allowed": false,
+  "boundary_check": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "eval_only_assets": [
+    "hard_b_test",
+    "m_final_test",
+    "m_weak_test",
+    "real_alignment_final_test",
+    "real_alignment_test",
+    "real_domain_selective_test",
+    "real_domain_split_test"
+  ],
+  "cross_asset_overlap": {
+    "sample_id_overlap_count": 0,
+    "sha_overlap_count": 0,
+    "synthetic_id_overlap_count": 0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "mica-local-asset-materialization-v1",
+  "artifacts": {
+    "stage1_candidate_22bcd358766e_f280eebdf24a_9320b20f609e_seed42": {
+      "path": "outputs/mica_stage1_clean_candidate_20260723T081816Z/training/stage1_full_model_checkpoint.pt",
+      "sha256": "4c292e0b4f6d7e2b0a291fd9ab1117552922076f3ffb6b28eff06484c33f8c11",
+      "created_by": "manual_clean_checkpoint_promotion",
+      "git_commit": "694a4dcfec14d93b65dcbe82fe9d212d90475a5c"
+    }
+  }
+}

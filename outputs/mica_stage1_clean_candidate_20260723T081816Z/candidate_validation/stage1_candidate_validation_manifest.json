@@ -1,0 +1,146 @@
+{
+  "run_id": "stage1_candidate_validation_20260723T082722Z",
+  "created_at": "2026-07-23T08:27:22.010249+00:00",
+  "stage": "stage1_candidate_validation",
+  "mode": "execute",
+  "output_root": "outputs/mica_stage1_clean_candidate_20260723T081816Z/candidate_validation",
+  "training_enabled": false,
+  "official_validation_executed": false,
+  "stage2_training_enabled": false,
+  "stage3_training_enabled": false,
+  "stage4_training_enabled": false,
+  "generation_training_enabled": false,
+  "retrieval_enabled": false,
+  "verifier_enabled": false,
+  "api_calls_enabled": false,
+  "thresholds_applied_to_pass_fail": true,
+  "advisor_approval_required": false,
+  "inputs": {
+    "asset_registry": "outputs/mica_stage1_clean_candidate_20260723T081816Z/data_asset_registry.runtime.json",
+    "metric_thresholds": "outputs/mica_stage1_clean_candidate_20260723T081816Z/threshold_selection/stage1_metric_thresholds.candidate.json",
+    "checkpoint": "outputs/mica_stage1_clean_candidate_20260723T081816Z/training/stage1_full_model_checkpoint.pt",
+    "manifest": "datasets/mica/formal_assets/stage1/stage1_official_validation_dev.json",
+    "stage0_readiness": "outputs/mica_stage1_clean_candidate_20260723T081816Z/stage0_preflight/report.json"
+  },
+  "metadata": {
+    "official_blockers": [
+      "kmax_coverage_not_frozen",
+      "stage0_formal_ready_false",
+      "thresholds_pending_approval"
+    ],
+    "required_assets_status": {
+      "step1_high_conf_single_dev": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage1/step1_high_conf_single_dev.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "strict_synthetic_dev": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage1/strict_synthetic_dev.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "stage1_official_validation_dev": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage1/stage1_official_validation_dev.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "stage1_checkpoint_input": {
+        "status": "candidate_validated",
+        "artifact_id": "stage1_candidate_22bcd358766e_f280eebdf24a_9320b20f609e_seed42",
+        "path": "outputs/mica_stage1_clean_candidate_20260723T081816Z/training/stage1_full_model_checkpoint.pt",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    "input_asset_hashes": {
+      "step1_high_conf_single_dev": "ba38e8f0a3102a5e15542fd751fc57d82f8258a964ee566fbc94551509b7ea63",
+      "strict_synthetic_dev": "fd9a83959d0a169d21ec2606b1e99271cf43fb61f8be2b163b1b06e96c3ec31f",
+      "stage1_official_validation_dev": "3758ba97ae0902cba98d9f4a17d04a5d871b342741976c545ed6cb3a2e7aecdf",
+      "stage1_checkpoint_input": "4c292e0b4f6d7e2b0a291fd9ab1117552922076f3ffb6b28eff06484c33f8c11"
+    },
+    "checkpoint_hash": "4c292e0b4f6d7e2b0a291fd9ab1117552922076f3ffb6b28eff06484c33f8c11",
+    "manifest_hash": "3758ba97ae0902cba98d9f4a17d04a5d871b342741976c545ed6cb3a2e7aecdf",
+    "output_paths": {
+      "predictions": "stage1_candidate_validation_predictions.jsonl",
+      "prediction_errors": "stage1_candidate_validation_prediction_export_errors.jsonl",
+      "metrics": "stage1_candidate_validation_metrics.json",
+      "summary": "stage1_candidate_validation_summary.json",
+      "readiness": "stage1_candidate_validation_readiness.json",
+      "leakage_report": "stage1_candidate_validation_leakage_report.json"
+    },
+    "experiment_manifest": {
+      "manifest_version": "mica-experiment-v1",
+      "stage": "stage1",
+      "protocol_version": "mica-runner-v1",
+      "config_hash": "a104c4d6046467fa58e07d1f63f8eeedfe2cd6bdf1652acd9d168b3330731ff3",
+      "asset_registry_hash": "959abda5fa78a9c4145f72633f851688987141e0e659b14bcc4c195d4e7b8e7e",
+      "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+      "dirty": false,
+      "seed": 0,
+      "forbidden_assets_excluded": true,
+      "runtime_output_policy": "no_repo_outputs",
+      "advisor_approval_status": "pending",
+      "runner_name": "run_stage1_candidate_validation",
+      "mode": "execute",
+      "advisor_approval": false,
+      "git_provenance": {
+        "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+        "dirty": false,
+        "repo_root": "/Users/lifulin/Downloads/Commits",
+        "excluded_paths": [
+          "outputs/**",
+          "artifacts/**",
+          "configs/mica/*.local.json",
+          "m_existing_diff_package/data/continuous_m_crawl.launchd.log"
+        ],
+        "status_lines": [],
+        "status_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "git_diff_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "scope": "repo_filtered"
+      },
+      "final_test_usage": {
+        "used": false,
+        "threshold_tuning": false
+      },
+      "environment": {
+        "python_version": "3.14.3",
+        "python_executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O"
+      },
+      "api_policy": false,
+      "attribution_update_policy": false,
+      "attribution_update_scope": "policy_unspecified"
+    }
+  },
+  "validation_run_executed": true,
+  "formal_ready": false,
+  "paper_ready": false,
+  "execution_tier": "candidate_nonformal",
+  "completion_status": "executed_nonformal"
+}

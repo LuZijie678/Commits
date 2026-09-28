@@ -1,0 +1,56 @@
+{
+  "run_id": "stage1_kmax_exact_count_audit_20260723T073725Z",
+  "created_at": "2026-07-23T07:37:25.584313+00:00",
+  "stage": "stage1_kmax_exact_count_audit",
+  "mode": "execute",
+  "output_root": "outputs/mica_kmax_exact_count_audit_20260723T073600Z",
+  "training_enabled": false,
+  "official_validation_executed": false,
+  "stage2_training_enabled": false,
+  "stage3_training_enabled": false,
+  "stage4_training_enabled": false,
+  "generation_training_enabled": false,
+  "retrieval_enabled": false,
+  "verifier_enabled": false,
+  "api_calls_enabled": false,
+  "thresholds_applied_to_pass_fail": false,
+  "advisor_approval_required": false,
+  "inputs": {
+    "asset_registry": "configs/mica/data_asset_registry.json",
+    "kmax": 4,
+    "kmax_tau": null
+  },
+  "metadata": {
+    "report_path": "kmax_exact_count_report.json",
+    "exact_rows_path": "kmax_exact_count_rows.jsonl",
+    "queue_path": "kmax_exact_count_annotation_queue.jsonl",
+    "exact_row_count": 6620,
+    "queue_row_count": 2624,
+    "experiment_manifest": {
+      "manifest_version": "mica-experiment-v1",
+      "stage": "stage0",
+      "protocol_version": "mica-runner-v1",
+      "config_hash": "",
+      "asset_registry_hash": "2e5210ffc8f1c41de7f52d7eb5e53dd604de473dd8f6e3fe1450a4d733ffb435",
+      "git_commit": "2ed7f711afcc1a4f96058c7d253328f22b8e5348",
+      "dirty": true,
+      "seed": 0,
+      "forbidden_assets_excluded": true,
+      "runtime_output_policy": "no_repo_outputs",
+      "advisor_approval_status": "pending",
+      "runner_name": "run_kmax_exact_count_audit",
+      "mode": "execute",
+      "advisor_approval": false,
+      "final_test_usage": {
+        "used": false,
+        "threshold_tuning": false
+      },
+      "api_policy": false,
+      "attribution_update_policy": false,
+      "attribution_update_scope": "policy_unspecified"
+    }
+  },
+  "completion_status": "completed",
+  "kmax_frozen": false,
+  "blocked_by_missing_asset": true
+}

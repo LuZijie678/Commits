@@ -1,0 +1,56 @@
+{
+  "schema_version": "mica-checkpoint-v2",
+  "checkpoint_kind": "full_model_state",
+  "artifact_id": "stage1_candidate_22bcd358766e_f280eebdf24a_9320b20f609e_seed42",
+  "checkpoint_path": "outputs/mica_stage1_clean_candidate_20260723T081816Z/training/stage1_full_model_checkpoint.pt",
+  "checkpoint_hash": "4c292e0b4f6d7e2b0a291fd9ab1117552922076f3ffb6b28eff06484c33f8c11",
+  "model_config": {
+    "text_vector_dim": 256,
+    "dense_feature_dim": 9,
+    "hidden_dim": 64,
+    "kmax": 4,
+    "use_null_slot": false,
+    "use_pairwise_bias": true,
+    "assignment_temperature": 0.7,
+    "count_pb_coupling_strength": 0.0
+  },
+  "training_state": {
+    "epochs_completed": 15,
+    "global_step": 3750,
+    "seed": 42,
+    "batch_size": 8,
+    "train_sample_count": 2000,
+    "dev_sample_count": 500,
+    "scheduler_enabled": false,
+    "protocol_candidate_schedule": "naive_balanced_mixed_large_scale"
+  },
+  "data_manifest_hashes": {
+    "step1_high_conf_single_train": "61d6d214b5ecac3d4dd930e96ec0d0875808a8f12fd45a019538374bdc2da618",
+    "strict_synthetic_train": "ab8b8100114d8a266010bc0db049cc53cd0d1c483f0a6023f343996a14fb7a06",
+    "step1_high_conf_single_dev": "ba38e8f0a3102a5e15542fd751fc57d82f8258a964ee566fbc94551509b7ea63",
+    "strict_synthetic_dev": "fd9a83959d0a169d21ec2606b1e99271cf43fb61f8be2b163b1b06e96c3ec31f"
+  },
+  "registry_hash": "3add9503327ad2439adf0abe8e1a9857c434307416523c41bf6fd34b9fe0b54c",
+  "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+  "git_provenance": {
+    "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+    "dirty": false,
+    "repo_root": "/Users/lifulin/Downloads/Commits",
+    "excluded_paths": [
+      "outputs/**",
+      "artifacts/**",
+      "configs/mica/*.local.json",
+      "m_existing_diff_package/data/continuous_m_crawl.launchd.log"
+    ],
+    "status_lines": [],
+    "status_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "git_diff_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scope": "repo_filtered"
+  },
+  "environment": {
+    "python_version": "3.14.3",
+    "python_executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O"
+  },
+  "model_config_hash": "f10d2f5897e697fe7e7504eaf3b2236915cd0e6eda0f396482a737320ccb9d53"
+}

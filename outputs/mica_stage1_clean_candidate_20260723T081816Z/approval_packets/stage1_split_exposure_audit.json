@@ -1,0 +1,28 @@
+{
+  "conclusion": "dev_only_unexposed_final_test",
+  "candidate_validation_split_must_not_equal_official_final_test_split": true,
+  "candidate_manifest_path": "datasets/mica/formal_assets/stage1/stage1_official_validation_dev.json",
+  "current_official_manifest_path": "datasets/mica/formal_assets/stage1/stage1_official_final_test.json",
+  "proposed_final_test_manifest_paths": [
+    "datasets/mica/formal_assets/stage1/stage1_official_final_test.json",
+    "datasets/mica/formal_assets/stage1/step1_high_conf_single_test.json",
+    "datasets/mica/formal_assets/stage1/strict_synthetic_test.json"
+  ],
+  "candidate_splits": [
+    "dev"
+  ],
+  "current_official_splits": [
+    "test"
+  ],
+  "proposed_final_splits": [
+    "test"
+  ],
+  "candidate_sample_count": 500,
+  "current_official_sample_count": 500,
+  "proposed_final_sample_count": 1000,
+  "current_runner_sample_overlap_count": 0,
+  "current_runner_leakage_overlap_count": 0,
+  "proposed_final_sample_overlap_count": 0,
+  "proposed_final_leakage_overlap_count": 0,
+  "remediation": "freeze_new_stage1_official_final_test_before_official_validation"
+}

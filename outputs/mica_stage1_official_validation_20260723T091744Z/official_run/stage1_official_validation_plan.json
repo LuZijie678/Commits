@@ -1,0 +1,15 @@
+{
+  "candidate_schedule": "naive_balanced_mixed_large_scale",
+  "threshold_status": "frozen_dev_thresholds_v1",
+  "sample_count": 500,
+  "components": [
+    "frozen_manifest_loader",
+    "stage1_model_loader",
+    "formal_asset_registry_gate",
+    "stage1_eval_components",
+    "attribution_metrics",
+    "baseline_evaluator",
+    "summary_writer"
+  ],
+  "official_validation_executed": false
+}

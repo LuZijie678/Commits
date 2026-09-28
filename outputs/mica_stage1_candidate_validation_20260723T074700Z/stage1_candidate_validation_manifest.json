@@ -1,0 +1,122 @@
+{
+  "run_id": "stage1_candidate_validation_20260723T073917Z",
+  "created_at": "2026-07-23T07:39:17.674231+00:00",
+  "stage": "stage1_candidate_validation",
+  "mode": "execute",
+  "output_root": "outputs/mica_stage1_candidate_validation_20260723T074700Z",
+  "training_enabled": false,
+  "official_validation_executed": false,
+  "stage2_training_enabled": false,
+  "stage3_training_enabled": false,
+  "stage4_training_enabled": false,
+  "generation_training_enabled": false,
+  "retrieval_enabled": false,
+  "verifier_enabled": false,
+  "api_calls_enabled": false,
+  "thresholds_applied_to_pass_fail": true,
+  "advisor_approval_required": false,
+  "inputs": {
+    "asset_registry": "configs/mica/data_asset_registry.json",
+    "metric_thresholds": "configs/mica/stage1_metric_thresholds.json",
+    "checkpoint": "outputs/mica_stage1_formal_training_20260723T073100Z/stage1_full_model_checkpoint.pt",
+    "manifest": "datasets/mica/formal_assets/stage1/stage1_official_validation_dev.json",
+    "stage0_readiness": "outputs/mica_stage0_protocol_freeze_20260723T074500Z/report.json"
+  },
+  "metadata": {
+    "official_blockers": [
+      "kmax_coverage_not_frozen",
+      "stage0_formal_ready_false",
+      "thresholds_pending_approval"
+    ],
+    "required_assets_status": {
+      "step1_high_conf_single_dev": {
+        "status": "frozen",
+        "path": "datasets/mica/formal_assets/stage1/step1_high_conf_single_dev.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "strict_synthetic_dev": {
+        "status": "frozen",
+        "path": "datasets/mica/formal_assets/stage1/strict_synthetic_dev.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "stage1_official_validation_dev": {
+        "status": "frozen",
+        "path": "datasets/mica/formal_assets/stage1/stage1_official_validation_dev.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "stage1_checkpoint_input": {
+        "status": "frozen",
+        "path": "outputs/mica_stage1_formal_training_20260723T073100Z/stage1_full_model_checkpoint.pt",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    "input_asset_hashes": {
+      "step1_high_conf_single_dev": "ba38e8f0a3102a5e15542fd751fc57d82f8258a964ee566fbc94551509b7ea63",
+      "strict_synthetic_dev": "fd9a83959d0a169d21ec2606b1e99271cf43fb61f8be2b163b1b06e96c3ec31f",
+      "stage1_official_validation_dev": "3758ba97ae0902cba98d9f4a17d04a5d871b342741976c545ed6cb3a2e7aecdf",
+      "stage1_checkpoint_input": "ef7756af1f2676a6df6caafbdb7c73819be739e829ed53ed9e465b13d96ecb7c"
+    },
+    "checkpoint_hash": "ef7756af1f2676a6df6caafbdb7c73819be739e829ed53ed9e465b13d96ecb7c",
+    "manifest_hash": "3758ba97ae0902cba98d9f4a17d04a5d871b342741976c545ed6cb3a2e7aecdf",
+    "output_paths": {
+      "predictions": "stage1_candidate_validation_predictions.jsonl",
+      "prediction_errors": "stage1_candidate_validation_prediction_export_errors.jsonl",
+      "metrics": "stage1_candidate_validation_metrics.json",
+      "summary": "stage1_candidate_validation_summary.json",
+      "readiness": "stage1_candidate_validation_readiness.json",
+      "leakage_report": "stage1_candidate_validation_leakage_report.json"
+    },
+    "experiment_manifest": {
+      "manifest_version": "mica-experiment-v1",
+      "stage": "stage1",
+      "protocol_version": "mica-runner-v1",
+      "config_hash": "07465e309b07e83548dbb64ea20ef93e173f5f78a34d3ff232c1f5822a0c678e",
+      "asset_registry_hash": "2e5210ffc8f1c41de7f52d7eb5e53dd604de473dd8f6e3fe1450a4d733ffb435",
+      "git_commit": "2ed7f711afcc1a4f96058c7d253328f22b8e5348",
+      "dirty": true,
+      "seed": 0,
+      "forbidden_assets_excluded": true,
+      "runtime_output_policy": "no_repo_outputs",
+      "advisor_approval_status": "pending",
+      "runner_name": "run_stage1_candidate_validation",
+      "mode": "execute",
+      "advisor_approval": false,
+      "final_test_usage": {
+        "used": false,
+        "threshold_tuning": false
+      },
+      "api_policy": false,
+      "attribution_update_policy": false,
+      "attribution_update_scope": "policy_unspecified"
+    }
+  },
+  "validation_run_executed": true,
+  "formal_ready": false,
+  "paper_ready": false,
+  "execution_tier": "candidate_nonformal",
+  "completion_status": "executed_nonformal"
+}

@@ -2,7 +2,9 @@
 
 这是当前唯一主仓，用来统一管理 Step1 单意图原料挖掘与 Step2 多意图合成。
 
-Current checkpoint: `docs/current-experiment-checkpoint.md`
+MICA 当前实验状态请先看 `docs/MICA_STAGE1_V2_DATA_AND_ANNOTATION_EXECUTION.md`；
+本次补充的历史实验文件及其局限见 `docs/EXPERIMENT_ARTIFACT_RECOVERY.md`。
+`docs/current-experiment-checkpoint.md` 已标记为过时，仅供查阅历史。
 
 ## 当前结论
 
@@ -24,8 +26,8 @@ Step1 conservative_atomic_sources.csv
 
 ## 三种读法
 
-- 只想快速了解当前口径：先看 `docs/research_overview.md`
-- 只想知道现在到底有哪些正式输入/输出：看 `docs/project_map.md`
+- 只想快速了解 MICA 当前口径：先看 `docs/MICA_IMPLEMENTATION_INDEX.md` 和 `docs/MICA_STAGE1_V2_DATA_AND_ANNOTATION_EXECUTION.md`
+- 只想知道正式输入、输出与本地资产如何登记：看 `docs/MICA_DATA_ASSET_REGISTRY.md` 和 `docs/EXPERIMENT_ARTIFACT_RECOVERY.md`
 - 只想直接运行：看 `code/step1/README.md` 和 `code/step2/README.md`
 
 如果要引用“真实事实”而不是摘要表述，优先读这些文件本身：
@@ -118,11 +120,13 @@ make step2-fewshot-report
 make step2-fewshot-materialize
 ```
 
-## 当前权威文档
+## 文档入口（含历史记录）
 
-- `docs/project_map.md`: 单仓库结构、数据流与关键对象关系
-- `docs/research_overview.md`: 当前实验叙事与方法口径
-- `docs/records/2026-05-27-current-project-state.md`: 当前项目状态总记录
+- `docs/MICA_IMPLEMENTATION_INDEX.md`: MICA 实现与文档索引
+- `docs/MICA_STAGE1_V2_DATA_AND_ANNOTATION_EXECUTION.md`: Stage1-v2 当前执行状态
+- `docs/MICA_STAGE1_INDEPENDENT_AUDIT.md`: Stage1-v1 独立审计结论
+- `docs/EXPERIMENT_ARTIFACT_RECOVERY.md`: 本次补充的历史实验文件、校验与未上传项
+- `docs/records/2026-05-27-current-project-state.md`: 2026 年 5 月的历史状态记录
 - `code/step1/docs/2026-05-26-step1-正式结果记录.md`: Step1 正式结果记录
 - `code/step1/README.md`: Step1 当前入口说明
 - `code/step2/README.md`: Step2 当前入口说明

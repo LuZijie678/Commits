@@ -1,0 +1,135 @@
+{
+  "schema_version": "mica-stage1-official-preflight-v1",
+  "status": "ready",
+  "gates": {
+    "clean_git_worktree": true,
+    "clean_commit_checkpoint_provenance": true,
+    "logical_registry_materialized_hash_match": true,
+    "thresholds_approved": true,
+    "kmax_approved": true,
+    "candidate_validation_split_must_not_equal_official_final_test_split": true,
+    "official_final_test_manifest_frozen": true,
+    "leakage_clean": true,
+    "required_output_location_empty": true,
+    "not_fixture_or_sanity": true,
+    "checkpoint_payload_valid": true,
+    "threshold_checkpoint_hash_matches_spec": true
+  },
+  "git_provenance": {
+    "git_commit": "694a4dcfec14d93b65dcbe82fe9d212d90475a5c",
+    "dirty": false,
+    "repo_root": "/Users/lifulin/Downloads/Commits",
+    "excluded_paths": [
+      "outputs/**",
+      "artifacts/**",
+      "configs/mica/*.local.json",
+      "m_existing_diff_package/data/continuous_m_crawl.launchd.log"
+    ],
+    "status_lines": [],
+    "status_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "git_diff_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scope": "repo_filtered"
+  },
+  "checkpoint_git_provenance": {
+    "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+    "dirty": false,
+    "repo_root": "/Users/lifulin/Downloads/Commits",
+    "excluded_paths": [
+      "outputs/**",
+      "artifacts/**",
+      "configs/mica/*.local.json",
+      "m_existing_diff_package/data/continuous_m_crawl.launchd.log"
+    ],
+    "status_lines": [],
+    "status_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "git_diff_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scope": "repo_filtered"
+  },
+  "checkpoint_validation": {
+    "valid": true,
+    "errors": [],
+    "checkpoint_kind": "full_model_state"
+  },
+  "checkpoint_provenance_validation": {
+    "valid": true,
+    "errors": [],
+    "git_provenance": {
+      "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+      "dirty": false,
+      "repo_root": "/Users/lifulin/Downloads/Commits",
+      "excluded_paths": [
+        "outputs/**",
+        "artifacts/**",
+        "configs/mica/*.local.json",
+        "m_existing_diff_package/data/continuous_m_crawl.launchd.log"
+      ],
+      "status_lines": [],
+      "status_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_diff_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "repo_filtered"
+    },
+    "fallback_metadata": {
+      "training_manifest_hashes": {
+        "step1_high_conf_single_train": "61d6d214b5ecac3d4dd930e96ec0d0875808a8f12fd45a019538374bdc2da618",
+        "strict_synthetic_train": "ab8b8100114d8a266010bc0db049cc53cd0d1c483f0a6023f343996a14fb7a06",
+        "step1_high_conf_single_dev": "ba38e8f0a3102a5e15542fd751fc57d82f8258a964ee566fbc94551509b7ea63",
+        "strict_synthetic_dev": "fd9a83959d0a169d21ec2606b1e99271cf43fb61f8be2b163b1b06e96c3ec31f"
+      },
+      "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+      "git_provenance": {
+        "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+        "dirty": false,
+        "repo_root": "/Users/lifulin/Downloads/Commits",
+        "excluded_paths": [
+          "outputs/**",
+          "artifacts/**",
+          "configs/mica/*.local.json",
+          "m_existing_diff_package/data/continuous_m_crawl.launchd.log"
+        ],
+        "status_lines": [],
+        "status_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "git_diff_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "scope": "repo_filtered"
+      },
+      "model_config_hash": "f10d2f5897e697fe7e7504eaf3b2236915cd0e6eda0f396482a737320ccb9d53",
+      "environment": {
+        "python_version": "3.14.3",
+        "python_executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O"
+      }
+    }
+  },
+  "split_exposure_audit": {
+    "conclusion": "dev_only_unexposed_final_test",
+    "candidate_validation_split_must_not_equal_official_final_test_split": true,
+    "candidate_manifest_path": "datasets/mica/formal_assets/stage1/stage1_official_validation_dev.json",
+    "current_official_manifest_path": "datasets/mica/formal_assets/stage1/stage1_official_final_test.json",
+    "proposed_final_test_manifest_paths": [
+      "datasets/mica/formal_assets/stage1/stage1_official_final_test.json",
+      "datasets/mica/formal_assets/stage1/step1_high_conf_single_test.json",
+      "datasets/mica/formal_assets/stage1/strict_synthetic_test.json"
+    ],
+    "candidate_splits": [
+      "dev"
+    ],
+    "current_official_splits": [
+      "test"
+    ],
+    "proposed_final_splits": [
+      "test"
+    ],
+    "candidate_sample_count": 500,
+    "current_official_sample_count": 500,
+    "proposed_final_sample_count": 1000,
+    "current_runner_sample_overlap_count": 0,
+    "current_runner_leakage_overlap_count": 0,
+    "proposed_final_sample_overlap_count": 0,
+    "proposed_final_leakage_overlap_count": 0,
+    "remediation": "freeze_new_stage1_official_final_test_before_official_validation"
+  },
+  "threshold_packet_status": "approved",
+  "kmax_packet_status": "approved",
+  "official_runner_target_asset": "stage1_official_final_test",
+  "candidate_validation_asset": "stage1_official_validation_dev",
+  "future_official_final_test_asset": "stage1_official_final_test"
+}

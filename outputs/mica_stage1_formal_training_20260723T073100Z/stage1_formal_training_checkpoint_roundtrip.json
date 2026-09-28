@@ -1,0 +1,9 @@
+{
+  "valid": true,
+  "sample_id": "atomic::e84f2e2fbbff177a56a0cf215ed55c4e1aeec588",
+  "predicted_count_before": 1,
+  "predicted_count_after": 1,
+  "assignments_match": true,
+  "count_probs_max_abs_diff": 0.0,
+  "slot_exist_max_abs_diff": 0.0
+}

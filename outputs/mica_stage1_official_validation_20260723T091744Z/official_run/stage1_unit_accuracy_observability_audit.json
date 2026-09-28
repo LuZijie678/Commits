@@ -1,0 +1,123 @@
+{
+  "schema_version": "mica-stage1-unit-accuracy-observability-audit-v1",
+  "official_run_id": "stage1_official_validation_20260723T091921Z",
+  "official_manifest_sha256": "e0fa6c3c4a32f638a0257203ed360a4e29d1c99bd15eee378f02536ef13e808b",
+  "predictions_sha256": "9fd0a710817e0860ae477813e38f4ab8dc0e1a383b8d25b598a295a968a67ad6",
+  "aggregate_metrics_sha256": "1205e61d2343384d50aa32e424ac4977fbd367fb96a40497340791d543b20f33",
+  "final_test_manifest_sha256": "0c0ca7acdbce65f9533b0119193b480db0f9304abe29367349c7c51c2e3ee3d8",
+  "official_result_sha256": "679c8af0e384e9dd461dd710bdf134de8c0354e7b88e4e0f17c3fcd4734b1acb",
+  "checkpoint_sha256": "4c292e0b4f6d7e2b0a291fd9ab1117552922076f3ffb6b28eff06484c33f8c11",
+  "metric_name": "unit_accuracy_gain_over_all_one",
+  "metric_definition_version": "stage1-unit-accuracy-gain-over-all-one-v1",
+  "metric_implementation_path": "code/mica/train/eval_stage1_sanity.py::evaluate_model -> code/mica/runners/run_stage1_official_validation.py::run_stage1_official_validation",
+  "baseline_definition": "Per eligible sample, assign every eligible foreground unit to a single synthetic slot `__all_one__`; compute Hungarian unit accuracy; report the sample-mean MICA unit accuracy minus the sample-mean all-one baseline unit accuracy.",
+  "required_input_fields": {
+    "gold": [
+      "sample_id",
+      "gold_unit_to_intent"
+    ],
+    "prediction": [
+      "sample_id",
+      "unit_to_slot"
+    ]
+  },
+  "available_input_fields": {
+    "gold_row_fields": [
+      "cardinality_label_type",
+      "commit_id",
+      "construction_group",
+      "edit_units",
+      "gold_count",
+      "gold_hunk_to_intent",
+      "gold_provenance_status",
+      "gold_unit_to_intent",
+      "intent_subjects",
+      "intent_types",
+      "leakage_group",
+      "repo",
+      "repository",
+      "sample_id",
+      "sample_weight",
+      "source_atomic_commit_ids",
+      "source_kind",
+      "source_sha",
+      "source_type",
+      "split"
+    ],
+    "prediction_row_fields": [
+      "active_slots",
+      "all_slots",
+      "count_probs",
+      "metadata",
+      "predicted_count",
+      "sample_id",
+      "source",
+      "unit_assignment_scores",
+      "unit_records",
+      "unit_to_slot"
+    ],
+    "gold_edit_unit_fields": [
+      "added_lines",
+      "changed_identifiers",
+      "deleted_lines",
+      "file_path",
+      "file_role",
+      "hunk_id",
+      "language",
+      "metadata",
+      "patch_text",
+      "unit_id"
+    ],
+    "prediction_unit_record_fields": [
+      "added_lines",
+      "changed_identifiers",
+      "deleted_lines",
+      "file_path",
+      "file_role",
+      "hunk_id",
+      "language",
+      "metadata",
+      "patch_text",
+      "unit_id"
+    ]
+  },
+  "missing_input_fields": [],
+  "total_samples": 500,
+  "eligible_samples": 500,
+  "excluded_samples": 0,
+  "total_units": 2526,
+  "eligible_units": 2526,
+  "excluded_units": 0,
+  "exclusion_counts_by_reason": {},
+  "numerator": {
+    "mica_unit_accuracy_sum": 481.1849190025663,
+    "all_one_unit_accuracy_sum": 415.09165130410514,
+    "gain_sum_difference": 66.09326769846115
+  },
+  "denominator": 500,
+  "observed_value": 0.13218653539692227,
+  "null_reason": "aggregate_metric_missing_despite_complete_frozen_inputs",
+  "root_cause_class": "metric_computation_bug",
+  "recomputation_allowed": true,
+  "protocol_amendment_required": false,
+  "test_data_reexecution_required": false,
+  "model_reexecution_required": false,
+  "aggregate_metric_observed": null,
+  "aggregate_metric_expected_bound": 0.03,
+  "frozen_definition_unique": true,
+  "definition_notes": [
+    "Threshold key was frozen before official evaluation.",
+    "Historical Stage 1 code already computed the gain as unit_accuracy_hungarian - all_one_unit_accuracy.",
+    "The frozen official final-test asset contains no uncertain/shared/mixed exclusions, so exclusion ambiguity does not affect the recovered value."
+  ],
+  "source_artifact_hashes": {
+    "official_manifest": "e0fa6c3c4a32f638a0257203ed360a4e29d1c99bd15eee378f02536ef13e808b",
+    "predictions": "9fd0a710817e0860ae477813e38f4ab8dc0e1a383b8d25b598a295a968a67ad6",
+    "aggregate_metrics": "1205e61d2343384d50aa32e424ac4977fbd367fb96a40497340791d543b20f33",
+    "final_test_manifest": "0c0ca7acdbce65f9533b0119193b480db0f9304abe29367349c7c51c2e3ee3d8",
+    "threshold_spec": "8036e622ab64bbfde6a189d7d2f97d60624408f9f09f81d549ce41b087836ad5",
+    "official_result": "679c8af0e384e9dd461dd710bdf134de8c0354e7b88e4e0f17c3fcd4734b1acb"
+  },
+  "official_result_recorded_paper_ready": false,
+  "official_manifest_recorded_paper_ready": false
+}

@@ -1,0 +1,568 @@
+{
+  "asset_registry_validation": {
+    "valid": true,
+    "schema_valid": true,
+    "registry_status": "formal_assets_populated",
+    "required_missing_paths": [
+      "human_pilot_annotations",
+      "m_align_calib",
+      "message_utility_manifest",
+      "oracle_plans",
+      "predicted_plans",
+      "real_alignment_dev",
+      "real_alignment_final_test",
+      "real_alignment_test",
+      "real_domain_selective_test",
+      "real_domain_split_test",
+      "renderer_dataset"
+    ],
+    "required_assets_ready": false,
+    "readiness_by_requirement": {
+      "final_eval": {
+        "required_assets": [
+          "real_alignment_final_test",
+          "real_alignment_test",
+          "real_domain_selective_test",
+          "real_domain_split_test"
+        ],
+        "missing_assets": [
+          "real_alignment_final_test",
+          "real_alignment_test",
+          "real_domain_selective_test",
+          "real_domain_split_test"
+        ],
+        "ready_asset_count": 0,
+        "required_asset_count": 4,
+        "ready": false
+      },
+      "message_utility_eval": {
+        "required_assets": [
+          "message_utility_manifest"
+        ],
+        "missing_assets": [
+          "message_utility_manifest"
+        ],
+        "ready_asset_count": 0,
+        "required_asset_count": 1,
+        "ready": false
+      },
+      "message_utility_human_pilot": {
+        "required_assets": [
+          "human_pilot_annotations"
+        ],
+        "missing_assets": [
+          "human_pilot_annotations"
+        ],
+        "ready_asset_count": 0,
+        "required_asset_count": 1,
+        "ready": false
+      },
+      "stage1_candidate_validation": {
+        "required_assets": [
+          "stage1_official_validation_dev",
+          "step1_high_conf_single_dev",
+          "strict_synthetic_dev"
+        ],
+        "missing_assets": [],
+        "ready_asset_count": 3,
+        "required_asset_count": 3,
+        "ready": true
+      },
+      "stage1_threshold_selection": {
+        "required_assets": [
+          "stage1_official_validation_dev",
+          "step1_high_conf_single_dev",
+          "strict_synthetic_dev"
+        ],
+        "missing_assets": [],
+        "ready_asset_count": 3,
+        "required_asset_count": 3,
+        "ready": true
+      },
+      "stage1_train": {
+        "required_assets": [
+          "step1_high_conf_single_train",
+          "strict_synthetic_train"
+        ],
+        "missing_assets": [],
+        "ready_asset_count": 2,
+        "required_asset_count": 2,
+        "ready": true
+      },
+      "stage1_validation_execute": {
+        "required_assets": [
+          "stage1_checkpoint_input",
+          "stage1_official_final_test"
+        ],
+        "missing_assets": [],
+        "ready_asset_count": 2,
+        "required_asset_count": 2,
+        "ready": true
+      },
+      "stage2_dev": {
+        "required_assets": [
+          "hard_b_dev",
+          "m_weak_dev"
+        ],
+        "missing_assets": [],
+        "ready_asset_count": 2,
+        "required_asset_count": 2,
+        "ready": true
+      },
+      "stage2_train": {
+        "required_assets": [
+          "hard_b_train",
+          "m_weak_train",
+          "strict_replay"
+        ],
+        "missing_assets": [],
+        "ready_asset_count": 3,
+        "required_asset_count": 3,
+        "ready": true
+      },
+      "stage3_calibration": {
+        "required_assets": [
+          "m_align_calib",
+          "real_alignment_dev"
+        ],
+        "missing_assets": [
+          "m_align_calib",
+          "real_alignment_dev"
+        ],
+        "ready_asset_count": 0,
+        "required_asset_count": 2,
+        "ready": false
+      },
+      "stage4_eval_oracle": {
+        "required_assets": [
+          "oracle_plans"
+        ],
+        "missing_assets": [
+          "oracle_plans"
+        ],
+        "ready_asset_count": 0,
+        "required_asset_count": 1,
+        "ready": false
+      },
+      "stage4_eval_predicted": {
+        "required_assets": [
+          "predicted_plans"
+        ],
+        "missing_assets": [
+          "predicted_plans"
+        ],
+        "ready_asset_count": 0,
+        "required_asset_count": 1,
+        "ready": false
+      },
+      "stage4_renderer_train": {
+        "required_assets": [
+          "renderer_dataset"
+        ],
+        "missing_assets": [
+          "renderer_dataset"
+        ],
+        "ready_asset_count": 0,
+        "required_asset_count": 1,
+        "ready": false
+      }
+    },
+    "asset_status": {
+      "strict_synthetic_train": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage1/strict_synthetic_train.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "strict_synthetic_dev": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage1/strict_synthetic_dev.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "strict_synthetic_test": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage1/strict_synthetic_test.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "step1_high_conf_single_train": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage1/step1_high_conf_single_train.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "step1_high_conf_single_dev": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage1/step1_high_conf_single_dev.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "step1_high_conf_single_test": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage1/step1_high_conf_single_test.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "stage1_official_validation_dev": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage1/stage1_official_validation_dev.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "stage1_checkpoint_input": {
+        "status": "frozen",
+        "artifact_id": "stage1_candidate_22bcd358766e_f280eebdf24a_9320b20f609e_seed42",
+        "path": "outputs/mica_stage1_clean_candidate_20260723T081816Z/training/stage1_full_model_checkpoint.pt",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "strict_replay": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage2/strict_replay.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "hard_b_train": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage2/hard_b_train.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "hard_b_dev": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage2/hard_b_dev.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "hard_b_test": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage2/hard_b_test.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "m_weak_train": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage2/m_weak_train.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "m_weak_dev": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage2/m_weak_dev.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "m_weak_test": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage2/m_weak_test.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "m_final_test": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage2/m_weak_test.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      },
+      "m_align_calib": {
+        "status": "pending_annotation",
+        "artifact_id": null,
+        "path": null,
+        "file_exists": false,
+        "schema_valid": true,
+        "content_valid": false,
+        "formal_ready": false,
+        "checksum_match": null,
+        "errors": [],
+        "warnings": []
+      },
+      "real_alignment_dev": {
+        "status": "pending_annotation",
+        "artifact_id": null,
+        "path": null,
+        "file_exists": false,
+        "schema_valid": true,
+        "content_valid": false,
+        "formal_ready": false,
+        "checksum_match": null,
+        "errors": [],
+        "warnings": []
+      },
+      "real_alignment_test": {
+        "status": "pending_annotation",
+        "artifact_id": null,
+        "path": null,
+        "file_exists": false,
+        "schema_valid": true,
+        "content_valid": false,
+        "formal_ready": false,
+        "checksum_match": null,
+        "errors": [],
+        "warnings": []
+      },
+      "real_alignment_final_test": {
+        "status": "pending_annotation",
+        "artifact_id": null,
+        "path": null,
+        "file_exists": false,
+        "schema_valid": true,
+        "content_valid": false,
+        "formal_ready": false,
+        "checksum_match": null,
+        "errors": [],
+        "warnings": []
+      },
+      "real_domain_split_test": {
+        "status": "pending_generation",
+        "artifact_id": null,
+        "path": null,
+        "file_exists": false,
+        "schema_valid": true,
+        "content_valid": false,
+        "formal_ready": false,
+        "checksum_match": null,
+        "errors": [],
+        "warnings": []
+      },
+      "real_domain_selective_test": {
+        "status": "pending_generation",
+        "artifact_id": null,
+        "path": null,
+        "file_exists": false,
+        "schema_valid": true,
+        "content_valid": false,
+        "formal_ready": false,
+        "checksum_match": null,
+        "errors": [],
+        "warnings": []
+      },
+      "renderer_dataset": {
+        "status": "pending_generation",
+        "artifact_id": null,
+        "path": null,
+        "file_exists": false,
+        "schema_valid": true,
+        "content_valid": false,
+        "formal_ready": false,
+        "checksum_match": null,
+        "errors": [],
+        "warnings": []
+      },
+      "predicted_plans": {
+        "status": "pending_generation",
+        "artifact_id": null,
+        "path": null,
+        "file_exists": false,
+        "schema_valid": true,
+        "content_valid": false,
+        "formal_ready": false,
+        "checksum_match": null,
+        "errors": [],
+        "warnings": []
+      },
+      "oracle_plans": {
+        "status": "pending_generation",
+        "artifact_id": null,
+        "path": null,
+        "file_exists": false,
+        "schema_valid": true,
+        "content_valid": false,
+        "formal_ready": false,
+        "checksum_match": null,
+        "errors": [],
+        "warnings": []
+      },
+      "message_utility_manifest": {
+        "status": "pending_generation",
+        "artifact_id": null,
+        "path": null,
+        "file_exists": false,
+        "schema_valid": true,
+        "content_valid": false,
+        "formal_ready": false,
+        "checksum_match": null,
+        "errors": [],
+        "warnings": []
+      },
+      "human_pilot_annotations": {
+        "status": "pending_annotation",
+        "artifact_id": null,
+        "path": null,
+        "file_exists": false,
+        "schema_valid": true,
+        "content_valid": false,
+        "formal_ready": false,
+        "checksum_match": null,
+        "errors": [],
+        "warnings": []
+      },
+      "stage1_official_final_test": {
+        "status": "frozen",
+        "artifact_id": null,
+        "path": "datasets/mica/formal_assets/stage1/stage1_official_final_test.json",
+        "file_exists": true,
+        "schema_valid": true,
+        "content_valid": true,
+        "formal_ready": true,
+        "checksum_match": true,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    "assets_materialized": true,
+    "assets_content_valid": true,
+    "formal_ready": false,
+    "warnings": [
+      {
+        "code": "forbidden_asset_unset",
+        "message": "Forbidden asset `real_alignment_test` is currently unset."
+      },
+      {
+        "code": "forbidden_asset_unset",
+        "message": "Forbidden asset `real_alignment_final_test` is currently unset."
+      },
+      {
+        "code": "forbidden_asset_unset",
+        "message": "Forbidden asset `real_domain_split_test` is currently unset."
+      },
+      {
+        "code": "forbidden_asset_unset",
+        "message": "Forbidden asset `real_domain_selective_test` is currently unset."
+      }
+    ],
+    "errors": []
+  },
+  "required_assets_status": {
+    "stage1_official_final_test": {
+      "status": "frozen",
+      "artifact_id": null,
+      "path": "datasets/mica/formal_assets/stage1/stage1_official_final_test.json",
+      "file_exists": true,
+      "schema_valid": true,
+      "content_valid": true,
+      "formal_ready": true,
+      "checksum_match": true,
+      "errors": [],
+      "warnings": []
+    },
+    "stage1_checkpoint_input": {
+      "status": "frozen",
+      "artifact_id": "stage1_candidate_22bcd358766e_f280eebdf24a_9320b20f609e_seed42",
+      "path": "outputs/mica_stage1_clean_candidate_20260723T081816Z/training/stage1_full_model_checkpoint.pt",
+      "file_exists": true,
+      "schema_valid": true,
+      "content_valid": true,
+      "formal_ready": true,
+      "checksum_match": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  "checkpoint_validation": {
+    "valid": true,
+    "errors": [],
+    "checkpoint_kind": "full_model_state"
+  },
+  "threshold_status": "frozen_dev_thresholds_v1",
+  "official_blockers": [],
+  "official_validation_executed": true,
+  "completion_status": "executed_official",
+  "stage0_formal_ready": true,
+  "preflight_status": "ready"
+}

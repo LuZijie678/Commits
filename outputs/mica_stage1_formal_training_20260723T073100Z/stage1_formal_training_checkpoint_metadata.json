@@ -1,0 +1,34 @@
+{
+  "schema_version": "mica-checkpoint-v2",
+  "checkpoint_kind": "full_model_state",
+  "checkpoint_path": "outputs/mica_stage1_formal_training_20260723T073100Z/stage1_full_model_checkpoint.pt",
+  "checkpoint_hash": "ef7756af1f2676a6df6caafbdb7c73819be739e829ed53ed9e465b13d96ecb7c",
+  "model_config": {
+    "text_vector_dim": 256,
+    "dense_feature_dim": 9,
+    "hidden_dim": 64,
+    "kmax": 4,
+    "use_null_slot": false,
+    "use_pairwise_bias": true,
+    "assignment_temperature": 0.7,
+    "count_pb_coupling_strength": 0.0
+  },
+  "training_state": {
+    "epochs_completed": 15,
+    "global_step": 3750,
+    "seed": 42,
+    "batch_size": 8,
+    "train_sample_count": 2000,
+    "dev_sample_count": 500,
+    "scheduler_enabled": false,
+    "protocol_candidate_schedule": "naive_balanced_mixed_large_scale"
+  },
+  "data_manifest_hashes": {
+    "step1_high_conf_single_train": "61d6d214b5ecac3d4dd930e96ec0d0875808a8f12fd45a019538374bdc2da618",
+    "strict_synthetic_train": "ab8b8100114d8a266010bc0db049cc53cd0d1c483f0a6023f343996a14fb7a06",
+    "step1_high_conf_single_dev": "ba38e8f0a3102a5e15542fd751fc57d82f8258a964ee566fbc94551509b7ea63",
+    "strict_synthetic_dev": "fd9a83959d0a169d21ec2606b1e99271cf43fb61f8be2b163b1b06e96c3ec31f"
+  },
+  "registry_hash": "7bd6ee923ee207dc6cd27967ff676d17dabedfd2cfd351420664c7835a9bd75d",
+  "git_commit": "2ed7f711afcc1a4f96058c7d253328f22b8e5348"
+}

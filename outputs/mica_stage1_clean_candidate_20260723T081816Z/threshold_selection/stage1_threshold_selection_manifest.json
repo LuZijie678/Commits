@@ -1,0 +1,119 @@
+{
+  "run_id": "stage1_threshold_selection_20260723T082427Z",
+  "created_at": "2026-07-23T08:24:27.113561+00:00",
+  "stage": "stage1_threshold_selection",
+  "mode": "execute",
+  "output_root": "outputs/mica_stage1_clean_candidate_20260723T081816Z/threshold_selection",
+  "training_enabled": false,
+  "official_validation_executed": false,
+  "stage2_training_enabled": false,
+  "stage3_training_enabled": false,
+  "stage4_training_enabled": false,
+  "generation_training_enabled": false,
+  "retrieval_enabled": false,
+  "verifier_enabled": false,
+  "api_calls_enabled": false,
+  "thresholds_applied_to_pass_fail": false,
+  "advisor_approval_required": false,
+  "inputs": {
+    "asset_registry": "outputs/mica_stage1_clean_candidate_20260723T081816Z/data_asset_registry.runtime.json",
+    "metric_thresholds": "configs/mica/stage1_metric_thresholds.json",
+    "checkpoint": "outputs/mica_stage1_clean_candidate_20260723T081816Z/training/stage1_full_model_checkpoint.pt",
+    "manifest": "datasets/mica/formal_assets/stage1/stage1_official_validation_dev.json"
+  },
+  "metadata": {
+    "checkpoint_hash": "4c292e0b4f6d7e2b0a291fd9ab1117552922076f3ffb6b28eff06484c33f8c11",
+    "dev_manifest_hash": "3758ba97ae0902cba98d9f4a17d04a5d871b342741976c545ed6cb3a2e7aecdf",
+    "gate_results": {
+      "count_accuracy": {
+        "bound_name": "count_accuracy_min",
+        "comparator": "min",
+        "threshold": 0.55,
+        "observed": 0.902,
+        "passed": true
+      },
+      "k2_split_recall": {
+        "bound_name": "k2_split_recall_min",
+        "comparator": "min",
+        "threshold": 0.5,
+        "observed": 0.848,
+        "passed": true
+      },
+      "over_split_rate_on_k1": {
+        "bound_name": "over_split_rate_on_k1_max",
+        "comparator": "max",
+        "threshold": 0.45,
+        "observed": 0.092,
+        "passed": true
+      },
+      "second_slot_gold_recall": {
+        "bound_name": "second_slot_gold_recall_min",
+        "comparator": "min",
+        "threshold": 0.4,
+        "observed": 0.6713333333333332,
+        "passed": true
+      },
+      "slot_collapse_rate": {
+        "bound_name": "slot_collapse_rate_max",
+        "comparator": "max",
+        "threshold": 0.45,
+        "observed": 0.086,
+        "passed": true
+      },
+      "unit_accuracy_gain_over_all_one": {
+        "bound_name": "unit_accuracy_gain_over_all_one_min",
+        "comparator": "min",
+        "threshold": 0.03,
+        "observed": null,
+        "passed": false
+      }
+    },
+    "report_path": "outputs/mica_stage1_clean_candidate_20260723T081816Z/threshold_selection/stage1_threshold_selection_report.json",
+    "thresholds_path": "outputs/mica_stage1_clean_candidate_20260723T081816Z/threshold_selection/stage1_metric_thresholds.candidate.json",
+    "experiment_manifest": {
+      "manifest_version": "mica-experiment-v1",
+      "stage": "stage1",
+      "protocol_version": "mica-runner-v1",
+      "config_hash": "07465e309b07e83548dbb64ea20ef93e173f5f78a34d3ff232c1f5822a0c678e",
+      "asset_registry_hash": "959abda5fa78a9c4145f72633f851688987141e0e659b14bcc4c195d4e7b8e7e",
+      "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+      "dirty": false,
+      "seed": 0,
+      "forbidden_assets_excluded": true,
+      "runtime_output_policy": "no_repo_outputs",
+      "advisor_approval_status": "pending",
+      "runner_name": "run_stage1_threshold_selection",
+      "mode": "execute",
+      "advisor_approval": false,
+      "git_provenance": {
+        "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+        "dirty": false,
+        "repo_root": "/Users/lifulin/Downloads/Commits",
+        "excluded_paths": [
+          "outputs/**",
+          "artifacts/**",
+          "configs/mica/*.local.json",
+          "m_existing_diff_package/data/continuous_m_crawl.launchd.log"
+        ],
+        "status_lines": [],
+        "status_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "git_diff_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "scope": "repo_filtered"
+      },
+      "final_test_usage": {
+        "used": false,
+        "threshold_tuning": false
+      },
+      "environment": {
+        "python_version": "3.14.3",
+        "python_executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O"
+      },
+      "api_policy": false,
+      "attribution_update_policy": false,
+      "attribution_update_scope": "policy_unspecified"
+    }
+  },
+  "completion_status": "completed",
+  "threshold_candidate_selected": true
+}

@@ -1,0 +1,76 @@
+{
+  "run_id": "stage1_kmax_exact_count_audit_20260723T082543Z",
+  "created_at": "2026-07-23T08:25:43.392947+00:00",
+  "stage": "stage1_kmax_exact_count_audit",
+  "mode": "execute",
+  "output_root": "outputs/mica_stage1_clean_candidate_20260723T081816Z/kmax_audit",
+  "training_enabled": false,
+  "official_validation_executed": false,
+  "stage2_training_enabled": false,
+  "stage3_training_enabled": false,
+  "stage4_training_enabled": false,
+  "generation_training_enabled": false,
+  "retrieval_enabled": false,
+  "verifier_enabled": false,
+  "api_calls_enabled": false,
+  "thresholds_applied_to_pass_fail": false,
+  "advisor_approval_required": false,
+  "inputs": {
+    "asset_registry": "outputs/mica_stage1_clean_candidate_20260723T081816Z/data_asset_registry.runtime.json",
+    "kmax": 4,
+    "kmax_tau": null
+  },
+  "metadata": {
+    "report_path": "kmax_exact_count_report.json",
+    "exact_rows_path": "kmax_exact_count_rows.jsonl",
+    "queue_path": "kmax_exact_count_annotation_queue.jsonl",
+    "exact_row_count": 6620,
+    "queue_row_count": 2624,
+    "experiment_manifest": {
+      "manifest_version": "mica-experiment-v1",
+      "stage": "stage0",
+      "protocol_version": "mica-runner-v1",
+      "config_hash": "",
+      "asset_registry_hash": "959abda5fa78a9c4145f72633f851688987141e0e659b14bcc4c195d4e7b8e7e",
+      "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+      "dirty": false,
+      "seed": 0,
+      "forbidden_assets_excluded": true,
+      "runtime_output_policy": "no_repo_outputs",
+      "advisor_approval_status": "pending",
+      "runner_name": "run_kmax_exact_count_audit",
+      "mode": "execute",
+      "advisor_approval": false,
+      "git_provenance": {
+        "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+        "dirty": false,
+        "repo_root": "/Users/lifulin/Downloads/Commits",
+        "excluded_paths": [
+          "outputs/**",
+          "artifacts/**",
+          "configs/mica/*.local.json",
+          "m_existing_diff_package/data/continuous_m_crawl.launchd.log"
+        ],
+        "status_lines": [],
+        "status_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "git_diff_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "scope": "repo_filtered"
+      },
+      "final_test_usage": {
+        "used": false,
+        "threshold_tuning": false
+      },
+      "environment": {
+        "python_version": "3.14.3",
+        "python_executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O"
+      },
+      "api_policy": false,
+      "attribution_update_policy": false,
+      "attribution_update_scope": "policy_unspecified"
+    }
+  },
+  "completion_status": "completed",
+  "kmax_frozen": false,
+  "blocked_by_missing_asset": true
+}

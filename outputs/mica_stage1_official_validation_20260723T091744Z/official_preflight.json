@@ -1,0 +1,157 @@
+{
+  "schema_version": "mica-stage1-official-preflight-v1",
+  "status": "ready",
+  "gates": {
+    "clean_execution_code_state": true,
+    "checkpoint_clean_provenance": true,
+    "logical_checkpoint_active_and_frozen": true,
+    "checkpoint_materialized": true,
+    "checkpoint_hash_match": true,
+    "checkpoint_loadable": true,
+    "threshold_version_approved": true,
+    "kmax_decision_approved": true,
+    "stage0_formal_ready": true,
+    "candidate_validation_split_must_not_equal_official_final_test_split": true,
+    "official_final_test_unexposed": true,
+    "final_test_manifest_frozen": true,
+    "leakage_clean": true,
+    "output_destination_available": true,
+    "non_fixture": true,
+    "non_sanity": true,
+    "non_dry_run": true,
+    "non_validate_only": true,
+    "clean_git_worktree": true,
+    "clean_commit_checkpoint_provenance": true,
+    "logical_registry_materialized_hash_match": true,
+    "thresholds_approved": true,
+    "kmax_approved": true,
+    "official_final_test_manifest_frozen": true,
+    "required_output_location_empty": true,
+    "not_fixture_or_sanity": true,
+    "checkpoint_payload_valid": true,
+    "threshold_checkpoint_hash_matches_spec": true
+  },
+  "git_provenance": {
+    "git_commit": "f85b5260057a213a04bb4ea0a3c8cb720caa5dff",
+    "dirty": false,
+    "repo_root": "/Users/lifulin/Downloads/Commits",
+    "excluded_paths": [
+      "outputs/**",
+      "artifacts/**",
+      "configs/mica/*.local.json",
+      "m_existing_diff_package/data/continuous_m_crawl.launchd.log"
+    ],
+    "status_lines": [],
+    "status_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "git_diff_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scope": "repo_filtered"
+  },
+  "checkpoint_git_provenance": {
+    "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+    "dirty": false,
+    "repo_root": "/Users/lifulin/Downloads/Commits",
+    "excluded_paths": [
+      "outputs/**",
+      "artifacts/**",
+      "configs/mica/*.local.json",
+      "m_existing_diff_package/data/continuous_m_crawl.launchd.log"
+    ],
+    "status_lines": [],
+    "status_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "git_diff_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scope": "repo_filtered"
+  },
+  "checkpoint_validation": {
+    "valid": true,
+    "errors": [],
+    "checkpoint_kind": "full_model_state"
+  },
+  "checkpoint_provenance_validation": {
+    "valid": true,
+    "errors": [],
+    "git_provenance": {
+      "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+      "dirty": false,
+      "repo_root": "/Users/lifulin/Downloads/Commits",
+      "excluded_paths": [
+        "outputs/**",
+        "artifacts/**",
+        "configs/mica/*.local.json",
+        "m_existing_diff_package/data/continuous_m_crawl.launchd.log"
+      ],
+      "status_lines": [],
+      "status_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_diff_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "repo_filtered"
+    },
+    "fallback_metadata": {
+      "training_manifest_hashes": {
+        "step1_high_conf_single_train": "61d6d214b5ecac3d4dd930e96ec0d0875808a8f12fd45a019538374bdc2da618",
+        "strict_synthetic_train": "ab8b8100114d8a266010bc0db049cc53cd0d1c483f0a6023f343996a14fb7a06",
+        "step1_high_conf_single_dev": "ba38e8f0a3102a5e15542fd751fc57d82f8258a964ee566fbc94551509b7ea63",
+        "strict_synthetic_dev": "fd9a83959d0a169d21ec2606b1e99271cf43fb61f8be2b163b1b06e96c3ec31f"
+      },
+      "validation_manifest_hashes": {
+        "stage1_official_validation_dev": "3758ba97ae0902cba98d9f4a17d04a5d871b342741976c545ed6cb3a2e7aecdf",
+        "stage1_official_final_test": "0c0ca7acdbce65f9533b0119193b480db0f9304abe29367349c7c51c2e3ee3d8"
+      },
+      "git_commit": "22bcd358766e1a678ee721c994830bdcf544213c",
+      "training_git_sha": "22bcd358766e1a678ee721c994830bdcf544213c",
+      "dirty_worktree": false,
+      "git_provenance_scope": "repo_filtered",
+      "provenance_status": "clean_commit_candidate",
+      "produced_from_clean_commit": true,
+      "model_config_hash": "f10d2f5897e697fe7e7504eaf3b2236915cd0e6eda0f396482a737320ccb9d53",
+      "training_registry_hash": "3add9503327ad2439adf0abe8e1a9857c434307416523c41bf6fd34b9fe0b54c",
+      "random_seed": 42,
+      "Kmax": 4,
+      "threshold_decision_dependency": "frozen_dev_thresholds_v1",
+      "threshold_checkpoint_hash": "4c292e0b4f6d7e2b0a291fd9ab1117552922076f3ffb6b28eff06484c33f8c11",
+      "checkpoint_roundtrip_validated": true,
+      "fixed_input_prediction_consistency_validated": true,
+      "immutable_storage_uri": null,
+      "supersedes_artifact_id": "stage1_candidate_dirty_2ed7f711afcc_20260723t073100z"
+    }
+  },
+  "stage0_readiness": {
+    "formal_ready": true,
+    "thresholds_approved": true,
+    "Kmax_protocol_frozen": true,
+    "official_final_test_unexposed": true
+  },
+  "split_exposure_audit": {
+    "conclusion": "dev_only_unexposed_final_test",
+    "candidate_validation_split_must_not_equal_official_final_test_split": true,
+    "candidate_manifest_path": "datasets/mica/formal_assets/stage1/stage1_official_validation_dev.json",
+    "current_official_manifest_path": "datasets/mica/formal_assets/stage1/stage1_official_final_test.json",
+    "proposed_final_test_manifest_paths": [
+      "datasets/mica/formal_assets/stage1/stage1_official_final_test.json",
+      "datasets/mica/formal_assets/stage1/step1_high_conf_single_test.json",
+      "datasets/mica/formal_assets/stage1/strict_synthetic_test.json"
+    ],
+    "candidate_splits": [
+      "dev"
+    ],
+    "current_official_splits": [
+      "test"
+    ],
+    "proposed_final_splits": [
+      "test"
+    ],
+    "candidate_sample_count": 500,
+    "current_official_sample_count": 500,
+    "proposed_final_sample_count": 1000,
+    "current_runner_sample_overlap_count": 0,
+    "current_runner_leakage_overlap_count": 0,
+    "proposed_final_sample_overlap_count": 0,
+    "proposed_final_leakage_overlap_count": 0,
+    "remediation": "freeze_new_stage1_official_final_test_before_official_validation"
+  },
+  "threshold_packet_status": "approved",
+  "kmax_packet_status": "approved",
+  "threshold_version": "frozen_dev_thresholds_v1",
+  "kmax_decision_version": "stage1-kmax-v1",
+  "official_runner_target_asset": "stage1_official_final_test",
+  "candidate_validation_asset": "stage1_official_validation_dev",
+  "future_official_final_test_asset": "stage1_official_final_test"
+}

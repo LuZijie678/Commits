@@ -1,0 +1,29 @@
+{
+  "schema_version": "mica-threshold-approval-packet-v1",
+  "decision_version": "stage1_dev_candidate_4c292e0b4f6d",
+  "status": "approved",
+  "approved_threshold_version": "frozen_dev_thresholds_v1",
+  "selected_thresholds": {
+    "k2_split_recall_min": 0.5,
+    "second_slot_gold_recall_min": 0.4,
+    "unit_accuracy_gain_over_all_one_min": 0.03,
+    "slot_collapse_rate_max": 0.45,
+    "count_accuracy_min": 0.55,
+    "over_split_rate_on_k1_max": 0.45
+  },
+  "checkpoint_hash": "4c292e0b4f6d7e2b0a291fd9ab1117552922076f3ffb6b28eff06484c33f8c11",
+  "dev_manifest_hash": "3758ba97ae0902cba98d9f4a17d04a5d871b342741976c545ed6cb3a2e7aecdf",
+  "threshold_report_hash": "d3df8a566130d5227cd119a9c7b20dcb0e09fdbb1cc18756b6203b00f2a9ec4c",
+  "selection_rule": {
+    "selection_split": "dev_only",
+    "selection_criterion": "stage1_dev_metric_gate",
+    "selected_operating_point": "stage1_dev_metric_gate_v1"
+  },
+  "dev_only": true,
+  "official_final_test_not_used": true,
+  "candidate_validation_not_used_for_selection": true,
+  "no_test_data_used": true,
+  "approved_by": "fulin",
+  "approved_at": "2026-07-23T16:45:14+08:00",
+  "no_further_tuning_after_approval": true
+}

@@ -1,0 +1,86 @@
+{
+  "protocol_spec_path": "configs/mica/stage1_protocol_spec.json",
+  "asset_registry_path": "configs/mica/data_asset_registry.json",
+  "required_assets_status": {
+    "step1_high_conf_single_train": {
+      "status": "frozen",
+      "path": "datasets/mica/formal_assets/stage1/step1_high_conf_single_train.json",
+      "file_exists": true,
+      "schema_valid": true,
+      "content_valid": true,
+      "formal_ready": true,
+      "checksum_match": true,
+      "errors": [],
+      "warnings": []
+    },
+    "strict_synthetic_train": {
+      "status": "frozen",
+      "path": "datasets/mica/formal_assets/stage1/strict_synthetic_train.json",
+      "file_exists": true,
+      "schema_valid": true,
+      "content_valid": true,
+      "formal_ready": true,
+      "checksum_match": true,
+      "errors": [],
+      "warnings": []
+    },
+    "step1_high_conf_single_dev": {
+      "status": "frozen",
+      "path": "datasets/mica/formal_assets/stage1/step1_high_conf_single_dev.json",
+      "file_exists": true,
+      "schema_valid": true,
+      "content_valid": true,
+      "formal_ready": true,
+      "checksum_match": true,
+      "errors": [],
+      "warnings": []
+    },
+    "strict_synthetic_dev": {
+      "status": "frozen",
+      "path": "datasets/mica/formal_assets/stage1/strict_synthetic_dev.json",
+      "file_exists": true,
+      "schema_valid": true,
+      "content_valid": true,
+      "formal_ready": true,
+      "checksum_match": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  "assets_ready": true,
+  "register_checkpoint_requested": true,
+  "mode": "execute",
+  "training_plan": {
+    "candidate_schedule": "naive_balanced_mixed_large_scale",
+    "epochs": 15,
+    "lambda_align": 1.0,
+    "lambda_count": 0.5,
+    "lambda_exist": 0.5,
+    "kmax": 4,
+    "null_slot_enabled": false,
+    "use_pairwise_bias": true
+  },
+  "experiment_manifest": {
+    "manifest_version": "mica-experiment-v1",
+    "stage": "stage1",
+    "protocol_version": "mica-runner-v1",
+    "config_hash": "f280eebdf24a6571241dcfd46cfac47e376f2932ad26d0b5e5708d45fb72751d",
+    "asset_registry_hash": "7bd6ee923ee207dc6cd27967ff676d17dabedfd2cfd351420664c7835a9bd75d",
+    "git_commit": "2ed7f711afcc1a4f96058c7d253328f22b8e5348",
+    "dirty": true,
+    "seed": 42,
+    "forbidden_assets_excluded": true,
+    "runtime_output_policy": "no_repo_outputs",
+    "advisor_approval_status": "pending",
+    "runner_name": "run_stage1_formal_training",
+    "mode": "execute",
+    "advisor_approval": false,
+    "final_test_usage": {
+      "used": false,
+      "threshold_tuning": false
+    },
+    "api_policy": false,
+    "attribution_update_policy": true,
+    "attribution_update_scope": "stage1_training_only"
+  }
+}
