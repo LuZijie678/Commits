@@ -1,5 +1,7 @@
 # 2026-05-30 Step2 clean formal fullscale 结果分析
 
+> 历史快照：本文的“当前”“正式”指 2026 年 5 月当时的 Step2 运行判断，不代表新仓库当前全部实验已完成。当前项目状态见 [当前状态入口](../CURRENT_STATUS.md)。
+
 ## 1. 本轮输出根
 
 本轮是在代理入口修复后新起的 clean formal fullscale：
@@ -13,9 +15,9 @@
 
 - [fullscale_summary.json](../../code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/fullscale_summary.json)
 - [runtime_state.json](../../code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/runtime_state.json)
-- [synthetic_samples.jsonl](../../code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples.jsonl)
-- [synthetic_samples_step3_ready.jsonl](../../code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples_step3_ready.jsonl)
-- [synthetic_samples_precheck_rejected.jsonl](../../code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples_precheck_rejected.jsonl)
+- `code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples.jsonl`（旧/新本地目录均有，仍未纳入 GitHub）
+- `code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples_step3_ready.jsonl`（旧/新本地目录均有，仍未纳入 GitHub）
+- `code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples_precheck_rejected.jsonl`（旧/新本地目录均有，仍未纳入 GitHub）
 
 这轮不复用旧的 `step2_fullscale_formal_20260529T1` 作为主结果。
 

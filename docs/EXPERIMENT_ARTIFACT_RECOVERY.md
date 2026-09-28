@@ -12,7 +12,9 @@
 
 ## 已知校验例外
 
-`configs/mica/official_results/stage1_official_validation_20260723T091921Z.json` 列出 13 个官方验证输出文件的预期哈希。本地旧工作目录中这 13 个文件都存在；其中 12 个 SHA-256 一致，但 `stage1_official_validation_manifest.json` 的预期哈希 `32943fae2925943aa183a7404da4e6546fa4a11dc231e65d007cad3f4d482e49` 与实际哈希 `e0fa6c3c4a32f638a0257203ed360a4e29d1c99bd15eee378f02536ef13e808b` 不一致。本次保留原文件，不改写结果记录，也不声称整套官方输出已通过完整一致性校验；后续需调查差异原因。
+`configs/mica/official_results/stage1_official_validation_20260723T091921Z.json` 列出 13 个官方验证输出文件的预期哈希。本地旧工作目录中这 13 个文件都存在；其中 12 个 SHA-256 一致，但 `stage1_official_validation_manifest.json` 的预期哈希 `32943fae2925943aa183a7404da4e6546fa4a11dc231e65d007cad3f4d482e49` 与实际哈希 `e0fa6c3c4a32f638a0257203ed360a4e29d1c99bd15eee378f02536ef13e808b` 不一致。本次保留原文件，不改写结果记录，也不声称整套官方输出已通过完整一致性校验。
+
+后续只读核查已定位为运行程序将 `output_hashes` 写回 manifest 引起的自引用哈希差异；复核步骤和证据见 [Stage1 官方 manifest 哈希核查](STAGE1_OFFICIAL_MANIFEST_HASH_AUDIT.md)。原始结果记录及运行产物保持不变。
 
 ## 仍未纳入 Git 的文件
 
@@ -20,4 +22,4 @@
 - Step 2 该次运行中的完整生成样本及预检拒绝样本（`synthetic_samples*.jsonl`），以及分片运行目录；历史文档指向这些文件的链接在新克隆中仍不能打开。
 - `datasets/step1/runtime_support/resolved_commit_texts.jsonl`（本地约 2.9 GB，超过 GitHub Free 的 LFS 单文件 2 GB 上限）、`archive/runs/` 的大型历史运行目录、缓存、临时文件和凭据。
 
-这些未上传文件仍在本地旧工作目录中。不要把旧目录整体加入 Git，也不要上传 `.github_token`、`.llm_api_key` 或含密钥的本机配置。若未来需要完整归档，应先确认数据许可、隐私、存储额度及文件哈希，再选用适合大型科研数据的存储方式。
+上述六份大型文件已从旧本地目录原样复制到新工作目录的同名路径，源/目标哈希一致，但仍被 Git 忽略，**尚未进入 GitHub**；详见[本机补回与剩余缺口](LOCAL_EXPERIMENT_ARTIFACT_RECOVERY.md)。旧目录原件保留。另有 [2026-06-14/15 Stage1 历史观察记录](records/archive/2026-06-14-mica-stage1-attribution-experiment-observations.md)原先指向旧 macOS 临时目录的 11 个逐次指标 JSON；这些文件在新、旧本地目录中均未找到，不属于“仍可从旧目录补入”的文件。不要把旧目录整体加入 Git，也不要上传 `.github_token`、`.llm_api_key` 或含密钥的本机配置。

@@ -1,6 +1,6 @@
 # DATA_CARD
 
-状态：当前工作区参考文档
+状态：Stage 0 数据边界参考文档；下文旧分支运行叙述是 2026-07 历史快照，不是新仓库 `main` 的实时状态。当前入口见 [当前项目状态](CURRENT_STATUS.md)。
 
 本文档总结当前工作区希望遵守的 Stage 0 数据边界约束。它是文档层的协议，不代表所有数据资产已经在本地落盘。
 
@@ -103,7 +103,7 @@
 - pseudo_alignment_allowed_as_gold: false
 - synthetic_labels_allowed_as_real_gold: false
 
-## 当前分支现实检查
+## 2026-07 旧分支运行记录（历史快照）
 
 - 当前代码通过 `code/mica/stage0/data_card.py` 校验上述约束。
 - `configs/mica/data_asset_registry.json` 现已切到 `mica-data-asset-registry-v2`，并填入当前工作区可验证的正式相对路径：
@@ -221,7 +221,7 @@
         - `pilot_only`
   - checked-in 小型结果记录：
     - `configs/mica/official_results/stage1_official_validation_20260723T091921Z.json`
-  - runtime outputs 仍是 local-only materialization，不进入 Git
+  - 当时 runtime outputs 是 local-only materialization；新仓库后来补入其中一部分，范围见 [历史实验文件补充说明](EXPERIMENT_ARTIFACT_RECOVERY.md)
   - Stage1-v2 当前入口：
     - `docs/MICA_STAGE1_V2_REAL_ADJUDICATED_PROTOCOL.md`
     - `configs/mica/protocol_decisions/stage1_v2_protocol_reset.json`

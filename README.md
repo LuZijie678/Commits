@@ -2,8 +2,10 @@
 
 这是当前唯一主仓，用来统一管理 Step1 单意图原料挖掘与 Step2 多意图合成。
 
-MICA 当前实验状态请先看 `docs/MICA_STAGE1_V2_DATA_AND_ANNOTATION_EXECUTION.md`；
+项目当前状态与历史证据边界请先看 `docs/CURRENT_STATUS.md`；
+MICA Stage1-v2 的执行细节见 `docs/MICA_STAGE1_V2_DATA_AND_ANNOTATION_EXECUTION.md`；
 本次补充的历史实验文件及其局限见 `docs/EXPERIMENT_ARTIFACT_RECOVERY.md`。
+大文件的本机补回、哈希及公开归档条件见 `docs/LOCAL_EXPERIMENT_ARTIFACT_RECOVERY.md`。
 `docs/current-experiment-checkpoint.md` 已标记为过时，仅供查阅历史。
 
 ## 当前结论
@@ -122,10 +124,13 @@ make step2-fewshot-materialize
 
 ## 文档入口（含历史记录）
 
+- `docs/CURRENT_STATUS.md`: 当前状态入口与历史证据边界
 - `docs/MICA_IMPLEMENTATION_INDEX.md`: MICA 实现与文档索引
 - `docs/MICA_STAGE1_V2_DATA_AND_ANNOTATION_EXECUTION.md`: Stage1-v2 当前执行状态
 - `docs/MICA_STAGE1_INDEPENDENT_AUDIT.md`: Stage1-v1 独立审计结论
 - `docs/EXPERIMENT_ARTIFACT_RECOVERY.md`: 本次补充的历史实验文件、校验与未上传项
+- `docs/LOCAL_EXPERIMENT_ARTIFACT_RECOVERY.md`: 六份大型实验文件的本机补回与未找回原件
+- `docs/STAGE1_OFFICIAL_MANIFEST_HASH_AUDIT.md`: 官方 manifest 哈希差异的只读核查
 - `docs/records/2026-05-27-current-project-state.md`: 2026 年 5 月的历史状态记录
 - `code/step1/docs/2026-05-26-step1-正式结果记录.md`: Step1 正式结果记录
 - `code/step1/README.md`: Step1 当前入口说明

@@ -1,5 +1,7 @@
 # 2026-05-28 Step2 正式基线论文主表初稿
 
+> 历史快照：本文的“当前”“正式”指 2026 年 5 月当时的 Step2 运行判断，不代表新仓库当前全部实验已完成。当前项目状态见 [当前状态入口](../CURRENT_STATUS.md)。
+
 ## 1. 适用范围
 
 本页用于把当前 Step2 已完成的 `6 seed` 正式基线结果整理成可直接贴入论文草稿的主表初稿。
@@ -83,8 +85,8 @@
 
 - [fullscale_summary.json](../../code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/fullscale_summary.json)
 - [runtime_state.json](../../code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/runtime_state.json)
-- [synthetic_samples.jsonl](../../code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples.jsonl)
-- [synthetic_samples_step3_ready.jsonl](../../code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples_step3_ready.jsonl)
-- [synthetic_samples_precheck_rejected.jsonl](../../code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples_precheck_rejected.jsonl)
+- `code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples.jsonl`（旧/新本地目录均有，仍未纳入 GitHub）
+- `code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples_step3_ready.jsonl`（旧/新本地目录均有，仍未纳入 GitHub）
+- `code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/synthetic_samples_precheck_rejected.jsonl`（旧/新本地目录均有，仍未纳入 GitHub）
 
 主表如果强调多种子稳定性，仍建议保留第 2 节的 `6 seed target_count=100` 基线结果作为主行；如果强调全量合成覆盖，则应增加这条 fullscale 行并明确它与多 seed 基线衡量的是不同层面的现象。

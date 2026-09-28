@@ -1,6 +1,6 @@
 > 状态：过时
 > 本文档是历史实现说明，可能不反映当前代码状态。
-> 当前事实来源：docs/MICA_CURRENT_STATE_AND_PLAN_GAP.md
+> 当前事实来源：docs/CURRENT_STATUS.md
 
 # MICA Stage4 范围决策
 

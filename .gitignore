@@ -40,6 +40,7 @@ configs/mica/*.local.json
 
 # Local Step1 workspace backfill cache
 datasets/step1/workspace/allcommits_local_backfill/
+datasets/step1/runtime_support/resolved_commit_texts.jsonl
 
 # Local scratch / one-off summaries
 tmp/

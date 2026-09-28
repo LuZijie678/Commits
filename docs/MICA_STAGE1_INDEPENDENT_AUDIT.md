@@ -1,5 +1,7 @@
 # MICA-v3 Stage 1 独立复核审计
 
+> 历史审计快照：下文分支、HEAD、Git SHA 和工作树状态均指 2026-07-23 的旧仓库环境；新仓库 `main` 未继承这些提交。科研结论仍应保留，但当前入口请看 [当前项目状态](CURRENT_STATUS.md)。
+
 审计日期：`2026-07-23`
 
 本文件记录一次只读、独立、端到端的 Stage 1 审计结论。它不修改 checkpoint、阈值、Kmax、split、official predictions 或 official result，只基于当前仓库中的冻结代码、配置、资产和运行产物给出结论。
@@ -17,8 +19,8 @@
 
 ## B. Reproducibility
 
-- 当前审计分支：`experiment/llm-generation-pilot-clean`
-- 当前审计 HEAD：`8834f557b9bc42c056c1aeef688e1710506e3b16`
+- 审计时的旧分支：`experiment/llm-generation-pilot-clean`
+- 审计时的旧 HEAD：`8834f557b9bc42c056c1aeef688e1710506e3b16`
 - 当前工作树无关脏文件：
   - `m_existing_diff_package/data/continuous_m_crawl.launchd.log`
 - clean training Git SHA：

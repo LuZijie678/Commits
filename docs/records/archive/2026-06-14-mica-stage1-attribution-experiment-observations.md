@@ -1,6 +1,6 @@
 > 状态：已归档 / 过时
 > 本文档是历史实现说明，可能不反映当前代码状态。
-> 当前事实来源：docs/MICA_CURRENT_STATE_AND_PLAN_GAP.md
+> 当前事实来源：docs/CURRENT_STATUS.md
 
 # 2026-06-14 MICA Stage 1 Attribution 实验现象与关键数据记录
 
@@ -41,12 +41,12 @@
 
 本记录中的数值以本地 runtime 输出为准，主要来自：
 
-- [outputs/mica_stage1_sanity_20260614T062358Z/metrics.json](/private/tmp/Commits-mica-v3-attribution-mvp/outputs/mica_stage1_sanity_20260614T062358Z/metrics.json)
-- [outputs/mica_stage1_sanity_20260614T063849Z/metrics.json](/private/tmp/Commits-mica-v3-attribution-mvp/outputs/mica_stage1_sanity_20260614T063849Z/metrics.json)
-- [outputs/mica_stage1_sanity_20260614T064442Z/metrics.json](/private/tmp/Commits-mica-v3-attribution-mvp/outputs/mica_stage1_sanity_20260614T064442Z/metrics.json)
-- [outputs/mica_stage1_sanity_20260614T064731Z/metrics.json](/private/tmp/Commits-mica-v3-attribution-mvp/outputs/mica_stage1_sanity_20260614T064731Z/metrics.json)
-- [outputs/mica_stage1_sanity_20260614T083245Z/metrics.json](/private/tmp/Commits-mica-v3-attribution-mvp/outputs/mica_stage1_sanity_20260614T083245Z/metrics.json)
-- [reports/mica_stage1_attribution_debug.json](/private/tmp/Commits-mica-v3-attribution-mvp/reports/mica_stage1_attribution_debug.json)
+- `outputs/mica_stage1_sanity_20260614T062358Z/metrics.json`（旧 macOS 临时目录产物，当前本地未找到）
+- `outputs/mica_stage1_sanity_20260614T063849Z/metrics.json`（旧 macOS 临时目录产物，当前本地未找到）
+- `outputs/mica_stage1_sanity_20260614T064442Z/metrics.json`（旧 macOS 临时目录产物，当前本地未找到）
+- `outputs/mica_stage1_sanity_20260614T064731Z/metrics.json`（旧 macOS 临时目录产物，当前本地未找到）
+- `outputs/mica_stage1_sanity_20260614T083245Z/metrics.json`（旧 macOS 临时目录产物，当前本地未找到）
+- [reports/mica_stage1_attribution_debug.json](../../../reports/mica_stage1_attribution_debug.json)
 
 补充说明：
 
@@ -277,14 +277,16 @@
 
 本轮新增的主要权威数据来源：
 
-- [outputs/mica_stage1_staged_curriculum_20260615T023159Z/T0_k2_only_reference_metrics.json](/private/tmp/Commits-mica-v3-attribution-mvp/outputs/mica_stage1_staged_curriculum_20260615T023159Z/T0_k2_only_reference_metrics.json)
-- [outputs/mica_stage1_staged_curriculum_20260615T023159Z/T1_long_k2_specialization_then_gentle_k1_reintroduction_metrics.json](/private/tmp/Commits-mica-v3-attribution-mvp/outputs/mica_stage1_staged_curriculum_20260615T023159Z/T1_long_k2_specialization_then_gentle_k1_reintroduction_metrics.json)
-- [outputs/mica_stage1_staged_curriculum_20260615T023159Z/T2_k2_specialization_with_replay_protected_mixed_training_metrics.json](/private/tmp/Commits-mica-v3-attribution-mvp/outputs/mica_stage1_staged_curriculum_20260615T023159Z/T2_k2_specialization_with_replay_protected_mixed_training_metrics.json)
-- [outputs/mica_stage1_staged_curriculum_20260615T023159Z/T3_align_preserving_mixed_training_metrics.json](/private/tmp/Commits-mica-v3-attribution-mvp/outputs/mica_stage1_staged_curriculum_20260615T023159Z/T3_align_preserving_mixed_training_metrics.json)
-- [outputs/mica_stage1_staged_curriculum_20260615T023159Z/T4_freeze_slot_queries_after_k2_specialization_metrics.json](/private/tmp/Commits-mica-v3-attribution-mvp/outputs/mica_stage1_staged_curriculum_20260615T023159Z/T4_freeze_slot_queries_after_k2_specialization_metrics.json)
-- [outputs/mica_stage1_staged_curriculum_20260615T023159Z/T5_disable_deterministic_coupling_during_reintroduction_metrics.json](/private/tmp/Commits-mica-v3-attribution-mvp/outputs/mica_stage1_staged_curriculum_20260615T023159Z/T5_disable_deterministic_coupling_during_reintroduction_metrics.json)
-- [reports/mica_stage1_staged_curriculum_result.json](/private/tmp/Commits-mica-v3-attribution-mvp/reports/mica_stage1_staged_curriculum_result.json)
-- [reports/mica_stage1_staged_curriculum_result.md](/private/tmp/Commits-mica-v3-attribution-mvp/reports/mica_stage1_staged_curriculum_result.md)
+- `outputs/mica_stage1_staged_curriculum_20260615T023159Z/T0_k2_only_reference_metrics.json`（旧 macOS 临时目录产物，当前本地未找到）
+- `outputs/mica_stage1_staged_curriculum_20260615T023159Z/T1_long_k2_specialization_then_gentle_k1_reintroduction_metrics.json`（旧 macOS 临时目录产物，当前本地未找到）
+- `outputs/mica_stage1_staged_curriculum_20260615T023159Z/T2_k2_specialization_with_replay_protected_mixed_training_metrics.json`（旧 macOS 临时目录产物，当前本地未找到）
+- `outputs/mica_stage1_staged_curriculum_20260615T023159Z/T3_align_preserving_mixed_training_metrics.json`（旧 macOS 临时目录产物，当前本地未找到）
+- `outputs/mica_stage1_staged_curriculum_20260615T023159Z/T4_freeze_slot_queries_after_k2_specialization_metrics.json`（旧 macOS 临时目录产物，当前本地未找到）
+- `outputs/mica_stage1_staged_curriculum_20260615T023159Z/T5_disable_deterministic_coupling_during_reintroduction_metrics.json`（旧 macOS 临时目录产物，当前本地未找到）
+- [reports/mica_stage1_staged_curriculum_result.json](../../../reports/mica_stage1_staged_curriculum_result.json)
+- [reports/mica_stage1_staged_curriculum_result.md](../../../reports/mica_stage1_staged_curriculum_result.md)
+
+后续恢复说明：上述 6 份原始 `*_metrics.json` 仍未找到；汇总 JSON 的 `settings[0..5]` 保留了对应完整指标对象，已生成[带来源与哈希的 reconstructed 副本](../../../recovered_artifacts/stage1_staged_curriculum_20260615T023159Z/RECOVERY_MANIFEST.json)。这些副本不能冒充原始运行文件。
 
 ### 9.2 staged schedule 矩阵与关键结果
 
@@ -483,10 +485,10 @@
 
 本节追加记录 `7122cef -> 3df2f8e` 之间的新实验事实和结论。权威摘要来自：
 
-- [reports/mica_stage1_t2_scaleup_result.md](../../reports/mica_stage1_t2_scaleup_result.md)
-- [reports/mica_stage1_candidate_schedule_comparison_result.md](../../reports/mica_stage1_candidate_schedule_comparison_result.md)
-- [reports/mica_stage1_formal_manifest_summary.md](../../reports/mica_stage1_formal_manifest_summary.md)
-- [reports/mica_stage1_protocol_freeze.md](../../reports/mica_stage1_protocol_freeze.md)
+- [reports/mica_stage1_t2_scaleup_result.md](../../../reports/mica_stage1_t2_scaleup_result.md)
+- [reports/mica_stage1_candidate_schedule_comparison_result.md](../../../reports/mica_stage1_candidate_schedule_comparison_result.md)
+- [reports/mica_stage1_formal_manifest_summary.md](../../../reports/mica_stage1_formal_manifest_summary.md)
+- [reports/mica_stage1_protocol_freeze.md](../../../reports/mica_stage1_protocol_freeze.md)
 
 ### 12.1 T2 replay-protected mixed 的 scale-up validation 失败
 

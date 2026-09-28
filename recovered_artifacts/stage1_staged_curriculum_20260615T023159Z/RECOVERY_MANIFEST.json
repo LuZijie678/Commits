@@ -1,0 +1,53 @@
+{
+  "status": "reconstructed_from_checked_in_report",
+  "original_runtime_files_found": false,
+  "original_sha256_verified": false,
+  "source_report_path": "reports/mica_stage1_staged_curriculum_result.json",
+  "source_report_sha256": "9774f41e92fb1e9e9cabff9509bc8f09daa35e31bf0bb32a8052a77e8b24983e",
+  "method": "Serialize each settings[i] object using the runner's json.dumps(ensure_ascii=False, indent=2) plus LF.",
+  "caveat": "Content follows the report, but no original per-setting file exists for byte-for-byte comparison.",
+  "files": [
+    {
+      "setting_name": "T0_k2_only_reference",
+      "reconstructed_path": "recovered_artifacts/stage1_staged_curriculum_20260615T023159Z/T0_k2_only_reference_metrics.reconstructed.json",
+      "source_json_pointer": "/settings/0",
+      "byte_count": 6477,
+      "sha256": "aaba1fb89205b1868cb7b3962bf6abc3abafb714d087c8a1e7843723af199bd8"
+    },
+    {
+      "setting_name": "T1_long_k2_specialization_then_gentle_k1_reintroduction",
+      "reconstructed_path": "recovered_artifacts/stage1_staged_curriculum_20260615T023159Z/T1_long_k2_specialization_then_gentle_k1_reintroduction_metrics.reconstructed.json",
+      "source_json_pointer": "/settings/1",
+      "byte_count": 8775,
+      "sha256": "da0755072aefea424c5ed2fcf74dd4acee30685e244b6d7d2298dce657c132f4"
+    },
+    {
+      "setting_name": "T2_k2_specialization_with_replay_protected_mixed_training",
+      "reconstructed_path": "recovered_artifacts/stage1_staged_curriculum_20260615T023159Z/T2_k2_specialization_with_replay_protected_mixed_training_metrics.reconstructed.json",
+      "source_json_pointer": "/settings/2",
+      "byte_count": 8310,
+      "sha256": "6d0197a7aa675c94001b03b48b56a7ec6aba2b43d8de56db295d606787e91aff"
+    },
+    {
+      "setting_name": "T3_align_preserving_mixed_training",
+      "reconstructed_path": "recovered_artifacts/stage1_staged_curriculum_20260615T023159Z/T3_align_preserving_mixed_training_metrics.reconstructed.json",
+      "source_json_pointer": "/settings/3",
+      "byte_count": 8339,
+      "sha256": "6c5eefb82b54d1a2b1ac87583fd0fae4aedb1b3c0706dc020e8044570522f26d"
+    },
+    {
+      "setting_name": "T4_freeze_slot_queries_after_k2_specialization",
+      "reconstructed_path": "recovered_artifacts/stage1_staged_curriculum_20260615T023159Z/T4_freeze_slot_queries_after_k2_specialization_metrics.reconstructed.json",
+      "source_json_pointer": "/settings/4",
+      "byte_count": 8302,
+      "sha256": "c7205b4d8dee1e30b8b2313538b436361e8eee5ca1513de03143ca42c5b7bba1"
+    },
+    {
+      "setting_name": "T5_disable_deterministic_coupling_during_reintroduction",
+      "reconstructed_path": "recovered_artifacts/stage1_staged_curriculum_20260615T023159Z/T5_disable_deterministic_coupling_during_reintroduction_metrics.reconstructed.json",
+      "source_json_pointer": "/settings/5",
+      "byte_count": 8261,
+      "sha256": "fb99e66bb3577e2b70d43fddfcfc473f75b703fddfff27c02c486c11c8d1b22d"
+    }
+  ]
+}

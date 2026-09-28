@@ -8,5 +8,8 @@ code/step2/data/*.csv filter=lfs diff=lfs merge=lfs -text
 code/step2/fewshot待制备/candidate_sources/*.csv filter=lfs diff=lfs merge=lfs -text
 code/step2/fewshot待制备/candidate_sources/*.jsonl filter=lfs diff=lfs merge=lfs -text
 datasets/mica/formal_assets/stage2/m_weak_*.json filter=lfs diff=lfs merge=lfs -text
+datasets/mica/formal_assets/**/*.json -text
+reports/mica_stage1_staged_curriculum_result.json -text
+recovered_artifacts/**/*.json -text
 outputs/mica_*/** -text
 code/step2/outputs/step2_fullscale_formal_proxyclean_20260530T030311Z/aggregate/* -text

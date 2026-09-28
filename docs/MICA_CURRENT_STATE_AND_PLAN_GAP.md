@@ -1,8 +1,10 @@
 # MICA 当前实现状态与方案差距
 
+> 历史状态审计：主体记录截至 2026-07-23 的旧分支工作区，后续附有当时的更新。“当前分支”和“当前结果”均指记录时的环境，不是新仓库 `main`。旧 Git SHA 保留为实验来源标识；新仓库没有继承旧 Git 历史。现在请先看 [当前项目状态入口](CURRENT_STATUS.md)。
+
 ## 1. 审计方法
 
-- 当前分支：`experiment/llm-generation-pilot-clean`
+- 审计时的旧分支：`experiment/llm-generation-pilot-clean`
 - 当前实现审计与 official Stage 1 执行代码 SHA：`f85b5260057a213a04bb4ea0a3c8cb720caa5dff`
   - Stage 1 clean training checkpoint provenance SHA：`22bcd358766e1a678ee721c994830bdcf544213c`
   - 当前工作树仅保留被过滤的无关外部脏文件：
