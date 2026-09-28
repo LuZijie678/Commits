@@ -9,10 +9,18 @@ $python = (Resolve-Path .\.venv\Scripts\python.exe).Path
 & $python --version
 git --version
 & $python scripts/check_dataset_readiness.py --output tmp/windows_asset_status.json
-& $python -m pytest -q tests/mica tests/generation code/step2/tests code/step1/tests/test_strategy_compare_wrapper.py
+& $python -m pytest -q tests/mica tests/generation code/step1/tests code/step2/tests
 ```
 
-`scripts/check_dataset_readiness.py` 是数据就绪检查，不代表模型训练或真实 API 生成已经完成。截至 2026-09-28，本机 `.venv` 中尚缺 Step1 导入所需的 `scikit-learn`；有正常的 PyPI 网络/代理后先执行 `& $python -m pip install scikit-learn`，再运行 `& $python -m pytest -q code/step1/tests` 及下面的 Step1 `--help`。Git 必须在 `PATH` 中，Step1 可能需要 GitHub 网络访问；DeepSeek 真实调用、模型下载和 GPU 训练还取决于密钥、网络、额外 Python 依赖及硬件。这些条件需要分阶段验证，不应凭单元测试通过就认定端到端可复现。
+`scripts/check_dataset_readiness.py` 是数据就绪检查，不代表模型训练或真实 API 生成已经完成。截至 2026-09-28，本机 `.venv` 使用 Python 3.12.14，已安装的直接依赖版本记录在根目录 `requirements-windows.txt`。如需在新机器重建，先用 Python 3.12 创建 `.venv`，再按下面的命令安装并运行上面的测试；该文件不是完整传递依赖锁，实际运行前仍须重新验证。Git 必须在 `PATH` 中，Step1 可能需要 GitHub 网络访问；DeepSeek 真实调用、模型下载和 GPU 训练还取决于密钥、网络及硬件。这些条件需要分阶段验证，不应凭单元测试通过就认定端到端可复现。
+
+本机此前的安装失败是因为进程中的三个代理变量都指向失效的 `127.0.0.1:9`。直接访问 PyPI 已验证可用；只在需要安装的 PowerShell 会话中清空这些失效变量即可，不必更改系统代理：
+
+```powershell
+$env:HTTP_PROXY = ''; $env:HTTPS_PROXY = ''; $env:ALL_PROXY = ''
+& $python -m pip install --index-url https://pypi.org/simple -r requirements-windows.txt
+& $python -m pip check
+```
 
 ## Step1
 
@@ -38,13 +46,15 @@ Pop-Location
 
 ```powershell
 if (-not (Test-Path code/step2/configs/step2_runtime_config.local.json)) { Copy-Item code/step2/configs/step2_runtime_config.json code/step2/configs/step2_runtime_config.local.json }
+New-Item -ItemType Directory -Force -Path tmp/matplotlib | Out-Null
+$env:MPLCONFIGDIR = (Resolve-Path tmp/matplotlib).Path
 Push-Location code/step2
 & $python tools/export_step1_to_step2_source.py --input ../../datasets/derived/step1_source_pool/current/conservative_atomic_sources.csv --output ../../datasets/derived/step2_bridge/current/step2_source_candidates_from_step1.csv --manifest ../../datasets/derived/step2_bridge/current/step2_source_candidates_from_step1_manifest.json
-& $python code/construct_simple_two_intent.py --preflight --output-dir ../../datasets/step2/delivery/current --config configs/step2_runtime_config.local.json
+& $python code/construct_simple_two_intent.py --preflight --output-dir ../../tmp/windows_step2_preflight --config configs/step2_runtime_config.local.json
 Pop-Location
 ```
 
-`--preflight` 默认不要求真实 API 连通性；如要检查，另外传入 `--preflight-api-ping`，这会触发网络请求。Windows 不使用 macOS 的 `scutil`/`emit_proxy_env.py`；需要代理时，在当前 PowerShell 会话设置 `HTTP_PROXY`/`HTTPS_PROXY`，由 Python 网络库读取。不要把代理账号密码或 API 密钥提交。
+这里把预检报告写入忽略跟踪的 `tmp/`，避免诊断运行覆盖正式交付报告。`--preflight` 默认不要求真实 API 连通性，但仍检查 API 密钥是否存在；如要实际检查连通性，另外传入 `--preflight-api-ping`，这会触发网络请求。截至 2026-09-28，本机未提供 DeepSeek 密钥的预检结果为：数据、few-shot、正式资产、评分依赖、输出均通过，仅生成器因缺少密钥而不通过。`bert-score` 可导入不等于 `roberta-large` 模型已下载。Windows 不使用 macOS 的 `scutil`/`emit_proxy_env.py`；需要代理时，在当前 PowerShell 会话设置 `HTTP_PROXY`/`HTTPS_PROXY`，由 Python 网络库读取。不要把代理账号密码或 API 密钥提交。
 
 ## 其他入口
 

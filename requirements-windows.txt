@@ -1,0 +1,9 @@
+# Verified on Windows with CPython 3.12.14 (2026-09-28).
+# Direct test/runtime packages only; transitive dependencies are resolved by pip.
+numpy==2.5.3
+torch==2.14.0
+pytest==9.1.1
+scipy==1.18.1
+scikit-learn==1.9.1
+bert-score==0.3.13
+transformers==4.57.6
